@@ -1,0 +1,46 @@
+name: Android — APK
+
+# Construit un APK installable sans compte Expo : génération native (prebuild) puis Gradle.
+# L'APK est signé avec la clé de debug générée par Expo : parfait pour la famille, les tests et les démos.
+# Pour le Play Store, utiliser EAS Build (voir README) ou ajouter une clé de signature en secret.
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - run: npm ci
+      - name: Génération du projet Android
+        run: npx expo prebuild -p android --no-install
+      - name: Compilation de l'APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon
+      - name: Renommage
+        run: cp android/app/build/outputs/apk/release/app-release.apk my-language-baddy.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-language-baddy-apk
+          path: my-language-baddy.apk
+      - name: Publication dans une release (tags v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: my-language-baddy.apk

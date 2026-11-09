@@ -1,25 +1,65 @@
 {
   "expo": {
-    "name": "mlb-tmp",
-    "slug": "mlb-tmp",
+    "name": "My Language Baddy",
+    "slug": "my-language-baddy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.drissguessous.mylanguagebaddy",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "My Language Baddy écoute votre voix pour analyser votre prononciation.",
+        "NSSpeechRecognitionUsageDescription": "La reconnaissance vocale permet de vérifier ce que vous dites.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#1F6F78",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.drissguessous.mylanguagebaddy",
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "My Language Baddy",
+      "themeColor": "#1F6F78",
+      "backgroundColor": "#F6F1E9"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "My Language Baddy écoute votre voix pour analyser votre prononciation.",
+          "speechRecognitionPermission": "La reconnaissance vocale permet de vérifier ce que vous dites.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox",
+            "com.google.android.tts"
+          ]
+        }
+      ]
+    ],
+    "scheme": "mylanguagebaddy",
+    "description": "Apprendre 11 langues à l'oral et à l'écrit, du niveau A1 au C2, avec un compagnon humain adapté à l'âge.",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F6F1E9"
+    },
+    "experiments": {
+      "typedRoutes": false,
+      "baseUrl": "/My-language-baddy"
     }
   }
 }
