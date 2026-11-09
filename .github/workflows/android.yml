@@ -39,8 +39,13 @@ jobs:
         with:
           name: my-language-baddy-apk
           path: my-language-baddy.apk
-      - name: Publication dans une release (tags v*)
-        if: startsWith(github.ref, 'refs/tags/v')
+      - name: Publication de l'APK dans une Release GitHub
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || format('android-{0}', github.run_number) }}
+          name: My Language Baddy — Android ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || format('build {0}', github.run_number) }}
+          make_latest: true
+          body: |
+            APK Android de My Language Baddy (commit ${{ github.sha }}).
+            Installation : ouvrir ce lien sur le téléphone, télécharger `my-language-baddy.apk`, puis autoriser l'installation depuis cette source.
           files: my-language-baddy.apk
