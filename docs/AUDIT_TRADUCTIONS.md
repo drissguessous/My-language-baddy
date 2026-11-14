@@ -7,12 +7,12 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | Langue | Phrases | Signalées | LaBSE direct moyen | Rétro-traduction moyenne |
 |---|---|---|---|---|
 | en | 120 | 6 | 0.899 | 0.947 |
-| ar | 120 | 15 | 0.885 | 0.920 |
+| ar | 120 | 14 | 0.884 | 0.922 |
 | es | 120 | 6 | 0.936 | 0.944 |
 | it | 120 | 9 | 0.930 | 0.941 |
 | pt | 120 | 10 | 0.932 | 0.932 |
-| zh | 120 | 27 | 0.836 | 0.863 |
-| ja | 120 | 31 | 0.836 | 0.853 |
+| zh | 120 | 26 | 0.835 | 0.866 |
+| ja | 120 | 31 | 0.837 | 0.854 |
 | ber | 36 | 21 | — | 0.715 |
 | fa | 120 | 17 | 0.892 | 0.907 |
 | hi | 120 | 16 | 0.885 | 0.924 |
@@ -28,11 +28,10 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | ps1 | ar | Bonjour, je suis l'infirmier de garde. Où avez-vous mal ? | مرحبًا، أنا الممرض المناوب. أين تشعر بالألم؟ | Je suis l'infirmière de service. | 0.811 | 0.716 |
 | g3 | ar | Bien, merci. Bienvenue ! | بخير، شكرًا. أهلًا وسهلًا! | Je vais bien, merci. | 0.877 | 0.719 |
 | ph2 | ar | Oui, merci. Mon fils est allergique aux arachides. | نعم، شكرًا. ابني لديه حساسية من الفول السوداني. | Mon fils est allergique aux cacahuètes. | 0.914 | 0.745 |
-| a6 | ar | En compensant par plus de flexibilité sur les horaires. | بالتعويض بمرونة أكبر في أوقات العمل. | Avec une rémunération plus souple pour les heures de travail. | 0.808 | 0.758 |
 | s5 | ar | Bien sûr, les cabines sont au fond. | طبعًا، غرف القياس في الخلف. | Bien sûr, les salles de mesure sont à l'arrière. | 0.641 | 0.777 |
 | x3 | ar | Dites-le-lui avec tact : il est très susceptible. | قل له ذلك بلباقة، فهو سريع الانفعال. | Dis-le-lui gentiment, il est tendu. | 0.772 | 0.783 |
-| f1 | ar | Bonjour, qu'est-ce que vous désirez ? | مرحبًا، ماذا تريد؟ | Vous voulez quoi ? | 0.924 | 0.784 |
 | s4 | ar | Du M, mais je voudrais l'essayer. | مقاس متوسط، لكن أريد أن أجربها. | Une taille moyenne, mais je veux l'essayer. | 0.766 | 0.784 |
+| a6 | ar | En compensant par plus de flexibilité sur les horaires. | بالتعويض عن ذلك بمرونة أكبر في أوقات العمل. | En contrepartie, des heures de travail plus flexibles. | 0.809 | 0.784 |
 | pt4 | ar | Environ huit cents, pendant quarante minutes ; le service est rétabli. | نحو ثمانمئة مستخدم لمدة أربعين دقيقة؛ وقد استُعيدت الخدمة. | Près de 800 utilisateurs pendant 40 minutes; le service est rétabli. | 0.808 | 0.789 |
 | x6 | ar | Je le condenserai pour n'en garder que l'essentiel. | سأختصره لأحتفظ بالأساسي فقط. | Je vais raccourcir pour ne retenir que le fond. | 0.791 | 0.792 |
 | x4 | ar | Je vais formuler ma critique sous forme de suggestion. | سأصوغ نقدي في شكل اقتراح. | Je vais formuler ma critique sous la forme d'une proposition. | 0.716 | 0.973 |
@@ -120,7 +119,6 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | x3 | ja | Dites-le-lui avec tact : il est très susceptible. | 彼はとても傷つきやすいので、言い方に気をつけてください。 | Il est très vulnérable, alors faites attention à ce que vous dites. | 0.623 | 0.542 |
 | f6 | ja | Voilà. Bonne journée ! | どうぞ。良い一日を！ | Je vous en prie, bonne journée. | 0.716 | 0.544 |
 | p1 | ja | Je vous remercie de votre présence ; je vais vous présenter nos résultats du trimestre. | お集まりいただきありがとうございます。今期の業績についてご報告いたします。 | Je vous remercie d'être venus. | 0.795 | 0.559 |
-| pl5 | ja | Relancez-le aujourd'hui, sinon nous paierons des frais de surestaries. | 今日中に催促してください。でないと、デマレージが発生します。 | Veuillez nous précipiter dans la journée. Sinon, il y aura une démarrage. | 0.591 | 0.56 |
 | s4 | ja | Du M, mais je voudrais l'essayer. | Mサイズですが、試着してもいいですか？ | C'est une taille M. Je peux l'essayer ? | 0.713 | 0.635 |
 | pt4 | ja | Environ huit cents, pendant quarante minutes ; le service est rétabli. | 約八百人で、四十分間でした。サービスは復旧済みです。 | Il y avait environ 800 personnes. Le service a été rétabli. | 0.841 | 0.635 |
 | f5 | ja | L'addition, s'il vous plaît. | お会計をお願いします。 | Les comptes, s'il vous plaît. | 0.521 | 0.644 |
@@ -135,6 +133,7 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | a6 | ja | En compensant par plus de flexibilité sur les horaires. | 勤務時間をより柔軟にすることで補えます。 | Nous pouvons compléter cela par une plus grande souplesse dans nos horaires de travail. | 0.813 | 0.732 |
 | f1 | ja | Bonjour, qu'est-ce que vous désirez ? | いらっしゃいませ。ご注文は何になさいますか？ | Bienvenue. Que voulez-vous commander ? | 0.656 | 0.74 |
 | s6 | ja | Elle me va bien. Je peux payer par carte ? | ぴったりです。カードで払えますか？ | C'est parfait. Vous pouvez payer par carte ? | 0.767 | 0.741 |
+| pl5 | ja | Relancez-le aujourd'hui, sinon nous paierons des frais de surestaries. | 今日中に催促してください。でないと、滞船料が発生します。 | S'il vous plaît dépêchez-vous d'ici aujourd'hui. Sinon, il y aura des frais d'expédition. | 0.735 | 0.744 |
 | k5 | ja | On joue ensemble ? | 一緒に遊ぼうか？ | Tu veux jouer avec moi ? | 0.918 | 0.75 |
 | m6 | ja | Très bien, envoyez-nous la proposition et nous signerons cette semaine. | 承知しました。提案書を送っていただければ、今週中に署名します。 | J'ai accepté. Si vous pouvez nous envoyer une proposition, je la signerai dans la semaine. | 0.756 | 0.769 |
 | o2 | ja | À mon avis, l'histoire était originale, mais la fin m'a déçu. | 話は斬新でしたが、結末にはがっかりしました。 | C'était une nouvelle histoire, mais j'ai été déçue de la fin. | 0.77 | 0.773 |
@@ -152,14 +151,13 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | s6 | pt | Elle me va bien. Je peux payer par carte ? | Fica-me bem. Posso pagar com cartão? | Je peux payer par carte ? | 0.869 | 0.734 |
 | pl5 | pt | Relancez-le aujourd'hui, sinon nous paierons des frais de surestaries. | Insista com ele hoje, senão vamos pagar sobre-estadia. | Insistez avec lui aujourd'hui, ou nous allons payer sur place. | 0.809 | 0.737 |
 | s5 | pt | Bien sûr, les cabines sont au fond. | Claro, os provadores ficam ao fundo. | Bien sûr, les testeurs sont au fond. | 0.742 | 0.757 |
-| n4 | zh | Ça fait vingt euros. | 二十欧元。 | Il y a aussi une petite salle de bains. | 0.777 | 0.348 |
+| f5 | zh | L'addition, s'il vous plaît. | 麻烦买单。 | Je n'arrive pas à payer. | 0.36 | 0.288 |
 | x1 | zh | Il ne faut pas vendre la peau de l'ours avant de l'avoir tué. | 不要高兴得太早。 | Ne vous réjouissez pas trop tôt. | 0.363 | 0.409 |
 | d6 | zh | Oui, le bus 12 s'arrête juste en face. | 可以，12路车就在对面停。 | Il est possible de s'arrêter à l'autre bout de la rue. | 0.865 | 0.504 |
-| h4 | zh | Oui, de sept heures à dix heures, au rez-de-chaussée. | 含，早上七点到十点，在一楼。 | Il y a eu des manifestations dans le quartier de l'établissement, à partir de 7h à 10h du matin, au premier étage. | 0.794 | 0.54 |
-| f5 | zh | L'addition, s'il vous plaît. | 请结账。 | Veuillez déposer votre facture. | 0.562 | 0.552 |
 | f6 | zh | Voilà. Bonne journée ! | 给您。祝您愉快！ | Je vous souhaite une bonne journée ! | 0.604 | 0.591 |
 | x3 | zh | Dites-le-lui avec tact : il est très susceptible. | 跟他说的时候委婉一点，他很敏感。 | Il est très sensible quand on lui parle. | 0.673 | 0.6 |
 | ph5 | zh | Oui, une visite guidée part à neuf heures ; je vous réserve deux places ? | 可以，九点有导游带团出发，要帮您预订两个位子吗？ | Pourriez-vous m'aider à réserver deux places ? | 0.793 | 0.606 |
+| h4 | zh | Oui, de sept heures à dix heures, au rez-de-chaussée. | 包含，早上七点到十点，在一楼。 | Il s'agit d'une manifestation qui s'est déroulée entre 7 et 10 heures du matin, au premier étage. | 0.757 | 0.628 |
 | x6 | zh | Je le condenserai pour n'en garder que l'essentiel. | 我会把它压缩一下，只保留重点。 | Je vais le compresser un peu, en gardant l'accent. | 0.773 | 0.671 |
 | s4 | zh | Du M, mais je voudrais l'essayer. | 中号，不过我想试一下。 | Je ne suis pas d'accord, mais j'aimerais essayer. | 0.841 | 0.707 |
 | s3 | zh | Quelle taille faites-vous ? | 您穿多大号？ | Quel est votre numéro ? | 0.794 | 0.714 |
@@ -168,12 +166,12 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | o6 | zh | Oui, surtout pour la musique et les acteurs. | 会的，特别是因为音乐和演员。 | Je pense qu'il est important que les gens se sentent à l'aise, surtout à cause de la musique et des acteurs. | 0.906 | 0.73 |
 | pl3 | zh | Les documents pour la douane sont-ils prêts ? | 报关单据准备好了吗？ | Vous êtes prêts à déposer vos dossiers ? | 0.83 | 0.736 |
 | p3 | zh | Comment expliquez-vous la baisse de la marge ? | 利润率下降的原因是什么？ | Qu'est-ce qui explique la baisse des taux de profit ? | 0.674 | 0.742 |
+| n4 | zh | Ça fait vingt euros. | 一共二十欧元。 | Le prix total est de vingt euros. | 0.79 | 0.745 |
 | x4 | zh | Je vais formuler ma critique sous forme de suggestion. | 我会把批评换成建议的方式说出来。 | Je vais essayer de transformer les critiques en recommandations. | 0.782 | 0.748 |
 | pt4 | zh | Environ huit cents, pendant quarante minutes ; le service est rétabli. | 大约八百人，持续了四十分钟，服务已经恢复。 | Il y a environ 800 personnes et le service a été rétabli après une quarantaine de minutes. | 0.879 | 0.749 |
-| ph1 | zh | Bienvenue à l'hôtel. Avez-vous fait bon voyage ? | 欢迎光临。一路上还顺利吗？ | Bienvenue à la maison. Comment allez-vous ? | 0.696 | 0.754 |
 | pt6 | zh | D'accord, je rédige le post-mortem et j'ouvre un ticket aujourd'hui. | 好的，我今天写事故复盘报告并提交工单。 | Bon, j'ai écrit le rapport d'accident aujourd'hui et j'ai déposé le formulaire. | 0.762 | 0.765 |
 | a6 | zh | En compensant par plus de flexibilité sur les horaires. | 可以用更灵活的工作时间来弥补。 | Il est possible de compenser avec des heures de travail plus flexibles. | 0.769 | 0.774 |
-| ph3 | zh | C'est noté ; je préviens le chef pour tous vos repas. | 好的，已记下，我会通知厨师您所有的餐食都要注意。 | Bien, rappelez-vous, je vais informer le cuisinier que vous devez faire attention à tous vos repas. | 0.841 | 0.776 |
+| ph3 | zh | C'est noté ; je préviens le chef pour tous vos repas. | 好的，已经记下了，我会通知厨师，您的每一餐都会特别注意。 | Bon, j'ai bien noté, j'informe le cuisinier et je fais attention à chaque repas que vous préparez. | 0.826 | 0.778 |
 | ph6 | zh | Avec plaisir, merci pour votre accueil. | 好的，谢谢你们的热情接待。 | Bien, merci pour votre accueil chaleureux. | 0.778 | 0.782 |
 | g3 | zh | Bien, merci. Bienvenue ! | 我也很好，谢谢。欢迎！ | Je vais bien, merci. Bienvenue ! | 0.737 | 0.784 |
 | pl5 | zh | Relancez-le aujourd'hui, sinon nous paierons des frais de surestaries. | 今天就催一下，不然我们要付滞期费。 | Si vous ne le faites pas aujourd'hui, nous devrons payer les frais de retard. | 0.771 | 0.799 |
