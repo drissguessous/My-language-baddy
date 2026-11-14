@@ -99,8 +99,8 @@ export const A2: Phrase[] = [
   P('h4', 'c', {
     fr: 'Oui, de sept heures à dix heures, au rez-de-chaussée.', en: 'Yes, from seven to ten, on the ground floor.', ar: 'نعم، من السابعة إلى العاشرة، في الطابق الأرضي.',
     es: 'Sí, de siete a diez, en la planta baja.', it: 'Sì, dalle sette alle dieci, al piano terra.', pt: 'Sim, das sete às dez, no rés-do-chão.',
-    zh: '含，早上七点到十点，在一楼。', ja: 'はい、七時から十時まで、一階でございます。', fa: 'بله، از ساعت هفت تا ده، در طبقه همکف.', hi: 'हाँ, सुबह सात से दस बजे तक, भूतल पर।',
-  }, { ar: 'naʿam, min as-sābiʿa ilā al-ʿāshira, fī aṭ-ṭābiq al-arḍī.', zh: 'hán, zǎoshang qī diǎn dào shí diǎn, zài yī lóu.',
+    zh: '包含，早上七点到十点，在一楼。', ja: 'はい、七時から十時まで、一階でございます。', fa: 'بله، از ساعت هفت تا ده، در طبقه همکف.', hi: 'हाँ, सुबह सात से दस बजे तक, भूतल पर।',
+  }, { ar: 'naʿam, min as-sābiʿa ilā al-ʿāshira, fī aṭ-ṭābiq al-arḍī.', zh: 'bāohán, zǎoshang qī diǎn dào shí diǎn, zài yī lóu.',
     ja: 'hai, shichi-ji kara jū-ji made, ikkai de gozaimasu.', fa: "bale, az sâ'at-e haft tâ dah, dar tabaqe-ye hamkaf.", hi: 'hā̃, subah sāt se das baje tak, bhūtal par.' }),
   P('h5', 'l', {
     fr: "Il n'y a pas d'eau chaude dans la salle de bain.", en: "There's no hot water in the bathroom.", ar: 'لا يوجد ماء ساخن في الحمام.',

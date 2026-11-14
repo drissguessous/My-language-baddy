@@ -115,9 +115,9 @@ export const A1: Phrase[] = [
   P('n4', 'c', {
     fr: 'Ça fait vingt euros.', en: "That's twenty euros.", ar: 'الثمن عشرون يورو.',
     es: 'Son veinte euros.', it: 'Sono venti euro.', pt: 'São vinte euros.',
-    zh: '二十欧元。', ja: '二十ユーロです。', ber: 'Ɛacrin n uru.',
+    zh: '一共二十欧元。', ja: '二十ユーロです。', ber: 'Ɛacrin n uru.',
     fa: 'بیست یورو می‌شود.', hi: 'बीस यूरो हुए।',
-  }, { ar: 'ath-thaman ʿishrūn yūrū.', zh: 'èrshí ōuyuán.', ja: 'nijū yūro desu.', fa: 'bist yuro mishavad.', hi: 'bīs yūro hue.' }),
+  }, { ar: 'ath-thaman ʿishrūn yūrū.', zh: 'yígòng èrshí ōuyuán.', ja: 'nijū yūro desu.', fa: 'bist yuro mishavad.', hi: 'bīs yūro hue.' }),
   P('n5', 'l', {
     fr: "J'ai rendez-vous lundi à dix heures.", en: 'I have an appointment on Monday at ten.', ar: 'عندي موعد يوم الاثنين في الساعة العاشرة.',
     es: 'Tengo una cita el lunes a las diez.', it: 'Ho un appuntamento lunedì alle dieci.', pt: 'Tenho uma marcação na segunda-feira às dez.',
@@ -135,11 +135,11 @@ export const A1: Phrase[] = [
 
   // ── Au café ──────────────────────────────────────────────────
   P('f1', 'c', {
-    fr: "Bonjour, qu'est-ce que vous désirez ?", en: 'Hello, what would you like?', ar: 'مرحبًا، ماذا تريد؟',
+    fr: "Bonjour, qu'est-ce que vous désirez ?", en: 'Hello, what would you like?', ar: 'مرحبًا، ماذا تطلب؟',
     es: 'Hola, ¿qué desea?', it: 'Buongiorno, cosa desidera?', pt: 'Olá, o que deseja?',
     zh: '您好，您要点什么？', ja: 'いらっしゃいませ。ご注文は何になさいますか？', ber: 'Azul, ma trit?',
     fa: 'سلام، چه میل دارید؟', hi: 'नमस्ते, आप क्या लेंगे?',
-  }, { ar: 'marḥaban, mādhā turīd?', zh: 'nín hǎo, nín yào diǎn shénme?', ja: 'irasshaimase. go-chūmon wa nani ni nasaimasu ka?',
+  }, { ar: 'marḥaban, mādhā taṭlub?', zh: 'nín hǎo, nín yào diǎn shénme?', ja: 'irasshaimase. go-chūmon wa nani ni nasaimasu ka?',
     fa: 'salâm, che meyl dârid?', hi: 'namaste, āp kyā lẽge?' }),
   P('f2', 'l', {
     fr: "Un café et un jus d'orange, s'il vous plaît.", en: 'A coffee and an orange juice, please.', ar: 'قهوة وعصير برتقال من فضلك.',
@@ -164,9 +164,9 @@ export const A1: Phrase[] = [
   P('f5', 'l', {
     fr: "L'addition, s'il vous plaît.", en: 'The bill, please.', ar: 'الحساب من فضلك.',
     es: 'La cuenta, por favor.', it: 'Il conto, per favore.', pt: 'A conta, por favor.',
-    zh: '请结账。', ja: 'お会計をお願いします。', ber: 'Lḥsab, ttxil.',
+    zh: '麻烦买单。', ja: 'お会計をお願いします。', ber: 'Lḥsab, ttxil.',
     fa: 'صورت‌حساب، لطفاً.', hi: 'बिल दीजिए, कृपया।',
-  }, { ar: 'al-ḥisāb min faḍlik.', zh: 'qǐng jiézhàng.', ja: 'o-kaikei o onegai shimasu.', fa: 'surat-hesâb, lotfan.', hi: 'bil dījie, kṛpayā.' }),
+  }, { ar: 'al-ḥisāb min faḍlik.', zh: 'máfan mǎidān.', ja: 'o-kaikei o onegai shimasu.', fa: 'surat-hesâb, lotfan.', hi: 'bil dījie, kṛpayā.' }),
   P('f6', 'c', {
     fr: 'Voilà. Bonne journée !', en: 'Here you are. Have a nice day!', ar: 'تفضل. يومًا سعيدًا!',
     es: 'Aquí tiene. ¡Que tenga un buen día!', it: 'Ecco a Lei. Buona giornata!', pt: 'Aqui tem. Tenha um bom dia!',
