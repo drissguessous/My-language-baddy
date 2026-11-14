@@ -1,6 +1,6 @@
 name: Voix — génération et validation
 
-# Génère 2 voix neuronales par langue (Kokoro, Piper, MMS), vérifie chaque enregistrement avec
+# Génère 2 voix neuronales par langue sous licence commerciale (Kokoro, Piper), vérifie chaque enregistrement avec
 # Whisper, garde les meilleures voix sur preuve et commite les clips validés + le rapport docs/VOIX.md.
 # Les clips inchangés sont réutilisés depuis le cache.
 
@@ -27,7 +27,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 350
     strategy:
       fail-fast: false
       matrix:
@@ -47,7 +47,7 @@ jobs:
           pip install -q "kokoro>=0.9.4" "misaki[ja,zh]" unidic-lite piper-tts huggingface_hub faster-whisper \
             "transformers>=4.40" pypinyin opencc-python-reimplemented pykakasi numpy soundfile
           python -m unidic download || true
-      - uses: actions/cache@v4
+      - uses: actions/cache/restore@v4
         with:
           path: |
             cache/voices/${{ matrix.lang }}
@@ -55,7 +55,16 @@ jobs:
           key: voices-${{ matrix.lang }}-${{ github.run_id }}
           restore-keys: voices-${{ matrix.lang }}-
       - name: Génération et vérification (${{ matrix.lang }})
+        timeout-minutes: 320
         run: python scripts/voices/generate.py --lang ${{ matrix.lang }}
+      # Le cache est sauvegardé même si la génération est interrompue : la run suivante reprend là où elle s'est arrêtée.
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            cache/voices/${{ matrix.lang }}
+            ~/.cache/huggingface
+          key: voices-${{ matrix.lang }}-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         with:
           name: voices-${{ matrix.lang }}

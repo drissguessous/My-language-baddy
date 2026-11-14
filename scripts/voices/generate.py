@@ -86,6 +86,7 @@ def main():
     ap.add_argument('--out', default='out/voices')
     ap.add_argument('--whisper', default='large-v3-turbo')
     ap.add_argument('--cache', default='cache/voices', help='clips déjà générés et vérifiés (réutilisés si le texte est inchangé)')
+    ap.add_argument('--budget', type=float, default=260, help='minutes ; au-delà, les répliques du professeur non encore générées sont ignorées')
     args = ap.parse_args()
     lang = args.lang
     corpus = json.load(open(args.corpus, encoding='utf-8'))
@@ -104,57 +105,74 @@ def main():
 
     results = {'lang': lang, 'validated': asr is not None, 'candidates': []}
     tmp = tempfile.mkdtemp()
+    deadline = time.time() + args.budget * 60
+    recs, synths = [], {}
+
+    def run(cand, rec, kind, it):
+        dest = os.path.join(args.out, lang, cand['id'])
+        cdir = os.path.join(args.cache, lang, cand['id'])
+        mp3 = os.path.join(dest, ('coach-' if kind == 'coach' else '') + it['key'] + '.mp3')
+        entry = {}
+        h = fnv(it['text'] + '|' + cand['id'] + '|' + args.whisper)
+        cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
+        if os.path.exists(cmp3) and os.path.exists(cjson):
+            shutil.copy(cmp3, mp3)
+            rec[kind][it['key']] = json.load(open(cjson, encoding='utf-8'))
+            return
+        if kind == 'coach' and time.time() > deadline:
+            return  # budget dépassé : la réplique du professeur sera lue par la voix de l'appareil
+        if cand['id'] not in synths and rec['error'] is None:
+            try:
+                synths[cand['id']] = Synth(cand)
+            except Exception as ex:  # modèle indisponible : on le signale et on continue
+                rec['error'] = f'{type(ex).__name__}: {ex}'
+                traceback.print_exc()
+        synth = synths.get(cand['id'])
+        if synth is None:
+            rec[kind][it['key']] = {'error': rec['error'], 'pass': False}
+            return
+        try:
+            wav = os.path.join(tmp, 'x.wav')
+            synth.wav(it['text'], wav)
+            encode(wav, mp3)
+            entry['bytes'] = os.path.getsize(mp3)
+            if asr:
+                heard = transcribe(mp3)
+                entry['heard'] = heard
+                entry['cer'] = round(cer(it['text'], heard, lang), 3)
+                entry['pass'] = entry['cer'] <= CER_PASS
+            else:
+                entry['pass'] = None
+            shutil.copy(mp3, cmp3)
+            json.dump(entry, open(cjson, 'w', encoding='utf-8'), ensure_ascii=False)
+        except Exception as ex:
+            entry = {'error': f'{type(ex).__name__}: {ex}', 'pass': False}
+        rec[kind][it['key']] = entry
+
+    # 1er passage : les phrases des leçons pour toutes les voix (prioritaires) ;
+    # 2e passage : les répliques du professeur, dans la limite du budget de temps.
     for cand in CANDIDATES[lang]:
+        os.makedirs(os.path.join(args.cache, lang, cand['id']), exist_ok=True)
+        os.makedirs(os.path.join(args.out, lang, cand['id']), exist_ok=True)
         rec = dict(cand, clips={}, coach={}, error=None)
         t0 = time.time()
-        synth = None
-        cdir = os.path.join(args.cache, lang, cand['id'])
-        os.makedirs(cdir, exist_ok=True)
-        dest = os.path.join(args.out, lang, cand['id'])
-        os.makedirs(dest, exist_ok=True)
-        jobs = [('clips', it) for it in items]
-        jobs += [('coach', it) for it in coach if it['gender'] == cand['gender']]
-        for kind, it in jobs:
-            mp3 = os.path.join(dest, ('coach-' if kind == 'coach' else '') + it['key'] + '.mp3')
-            entry = {}
-            h = fnv(it['text'] + '|' + cand['id'] + '|' + args.whisper)
-            cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
-            if os.path.exists(cmp3) and os.path.exists(cjson):
-                shutil.copy(cmp3, mp3)
-                rec[kind][it['key']] = json.load(open(cjson, encoding='utf-8'))
-                continue
-            if synth is None and rec['error'] is None:
-                try:
-                    synth = Synth(cand)
-                except Exception as ex:  # modèle indisponible : on le signale et on continue
-                    rec['error'] = f'{type(ex).__name__}: {ex}'
-                    traceback.print_exc()
-            if synth is None:
-                rec[kind][it['key']] = {'error': rec['error'], 'pass': False}
-                continue
-            try:
-                wav = os.path.join(tmp, 'x.wav')
-                synth.wav(it['text'], wav)
-                encode(wav, mp3)
-                entry['bytes'] = os.path.getsize(mp3)
-                if asr:
-                    heard = transcribe(mp3)
-                    entry['heard'] = heard
-                    entry['cer'] = round(cer(it['text'], heard, lang), 3)
-                    entry['pass'] = entry['cer'] <= CER_PASS
-                else:
-                    entry['pass'] = None
-                shutil.copy(mp3, cmp3)
-                json.dump(entry, open(cjson, 'w', encoding='utf-8'), ensure_ascii=False)
-            except Exception as ex:
-                entry = {'error': f'{type(ex).__name__}: {ex}', 'pass': False}
-            rec[kind][it['key']] = entry
+        for it in items:
+            run(cand, rec, 'clips', it)
         rec['seconds'] = round(time.time() - t0)
+        recs.append(rec)
+    for cand, rec in zip(CANDIDATES[lang], recs):
+        t0 = time.time()
+        for it in coach:
+            if it['gender'] == cand['gender']:
+                run(cand, rec, 'coach', it)
+        rec['seconds'] += round(time.time() - t0)
+        rec['coach_missing'] = sum(1 for it in coach if it['gender'] == cand['gender'] and it['key'] not in rec['coach'])
+    for rec in recs:
         graded = [v for v in rec['clips'].values() if v.get('pass') is not None]
         rec['pass_rate'] = round(sum(1 for v in graded if v['pass']) / len(graded), 3) if graded else None
         cers = [v['cer'] for v in rec['clips'].values() if 'cer' in v]
         rec['mean_cer'] = round(sum(cers) / len(cers), 3) if cers else None
-        print(f"{lang}/{cand['id']}: réussite {rec['pass_rate']} CER moyen {rec['mean_cer']} ({rec['seconds']} s)", flush=True)
+        print(f"{lang}/{rec['id']}: réussite {rec['pass_rate']} CER moyen {rec['mean_cer']} ({rec['seconds']} s, coach manquant {rec.get('coach_missing', 0)})", flush=True)
         results['candidates'].append(rec)
 
     os.makedirs(os.path.join(args.out, lang), exist_ok=True)
