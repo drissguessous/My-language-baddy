@@ -9,7 +9,7 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 | | |
 |---|---|
 | **11 langues** | anglais, français, espagnol, italien, portugais, arabe standard, amazigh (tamazight, tifinagh + latin), persan, hindi, chinois mandarin, japonais |
-| **Écoute** | **voix neuronales intégrées** (2 par langue, une seule pour l'amazigh), chaque enregistrement vérifié par Whisper ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
+| **Écoute** | **voix neuronales intégrées** (2 par langue, sous licence compatible avec un usage commercial), chaque enregistrement vérifié par Whisper ; l'arabe et l'amazigh utilisent la voix de l'appareil faute de modèle commercialisable ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
 | **Analyse de la voix** | reconnaissance vocale (Android, iOS, Chrome/Edge) puis notation : précision, complétude, **débit** mesuré via le niveau sonore du micro ; mots justes, approximatifs ou manqués surlignés |
 | **Écrit** | traduction libre, mots à remettre dans l'ordre ; pinyin, rōmaji et translittération acceptés |
 | **Dialogues** | chaque unité est une scène jouée avec le compagnon : il parle, vous répondez au micro |
@@ -60,7 +60,7 @@ docs/                  équipe d'experts, sécurité, modèle de données, conte
 scripts/               contrôle automatique du corpus et du filtre
 ```
 
-Documentation détaillée : [docs/PEDAGOGIE.md](docs/PEDAGOGIE.md), [docs/VOIX.md](docs/VOIX.md), [docs/AUDIT_TRADUCTIONS.md](docs/AUDIT_TRADUCTIONS.md), [docs/SECURITE.md](docs/SECURITE.md), [docs/DATA_MODEL.md](docs/DATA_MODEL.md), [docs/CONTENU.md](docs/CONTENU.md), [docs/EXPERTS.md](docs/EXPERTS.md).
+Documentation détaillée : [docs/PEDAGOGIE.md](docs/PEDAGOGIE.md), [docs/VOIX.md](docs/VOIX.md), [docs/AUDIT_TRADUCTIONS.md](docs/AUDIT_TRADUCTIONS.md), [docs/REVUE_TRADUCTIONS.md](docs/REVUE_TRADUCTIONS.md), [docs/SECURITE.md](docs/SECURITE.md), [docs/DATA_MODEL.md](docs/DATA_MODEL.md), [docs/CONTENU.md](docs/CONTENU.md), [docs/EXPERTS.md](docs/EXPERTS.md).
 
 ## Contrôles automatiques (GitHub Actions)
 
@@ -68,5 +68,5 @@ Documentation détaillée : [docs/PEDAGOGIE.md](docs/PEDAGOGIE.md), [docs/VOIX.m
 |---|---|
 | Web | types, 36 tests, contrôle du corpus, publication GitHub Pages |
 | Android — APK | APK publié dans une Release à chaque version |
-| Voix | génère les voix candidates (Kokoro, Piper, MMS), vérifie chaque clip avec Whisper, garde les 2 meilleures voix par langue |
+| Voix | génère les voix candidates sous licence commerciale (Kokoro, Piper), vérifie chaque clip avec Whisper, garde les 2 meilleures voix par langue |
 | Audit des traductions | rétro-traduction NLLB-200 et similarité LaBSE de chaque phrase, rapport des écarts |
