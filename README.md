@@ -9,11 +9,13 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 | | |
 |---|---|
 | **11 langues** | anglais, français, espagnol, italien, portugais, arabe standard, amazigh (tamazight, tifinagh + latin), persan, hindi, chinois mandarin, japonais |
-| **Écoute** | synthèse vocale native de l'appareil, vitesse normale ou ralentie, voix accordée au compagnon |
+| **Écoute** | **voix neuronales intégrées** (2 par langue, une seule pour l'amazigh), chaque enregistrement vérifié par Whisper ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
 | **Analyse de la voix** | reconnaissance vocale (Android, iOS, Chrome/Edge) puis notation : précision, complétude, **débit** mesuré via le niveau sonore du micro ; mots justes, approximatifs ou manqués surlignés |
 | **Écrit** | traduction libre, mots à remettre dans l'ordre ; pinyin, rōmaji et translittération acceptés |
 | **Dialogues** | chaque unité est une scène jouée avec le compagnon : il parle, vous répondez au micro |
 | **Révisions** | répétition espacée (Leitner) alimentée par chaque tentative |
+| **Pédagogie par âge** | 6-12 ans : écoute avant l'écrit, cartes illustrées, autocollants ; 13-17 ans : point de langue guidé, défis ; adultes : grammaire explicite, auto-évaluation CECRL ; récupération finale et révisions espacées pour tous ([fondements](docs/PEDAGOGIE.md)) |
+| **Mode professeur** | ton Sérieux / Normal / Sympathique / Comique × intensité Un peu / Normal / Beaucoup ; le mode Sérieux relève la barre de réussite |
 | **Compagnons** | 10 personnes illustrées (pas de robot), animées quand elles parlent : 2 pour les 6-12 ans, 3 pour les 13-17 ans, 5 pour les adultes |
 | **Protection** | filtre de langage multilingue (grossièretés, insultes, propos haineux, sexe, drogues bloqués pour tous ; alcool, jeux d'argent, armes bloqués pour les mineurs), message de soutien en cas de mots de détresse, contenus et compagnons filtrés par âge, espace parent protégé par code (durée quotidienne, micro, compagnon, âge) |
 | **Données** | tout reste sur l'appareil, aucun compte, aucun serveur |
@@ -58,4 +60,13 @@ docs/                  équipe d'experts, sécurité, modèle de données, conte
 scripts/               contrôle automatique du corpus et du filtre
 ```
 
-Documentation détaillée : [docs/EXPERTS.md](docs/EXPERTS.md), [docs/SECURITE.md](docs/SECURITE.md), [docs/DATA_MODEL.md](docs/DATA_MODEL.md), [docs/CONTENU.md](docs/CONTENU.md).
+Documentation détaillée : [docs/PEDAGOGIE.md](docs/PEDAGOGIE.md), [docs/VOIX.md](docs/VOIX.md), [docs/AUDIT_TRADUCTIONS.md](docs/AUDIT_TRADUCTIONS.md), [docs/SECURITE.md](docs/SECURITE.md), [docs/DATA_MODEL.md](docs/DATA_MODEL.md), [docs/CONTENU.md](docs/CONTENU.md), [docs/EXPERTS.md](docs/EXPERTS.md).
+
+## Contrôles automatiques (GitHub Actions)
+
+| Workflow | Rôle |
+|---|---|
+| Web | types, 36 tests, contrôle du corpus, publication GitHub Pages |
+| Android — APK | APK publié dans une Release à chaque version |
+| Voix | génère les voix candidates (Kokoro, Piper, MMS), vérifie chaque clip avec Whisper, garde les 2 meilleures voix par langue |
+| Audit des traductions | rétro-traduction NLLB-200 et similarité LaBSE de chaque phrase, rapport des écarts |
