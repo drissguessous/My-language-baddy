@@ -1,0 +1,736 @@
+{
+ "ber": {
+  "validated": false,
+  "candidates": [
+   {
+    "id": "mms_shi",
+    "engine": "mms",
+    "name": "MMS Tachelhit",
+    "gender": "m",
+    "accent": "shi",
+    "license": "CC-BY-NC-4.0",
+    "pass_rate": null,
+    "mean_cer": null,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "mms_shi"
+  ],
+  "clips_total": 36,
+  "clips_kept": 36,
+  "failed": []
+ },
+ "en": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "bf_emma",
+    "engine": "kokoro",
+    "name": "Emma",
+    "gender": "f",
+    "accent": "en-GB",
+    "license": "Apache-2.0",
+    "pass_rate": 0.95,
+    "mean_cer": 0.023,
+    "error": null
+   },
+   {
+    "id": "bf_isabella",
+    "engine": "kokoro",
+    "name": "Isabella",
+    "gender": "f",
+    "accent": "en-GB",
+    "license": "Apache-2.0",
+    "pass_rate": 0.967,
+    "mean_cer": 0.016,
+    "error": null
+   },
+   {
+    "id": "bm_george",
+    "engine": "kokoro",
+    "name": "George",
+    "gender": "m",
+    "accent": "en-GB",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.022,
+    "error": null
+   },
+   {
+    "id": "bm_fable",
+    "engine": "kokoro",
+    "name": "Fable",
+    "gender": "m",
+    "accent": "en-GB",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.025,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "bf_isabella",
+   "bm_george"
+  ],
+  "clips_total": 120,
+  "clips_kept": 116,
+  "failed": [
+   {
+    "key": "m1",
+    "heard": {
+     "bf_isabella": "we can offer you a 5% discount.",
+     "bm_george": "we can offer you a 5% discount."
+    }
+   },
+   {
+    "key": "m3",
+    "heard": {
+     "bf_isabella": "If you commit for a year, we can go up to 8%.",
+     "bm_george": "If you commit for a year, we can go up to 8%."
+    }
+   },
+   {
+    "key": "n4",
+    "heard": {
+     "bf_isabella": "That's 20 euros.",
+     "bm_george": "That's 20 euros."
+    }
+   },
+   {
+    "key": "p2",
+    "heard": {
+     "bf_isabella": "Revenue grew by 12%, mainly thanks to exports.",
+     "bm_george": "Revenue grew by 12%, mainly thanks to exports."
+    }
+   }
+  ]
+ },
+ "es": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "ef_dora",
+    "engine": "kokoro",
+    "name": "Dora",
+    "gender": "f",
+    "accent": "es",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.025,
+    "error": null
+   },
+   {
+    "id": "em_alex",
+    "engine": "kokoro",
+    "name": "Álex",
+    "gender": "m",
+    "accent": "es",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.025,
+    "error": null
+   },
+   {
+    "id": "davefx",
+    "engine": "piper",
+    "name": "Dave",
+    "gender": "m",
+    "accent": "es-ES",
+    "license": "CC0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.034,
+    "error": null
+   },
+   {
+    "id": "sharvard",
+    "engine": "piper",
+    "name": "Sharvard",
+    "gender": "f",
+    "accent": "es-ES",
+    "license": "CC-BY-4.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.028,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "ef_dora",
+   "em_alex"
+  ],
+  "clips_total": 120,
+  "clips_kept": 115,
+  "failed": [
+   {
+    "key": "h4",
+    "heard": {
+     "ef_dora": "Sí de 7 a 10 en la planta baja.",
+     "em_alex": "Sí de 7 a 10 en la planta baja."
+    }
+   },
+   {
+    "key": "m1",
+    "heard": {
+     "ef_dora": "podemos ofrecerle un descuento del 5%.",
+     "em_alex": "Podemos ofrecerle un descuento del 5%."
+    }
+   },
+   {
+    "key": "m3",
+    "heard": {
+     "ef_dora": "Si se comprometen por un año, podemos llegar al 8%.",
+     "em_alex": "Si se comprometen por un año, podemos llegar al 8%."
+    }
+   },
+   {
+    "key": "n4",
+    "heard": {
+     "ef_dora": "Son 20 euros.",
+     "em_alex": "Son 20 euros."
+    }
+   },
+   {
+    "key": "pt4",
+    "heard": {
+     "ef_dora": "Unos 800 durante 40 minutos, el servicio ya está restablecido.",
+     "em_alex": "Unos 800 durante 40 minutos, el servicio ya está restablecido."
+    }
+   }
+  ]
+ },
+ "fa": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "amir",
+    "engine": "piper",
+    "name": "Amir",
+    "gender": "m",
+    "accent": "fa-IR",
+    "license": "CC0",
+    "pass_rate": 0.7,
+    "mean_cer": 0.212,
+    "error": null
+   },
+   {
+    "id": "gyro",
+    "engine": "piper",
+    "name": "Gyro",
+    "gender": "m",
+    "accent": "fa-IR",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.925,
+    "mean_cer": 0.103,
+    "error": null
+   },
+   {
+    "id": "ganji",
+    "engine": "piper",
+    "name": "Ganji",
+    "gender": "m",
+    "accent": "fa-IR",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.933,
+    "mean_cer": 0.084,
+    "error": null
+   },
+   {
+    "id": "reza_ibrahim",
+    "engine": "piper",
+    "name": "Reza",
+    "gender": "m",
+    "accent": "fa-IR",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.767,
+    "mean_cer": 0.179,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "ganji",
+   "gyro"
+  ],
+  "clips_total": 120,
+  "clips_kept": 118,
+  "failed": [
+   {
+    "key": "d6",
+    "heard": {
+     "ganji": "بله، اوتو بوست دبازد درست روبروم میستد.",
+     "gyro": "بله، اوتوبوس دوازده درست رو به رو می استد."
+    }
+   },
+   {
+    "key": "f5",
+    "heard": {
+     "ganji": "سورت سا لطفم",
+     "gyro": "تو رات اصب لتفن"
+    }
+   }
+  ]
+ },
+ "hi": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "hf_alpha",
+    "engine": "kokoro",
+    "name": "Alpha",
+    "gender": "f",
+    "accent": "hi-IN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.933,
+    "mean_cer": 0.071,
+    "error": null
+   },
+   {
+    "id": "hf_beta",
+    "engine": "kokoro",
+    "name": "Beta",
+    "gender": "f",
+    "accent": "hi-IN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.917,
+    "mean_cer": 0.08,
+    "error": null
+   },
+   {
+    "id": "hm_omega",
+    "engine": "kokoro",
+    "name": "Omega",
+    "gender": "m",
+    "accent": "hi-IN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.942,
+    "mean_cer": 0.07,
+    "error": null
+   },
+   {
+    "id": "hm_psi",
+    "engine": "kokoro",
+    "name": "Psi",
+    "gender": "m",
+    "accent": "hi-IN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.917,
+    "mean_cer": 0.082,
+    "error": null
+   },
+   {
+    "id": "priyamvada",
+    "engine": "piper",
+    "name": "Priyamvada",
+    "gender": "f",
+    "accent": "hi-IN",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.917,
+    "mean_cer": 0.104,
+    "error": null
+   },
+   {
+    "id": "pratham",
+    "engine": "piper",
+    "name": "Pratham",
+    "gender": "m",
+    "accent": "hi-IN",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.908,
+    "mean_cer": 0.093,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "hm_omega",
+   "hf_alpha"
+  ],
+  "clips_total": 120,
+  "clips_kept": 114,
+  "failed": [
+   {
+    "key": "a4",
+    "heard": {
+     "hm_omega": "इसलिए मैं Hybrid Model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हूँ.",
+     "hf_alpha": "इसलिए मैं hybrid model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में होूँ."
+    }
+   },
+   {
+    "key": "ph5",
+    "heard": {
+     "hm_omega": "हाँ एक guided tour 9 बजे निकलता है, क्या मैं आपके लिए 2 seat'े book कर दूँ।",
+     "hf_alpha": "हाँ, एक guided tour 9 बजे निकलता है, क्या मैं आपके लिए 2 सीटे book कर दूँ?"
+    }
+   },
+   {
+    "key": "pt2",
+    "heard": {
+     "hm_omega": "मैंने log देखे एक environment variable गायब था.",
+     "hf_alpha": "मैंने लॉक देखे एक environment variable गायब था."
+    }
+   },
+   {
+    "key": "pt4",
+    "heard": {
+     "hm_omega": "लगभग 840 मिनट तक सेवा बहाल कर दी गई है।",
+     "hf_alpha": "लगभग 840 मिनट तक सेवा बहाल कर दी गई है।"
+    }
+   },
+   {
+    "key": "pt5",
+    "heard": {
+     "hm_omega": "ऐसा दोबारा नहो, इसके लिए एक automated test जोड़ना होगा.",
+     "hf_alpha": "ऐसा दोबारा नहो, इसके लिए एक automated test जोड़ना होगा।"
+    }
+   },
+   {
+    "key": "pt6",
+    "heard": {
+     "hm_omega": "ठीक है मैं आज ही post mortem लिखकर एक टिकट खोलता हूँ.",
+     "hf_alpha": "ठीक है मैं आज ही post-mortem लिखकर एक टिकट खोलता हूँ."
+    }
+   }
+  ]
+ },
+ "it": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "if_sara",
+    "engine": "kokoro",
+    "name": "Sara",
+    "gender": "f",
+    "accent": "it-IT",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.026,
+    "error": null
+   },
+   {
+    "id": "paola",
+    "engine": "piper",
+    "name": "Paola",
+    "gender": "f",
+    "accent": "it-IT",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.942,
+    "mean_cer": 0.04,
+    "error": null
+   },
+   {
+    "id": "im_nicola",
+    "engine": "kokoro",
+    "name": "Nicola",
+    "gender": "m",
+    "accent": "it-IT",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.028,
+    "error": null
+   },
+   {
+    "id": "riccardo",
+    "engine": "piper",
+    "name": "Riccardo",
+    "gender": "m",
+    "accent": "it-IT",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.942,
+    "mean_cer": 0.053,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "if_sara",
+   "im_nicola"
+  ],
+  "clips_total": 120,
+  "clips_kept": 115,
+  "failed": [
+   {
+    "key": "d4",
+    "heard": {
+     "if_sara": "No, è a 5 minuti a piedi.",
+     "im_nicola": "No è a 5 minuti a piedi."
+    }
+   },
+   {
+    "key": "h4",
+    "heard": {
+     "if_sara": "Sì dalle 7 alle 10 al piano terra.",
+     "im_nicola": "Sì dalle 7 alle 10 al piano terra."
+    }
+   },
+   {
+    "key": "m1",
+    "heard": {
+     "if_sara": "Possiamo offrirvi uno sconto del 5%.",
+     "im_nicola": "possiamo offrirvi uno sconto del 5%."
+    }
+   },
+   {
+    "key": "n4",
+    "heard": {
+     "if_sara": "Sono 20 euro.",
+     "im_nicola": "Sono 20 euro."
+    }
+   },
+   {
+    "key": "pt4",
+    "heard": {
+     "if_sara": "Circa 800 per 40 minuti, il servizio è stato ripristinato.",
+     "im_nicola": "Circa 800 per 40 minuti, il servizio è stato ripristinato."
+    }
+   }
+  ]
+ },
+ "ja": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "jf_alpha",
+    "engine": "kokoro",
+    "name": "Alpha",
+    "gender": "f",
+    "accent": "ja-JP",
+    "license": "Apache-2.0",
+    "pass_rate": 0.95,
+    "mean_cer": 0.039,
+    "error": null
+   },
+   {
+    "id": "jf_gongitsune",
+    "engine": "kokoro",
+    "name": "Gongitsune",
+    "gender": "f",
+    "accent": "ja-JP",
+    "license": "Apache-2.0 / CC BY",
+    "pass_rate": 0.942,
+    "mean_cer": 0.045,
+    "error": null
+   },
+   {
+    "id": "jm_kumo",
+    "engine": "kokoro",
+    "name": "Kumo",
+    "gender": "m",
+    "accent": "ja-JP",
+    "license": "Apache-2.0 / CC BY",
+    "pass_rate": 0.95,
+    "mean_cer": 0.043,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "jf_alpha",
+   "jm_kumo"
+  ],
+  "clips_total": 120,
+  "clips_kept": 114,
+  "failed": [
+   {
+    "key": "d4",
+    "heard": {
+     "jf_alpha": "いいえ歩いて5分です",
+     "jm_kumo": "家歩いて5分です。"
+    }
+   },
+   {
+    "key": "h4",
+    "heard": {
+     "jf_alpha": "はい7時から10時まで1回でございます。",
+     "jm_kumo": "廃止時から10時まで1回でございます"
+    }
+   },
+   {
+    "key": "n2",
+    "heard": {
+     "jf_alpha": "3時半です。",
+     "jm_kumo": "3時半です。"
+    }
+   },
+   {
+    "key": "n4",
+    "heard": {
+     "jf_alpha": "二次給路です",
+     "jm_kumo": "2次給炉です"
+    }
+   },
+   {
+    "key": "pt4",
+    "heard": {
+     "jf_alpha": "約800人で40分間でしたサービスは復旧済みです。",
+     "jm_kumo": "約800人で40分間でしたサービスは復旧済みです"
+    }
+   },
+   {
+    "key": "r2",
+    "heard": {
+     "jf_alpha": "7時に起きて朝ごはんを食べます。",
+     "jm_kumo": "7時に起きて朝ごはんを食べます"
+    }
+   }
+  ]
+ },
+ "pt": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "tugao",
+    "engine": "piper",
+    "name": "Tugão",
+    "gender": "m",
+    "accent": "pt-PT",
+    "license": "CC0",
+    "pass_rate": 0.842,
+    "mean_cer": 0.112,
+    "error": null
+   },
+   {
+    "id": "pf_dora",
+    "engine": "kokoro",
+    "name": "Dora",
+    "gender": "f",
+    "accent": "pt-BR",
+    "license": "Apache-2.0",
+    "pass_rate": 0.958,
+    "mean_cer": 0.026,
+    "error": null
+   },
+   {
+    "id": "pm_alex",
+    "engine": "kokoro",
+    "name": "Alex",
+    "gender": "m",
+    "accent": "pt-BR",
+    "license": "Apache-2.0",
+    "pass_rate": 0.942,
+    "mean_cer": 0.031,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "pf_dora",
+   "pm_alex"
+  ],
+  "clips_total": 120,
+  "clips_kept": 115,
+  "failed": [
+   {
+    "key": "d4",
+    "heard": {
+     "pf_dora": "Não fica 5 minutos a pé.",
+     "pm_alex": "Não fica 5 minutos a pé."
+    }
+   },
+   {
+    "key": "h4",
+    "heard": {
+     "pf_dora": "Sim, das 7 às 10 no res do chão.",
+     "pm_alex": "Sim, das 7 às 10 no res do chão."
+    }
+   },
+   {
+    "key": "m1",
+    "heard": {
+     "pf_dora": "Podemos oferecer-lhe um desconto de 5%.",
+     "pm_alex": "Podemos oferecer-lhe um desconto de 5%."
+    }
+   },
+   {
+    "key": "n4",
+    "heard": {
+     "pf_dora": "São 20 euros.",
+     "pm_alex": "São 20 euros."
+    }
+   },
+   {
+    "key": "pt4",
+    "heard": {
+     "pf_dora": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido.",
+     "pm_alex": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido."
+    }
+   }
+  ]
+ },
+ "zh": {
+  "validated": true,
+  "candidates": [
+   {
+    "id": "zf_xiaobei",
+    "engine": "kokoro",
+    "name": "Xiaobei",
+    "gender": "f",
+    "accent": "zh-CN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.975,
+    "mean_cer": 0.016,
+    "error": null
+   },
+   {
+    "id": "zf_xiaoxiao",
+    "engine": "kokoro",
+    "name": "Xiaoxiao",
+    "gender": "f",
+    "accent": "zh-CN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.975,
+    "mean_cer": 0.018,
+    "error": null
+   },
+   {
+    "id": "zm_yunjian",
+    "engine": "kokoro",
+    "name": "Yunjian",
+    "gender": "m",
+    "accent": "zh-CN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.983,
+    "mean_cer": 0.012,
+    "error": null
+   },
+   {
+    "id": "zm_yunxi",
+    "engine": "kokoro",
+    "name": "Yunxi",
+    "gender": "m",
+    "accent": "zh-CN",
+    "license": "Apache-2.0",
+    "pass_rate": 0.975,
+    "mean_cer": 0.016,
+    "error": null
+   },
+   {
+    "id": "huayan",
+    "engine": "piper",
+    "name": "Huayan",
+    "gender": "f",
+    "accent": "zh-CN",
+    "license": "voir carte du modèle",
+    "pass_rate": 0.975,
+    "mean_cer": 0.023,
+    "error": null
+   }
+  ],
+  "chosen": [
+   "zm_yunjian",
+   "zf_xiaobei"
+  ],
+  "clips_total": 120,
+  "clips_kept": 118,
+  "failed": [
+   {
+    "key": "m1",
+    "heard": {
+     "zm_yunjian": "我们可以给您5%的折扣。",
+     "zf_xiaobei": "我们可以给您5%的折扣。"
+    }
+   },
+   {
+    "key": "p2",
+    "heard": {
+     "zm_yunjian": "营业额增长了12%,主要得益于出口。",
+     "zf_xiaobei": "营业额增长了12%主要得益于出口"
+    }
+   }
+  ]
+ }
+}
