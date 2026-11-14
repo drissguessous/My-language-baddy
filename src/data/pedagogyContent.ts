@@ -1,16 +1,18 @@
 import type { LangCode } from './languages';
 
-// Pictogrammes des phrases (cartes illustrées des 6-12 ans, niveaux A1-A2).
-export const PICTO: Record<string, string> = {
-  g1: '👋🙂', g2: '👍🙂', g3: '🤗🏫', g4: '🙏💐', g5: '👋🌙', g6: '👋☀️',
-  i1: '❓📛', i2: '🙋📛', i3: '❓🌍', i4: '🇲🇦🏠', i5: '❓🗣️', i6: '🗣️📚',
-  n1: '❓🕒', n2: '🕞', n3: '❓💰', n4: '💶 20', n5: '📅 🔟', n6: '👌📅',
-  f1: '☕❓', f2: '☕🍊', f3: '🍬❓', f4: '🚫🍬', f5: '🧾', f6: '🫴😊',
-  d1: '❓🚉', d2: '⬆️⬅️', d3: '❓📏', d4: '🚶 5', d5: '❓🚌', d6: '🚌 12',
-  k1: '❓🎨', k2: '🔴🟡', k3: '❓🐾', k4: '🐱', k5: '🤹❓', k6: '🎉',
-  s1: '🛍️❓', s2: '🧥❄️', s3: '❓📐', s4: '👕 M', s5: '🚪👗', s6: '💳',
-  r1: '⏰❓', r2: '⏰🥐', r3: '❓🏢', r4: '🚋 20', r5: '🌆❓', r6: '🏃📖',
-  h1: '🏨📋', h2: '🛂', h3: '🥐❓', h4: '🥐 7-10', h5: '🚿❄️', h6: '🔧🏃',
+// Pictogrammes des phrases (cartes illustrées du mode enfant, niveaux A1-A2) : icônes Lucide (ISC).
+// « CircleHelp » marque une question.
+const Q = 'CircleHelp';
+export const PICTO: Record<string, string[]> = {
+  g1: ['Hand', 'Smile'], g2: ['ThumbsUp', 'Smile'], g3: ['HeartHandshake', 'School'], g4: ['HandHeart'], g5: ['Hand', 'Moon'], g6: ['Hand', 'Sun'],
+  i1: [Q, 'IdCard'], i2: ['IdCard', 'User'], i3: [Q, 'Earth'], i4: ['MapPin', 'Building2'], i5: [Q, 'Languages'], i6: ['Languages', 'BookOpen'],
+  n1: [Q, 'Clock3'], n2: ['Clock3'], n3: [Q, 'Coins'], n4: ['Euro'], n5: ['CalendarDays', 'Clock3'], n6: ['ThumbsUp', 'CalendarDays'],
+  f1: [Q, 'Coffee'], f2: ['Coffee', 'Citrus'], f3: [Q, 'Candy'], f4: ['Ban', 'Candy'], f5: ['Receipt'], f6: ['Coffee', 'Sun'],
+  d1: [Q, 'TrainFront'], d2: ['ArrowUp', 'ArrowLeft'], d3: [Q, 'Compass'], d4: ['Footprints'], d5: [Q, 'Bus'], d6: ['Bus', 'MapPin'],
+  k1: [Q, 'Palette'], k2: ['Palette', 'Sparkles'], k3: [Q, 'PawPrint'], k4: ['Cat'], k5: ['Shapes', 'Smile'], k6: ['PartyPopper'],
+  s1: [Q, 'Shirt'], s2: ['Shirt', 'Snowflake'], s3: [Q, 'Shirt', 'Check'], s4: ['Shirt', 'Check'], s5: ['DoorOpen'], s6: ['CreditCard'],
+  r1: [Q, 'AlarmClock'], r2: ['AlarmClock', 'Croissant'], r3: [Q, 'Building2'], r4: ['TramFront'], r5: [Q, 'Sunset'], r6: ['Bike', 'BookOpen'],
+  h1: ['Hotel', 'CalendarDays'], h2: ['BookUser'], h3: [Q, 'Croissant'], h4: ['Croissant', 'Clock3'], h5: ['ShowerHead', 'Snowflake'], h6: ['Wrench'],
 };
 
 export interface UnitNote {

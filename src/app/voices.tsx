@@ -1,7 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Linking, Platform, Pressable, Text, View } from 'react-native';
+import { Linking, Platform, Pressable, View } from 'react-native';
+import { Text } from '../components/Text';
 import * as Speech from 'expo-speech';
 import { router } from 'expo-router';
+import { Volume2 } from 'lucide-react-native';
+import { BackBar } from '../components/ui';
 import { Btn, Card, Chip, Gap, Row, Screen, T } from '../components/ui';
 import { PHRASE, UNITS } from '../data/curriculum';
 import { LANG } from '../data/languages';
@@ -39,7 +42,7 @@ export default function Voices() {
 
   return (
     <Screen>
-      <Pressable onPress={() => router.back()} accessibilityRole="button"><Text style={{ fontSize: 20, color: C.primary }}>‹ Retour</Text></Pressable>
+      <BackBar />
       <Gap h={10} />
       <T v="title">Voix et écoute</T>
       <T v="small" style={{ marginTop: 4 }}>{LANG[lang].name} · {OS_LABEL[os]}</T>
@@ -89,12 +92,12 @@ export default function Voices() {
           <Row key={v.identifier} style={{ paddingVertical: 8, borderTopWidth: 1, borderColor: C.line }}>
             <Pressable style={{ flex: 1 }} onPress={() => set({ deviceVoices: { ...profile.settings.deviceVoices, [lang]: v.identifier } })}>
               <Text style={{ fontWeight: chosenDevice === v.identifier ? '800' : '500', color: chosenDevice === v.identifier ? C.primary : C.ink }}>
-                {chosenDevice === v.identifier ? '✓ ' : ''}{v.name}
+                {v.name}
               </Text>
               <Text style={F.small}>{v.language}{String(v.quality).toLowerCase().includes('enhanced') ? ' · qualité supérieure' : ''}</Text>
             </Pressable>
             <Text onPress={() => { Speech.stop(); Speech.speak(sample.t[lang] ?? '', { voice: v.identifier, language: v.language }); }} style={{ fontSize: 20 }} accessibilityRole="button" accessibilityLabel={`Tester ${v.name}`}>
-              🔊
+              <Volume2 size={20} color={C.primary} />
             </Text>
           </Row>
         )) : <T v="small">Aucune voix en {LANG[lang].name.toLowerCase()} installée sur cet appareil.</T>}

@@ -20,7 +20,7 @@ export interface Pedagogy {
   /** Affichage détaillé des mesures de prononciation. */
   detailedMetrics: boolean;
   /** Récompense mise en avant. */
-  reward: 'stickers' | 'challenge' | 'progress';
+  reward: 'badges' | 'challenge' | 'progress';
   /** Auto-évaluation « je peux… » en fin d'unité (descripteurs CECRL). */
   canDo: boolean;
   /** Vitesse de lecture par défaut (1 = naturelle). */
@@ -30,7 +30,7 @@ export interface Pedagogy {
 export const PEDAGOGY: Record<AgeBand, Pedagogy> = {
   kid: {
     audioFirst: true, pictureCards: true, writeLatin: 1, writeOther: 0, orderCount: 1, orderMaxWords: 6,
-    retrievalRound: true, grammar: 'none', detailedMetrics: false, reward: 'stickers', canDo: false, audioRate: 0.85,
+    retrievalRound: true, grammar: 'none', detailedMetrics: false, reward: 'badges', canDo: false, audioRate: 0.85,
   },
   teen: {
     audioFirst: true, pictureCards: false, writeLatin: 2, writeOther: 1, orderCount: 2, orderMaxWords: 10,
@@ -42,4 +42,4 @@ export const PEDAGOGY: Record<AgeBand, Pedagogy> = {
   },
 };
 
-export const STICKERS = ['🦁', '🐬', '🦊', '🐼', '🦉', '🐢', '🦋', '🐙', '🦄', '🐝', '🐧', '🦒', '🐸', '🐨', '🦜', '🐳', '🦔', '🐞', '🐿️', '🦩'];
+export const BADGE_COLORS = ['#0F766E', '#F2613F', '#6D5BD0', '#E9A23B', '#12936A', '#2563EB'];

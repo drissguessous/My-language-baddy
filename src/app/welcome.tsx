@@ -1,15 +1,19 @@
 import React, { useMemo, useState } from 'react';
-import { Pressable, Text, TextInput, View } from 'react-native';
+import { Pressable, View } from 'react-native';
+import { Text, TextInput } from '../components/Text';
 import { router } from 'expo-router';
+import { ArrowRight, BriefcaseBusiness, Check, ChevronLeft, GraduationCap, Mic, Headphones, RotateCcw, ShieldCheck, Sparkles, Users } from 'lucide-react-native';
+import { Wordmark } from '../components/Logo';
+import { TRACK_ICON } from '../components/unitIcons';
 import { Avatar } from '../components/Avatar';
-import { Btn, Card, Chip, Gap, LangBadge, Row, Screen, T } from '../components/ui';
-import { COMPANIONS, BAND_LABEL, ageOf, bandOf, companionsFor } from '../data/companions';
+import { Btn, Card, Chip, Gap, IconTile, LangBadge, Row, Screen, T } from '../components/ui';
+import { BAND_LABEL, ageOf, bandOf, companionsFor } from '../data/companions';
 import { GOALS, Goal, LEVELS, LEVEL_INFO, Level, PRO_TRACKS, ProTrack } from '../data/curriculum';
 import { LANGUAGES, LANG, LangCode, REFERENCE_LANGS } from '../data/languages';
 import { BLOCK_MESSAGE, moderate } from '../lib/safety/filter';
 import { speakCoach } from '../lib/speech';
 import { useStore } from '../lib/store';
-import { C, F, R } from '../theme';
+import { C, F, R, shadow } from '../theme';
 
 type StepId = 'hero' | 'who' | 'parent' | 'ref' | 'target' | 'goal' | 'level' | 'companion';
 
@@ -72,13 +76,16 @@ export default function Welcome() {
   const Header = ({ title, sub }: { title: string; sub?: string }) => (
     <View>
       <Row style={{ justifyContent: 'space-between' }}>
-        <Pressable onPress={back} accessibilityRole="button" accessibilityLabel="Retour"><Text style={{ fontSize: 22, color: C.primary }}>‹ Retour</Text></Pressable>
-        <Text style={F.small}>{order.indexOf(step)}/{order.length - 1}</Text>
+        <Pressable onPress={back} accessibilityRole="button" accessibilityLabel="Retour" hitSlop={12}
+          style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: C.card, borderWidth: 1, borderColor: C.line, alignItems: 'center', justifyContent: 'center' }}>
+          <ChevronLeft size={22} color={C.ink} />
+        </Pressable>
+        <View style={{ flex: 1, height: 6, backgroundColor: '#E7E4DD', borderRadius: 3, marginHorizontal: 14 }}>
+          <View style={{ width: `${progress * 100}%`, height: 6, backgroundColor: C.primary, borderRadius: 3 }} />
+        </View>
+        <Text style={[F.small, { fontWeight: '700' }]}>{order.indexOf(step)}/{order.length - 1}</Text>
       </Row>
-      <View style={{ height: 6, backgroundColor: C.line, borderRadius: 3, marginTop: 10 }}>
-        <View style={{ width: `${progress * 100}%`, height: 6, backgroundColor: C.accent, borderRadius: 3 }} />
-      </View>
-      <Gap h={20} />
+      <Gap h={26} />
       <T v="title">{title}</T>
       {sub ? <T v="small" style={{ marginTop: 6, fontSize: 15 }}>{sub}</T> : null}
       <Gap h={18} />
@@ -91,7 +98,8 @@ export default function Welcome() {
     return (
       <Screen>
         <Gap h={40} />
-        <Text style={{ fontSize: 48, textAlign: 'center' }}>🛡️</Text>
+        <View style={{ alignItems: 'center' }}><IconTile icon={ShieldCheck} size={72} color={C.primary} /></View>
+        <Gap />
         <T v="title" style={{ textAlign: 'center' }}>Espace parent</T>
         <T style={{ textAlign: 'center', color: C.sub, marginTop: 6 }}>La création d’un nouveau profil est réservée au parent.</T>
         <Gap h={20} />
@@ -103,31 +111,53 @@ export default function Welcome() {
   }
 
   if (step === 'hero') {
+    const featured = ['nadia', 'karim', 'ines', 'lina'];
     return (
       <Screen>
-        <Gap h={24} />
-        <Row style={{ justifyContent: 'center', gap: -10 }}>
-          {[COMPANIONS[0], COMPANIONS[5], COMPANIONS[2], COMPANIONS[8]].map((c, i) => (
-            <View key={c.id} style={{ marginTop: i % 2 ? 18 : 0 }}><Avatar spec={c.avatar} size={86} /></View>
+        <Gap h={8} />
+        <Wordmark size={22} />
+        <Gap h={28} />
+        <View style={{ backgroundColor: C.night, borderRadius: R.xl, padding: 22, overflow: 'hidden' }}>
+          <View style={{ position: 'absolute', right: -50, top: -50, width: 200, height: 200, borderRadius: 100, backgroundColor: '#ffffff0D' }} />
+          <Text style={{ color: '#fff', fontSize: 30, fontWeight: '800', letterSpacing: -0.8, lineHeight: 36 }}>
+            Parlez une nouvelle langue, pour de vrai.
+          </Text>
+          <Text style={{ color: '#CFE7E3', fontSize: 15.5, marginTop: 10, lineHeight: 22 }}>
+            Un professeur particulier qui vous écoute, corrige votre prononciation et vous accompagne du premier mot à l’aisance professionnelle.
+          </Text>
+          <Gap h={20} />
+          <Row gap={0}>
+            {featured.map((id, k) => (
+              <View key={id} style={{ marginLeft: k ? -12 : 0, borderRadius: 30, borderWidth: 3, borderColor: C.night }}><Avatar id={id} size={50} /></View>
+            ))}
+          </Row>
+          <Text style={{ color: '#9FD8CF', marginTop: 10, fontWeight: '600', fontSize: 13 }}>10 compagnons, adaptés à chaque âge</Text>
+        </View>
+        <Gap h={16} />
+        {[
+          { icon: Mic, title: 'Votre voix analysée', text: 'Précision, complétude et débit, mot par mot.' },
+          { icon: Headphones, title: 'Des voix naturelles', text: 'Écoute normale ou ralentie, hors connexion.' },
+          { icon: Sparkles, title: 'Du niveau A1 au C2', text: 'Formation, mise à niveau ou langue de votre métier.' },
+          { icon: ShieldCheck, title: 'Sûr pour toute la famille', text: 'Mode enfant, contrôle parental, langage filtré.' },
+        ].map((f) => (
+          <Row key={f.title} gap={14} style={{ paddingVertical: 9 }}>
+            <IconTile icon={f.icon} size={42} />
+            <View style={{ flex: 1 }}><Text style={{ fontWeight: '700', fontSize: 15.5 }}>{f.title}</Text><Text style={F.small}>{f.text}</Text></View>
+          </Row>
+        ))}
+        <Gap h={14} />
+        <Text style={F.label}>11 langues</Text>
+        <Row style={{ flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
+          {LANGUAGES.map((l) => (
+            <View key={l.code} style={{ paddingVertical: 7, paddingHorizontal: 12, borderRadius: R.pill, backgroundColor: C.card, borderWidth: 1, borderColor: '#EFECE6' }}>
+              <Text style={{ fontWeight: '600', fontSize: 13.5, color: C.ink }}>{l.native}</Text>
+            </View>
           ))}
         </Row>
-        <Gap h={24} />
-        <Text style={{ fontSize: 38, fontWeight: '900', color: C.ink, textAlign: 'center', letterSpacing: -1 }}>
-          My Language <Text style={{ color: C.accent }}>Baddy</Text>
-        </Text>
-        <T style={{ textAlign: 'center', marginTop: 10, color: C.sub, fontSize: 17 }}>
-          Un compagnon qui vous écoute, vous corrige et vous fait progresser, de vos premiers mots jusqu’à l’aisance professionnelle.
-        </T>
-        <Gap h={18} />
-        <Row style={{ flexWrap: 'wrap', justifyContent: 'center', gap: 8 }}>
-          {LANGUAGES.map((l) => <LangBadge key={l.code} code={l.code} size={34} />)}
-        </Row>
+        <Gap h={28} />
+        <Btn title="Commencer" iconRight={ArrowRight} onPress={next} />
         <Gap h={10} />
-        <T v="small" style={{ textAlign: 'center' }}>11 langues · niveaux A1 à C2 · oral et écrit · filières métiers</T>
-        <Gap h={30} />
-        <Btn title="Créer mon profil" onPress={next} />
-        <Gap h={10} />
-        <Btn title="Découvrir avec des profils de démonstration" variant="ghost" onPress={() => { store.loadDemo(); router.replace('/(tabs)'); }} />
+        <Btn title="Explorer avec des profils de démonstration" variant="ghost" icon={Users} onPress={() => { store.loadDemo(); router.replace('/(tabs)'); }} />
       </Screen>
     );
   }
@@ -170,8 +200,8 @@ export default function Welcome() {
         <Gap />
         <Pressable onPress={() => setConsent(!consent)} accessibilityRole="checkbox" accessibilityState={{ checked: consent }}>
           <Row style={{ alignItems: 'flex-start' }}>
-            <View style={{ width: 24, height: 24, borderRadius: 6, borderWidth: 2, borderColor: C.primary, backgroundColor: consent ? C.primary : 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-              {consent ? <Text style={{ color: '#fff', fontWeight: '900' }}>✓</Text> : null}
+            <View style={{ width: 24, height: 24, borderRadius: 7, borderWidth: 2, borderColor: C.primary, backgroundColor: consent ? C.primary : 'transparent', alignItems: 'center', justifyContent: 'center' }}>
+              {consent ? <Check size={16} color="#fff" strokeWidth={3} /> : null}
             </View>
             <T style={{ flex: 1, fontSize: 14 }}>Je suis le parent ou le tuteur légal et j’autorise l’utilisation de l’application, y compris du micro, pour ce profil.</T>
           </Row>
@@ -189,8 +219,8 @@ export default function Welcome() {
       <Screen>
         <Header title="Votre langue de référence" sub="Les traductions et les explications s’afficheront dans cette langue." />
         {REFERENCE_LANGS.map((c) => (
-          <Card key={c} onPress={() => setRef(c)} style={{ marginBottom: 10, borderWidth: 2, borderColor: refLang === c ? C.primary : 'transparent' }}>
-            <Row><LangBadge code={c} /><T v="h2">{LANG[c].native}</T><T v="small">{LANG[c].name}</T></Row>
+          <Card key={c} onPress={() => setRef(c)} style={[{ marginBottom: 10 }, sel(refLang === c)]}>
+            <Row><LangBadge code={c} size={40} /><View style={{ flex: 1 }}><T v="h2">{LANG[c].native}</T><T v="small">{LANG[c].name}</T></View>{refLang === c ? <Check size={20} color={C.primary} strokeWidth={3} /> : null}</Row>
           </Card>
         ))}
         <Gap h={12} />
@@ -206,8 +236,11 @@ export default function Welcome() {
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>
           {LANGUAGES.filter((l) => l.code !== refLang).map((l) => (
             <Pressable key={l.code} onPress={() => setTarget(l.code)} accessibilityRole="button" accessibilityState={{ selected: target === l.code }}
-              style={{ width: '48%', backgroundColor: C.card, borderRadius: R.m, padding: 12, borderWidth: 2, borderColor: target === l.code ? l.color : C.line }}>
-              <Row><LangBadge code={l.code} size={32} /><View style={{ flex: 1 }}><Text style={{ fontWeight: '700', color: C.ink }}>{l.name}</Text><Text style={F.small}>{l.native}</Text></View></Row>
+              style={[{ width: '48.5%', backgroundColor: C.card, borderRadius: R.l, padding: 14, borderWidth: 1.5, borderColor: target === l.code ? C.primary : '#EFECE6' },
+                target === l.code ? { backgroundColor: C.primarySoft } : shadow]}>
+              <LangBadge code={l.code} size={38} />
+              <Text style={{ fontWeight: '800', color: C.ink, marginTop: 10, textAlign: 'left', writingDirection: 'ltr', fontSize: 15.5 }}>{l.native}</Text>
+              <Text style={F.small}>{l.name}</Text>
             </Pressable>
           ))}
         </View>
@@ -224,15 +257,19 @@ export default function Welcome() {
       <Screen>
         <Header title="Votre objectif" sub="Le parcours s’adapte à votre projet." />
         {goals.map((g) => (
-          <Card key={g.id} onPress={() => setGoal(g.id)} style={{ marginBottom: 10, borderWidth: 2, borderColor: goal === g.id ? C.primary : 'transparent' }}>
-            <T v="h2">{g.title}</T><T v="small" style={{ fontSize: 15, marginTop: 4 }}>{g.text}</T>
+          <Card key={g.id} onPress={() => setGoal(g.id)} style={[{ marginBottom: 10 }, sel(goal === g.id)]}>
+            <Row style={{ alignItems: 'flex-start' }} gap={14}>
+              <IconTile icon={g.id === 'formation' ? GraduationCap : g.id === 'remise' ? RotateCcw : BriefcaseBusiness} />
+              <View style={{ flex: 1 }}><T v="h2">{g.title}</T><T v="small" style={{ fontSize: 14, marginTop: 3 }}>{g.text}</T></View>
+              {goal === g.id ? <Check size={20} color={C.primary} strokeWidth={3} /> : null}
+            </Row>
           </Card>
         ))}
         {goal === 'pro' ? (
           <>
             <Gap h={6} /><T v="label">Votre filière</T><Gap h={8} />
             <Row style={{ flexWrap: 'wrap', gap: 8 }}>
-              {PRO_TRACKS.map((t) => <Chip key={t.id} label={`${t.icon} ${t.title}`} active={track === t.id} onPress={() => setTrack(t.id)} />)}
+              {PRO_TRACKS.map((t) => <Chip key={t.id} label={t.title} icon={TRACK_ICON[t.id]} active={track === t.id} onPress={() => setTrack(t.id)} />)}
             </Row>
           </>
         ) : null}
@@ -248,8 +285,9 @@ export default function Welcome() {
       <Screen>
         <Header title="Votre niveau actuel" sub="Choisissez « Découverte » si vous débutez. Vous pourrez passer le test de positionnement plus tard." />
         {levels.map((l) => (
-          <Card key={l} onPress={() => setLevel(l)} style={{ marginBottom: 8, borderWidth: 2, borderColor: level === l ? C.primary : 'transparent' }}>
-            <Row><Text style={{ fontWeight: '900', fontSize: 18, color: C.primary, width: 36 }}>{l}</Text>
+          <Card key={l} onPress={() => setLevel(l)} style={[{ marginBottom: 8, paddingVertical: 14 }, sel(level === l)]}>
+            <Row gap={14}><View style={{ width: 44, height: 44, borderRadius: 12, backgroundColor: level === l ? C.primary : C.primarySoft, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontWeight: '800', fontSize: 16, color: level === l ? '#fff' : C.primary }}>{l}</Text></View>
               <View style={{ flex: 1 }}><Text style={{ fontWeight: '700', color: C.ink }}>{LEVEL_INFO[l].label}</Text><Text style={F.small}>{LEVEL_INFO[l].can}</Text></View></Row>
           </Card>
         ))}
@@ -267,11 +305,11 @@ export default function Welcome() {
         <Card key={c.id} onPress={() => {
           setCompanion(c.id); setTalking(c.id);
           speakCoach(c.greeting, c.voice.gender, c.voice.pitch, () => setTalking(null));
-        }} style={{ marginBottom: 12, borderWidth: 2, borderColor: companionId === c.id ? C.accent : 'transparent' }}>
+        }} style={[{ marginBottom: 12 }, sel(companionId === c.id)]}>
           <Row style={{ alignItems: 'flex-start' }}>
-            <Avatar spec={c.avatar} size={78} speaking={talking === c.id} />
+            <Avatar id={c.id} size={78} speaking={talking === c.id} />
             <View style={{ flex: 1 }}>
-              <T v="h2">{c.name}</T>
+              <Row style={{ justifyContent: 'space-between' }}><T v="h2">{c.name}</T>{companionId === c.id ? <Check size={20} color={C.primary} strokeWidth={3} /> : null}</Row>
               <Text style={{ color: C.primary, fontWeight: '600', marginTop: 2 }}>{c.role}</Text>
               <T v="small" style={{ marginTop: 6, fontSize: 14 }}>{c.bio}</T>
             </View>
@@ -285,6 +323,8 @@ export default function Welcome() {
 }
 
 const input = {
-  backgroundColor: C.card, borderRadius: R.m, borderWidth: 1.5, borderColor: C.line, paddingHorizontal: 14, paddingVertical: 12,
-  fontSize: 17, color: C.ink, marginTop: 6,
+  backgroundColor: C.card, borderRadius: R.m, borderWidth: 1.5, borderColor: C.line, paddingHorizontal: 16, paddingVertical: 14,
+  fontSize: 17, color: C.ink, marginTop: 8,
 } as const;
+
+const sel = (on: boolean) => (on ? { borderWidth: 1.5, borderColor: C.primary, backgroundColor: C.primarySoft } : {});

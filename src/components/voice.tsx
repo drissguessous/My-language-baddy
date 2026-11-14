@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Animated, Pressable, Text, View } from 'react-native';
+import { Animated, Pressable, View } from 'react-native';
+import { Text } from './Text';
 import { router } from 'expo-router';
-import { C, F, R } from '../theme';
+import { Mic, Snail, Square, Star, Volume2 } from 'lucide-react-native';
+import { C, F, R, shadow } from '../theme';
 import { LANG, LangCode } from '../data/languages';
 import type { Phrase } from '../data/phrases/types';
 import type { Companion } from '../data/companions';
@@ -30,11 +32,14 @@ export function PlayButton({ text, pid, lang, slow, companion, label, onState, s
   return (
     <View style={{ alignItems: 'center' }}>
       <Pressable accessibilityRole="button" accessibilityLabel={slow ? 'Écouter lentement' : 'Écouter'} onPress={play}
-        style={{ width: size, height: size, borderRadius: size / 2, backgroundColor: slow ? C.goldSoft : C.primary,
-          alignItems: 'center', justifyContent: 'center', opacity: noVoice ? 0.4 : 1 }}>
-        <Text style={{ fontSize: size * 0.42, color: slow ? C.ink : '#fff' }}>{playing ? '■' : slow ? '🐢' : '🔊'}</Text>
+        style={({ pressed }) => [{ width: size, height: size, borderRadius: size / 2, backgroundColor: slow ? C.card : C.primary,
+          borderWidth: slow ? 1.5 : 0, borderColor: C.line, alignItems: 'center', justifyContent: 'center',
+          opacity: noVoice ? 0.4 : 1, transform: [{ scale: pressed ? 0.95 : 1 }] }, !slow && shadow]}>
+        {playing
+          ? <Square size={size * 0.34} color={slow ? C.primary : '#fff'} fill={slow ? C.primary : '#fff'} />
+          : slow ? <Snail size={size * 0.44} color={C.primary} strokeWidth={2} /> : <Volume2 size={size * 0.44} color="#fff" strokeWidth={2.2} />}
       </Pressable>
-      {noVoice ? <Text onPress={() => router.push('/voices')} style={[F.small, { marginTop: 4, color: C.accent, fontWeight: '700' }]}>Installer une voix ›</Text>
+      {noVoice ? <Text onPress={() => router.push('/voices')} style={[F.small, { marginTop: 4, color: C.accent, fontWeight: '700' }]}>Installer une voix</Text>
         : label ? <Text style={[F.small, { marginTop: 4 }]}>{label}</Text> : null}
     </View>
   );
@@ -73,9 +78,9 @@ export function MicButton({ listening, volume, onPress, disabled }: { listening:
       <Animated.View style={{ position: 'absolute', width: 96, height: 96, borderRadius: 48,
         backgroundColor: listening ? C.accentSoft : 'transparent', transform: [{ scale }] }} />
       <Pressable accessibilityRole="button" accessibilityLabel={listening ? 'Arrêter l’écoute' : 'Parler'} onPress={onPress} disabled={disabled}
-        style={{ width: 84, height: 84, borderRadius: 42, backgroundColor: listening ? C.accent : C.primary,
-          alignItems: 'center', justifyContent: 'center', opacity: disabled ? 0.4 : 1 }}>
-        <Text style={{ fontSize: 34, color: '#fff' }}>{listening ? '■' : '🎙️'}</Text>
+        style={[{ width: 84, height: 84, borderRadius: 42, backgroundColor: listening ? C.accent : C.primary,
+          alignItems: 'center', justifyContent: 'center', opacity: disabled ? 0.4 : 1 }, shadow]}>
+        {listening ? <Square size={28} color="#fff" fill="#fff" /> : <Mic size={36} color="#fff" strokeWidth={2.2} />}
       </Pressable>
     </View>
   );
@@ -87,10 +92,10 @@ export function ScoreView({ result, lang, spoken, simple }: { result: ScoreResul
   const rtl = LANG[lang].rtl;
   const seg = LANG[lang].segmented;
   return (
-    <View style={{ backgroundColor: C.card, borderRadius: R.m, padding: 14, borderWidth: 2, borderColor: color }}>
+    <View style={{ backgroundColor: C.card, borderRadius: R.l, padding: 16, borderWidth: 1.5, borderColor: color }}>
       <Row style={{ justifyContent: 'space-between' }}>
         {simple
-          ? <Text style={{ fontSize: 30 }}>{result.verdict === 'excellent' ? '⭐⭐⭐' : result.verdict === 'good' ? '⭐⭐' : '⭐'}</Text>
+          ? <Row gap={3}>{[0, 1, 2].map((k) => <Star key={k} size={26} color={C.gold} fill={k < (result.verdict === 'excellent' ? 3 : result.verdict === 'good' ? 2 : 1) ? C.gold : 'transparent'} />)}</Row>
           : <Text style={{ fontSize: 34, fontWeight: '800', color }}>{result.score}<Text style={{ fontSize: 16 }}>/100</Text></Text>}
         <Text style={{ fontWeight: '700', color }}>{result.verdict === 'excellent' ? 'Excellent' : result.verdict === 'good' ? 'Bien' : 'À retravailler'}</Text>
       </Row>
@@ -126,9 +131,8 @@ export function CompanionSays({ companion, text, speaking, mood, size = 72 }: {
 }) {
   return (
     <Row style={{ alignItems: 'flex-end' }}>
-      <Avatar spec={companion.avatar} size={size} speaking={speaking} mood={mood} />
-      <View style={{ flex: 1, backgroundColor: C.card, borderRadius: R.m, borderBottomLeftRadius: 4, padding: 12,
-        borderWidth: 1, borderColor: C.line }}>
+      <Avatar id={companion.id} size={size} speaking={speaking} mood={mood} />
+      <View style={[{ flex: 1, backgroundColor: C.card, borderRadius: R.l, borderBottomLeftRadius: 6, padding: 14 }, shadow]}>
         <Text style={[F.small, { fontWeight: '700', color: C.primary, marginBottom: 2 }]}>{companion.name}</Text>
         <Text style={F.body}>{text}</Text>
       </View>

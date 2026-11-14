@@ -1,7 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Pressable, Text, TextInput, View } from 'react-native';
+import { Pressable, View } from 'react-native';
+import { Text, TextInput } from '../../components/Text';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Avatar } from '../../components/Avatar';
+import { CircleCheckBig, CircleX, Lightbulb, MapPin, MessagesSquare, Search, X, Sprout, Leaf, Award } from 'lucide-react-native';
+import { Picto } from '../../components/icons';
+import { UNIT_ICON } from '../../components/unitIcons';
 import { Bar, Btn, Card, Gap, Row, Screen, Stars, T } from '../../components/ui';
 import { CompanionSays, MicButton, PhraseView, PlayButton, ScoreView } from '../../components/voice';
 import type { CoachCat } from '../../data/coachLines';
@@ -82,7 +86,7 @@ export default function Lesson() {
     return (
       <Screen>
         <Gap h={40} />
-        <CompanionSays companion={companion} text="C’est tout pour aujourd’hui ! Le temps fixé par tes parents est écoulé. À demain 🌙" />
+        <CompanionSays companion={companion} text="C’est tout pour aujourd’hui ! Le temps fixé par tes parents est écoulé. À demain !" />
         <Gap h={20} />
         <Btn title="Retour" onPress={() => router.back()} />
       </Screen>
@@ -107,18 +111,18 @@ export default function Lesson() {
     return (
       <Screen>
         <Row>
-          <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter"><Text style={{ fontSize: 26, color: C.sub }}>✕</Text></Pressable>
+          <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter"><X size={26} color={C.sub} /></Pressable>
           <T v="small">{title}</T>
         </Row>
         <Gap h={30} />
-        <View style={{ alignItems: 'center' }}><Avatar spec={companion.avatar} size={130} /></View>
+        <View style={{ alignItems: 'center' }}><Avatar id={companion.id} size={130} ring /></View>
         <Gap />
         <CompanionSays companion={companion} text={intro} />
         {unit ? (
           <>
             <Gap />
             <Card tone={C.goldSoft}>
-              <T style={{ fontSize: 15 }}>🎬 {unit.scene}</T>
+              <Row style={{ alignItems: 'flex-start' }} gap={8}><MapPin size={18} color={C.warn} style={{ marginTop: 2 }} /><T style={{ fontSize: 15, flex: 1 }}>{unit.scene}</T></Row>
               {note && pedagogy.canDo ? <T v="small" style={{ marginTop: 6, fontSize: 14 }}>Objectif : {note.canDo}</T> : null}
             </Card>
           </>
@@ -153,14 +157,17 @@ export default function Lesson() {
       <Screen>
         <Gap h={30} />
         <View style={{ alignItems: 'center' }}>
-          {finished.sticker ? <Text style={{ fontSize: 90 }}>{finished.sticker}</Text> : <Avatar spec={companion.avatar} size={140} mood="wow" />}
+          {finished.sticker && unit ? (() => { const I = UNIT_ICON[unit.id] ?? Award; return (
+            <View style={{ width: 120, height: 120, borderRadius: 60, backgroundColor: finished.sticker, alignItems: 'center', justifyContent: 'center', borderWidth: 6, borderColor: '#fff' }}>
+              <I size={54} color="#fff" strokeWidth={2} />
+            </View>); })() : <Avatar id={companion.id} size={140} ring />}
           <Gap />
           <T v="title" style={{ textAlign: 'center' }}>{good ? 'Leçon réussie !' : 'Leçon terminée'}</T>
           <Gap h={8} />
           <Stars n={finished.stars} size={34} />
           <Gap h={8} />
-          {pedagogy.reward === 'stickers'
-            ? <T style={{ color: C.sub }}>{finished.sticker ? 'Nouvel autocollant pour ta collection !' : ''}</T>
+          {pedagogy.reward === 'badges'
+            ? <T style={{ color: C.sub }}>{finished.sticker ? `Nouveau badge : ${unit?.title ?? ''}` : ''}</T>
             : <T style={{ color: C.sub }}>Score moyen {finished.avg}/100 · +{finished.xp} XP</T>}
         </View>
         <Gap h={20} />
@@ -172,11 +179,11 @@ export default function Lesson() {
               <T v="label">Auto-évaluation</T>
               <Text style={{ fontSize: 16, color: C.ink, marginTop: 6, fontWeight: '600' }}>{note.canDo}</Text>
               <Row style={{ marginTop: 10, gap: 8 }}>
-                {(['Pas encore', 'Avec aide', 'Oui, seul'] as const).map((lbl, k) => (
+                {(['Pas encore', 'Avec aide', 'En autonomie'] as const).map((lbl, k) => (
                   <Pressable key={lbl} onPress={() => { setCanDo(k as 0 | 1 | 2); store.setCanDo(unit.id, k as 0 | 1 | 2); }}
                     style={{ flex: 1, padding: 10, borderRadius: R.s, borderWidth: 2, alignItems: 'center',
                       borderColor: canDo === k ? C.primary : C.line, backgroundColor: canDo === k ? C.primarySoft : C.card }}>
-                    <Text style={{ fontSize: 20 }}>{['🌱', '🌿', '🌳'][k]}</Text>
+                    {k === 0 ? <Sprout size={22} color={canDo === k ? C.primary : C.sub} /> : k === 1 ? <Leaf size={22} color={canDo === k ? C.primary : C.sub} /> : <CircleCheckBig size={22} color={canDo === k ? C.primary : C.sub} />}
                     <Text style={[F.small, { textAlign: 'center' }]}>{lbl}</Text>
                   </Pressable>
                 ))}
@@ -188,7 +195,7 @@ export default function Lesson() {
           <><Gap /><Card tone={C.primarySoft}><T v="label">Le saviez-vous ?</T><T style={{ fontSize: 14, marginTop: 4 }}>{LANG_TIPS[lang][finished.avg % LANG_TIPS[lang].length]}</T></Card></>
         ) : null}
         <Gap h={24} />
-        {unit ? <Btn title="Jouer le dialogue avec mon compagnon" icon="💬" onPress={() => router.replace(`/dialogue/${unit.id}`)} /> : null}
+        {unit ? <Btn title="Jouer le dialogue avec mon compagnon" icon={MessagesSquare} onPress={() => router.replace(`/dialogue/${unit.id}`)} /> : null}
         <Gap h={10} />
         <Btn title="Retour au parcours" variant="ghost" onPress={() => router.replace('/(tabs)')} />
       </Screen>
@@ -198,7 +205,7 @@ export default function Lesson() {
   return (
     <Screen>
       <Row>
-        <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter la leçon"><Text style={{ fontSize: 26, color: C.sub }}>✕</Text></Pressable>
+        <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter la leçon"><X size={26} color={C.sub} /></Pressable>
         <View style={{ flex: 1 }}><Bar value={i / steps.length} color={C.accent} height={10} /></View>
         <T v="small">{i + 1}/{steps.length}</T>
       </Row>
@@ -266,7 +273,7 @@ function Discover({ pid, lang, refLang, onDone }: P) {
         {p.role === 'c' ? tv('Ce que ton interlocuteur va dire :', 'Ce que votre interlocuteur va dire :') : tv('Ce que tu vas dire :', 'Ce que vous allez dire :')}
       </T>
       <Card>
-        {PICTO[pid] && pedagogy.pictureCards ? <Text style={{ fontSize: 54, textAlign: 'center', marginBottom: 8 }}>{PICTO[pid]}</Text> : null}
+        {PICTO[pid] && pedagogy.pictureCards ? <View style={{ alignItems: 'center', marginBottom: 12 }}><Picto names={PICTO[pid]} size={52} /></View> : null}
         {heard ? <PhraseView phrase={p} lang={lang} refLang={refLang} showRoman={profile?.settings.showRomanization} /> : (
           <Pressable onPress={() => setHeard(true)} accessibilityRole="button">
             <T style={{ textAlign: 'center', color: C.sub }}>{tv('Écoute d’abord… (touche pour voir le texte)', 'Écoutez d’abord… (touchez pour afficher le texte)')}</T>
@@ -294,8 +301,11 @@ function Feedback({ ok, answer, onNext }: { ok: boolean; answer?: React.ReactNod
   }, []);
   return (
     <View style={{ marginTop: 16, backgroundColor: ok ? C.okSoft : C.badSoft, borderRadius: R.m, padding: 14 }}>
-      <Text style={{ fontWeight: '800', color: ok ? C.ok : C.bad, fontSize: 16 }}>{ok ? '✓ ' : '✗ '}{msg}</Text>
-      {extra ? <Text style={{ color: C.ink, marginTop: 6, fontStyle: 'italic' }}>💡 {extra}</Text> : null}
+      <Row gap={8}>
+        {ok ? <CircleCheckBig size={22} color={C.ok} strokeWidth={2.4} /> : <CircleX size={22} color={C.bad} strokeWidth={2.4} />}
+        <Text style={{ fontWeight: '800', color: ok ? C.ok : C.bad, fontSize: 16, flex: 1 }}>{msg}</Text>
+      </Row>
+      {extra ? <Row gap={8} style={{ marginTop: 8, alignItems: 'flex-start' }}><Lightbulb size={17} color={C.warn} style={{ marginTop: 2 }} /><Text style={{ color: C.ink, flex: 1 }}>{extra}</Text></Row> : null}
       {answer ? <View style={{ marginTop: 6 }}>{answer}</View> : null}
       <Gap h={12} />
       <Btn title="Continuer" variant={ok ? 'ok' : 'danger'} onPress={() => { stopSpeaking(); onNext(); }} />
@@ -322,11 +332,11 @@ function Picture({ pid, options, recall, lang, onDone }: P & { options: string[]
         {options.map((o) => {
           const state = chosen ? (o === pid ? 'right' : o === chosen ? 'wrong' : 'idle') : 'idle';
           return (
-            <Pressable key={o} disabled={!!chosen} onPress={() => setChosen(o)} accessibilityRole="button" accessibilityLabel={`Image ${PICTO[o]}`}
+            <Pressable key={o} disabled={!!chosen} onPress={() => setChosen(o)} accessibilityRole="button" accessibilityLabel="Image" 
               style={{ width: '46%', aspectRatio: 1.3, borderRadius: R.l, alignItems: 'center', justifyContent: 'center', borderWidth: 3,
                 backgroundColor: state === 'right' ? C.okSoft : state === 'wrong' ? C.badSoft : C.card,
                 borderColor: state === 'right' ? C.ok : state === 'wrong' ? C.bad : C.line }}>
-              <Text style={{ fontSize: 44 }}>{PICTO[o]}</Text>
+              <Picto names={PICTO[o]} size={40} color={state === 'right' ? C.ok : state === 'wrong' ? C.bad : C.primary} />
             </Pressable>
           );
         })}
@@ -348,7 +358,7 @@ function Grammar({ unitId, mode, lang, refLang, onDone }: { unitId: string; mode
       <Gap />
       {mode === 'explicit'
         ? <Card>{note.explicit.map((e, k) => <Text key={k} style={{ fontSize: 15, color: C.ink, lineHeight: 22, marginBottom: 6 }}>• {e}</Text>)}</Card>
-        : <Card tone={C.goldSoft}><Text style={{ fontSize: 16, color: C.ink }}>🔎 {note.guided}</Text></Card>}
+        : <Card tone={C.goldSoft}><Row style={{ alignItems: 'flex-start' }} gap={10}><Search size={19} color={C.warn} style={{ marginTop: 2 }} /><Text style={{ fontSize: 16, color: C.ink, flex: 1 }}>{note.guided}</Text></Row></Card>}
       <Gap />
       <T v="label">À observer</T>
       <Gap h={8} />
@@ -360,7 +370,7 @@ function Grammar({ unitId, mode, lang, refLang, onDone }: { unitId: string; mode
           </Row>
         </Card>
       ))}
-      {LANG_TIPS[lang] && mode === 'explicit' ? <T v="small" style={{ marginTop: 4 }}>💡 {LANG_TIPS[lang][0]}</T> : null}
+      {LANG_TIPS[lang] && mode === 'explicit' ? <Row gap={8} style={{ marginTop: 4, alignItems: 'flex-start' }}><Lightbulb size={16} color={C.warn} /><T v="small" style={{ flex: 1 }}>{LANG_TIPS[lang][0]}</T></Row> : null}
       <Gap h={18} />
       <Btn title="Continuer" onPress={() => onDone(null)} />
     </View>

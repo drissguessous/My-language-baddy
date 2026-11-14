@@ -17,10 +17,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#1F6F78",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F766E"
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.drissguessous.mylanguagebaddy",
@@ -33,8 +31,8 @@
       "bundler": "metro",
       "output": "single",
       "name": "My Language Baddy",
-      "themeColor": "#1F6F78",
-      "backgroundColor": "#F6F1E9"
+      "themeColor": "#0F766E",
+      "backgroundColor": "#F7F6F2"
     },
     "plugins": [
       "expo-router",
@@ -49,14 +47,15 @@
           ]
         }
       ],
-      "expo-audio"
+      "expo-audio",
+      "expo-font"
     ],
     "scheme": "mylanguagebaddy",
     "description": "Apprendre 11 langues à l'oral et à l'écrit, du niveau A1 au C2, avec un compagnon humain adapté à l'âge.",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#F6F1E9"
+      "backgroundColor": "#F7F6F2"
     },
     "experiments": {
       "typedRoutes": false,

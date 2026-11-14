@@ -6,6 +6,10 @@
   "exclude": [
     "tests",
     "scripts",
-    "node_modules"
+    "node_modules",
+    "dist",
+    "build",
+    "cache",
+    "out"
   ]
 }

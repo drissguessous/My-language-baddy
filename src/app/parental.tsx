@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { Pressable, Switch, Text, TextInput, View } from 'react-native';
+import { Pressable, Switch, View } from 'react-native';
+import { Text, TextInput } from '../components/Text';
 import { router } from 'expo-router';
 import { Avatar } from '../components/Avatar';
+import { ShieldCheck } from 'lucide-react-native';
+import { BackBar, IconTile } from '../components/ui';
 import { Btn, Card, Chip, Gap, Row, Screen, T } from '../components/ui';
 import { BAND_LABEL, ageOf, bandOf, companionsFor } from '../data/companions';
 import { useStore } from '../lib/store';
@@ -22,7 +25,8 @@ export default function Parental() {
       <Screen>
         <Back />
         <Gap h={30} />
-        <Text style={{ fontSize: 48, textAlign: 'center' }}>🛡️</Text>
+        <View style={{ alignItems: 'center' }}><IconTile icon={ShieldCheck} size={72} /></View>
+        <Gap />
         <T v="title" style={{ textAlign: 'center' }}>Espace parent</T>
         <T style={{ textAlign: 'center', color: C.sub, marginTop: 6 }}>Saisissez le code parental à 4 chiffres.</T>
         <Gap h={20} />
@@ -84,7 +88,7 @@ export default function Parental() {
           {companionsFor(age).map((c) => (
             <Pressable key={c.id} onPress={() => s.updateProfile({ companionId: c.id })}>
               <Card style={{ marginBottom: 8, borderWidth: 2, borderColor: profile.companionId === c.id ? C.accent : 'transparent' }}>
-                <Row><Avatar spec={c.avatar} size={46} /><View style={{ flex: 1 }}><Text style={{ fontWeight: '700' }}>{c.name}</Text><T v="small">{c.role}</T></View></Row>
+                <Row><Avatar id={c.id} size={46} /><View style={{ flex: 1 }}><Text style={{ fontWeight: '700' }}>{c.name}</Text><T v="small">{c.role}</T></View></Row>
               </Card>
             </Pressable>
           ))}
@@ -118,5 +122,5 @@ export default function Parental() {
 }
 
 function Back() {
-  return <Pressable onPress={() => router.back()} accessibilityRole="button"><Text style={{ fontSize: 20, color: C.primary }}>‹ Retour</Text></Pressable>;
+  return <BackBar />;
 }

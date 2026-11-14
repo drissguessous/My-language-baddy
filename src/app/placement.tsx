@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Pressable, View } from 'react-native';
+import { Text } from '../components/Text';
 import { router } from 'expo-router';
 import { Avatar } from '../components/Avatar';
 import { Bar, Btn, Card, Gap, Row, Screen, T } from '../components/ui';
@@ -56,7 +57,7 @@ export default function Placement() {
       <Screen>
         <Gap h={30} />
         <View style={{ alignItems: 'center' }}>
-          <Avatar spec={companion.avatar} size={130} mood="wow" />
+          <Avatar id={companion.id} size={130} mood="wow" />
           <Gap />
           <T v="small">Votre niveau en {LANG[lang].name.toLowerCase()}</T>
           <Text style={{ fontSize: 64, fontWeight: '900', color: C.primary }}>{result}</Text>
@@ -75,7 +76,7 @@ export default function Placement() {
     return (
       <Screen>
         <Gap h={30} />
-        <View style={{ alignItems: 'center' }}><Avatar spec={companion.avatar} size={120} /></View>
+        <View style={{ alignItems: 'center' }}><Avatar id={companion.id} size={120} /></View>
         <Gap />
         <T v="title" style={{ textAlign: 'center' }}>Test de positionnement</T>
         <T style={{ textAlign: 'center', color: C.sub, marginTop: 8 }}>

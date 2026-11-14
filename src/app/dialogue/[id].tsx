@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Pressable, ScrollView, ScrollViewInstance, Text, View } from 'react-native';
+import { Pressable, ScrollView, ScrollViewInstance, View } from 'react-native';
+import { Text } from '../../components/Text';
 import { router, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Avatar } from '../../components/Avatar';
+import { CircleCheckBig, MapPin, X } from 'lucide-react-native';
 import { Btn, Gap, Row, T } from '../../components/ui';
 import { MicButton, PlayButton } from '../../components/voice';
 import { PHRASE, UNIT } from '../../data/curriculum';
@@ -80,14 +82,14 @@ export default function Dialogue() {
     <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
       <View style={{ paddingHorizontal: 18, paddingTop: 8, maxWidth: 720, width: '100%', alignSelf: 'center' }}>
         <Row>
-          <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter"><Text style={{ fontSize: 26, color: C.sub }}>✕</Text></Pressable>
+          <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter"><X size={26} color={C.sub} /></Pressable>
           <View style={{ flex: 1 }}><T v="h2">{unit.title}</T><T v="small">{companion.name} joue {unit.counterpart}</T></View>
-          <Avatar spec={companion.avatar} size={54} speaking={speaking} />
+          <Avatar id={companion.id} size={54} speaking={speaking} />
         </Row>
       </View>
       <ScrollView ref={scroll} contentContainerStyle={{ padding: 18, maxWidth: 720, width: '100%', alignSelf: 'center' }}>
         <View style={{ backgroundColor: C.goldSoft, borderRadius: R.m, padding: 12 }}>
-          <T style={{ fontSize: 14 }}>🎬 {unit.scene}</T>
+          <Row style={{ alignItems: 'flex-start' }} gap={8}><MapPin size={17} color={C.warn} style={{ marginTop: 2 }} /><T style={{ fontSize: 14, flex: 1 }}>{unit.scene}</T></Row>
         </View>
         <Gap />
         {log.map((m, k) => <Bubble key={k} msg={m} />)}
@@ -107,7 +109,7 @@ export default function Dialogue() {
           </>
         ) : ended ? (
           <>
-            <T v="h2">Scène terminée 🎉</T>
+            <Row gap={8}><CircleCheckBig size={22} color={C.ok} /><T v="h2">Scène terminée</T></Row>
             <T v="small" style={{ marginTop: 4 }}>Score moyen à l’oral : {Math.round(avg(log.filter((m) => m.who === 'l').map((m) => m.score ?? 0)))}/100</T>
             <Gap />
             <Row>
@@ -139,7 +141,7 @@ export default function Dialogue() {
                   onPress={() => { setFeedback(null); if (rec.state === 'listening') rec.stop(); else rec.start([current.t[lang]!]); }} />
                 <Row style={{ justifyContent: 'space-between' }}>
                   <T v="small">{rec.state === 'listening' ? 'Je vous écoute…' : rec.state === 'denied' ? 'Micro refusé' : 'Touchez le micro'}</T>
-                  <Text onPress={() => accept(0)} style={{ color: C.sub }} accessibilityRole="button">Passer ›</Text>
+                  <Text onPress={() => accept(0)} style={{ color: C.sub, fontWeight: '600' }} accessibilityRole="button">Passer</Text>
                 </Row>
               </>
             )}

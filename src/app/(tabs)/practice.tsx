@@ -1,7 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { router } from 'expo-router';
-import { Bar, Card, Gap, Row, Screen, T } from '../../components/ui';
+import { ChartNoAxesColumn, Headphones, Mic, PenLine, Repeat } from 'lucide-react-native';
+import { Text } from '../../components/Text';
+import { Bar, Card, Gap, ListItem, Row, Screen, Section, T } from '../../components/ui';
 import { LANG } from '../../data/languages';
 import { useStore } from '../../lib/store';
 import { dueCards } from '../../lib/srs';
@@ -11,7 +13,7 @@ import { C, F } from '../../theme';
 const DAY = 86_400_000;
 
 export default function Practice() {
-  const { profile, progress, attempts } = useStore();
+  const { profile, progress, attempts, band } = useStore();
   if (!profile) return null;
   const due = dueCards(progress.cards).length;
   const voice = recognitionAvailable(profile.targetLang);
@@ -21,56 +23,54 @@ export default function Practice() {
     return xs.length ? Math.round(xs.reduce((s, x) => s + x, 0) / xs.length) : null;
   };
   const skills = [
-    { label: 'Compréhension orale', v: avgOf(['listen']) },
-    { label: 'Expression orale', v: avgOf(['speak', 'dialogue']) },
-    { label: 'Expression écrite', v: avgOf(['write', 'order']) },
+    { label: 'Compréhension orale', v: avgOf(['listen']), color: C.primary },
+    { label: 'Expression orale', v: avgOf(['speak', 'dialogue']), color: C.accent },
+    { label: 'Expression écrite', v: avgOf(['write', 'order']), color: C.violet },
   ];
   const days = Array.from({ length: 7 }, (_, k) => {
     const start = new Date(); start.setHours(0, 0, 0, 0);
     const t0 = start.getTime() - (6 - k) * DAY;
-    return { label: ['D', 'L', 'M', 'M', 'J', 'V', 'S'][new Date(t0).getDay()], n: attempts.filter((a) => a.ts >= t0 && a.ts < t0 + DAY).length };
+    return { label: ['D', 'L', 'M', 'M', 'J', 'V', 'S'][new Date(t0).getDay()], n: attempts.filter((a) => a.ts >= t0 && a.ts < t0 + DAY).length, today: k === 6 };
   });
   const maxN = Math.max(1, ...days.map((d) => d.n));
-
-  const Item = ({ icon, title, sub, to, badge }: { icon: string; title: string; sub: string; to: string; badge?: string }) => (
-    <Card style={{ marginBottom: 10 }} onPress={() => router.push(to as never)}>
-      <Row>
-        <Text style={{ fontSize: 28 }}>{icon}</Text>
-        <View style={{ flex: 1 }}><Text style={{ fontWeight: '700', fontSize: 16, color: C.ink }}>{title}</Text><T v="small">{sub}</T></View>
-        {badge ? <View style={{ backgroundColor: C.accent, borderRadius: 12, paddingHorizontal: 9, paddingVertical: 3 }}><Text style={{ color: '#fff', fontWeight: '800' }}>{badge}</Text></View> : null}
-      </Row>
-    </Card>
-  );
+  const tu = band !== 'adult';
 
   return (
     <Screen>
       <T v="title">Pratiquer</T>
       <T v="small" style={{ marginTop: 4 }}>{LANG[profile.targetLang].name} · séances courtes et ciblées</T>
       <Gap h={18} />
-      <Item icon="🔁" title="Révisions du jour" sub="Répétition espacée des phrases à consolider" to="/lesson/review" badge={due ? String(due) : undefined} />
-      <Item icon="🎧" title="Écoute active" sub="Comprendre à l’oral, à vitesse normale ou ralentie" to="/lesson/listen" />
-      <Item icon="🎙️" title="Atelier de prononciation" sub={voice ? 'Analyse de la voix : précision, complétude, débit' : 'Auto-évaluation (analyse vocale indisponible ici)'} to="/lesson/speak" />
-      <Item icon="✍️" title="Écriture" sub="Traduire et écrire, transcription acceptée" to="/lesson/write" />
-      <Item icon="📊" title="Test de positionnement" sub="Mesurer son niveau CECRL" to="/placement" />
+      <Card style={{ paddingVertical: 2 }}>
+        <ListItem icon={Repeat} color={C.accent} title="Révisions du jour" subtitle={due ? `${due} phrase${due > 1 ? 's' : ''} à consolider` : 'À jour : rien à revoir pour l’instant'}
+          onPress={() => router.push('/lesson/review')} />
+        <ListItem icon={Headphones} title="Écoute active" subtitle="Comprendre à l’oral, à vitesse normale ou ralentie" onPress={() => router.push('/lesson/listen')} />
+        <ListItem icon={Mic} color={C.violet} title="Prononciation" subtitle={voice ? 'Analyse de la voix : précision, complétude, débit' : 'Auto-évaluation (analyse vocale indisponible ici)'}
+          onPress={() => router.push('/lesson/speak')} />
+        <ListItem icon={PenLine} color={C.gold} title="Écriture" subtitle="Traduire et écrire ; transcription latine acceptée" onPress={() => router.push('/lesson/write')} />
+        <ListItem icon={ChartNoAxesColumn} color={C.ok} title="Test de positionnement" subtitle="Mesurer son niveau CECRL" onPress={() => router.push('/placement')} last />
+      </Card>
 
-      <Gap h={14} />
-      <T v="h2">Mes compétences (7 jours)</T>
-      <Gap h={10} />
+      <Section title={tu ? 'Tes compétences · 7 jours' : 'Vos compétences · 7 jours'} />
       <Card>
         {skills.map((s) => (
-          <View key={s.label} style={{ marginBottom: 12 }}>
-            <Row style={{ justifyContent: 'space-between' }}><Text style={{ color: C.ink, fontWeight: '600' }}>{s.label}</Text><T v="small">{s.v === null ? '—' : `${s.v}/100`}</T></Row>
-            <Gap h={6} />
-            <Bar value={(s.v ?? 0) / 100} color={s.v === null ? C.line : s.v >= 85 ? C.ok : s.v >= 65 ? C.gold : C.accent} />
+          <View key={s.label} style={{ marginBottom: 14 }}>
+            <Row style={{ justifyContent: 'space-between' }}>
+              <Text style={{ color: C.ink, fontWeight: '600' }}>{s.label}</Text>
+              <Text style={{ fontWeight: '800', color: s.v === null ? C.muted : C.ink }}>{s.v === null ? '—' : `${s.v} %`}</Text>
+            </Row>
+            <Gap h={8} />
+            <Bar value={(s.v ?? 0) / 100} color={s.color} />
           </View>
         ))}
-        <T v="small">Activité</T>
-        <Gap h={8} />
-        <Row style={{ alignItems: 'flex-end', justifyContent: 'space-between', height: 80 }}>
+        <View style={{ height: 1, backgroundColor: C.line, marginVertical: 6 }} />
+        <Text style={[F.label, { marginTop: 8 }]}>Activité</Text>
+        <Gap h={10} />
+        <Row style={{ alignItems: 'flex-end', justifyContent: 'space-between', height: 92 }}>
           {days.map((d, k) => (
             <View key={k} style={{ alignItems: 'center', flex: 1 }}>
-              <View style={{ width: 18, height: Math.max(4, (d.n / maxN) * 60), backgroundColor: d.n ? C.primary : C.line, borderRadius: 6 }} />
-              <Text style={[F.small, { marginTop: 4 }]}>{d.label}</Text>
+              <Text style={[F.small, { fontSize: 11, marginBottom: 4 }]}>{d.n || ''}</Text>
+              <View style={{ width: 22, height: Math.max(4, (d.n / maxN) * 56), backgroundColor: d.today ? C.accent : d.n ? C.primary : '#ECE9E2', borderRadius: 7 }} />
+              <Text style={[F.small, { marginTop: 6, fontWeight: d.today ? '800' : '500' }]}>{d.label}</Text>
             </View>
           ))}
         </Row>

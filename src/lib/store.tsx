@@ -8,7 +8,7 @@ import {
 import { review } from './srs';
 import { setVoicePrefs } from './speech';
 import { TeacherMode, teacherFor } from './teacher';
-import { PEDAGOGY, Pedagogy, STICKERS } from '../data/pedagogy';
+import { PEDAGOGY, Pedagogy, BADGE_COLORS } from '../data/pedagogy';
 
 interface Store {
   ready: boolean;
@@ -160,7 +160,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       const stars = best >= 90 ? 3 : best >= 75 ? 2 : 1;
       const xp = (UNIT[unitId]?.phrases.length ?? 6) * 15 + best;
       const prevSticker = progress.units[unitId]?.sticker;
-      const sticker = pedagogy.reward === 'stickers' ? prevSticker ?? STICKERS[Object.keys(progress.units).length % STICKERS.length] : undefined;
+      const sticker = pedagogy.reward === 'badges' ? prevSticker ?? BADGE_COLORS[Object.keys(progress.units).length % BADGE_COLORS.length] : undefined;
       patchProgress((p) => {
         const prev = p.units[unitId];
         return { ...p, xp: p.xp + xp,
