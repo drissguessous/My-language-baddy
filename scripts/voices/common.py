@@ -4,6 +4,10 @@ import unicodedata
 
 # Voix candidates par langue. Le pipeline les génère toutes, les vérifie par reconnaissance
 # vocale (Whisper) et ne garde que les deux meilleures (une féminine et une masculine si possible).
+# Application commercialisable : seules les voix dont la licence autorise l'usage commercial sont
+# listées (Apache-2.0, CC0, CC-BY), vérifiées sur les cartes de modèles le 14/11/2026.
+# Exclues : MMS (CC-BY-NC), voix hindi Piper (CC-BY-NC-SA), Tom (AGPL), Kareem, Gyro, Huayan,
+# Riccardo (licence non précisée). L'arabe et l'amazigh utilisent donc la voix de l'appareil.
 # engine: kokoro (lang_code, voix) | piper (chemin du modèle dans rhasspy/piper-voices) | mms (dépôt HF)
 CANDIDATES = {
     'en': [
@@ -15,60 +19,48 @@ CANDIDATES = {
     'fr': [
         dict(id='siwis', engine='piper', model='fr/fr_FR/siwis/medium/fr_FR-siwis-medium', name='Siwis', gender='f', accent='fr-FR', license='CC-BY-4.0'),
         dict(id='ff_siwis', engine='kokoro', code='f', name='Siwis (Kokoro)', gender='f', accent='fr-FR', license='Apache-2.0'),
-        dict(id='tom', engine='piper', model='fr/fr_FR/tom/medium/fr_FR-tom-medium', name='Tom', gender='m', accent='fr-FR', license='AGPL-3.0 (modèle)'),
-        dict(id='gilles', engine='piper', model='fr/fr_FR/gilles/low/fr_FR-gilles-low', name='Gilles', gender='m', accent='fr-FR', license='voir carte du modèle'),
+        dict(id='gilles', engine='piper', model='fr/fr_FR/gilles/low/fr_FR-gilles-low', name='Gilles', gender='m', accent='fr-FR', license='CC0'),
     ],
     'es': [
         dict(id='ef_dora', engine='kokoro', code='e', name='Dora', gender='f', accent='es', license='Apache-2.0'),
         dict(id='em_alex', engine='kokoro', code='e', name='Álex', gender='m', accent='es', license='Apache-2.0'),
         dict(id='davefx', engine='piper', model='es/es_ES/davefx/medium/es_ES-davefx-medium', name='Dave', gender='m', accent='es-ES', license='CC0'),
-        dict(id='sharvard', engine='piper', model='es/es_ES/sharvard/medium/es_ES-sharvard-medium', name='Sharvard', gender='f', accent='es-ES', license='CC-BY-4.0'),
+        dict(id='sharvard', engine='piper', model='es/es_ES/sharvard/medium/es_ES-sharvard-medium', name='Sharvard', gender='m', accent='es-ES', license='CC-BY-3.0'),
     ],
     'it': [
         dict(id='if_sara', engine='kokoro', code='i', name='Sara', gender='f', accent='it-IT', license='Apache-2.0'),
-        dict(id='paola', engine='piper', model='it/it_IT/paola/medium/it_IT-paola-medium', name='Paola', gender='f', accent='it-IT', license='voir carte du modèle'),
+        dict(id='paola', engine='piper', model='it/it_IT/paola/medium/it_IT-paola-medium', name='Paola', gender='f', accent='it-IT', license='CC0'),
         dict(id='im_nicola', engine='kokoro', code='i', name='Nicola', gender='m', accent='it-IT', license='Apache-2.0'),
-        dict(id='riccardo', engine='piper', model='it/it_IT/riccardo/x_low/it_IT-riccardo-x_low', name='Riccardo', gender='m', accent='it-IT', license='voir carte du modèle'),
     ],
     'pt': [
         dict(id='tugao', engine='piper', model='pt/pt_PT/tugão/medium/pt_PT-tugão-medium', name='Tugão', gender='m', accent='pt-PT', license='CC0'),
         dict(id='pf_dora', engine='kokoro', code='p', name='Dora', gender='f', accent='pt-BR', license='Apache-2.0'),
         dict(id='pm_alex', engine='kokoro', code='p', name='Alex', gender='m', accent='pt-BR', license='Apache-2.0'),
     ],
-    'ar': [
-        dict(id='kareem', engine='piper', model='ar/ar_JO/kareem/medium/ar_JO-kareem-medium', name='Kareem', gender='m', accent='ar', license='voir carte du modèle'),
-        dict(id='kareem_low', engine='piper', model='ar/ar_JO/kareem/low/ar_JO-kareem-low', name='Kareem (léger)', gender='m', accent='ar', license='voir carte du modèle'),
-        dict(id='mms_ara', engine='mms', repo='facebook/mms-tts-ara', name='MMS', gender='m', accent='ar', license='CC-BY-NC-4.0'),
-    ],
+    'ar': [],
     'fa': [
         dict(id='amir', engine='piper', model='fa/fa_IR/amir/medium/fa_IR-amir-medium', name='Amir', gender='m', accent='fa-IR', license='CC0'),
-        dict(id='gyro', engine='piper', model='fa/fa_IR/gyro/medium/fa_IR-gyro-medium', name='Gyro', gender='m', accent='fa-IR', license='voir carte du modèle'),
-        dict(id='ganji', engine='piper', model='fa/fa_IR/ganji/medium/fa_IR-ganji-medium', name='Ganji', gender='m', accent='fa-IR', license='voir carte du modèle'),
-        dict(id='reza_ibrahim', engine='piper', model='fa/fa_IR/reza_ibrahim/medium/fa_IR-reza_ibrahim-medium', name='Reza', gender='m', accent='fa-IR', license='voir carte du modèle'),
+        dict(id='ganji', engine='piper', model='fa/fa_IR/ganji/medium/fa_IR-ganji-medium', name='Ganji', gender='m', accent='fa-IR', license='CC0'),
+        dict(id='reza_ibrahim', engine='piper', model='fa/fa_IR/reza_ibrahim/medium/fa_IR-reza_ibrahim-medium', name='Reza', gender='m', accent='fa-IR', license='CC0'),
     ],
     'hi': [
         dict(id='hf_alpha', engine='kokoro', code='h', name='Alpha', gender='f', accent='hi-IN', license='Apache-2.0'),
         dict(id='hf_beta', engine='kokoro', code='h', name='Beta', gender='f', accent='hi-IN', license='Apache-2.0'),
         dict(id='hm_omega', engine='kokoro', code='h', name='Omega', gender='m', accent='hi-IN', license='Apache-2.0'),
         dict(id='hm_psi', engine='kokoro', code='h', name='Psi', gender='m', accent='hi-IN', license='Apache-2.0'),
-        dict(id='priyamvada', engine='piper', model='hi/hi_IN/priyamvada/medium/hi_IN-priyamvada-medium', name='Priyamvada', gender='f', accent='hi-IN', license='voir carte du modèle'),
-        dict(id='pratham', engine='piper', model='hi/hi_IN/pratham/medium/hi_IN-pratham-medium', name='Pratham', gender='m', accent='hi-IN', license='voir carte du modèle'),
     ],
     'zh': [
         dict(id='zf_xiaobei', engine='kokoro', code='z', name='Xiaobei', gender='f', accent='zh-CN', license='Apache-2.0'),
         dict(id='zf_xiaoxiao', engine='kokoro', code='z', name='Xiaoxiao', gender='f', accent='zh-CN', license='Apache-2.0'),
         dict(id='zm_yunjian', engine='kokoro', code='z', name='Yunjian', gender='m', accent='zh-CN', license='Apache-2.0'),
         dict(id='zm_yunxi', engine='kokoro', code='z', name='Yunxi', gender='m', accent='zh-CN', license='Apache-2.0'),
-        dict(id='huayan', engine='piper', model='zh/zh_CN/huayan/medium/zh_CN-huayan-medium', name='Huayan', gender='f', accent='zh-CN', license='voir carte du modèle'),
     ],
     'ja': [
         dict(id='jf_alpha', engine='kokoro', code='j', name='Alpha', gender='f', accent='ja-JP', license='Apache-2.0'),
         dict(id='jf_gongitsune', engine='kokoro', code='j', name='Gongitsune', gender='f', accent='ja-JP', license='Apache-2.0 / CC BY'),
         dict(id='jm_kumo', engine='kokoro', code='j', name='Kumo', gender='m', accent='ja-JP', license='Apache-2.0 / CC BY'),
     ],
-    'ber': [
-        dict(id='mms_shi', engine='mms', repo='facebook/mms-tts-shi', name='MMS Tachelhit', gender='m', accent='shi', license='CC-BY-NC-4.0'),
-    ],
+    'ber': [],
 }
 
 WHISPER_LANG = {'fr': 'fr', 'en': 'en', 'es': 'es', 'it': 'it', 'pt': 'pt', 'ar': 'ar', 'fa': 'fa', 'hi': 'hi', 'zh': 'zh', 'ja': 'ja'}

@@ -22,7 +22,7 @@ permissions:
 
 concurrency:
   group: voices
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -31,7 +31,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lang: [fr, en, es, it, pt, ar, fa, hi, zh, ja, ber]
+        lang: [fr, en, es, it, pt, fa, hi, zh, ja]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
