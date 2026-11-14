@@ -1,0 +1,90 @@
+name: Voix — génération et validation
+
+# Génère 2 voix neuronales par langue (Kokoro, Piper, MMS), vérifie chaque enregistrement avec
+# Whisper, garde les meilleures voix sur preuve et commite les clips validés + le rapport docs/VOIX.md.
+# Les clips inchangés sont réutilisés depuis le cache.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/phrases/**'
+      - 'src/data/coachLines.ts'
+      - 'src/data/coach.ts'
+      - 'src/data/companions.ts'
+      - 'scripts/voices/**'
+      - '.github/workflows/voices.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: voices
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [fr, en, es, it, pt, ar, fa, hi, zh, ja, ber]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: npm ci
+      - run: npx tsx scripts/export-corpus.ts
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+      - name: Dépendances Python
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro>=0.9.4" "misaki[ja,zh]" unidic-lite piper-tts huggingface_hub faster-whisper \
+            "transformers>=4.40" pypinyin opencc-python-reimplemented pykakasi numpy soundfile
+          python -m unidic download || true
+      - uses: actions/cache@v4
+        with:
+          path: |
+            cache/voices/${{ matrix.lang }}
+            ~/.cache/huggingface
+          key: voices-${{ matrix.lang }}-${{ github.run_id }}
+          restore-keys: voices-${{ matrix.lang }}-
+      - name: Génération et vérification (${{ matrix.lang }})
+        run: python scripts/voices/generate.py --lang ${{ matrix.lang }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voices-${{ matrix.lang }}
+          path: out/voices/${{ matrix.lang }}
+          retention-days: 7
+
+  assemble:
+    needs: generate
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { pattern: voices-*, path: out/voices-dl }
+      - name: Regroupement
+        run: |
+          mkdir -p out/voices
+          for d in out/voices-dl/voices-*; do cp -r "$d" "out/voices/${d##*/voices-}"; done
+          python3 scripts/voices/assemble.py --in out/voices
+      - name: Commit des clips validés
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio src/data/audio/manifest.ts docs/VOIX.md docs/voix-report.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Voix : clips validés par Whisper ($(date -u +%F))"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+      - name: Relance des builds Android et web
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          gh workflow run android.yml --ref main
+          gh workflow run web.yml --ref main

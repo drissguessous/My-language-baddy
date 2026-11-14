@@ -43,3 +43,6 @@ yarn-error.*
 # Natif généré (Continuous Native Generation)
 /android
 /ios
+/build
+/cache
+/out

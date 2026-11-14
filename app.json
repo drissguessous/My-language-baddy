@@ -48,7 +48,8 @@
             "com.google.android.tts"
           ]
         }
-      ]
+      ],
+      "expo-audio"
     ],
     "scheme": "mylanguagebaddy",
     "description": "Apprendre 11 langues à l'oral et à l'écrit, du niveau A1 au C2, avec un compagnon humain adapté à l'âge.",

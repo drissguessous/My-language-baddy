@@ -1,0 +1,42 @@
+name: Audit des traductions
+
+# Rétro-traduction NLLB-200 + similarité LaBSE pour chaque phrase ; rapport docs/AUDIT_TRADUCTIONS.md.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['src/data/phrases/**', 'scripts/audit/**', '.github/workflows/audit.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: npm ci && npx tsx scripts/export-corpus.ts
+      - run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "transformers>=4.40" sentencepiece sentence-transformers sacrebleu
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/huggingface, key: audit-models-v1 }
+      - run: python scripts/audit/audit.py
+      - name: Commit du rapport
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/AUDIT_TRADUCTIONS.md docs/audit-traductions.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Audit des traductions ($(date -u +%F))"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
