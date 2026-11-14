@@ -4,13 +4,16 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { Avatar } from '../../components/Avatar';
 import { Bar, Btn, Card, Gap, Row, Screen, Stars, T } from '../../components/ui';
 import { CompanionSays, MicButton, PhraseView, PlayButton, ScoreView } from '../../components/voice';
+import type { CoachCat } from '../../data/coachLines';
 import { PHRASE, UNIT, UNITS } from '../../data/curriculum';
 import { LANG, LangCode } from '../../data/languages';
+import { LANG_TIPS, PICTO, UNIT_NOTES } from '../../data/pedagogyContent';
 import { Step, buildPractice, buildUnitLesson, sameText } from '../../lib/lesson';
 import { BLOCK_MESSAGE, DISTRESS_MESSAGE, moderate } from '../../lib/safety/filter';
 import { ScoreResult, scoreAttempt } from '../../lib/scoring';
 import { speak, speakCoach, stopSpeaking } from '../../lib/speech';
 import { dueCards } from '../../lib/srs';
+import { line, speaks, verdictOf } from '../../lib/teacher';
 import { romanText, scriptText } from '../../lib/text';
 import { useRecognizer } from '../../lib/useRecognizer';
 import { useStore } from '../../lib/store';
@@ -20,10 +23,29 @@ const PRACTICE_TITLES: Record<string, string> = {
   review: 'Révisions du jour', listen: 'Écoute active', speak: 'Atelier de prononciation', write: 'Dictée et écriture',
 };
 
+/** Tutoiement pour les enfants et les ados, vouvoiement pour les adultes. */
+function useTv() {
+  const { band } = useStore();
+  return (tu: string, vous: string) => (band === 'adult' ? vous : tu);
+}
+
+/** Répliques du compagnon selon l'âge et le mode professeur. */
+function useCoach() {
+  const { band, teacher, companion, profile } = useStore();
+  const get = (cat: CoachCat) => line(band, teacher, cat);
+  const say = (cat: CoachCat, text = get(cat), onDone?: () => void) => {
+    if (profile?.settings.coachVoice && speaks(teacher, cat, 0)) speakCoach(text, companion.voice.gender, companion.voice.pitch, onDone);
+    else onDone?.();
+    return text;
+  };
+  return { get, say, teacher, chatty: teacher.intensity >= 2 };
+}
+
 export default function Lesson() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const store = useStore();
-  const { profile, companion, band, progress, unitState } = store;
+  const { profile, companion, band, progress, unitState, pedagogy, teacher } = store;
+  const coach = useCoach();
   const lang = profile?.targetLang ?? 'en';
   const ref = profile?.refLang ?? 'fr';
   const unit = UNIT[id ?? ''];
@@ -43,9 +65,10 @@ export default function Lesson() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, profile?.id, lang]);
 
-  const [i, setI] = useState(0);
-  const [scores, setScores] = useState<number[]>([]);
-  const [finished, setFinished] = useState<null | { avg: number; stars: number; xp: number }>(null);
+  const [i, setI] = useState(-1);   // -1 = écran d'accueil de la leçon
+  const [scores, setScores] = useState<(number | null)[]>([]);
+  const [finished, setFinished] = useState<null | { avg: number; stars: number; xp: number; sticker?: string; line: string }>(null);
+  const [canDo, setCanDo] = useState<0 | 1 | 2 | null>(null);
 
   useEffect(() => () => {
     stopSpeaking();
@@ -76,40 +99,94 @@ export default function Lesson() {
     );
   }
 
-  const step = steps[i];
   const title = unit ? unit.title : PRACTICE_TITLES[id ?? ''] ?? 'Entraînement';
+  const note = unit ? UNIT_NOTES[unit.id] : undefined;
 
-  const done = (score: number) => {
+  if (i === -1) {
+    const intro = coach.get('start');
+    return (
+      <Screen>
+        <Row>
+          <Pressable onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Quitter"><Text style={{ fontSize: 26, color: C.sub }}>✕</Text></Pressable>
+          <T v="small">{title}</T>
+        </Row>
+        <Gap h={30} />
+        <View style={{ alignItems: 'center' }}><Avatar spec={companion.avatar} size={130} /></View>
+        <Gap />
+        <CompanionSays companion={companion} text={intro} />
+        {unit ? (
+          <>
+            <Gap />
+            <Card tone={C.goldSoft}>
+              <T style={{ fontSize: 15 }}>🎬 {unit.scene}</T>
+              {note && pedagogy.canDo ? <T v="small" style={{ marginTop: 6, fontSize: 14 }}>Objectif : {note.canDo}</T> : null}
+            </Card>
+          </>
+        ) : null}
+        <Gap h={24} />
+        <Btn title="C’est parti" variant="accent" onPress={() => { coach.say('start', intro); setI(0); }} />
+      </Screen>
+    );
+  }
+
+  const step = steps[i];
+
+  const done = (score: number | null) => {
     const next = [...scores, score];
     setScores(next);
-    if (step.kind !== 'discover') {
+    if (step.kind !== 'discover' && step.kind !== 'grammar' && score !== null) {
       store.record({ kind: step.kind === 'order' ? 'order' : step.kind === 'speak' ? 'speak' : step.kind === 'write' ? 'write' : 'listen', phraseId: step.pid, score });
     }
     if (i + 1 < steps.length) { setI(i + 1); return; }
-    const graded = steps.map((s, k) => (s.kind === 'discover' ? null : next[k])).filter((v): v is number => v !== null);
+    const graded = steps.map((s, k) => (s.kind === 'discover' || s.kind === 'grammar' ? null : next[k])).filter((v): v is number => v !== null && v !== undefined);
     const avg = Math.round(graded.reduce((a, b) => a + b, 0) / Math.max(1, graded.length));
-    let res = { avg, stars: avg >= 90 ? 3 : avg >= 75 ? 2 : 1, xp: graded.length * 5 };
+    const good = verdictOf(avg, teacher) !== 'retry';
+    let res: { avg: number; stars: number; xp: number; sticker?: string } = { avg, stars: avg >= 90 ? 3 : avg >= 75 ? 2 : 1, xp: graded.length * 5 };
     if (unit) { const r = store.completeUnit(unit.id, avg); res = { avg, ...r }; }
-    setFinished(res);
-    if (profile.settings.coachVoice) speakCoach(companion.cheers[0], companion.voice.gender, companion.voice.pitch);
+    const l = coach.say(good ? 'end_good' : 'end_retry');
+    setFinished({ ...res, line: l });
   };
 
   if (finished) {
+    const good = verdictOf(finished.avg, teacher) !== 'retry';
     return (
       <Screen>
         <Gap h={30} />
         <View style={{ alignItems: 'center' }}>
-          <Avatar spec={companion.avatar} size={140} mood="wow" />
+          {finished.sticker ? <Text style={{ fontSize: 90 }}>{finished.sticker}</Text> : <Avatar spec={companion.avatar} size={140} mood="wow" />}
           <Gap />
-          <T v="title" style={{ textAlign: 'center' }}>{finished.avg >= 75 ? 'Leçon réussie !' : 'Leçon terminée'}</T>
+          <T v="title" style={{ textAlign: 'center' }}>{good ? 'Leçon réussie !' : 'Leçon terminée'}</T>
           <Gap h={8} />
           <Stars n={finished.stars} size={34} />
           <Gap h={8} />
-          <T style={{ color: C.sub }}>Score moyen {finished.avg}/100 · +{finished.xp} XP</T>
+          {pedagogy.reward === 'stickers'
+            ? <T style={{ color: C.sub }}>{finished.sticker ? 'Nouvel autocollant pour ta collection !' : ''}</T>
+            : <T style={{ color: C.sub }}>Score moyen {finished.avg}/100 · +{finished.xp} XP</T>}
         </View>
         <Gap h={20} />
-        <CompanionSays companion={companion}
-          text={finished.avg >= 75 ? companion.cheers[1] : `${companion.nudges[0]} Les phrases difficiles reviendront dans tes révisions.`} />
+        <CompanionSays companion={companion} text={finished.line} />
+        {unit && note && pedagogy.canDo ? (
+          <>
+            <Gap />
+            <Card>
+              <T v="label">Auto-évaluation</T>
+              <Text style={{ fontSize: 16, color: C.ink, marginTop: 6, fontWeight: '600' }}>{note.canDo}</Text>
+              <Row style={{ marginTop: 10, gap: 8 }}>
+                {(['Pas encore', 'Avec aide', 'Oui, seul'] as const).map((lbl, k) => (
+                  <Pressable key={lbl} onPress={() => { setCanDo(k as 0 | 1 | 2); store.setCanDo(unit.id, k as 0 | 1 | 2); }}
+                    style={{ flex: 1, padding: 10, borderRadius: R.s, borderWidth: 2, alignItems: 'center',
+                      borderColor: canDo === k ? C.primary : C.line, backgroundColor: canDo === k ? C.primarySoft : C.card }}>
+                    <Text style={{ fontSize: 20 }}>{['🌱', '🌿', '🌳'][k]}</Text>
+                    <Text style={[F.small, { textAlign: 'center' }]}>{lbl}</Text>
+                  </Pressable>
+                ))}
+              </Row>
+            </Card>
+          </>
+        ) : null}
+        {band !== 'kid' && LANG_TIPS[lang] ? (
+          <><Gap /><Card tone={C.primarySoft}><T v="label">Le saviez-vous ?</T><T style={{ fontSize: 14, marginTop: 4 }}>{LANG_TIPS[lang][finished.avg % LANG_TIPS[lang].length]}</T></Card></>
+        ) : null}
         <Gap h={24} />
         {unit ? <Btn title="Jouer le dialogue avec mon compagnon" icon="💬" onPress={() => router.replace(`/dialogue/${unit.id}`)} /> : null}
         <Gap h={10} />
@@ -135,67 +212,157 @@ export default function Lesson() {
 
 // ─────────────────────────────────────────────────────────────────
 
-function StepView({ step, lang, refLang, onDone }: { step: Step; lang: LangCode; refLang: LangCode; onDone: (score: number) => void }) {
+function StepView({ step, lang, refLang, onDone }: { step: Step; lang: LangCode; refLang: LangCode; onDone: (score: number | null) => void }) {
   switch (step.kind) {
     case 'discover': return <Discover pid={step.pid} lang={lang} refLang={refLang} onDone={onDone} />;
     case 'meaning': return <Meaning pid={step.pid} audio={step.audio} options={step.options} lang={lang} refLang={refLang} onDone={onDone} />;
     case 'pick': return <Pick pid={step.pid} options={step.options} lang={lang} refLang={refLang} onDone={onDone} />;
+    case 'picture': return <Picture pid={step.pid} options={step.options} recall={step.recall} lang={lang} refLang={refLang} onDone={onDone} />;
+    case 'grammar': return <Grammar unitId={step.unitId} mode={step.mode} lang={lang} refLang={refLang} onDone={onDone} />;
     case 'order': return <Order pid={step.pid} tiles={step.tiles} lang={lang} refLang={refLang} onDone={onDone} />;
     case 'speak': return <Speak pid={step.pid} lang={lang} refLang={refLang} onDone={onDone} />;
     case 'write': return <Write pid={step.pid} lang={lang} refLang={refLang} onDone={onDone} />;
   }
 }
 
-type P = { pid: string; lang: LangCode; refLang: LangCode; onDone: (score: number) => void };
+type P = { pid: string; lang: LangCode; refLang: LangCode; onDone: (score: number | null) => void };
 
-function useAutoPlay(text: string, lang: LangCode, enabled = true) {
+function useAutoPlay(text: string, lang: LangCode, enabled = true, pid?: string, onDone?: () => void) {
   const { profile, companion } = useStore();
   useEffect(() => {
     if (!enabled || !profile?.settings.autoPlay) return;
-    const t = setTimeout(() => speak(text, lang, { slow: profile.settings.slowAudio, gender: companion.voice.gender, pitch: companion.voice.pitch }), 350);
+    const t = setTimeout(() => speak(text, lang, { pid, gender: companion.voice.gender, pitch: companion.voice.pitch, onDone }), 350);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text, lang]);
 }
 
+/** Bulle de consigne du compagnon (masquée en intensité « un peu »). */
+function Instruction({ cat }: { cat: CoachCat }) {
+  const { companion } = useStore();
+  const coach = useCoach();
+  const [text] = useState(() => coach.get(cat));
+  if (!coach.chatty) return null;
+  return <><CompanionSays companion={companion} text={text} size={56} /><Gap /></>;
+}
+
 function Discover({ pid, lang, refLang, onDone }: P) {
-  const { companion, profile } = useStore();
+  const { companion, profile, pedagogy } = useStore();
+  const tv = useTv();
   const p = PHRASE[pid];
   const text = p.t[lang]!;
   const [speaking, setSpeaking] = useState(false);
-  useAutoPlay(text, lang);
+  const [heard, setHeard] = useState(!pedagogy.audioFirst);
+  useAutoPlay(text, lang, true, pid, () => setHeard(true));
+  useEffect(() => {
+    if (heard || !pedagogy.audioFirst) return;
+    const t = setTimeout(() => setHeard(true), 6000); // filet de sécurité si l'audio ne se lance pas
+    return () => clearTimeout(t);
+  }, [heard, pedagogy.audioFirst]);
   return (
     <View>
-      <CompanionSays companion={companion} speaking={speaking}
-        text={p.role === 'c' ? 'Écoute ce que je vais te dire dans la conversation :' : 'Voici ce que tu vas dire. Écoute bien :'} />
-      <Gap h={18} />
+      <Instruction cat="discover" />
+      <T v="small" style={{ marginBottom: 8 }}>
+        {p.role === 'c' ? tv('Ce que ton interlocuteur va dire :', 'Ce que votre interlocuteur va dire :') : tv('Ce que tu vas dire :', 'Ce que vous allez dire :')}
+      </T>
       <Card>
-        <PhraseView phrase={p} lang={lang} refLang={refLang} showRoman={profile?.settings.showRomanization} />
+        {PICTO[pid] && pedagogy.pictureCards ? <Text style={{ fontSize: 54, textAlign: 'center', marginBottom: 8 }}>{PICTO[pid]}</Text> : null}
+        {heard ? <PhraseView phrase={p} lang={lang} refLang={refLang} showRoman={profile?.settings.showRomanization} /> : (
+          <Pressable onPress={() => setHeard(true)} accessibilityRole="button">
+            <T style={{ textAlign: 'center', color: C.sub }}>{tv('Écoute d’abord… (touche pour voir le texte)', 'Écoutez d’abord… (touchez pour afficher le texte)')}</T>
+          </Pressable>
+        )}
         <Gap h={16} />
         <Row style={{ justifyContent: 'center', gap: 24 }}>
-          <PlayButton text={text} lang={lang} companion={companion} label="Écouter" onState={setSpeaking} />
-          <PlayButton text={text} lang={lang} companion={companion} slow label="Lentement" onState={setSpeaking} />
+          <PlayButton pid={p.id} text={text} lang={lang} companion={companion} label="Écouter" onState={(v) => { setSpeaking(v); if (!v) setHeard(true); }} />
+          <PlayButton pid={p.id} text={text} lang={lang} companion={companion} slow label="Lentement" onState={setSpeaking} />
         </Row>
       </Card>
       <Gap h={20} />
-      <Btn title="J’ai compris" onPress={() => onDone(100)} />
+      <Btn title={tv('J’ai compris', 'J’ai compris')} disabled={!heard || speaking} onPress={() => onDone(null)} />
     </View>
   );
 }
 
 function Feedback({ ok, answer, onNext }: { ok: boolean; answer?: React.ReactNode; onNext: () => void }) {
-  const { companion, profile } = useStore();
-  const msg = ok ? companion.cheers[Math.floor(Math.random() * companion.cheers.length)] : companion.nudges[Math.floor(Math.random() * companion.nudges.length)];
+  const coach = useCoach();
+  const [msg] = useState(() => coach.get(ok ? 'cheer' : 'nudge'));
+  const [extra] = useState(() => (ok && speaks(coach.teacher, 'extra') ? coach.get('extra') : null));
   useEffect(() => {
-    if (profile?.settings.coachVoice) speakCoach(msg, companion.voice.gender, companion.voice.pitch);
+    coach.say(ok ? 'cheer' : 'nudge', msg, extra ? () => coach.say('extra', extra) : undefined);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <View style={{ marginTop: 16, backgroundColor: ok ? C.okSoft : C.badSoft, borderRadius: R.m, padding: 14 }}>
       <Text style={{ fontWeight: '800', color: ok ? C.ok : C.bad, fontSize: 16 }}>{ok ? '✓ ' : '✗ '}{msg}</Text>
+      {extra ? <Text style={{ color: C.ink, marginTop: 6, fontStyle: 'italic' }}>💡 {extra}</Text> : null}
       {answer ? <View style={{ marginTop: 6 }}>{answer}</View> : null}
       <Gap h={12} />
-      <Btn title="Continuer" variant={ok ? 'ok' : 'danger'} onPress={onNext} />
+      <Btn title="Continuer" variant={ok ? 'ok' : 'danger'} onPress={() => { stopSpeaking(); onNext(); }} />
+    </View>
+  );
+}
+
+function Picture({ pid, options, recall, lang, onDone }: P & { options: string[]; recall?: boolean }) {
+  const { companion } = useStore();
+  const p = PHRASE[pid];
+  const [chosen, setChosen] = useState<string | null>(null);
+  useAutoPlay(p.t[lang]!, lang, true, pid);
+  return (
+    <View>
+      <Instruction cat="listen" />
+      <T v="h2">{recall ? 'Tu te souviens ? Écoute et touche l’image' : 'Écoute et touche la bonne image'}</T>
+      <Gap />
+      <Row style={{ justifyContent: 'center', gap: 24 }}>
+        <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} size={70} label="Écouter" />
+        <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} slow label="Lentement" />
+      </Row>
+      <Gap />
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }}>
+        {options.map((o) => {
+          const state = chosen ? (o === pid ? 'right' : o === chosen ? 'wrong' : 'idle') : 'idle';
+          return (
+            <Pressable key={o} disabled={!!chosen} onPress={() => setChosen(o)} accessibilityRole="button" accessibilityLabel={`Image ${PICTO[o]}`}
+              style={{ width: '46%', aspectRatio: 1.3, borderRadius: R.l, alignItems: 'center', justifyContent: 'center', borderWidth: 3,
+                backgroundColor: state === 'right' ? C.okSoft : state === 'wrong' ? C.badSoft : C.card,
+                borderColor: state === 'right' ? C.ok : state === 'wrong' ? C.bad : C.line }}>
+              <Text style={{ fontSize: 44 }}>{PICTO[o]}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
+      {chosen ? <Feedback ok={chosen === pid} onNext={() => onDone(chosen === pid ? 100 : 0)}
+        answer={<Text style={{ color: C.ink, fontSize: 17 }}>{scriptText(p, lang)}</Text>} /> : null}
+    </View>
+  );
+}
+
+function Grammar({ unitId, mode, lang, refLang, onDone }: { unitId: string; mode: 'guided' | 'explicit'; lang: LangCode; refLang: LangCode; onDone: (s: number | null) => void }) {
+  const { companion, profile } = useStore();
+  const note = UNIT_NOTES[unitId];
+  const unit = UNIT[unitId];
+  return (
+    <View>
+      <T v="label">Point de langue</T>
+      <T v="h2" style={{ marginTop: 4 }}>{unit.grammar}</T>
+      <Gap />
+      {mode === 'explicit'
+        ? <Card>{note.explicit.map((e, k) => <Text key={k} style={{ fontSize: 15, color: C.ink, lineHeight: 22, marginBottom: 6 }}>• {e}</Text>)}</Card>
+        : <Card tone={C.goldSoft}><Text style={{ fontSize: 16, color: C.ink }}>🔎 {note.guided}</Text></Card>}
+      <Gap />
+      <T v="label">À observer</T>
+      <Gap h={8} />
+      {note.focus.filter((id) => PHRASE[id]?.t[lang]).map((id) => (
+        <Card key={id} style={{ marginBottom: 8 }}>
+          <Row style={{ alignItems: 'flex-start' }}>
+            <View style={{ flex: 1 }}><PhraseView phrase={PHRASE[id]} lang={lang} refLang={refLang} big={false} showRoman={profile?.settings.showRomanization} /></View>
+            <PlayButton pid={id} text={PHRASE[id].t[lang]!} lang={lang} companion={companion} size={40} />
+          </Row>
+        </Card>
+      ))}
+      {LANG_TIPS[lang] && mode === 'explicit' ? <T v="small" style={{ marginTop: 4 }}>💡 {LANG_TIPS[lang][0]}</T> : null}
+      <Gap h={18} />
+      <Btn title="Continuer" onPress={() => onDone(null)} />
     </View>
   );
 }
@@ -204,16 +371,18 @@ function Meaning({ pid, audio, options, lang, refLang, onDone }: P & { audio: bo
   const { companion, profile } = useStore();
   const p = PHRASE[pid];
   const [chosen, setChosen] = useState<string | null>(null);
-  useAutoPlay(p.t[lang]!, lang, audio);
+  const tv = useTv();
+  useAutoPlay(p.t[lang]!, lang, audio, pid);
   return (
     <View>
-      <T v="h2">{audio ? 'Écoutez et choisissez le sens' : 'Que signifie cette phrase ?'}</T>
+      <Instruction cat="listen" />
+      <T v="h2">{audio ? tv('Écoute et choisis le sens', 'Écoutez et choisissez le sens') : 'Que signifie cette phrase ?'}</T>
       <Gap />
       <Card>
         {audio ? (
           <Row style={{ justifyContent: 'center', gap: 24 }}>
-            <PlayButton text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" />
-            <PlayButton text={p.t[lang]!} lang={lang} companion={companion} slow label="Lentement" />
+            <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" />
+            <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} slow label="Lentement" />
           </Row>
         ) : <PhraseView phrase={p} lang={lang} refLang={refLang} showTranslation={false} showRoman={profile?.settings.showRomanization} />}
       </Card>
@@ -237,16 +406,18 @@ function Meaning({ pid, audio, options, lang, refLang, onDone }: P & { audio: bo
 
 function Pick({ pid, options, lang, refLang, onDone }: P & { options: string[] }) {
   const { companion, profile } = useStore();
+  const tv = useTv();
   const p = PHRASE[pid];
   const [chosen, setChosen] = useState<string | null>(null);
-  useAutoPlay(p.t[lang]!, lang);
+  useAutoPlay(p.t[lang]!, lang, true, pid);
   return (
     <View>
-      <T v="h2">Écoutez et choisissez ce que vous entendez</T>
+      <Instruction cat="listen" />
+      <T v="h2">{tv('Écoute et choisis ce que tu entends', 'Écoutez et choisissez ce que vous entendez')}</T>
       <Gap />
       <Row style={{ justifyContent: 'center', gap: 24 }}>
-        <PlayButton text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" />
-        <PlayButton text={p.t[lang]!} lang={lang} companion={companion} slow label="Lentement" />
+        <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" />
+        <PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} slow label="Lentement" />
       </Row>
       <Gap />
       {options.map((o) => {
@@ -269,6 +440,7 @@ function Pick({ pid, options, lang, refLang, onDone }: P & { options: string[] }
 }
 
 function Order({ pid, tiles, lang, refLang, onDone }: P & { tiles: string[] }) {
+  const tv = useTv();
   const p = PHRASE[pid];
   const [picked, setPicked] = useState<number[]>([]);
   const [checked, setChecked] = useState<null | boolean>(null);
@@ -276,7 +448,8 @@ function Order({ pid, tiles, lang, refLang, onDone }: P & { tiles: string[] }) {
   const rtl = LANG[lang].rtl;
   return (
     <View>
-      <T v="h2">Remettez les mots dans l’ordre</T>
+      <Instruction cat="order" />
+      <T v="h2">{tv('Remets les mots dans l’ordre', 'Remettez les mots dans l’ordre')}</T>
       <T v="small" style={{ marginTop: 4, fontSize: 15 }}>{p.t[refLang]}</T>
       <Gap />
       <View style={{ minHeight: 70, borderBottomWidth: 2, borderColor: C.line, flexDirection: rtl ? 'row-reverse' : 'row', flexWrap: 'wrap', gap: 8, paddingBottom: 10 }}>
@@ -304,7 +477,8 @@ function Order({ pid, tiles, lang, refLang, onDone }: P & { tiles: string[] }) {
 }
 
 function Speak({ pid, lang, refLang, onDone }: P) {
-  const { companion, profile, age, band } = useStore();
+  const { companion, profile, age, band, teacher, pedagogy } = useStore();
+  const tv = useTv();
   const p = PHRASE[pid];
   const target = p.t[lang]!;
   const rec = useRecognizer(lang);
@@ -328,15 +502,16 @@ function Speak({ pid, lang, refLang, onDone }: P) {
 
   return (
     <View>
-      <T v="h2">À vous de parler</T>
-      <T v="small" style={{ marginTop: 4, fontSize: 15 }}>Écoutez {companion.name}, puis répétez la phrase.</T>
+      <Instruction cat="speak" />
+      <T v="h2">{tv('À toi de parler', 'À vous de parler')}</T>
+      <T v="small" style={{ marginTop: 4, fontSize: 15 }}>{tv(`Écoute ${companion.name}, puis répète la phrase.`, `Écoutez ${companion.name}, puis répétez la phrase.`)}</T>
       <Gap />
       <Card>
         <PhraseView phrase={p} lang={lang} refLang={refLang} showRoman={profile?.settings.showRomanization} />
         <Gap h={12} />
         <Row style={{ justifyContent: 'center', gap: 24 }}>
-          <PlayButton text={target} lang={lang} companion={companion} label="Modèle" />
-          <PlayButton text={target} lang={lang} companion={companion} slow label="Lentement" />
+          <PlayButton pid={p.id} text={target} lang={lang} companion={companion} label="Modèle" />
+          <PlayButton pid={p.id} text={target} lang={lang} companion={companion} slow label="Lentement" />
         </Row>
       </Card>
 
@@ -348,7 +523,7 @@ function Speak({ pid, lang, refLang, onDone }: P) {
               {micOff ? 'Le micro est désactivé dans l’espace parent.'
                 : lang === 'ber' ? 'Pas encore d’analyse vocale pour l’amazigh sur cet appareil.'
                 : 'La reconnaissance vocale n’est pas disponible ici (Expo Go, navigateur sans Web Speech, ou langue non installée).'}
-              {' '}Répétez la phrase à voix haute, puis évaluez-vous honnêtement.
+              {' '}{tv('Répète la phrase à voix haute, puis dis honnêtement comment ça s’est passé.', 'Répétez la phrase à voix haute, puis évaluez-vous honnêtement.')}
             </T>
           </Card>
           <Gap />
@@ -362,18 +537,16 @@ function Speak({ pid, lang, refLang, onDone }: P) {
           <MicButton listening={rec.state === 'listening'} volume={rec.volume}
             onPress={() => { setBlocked(null); if (rec.state === 'listening') rec.stop(); else { setResult(null); rec.start([target]); } }} />
           <T v="small" style={{ textAlign: 'center' }}>
-            {rec.state === 'listening' ? (rec.transcript ? `« ${moderate(rec.transcript, { age, langs: [lang] }).masked} »` : 'Je vous écoute…')
-              : rec.state === 'denied' ? 'Autorisez le micro dans les réglages de l’appareil.'
-              : rec.state === 'error' ? `Erreur : ${rec.error ?? 'inconnue'}` : 'Touchez le micro et parlez'}
+            {rec.state === 'listening' ? (rec.transcript ? `« ${moderate(rec.transcript, { age, langs: [lang] }).masked} »` : tv('Je t’écoute…', 'Je vous écoute…'))
+              : rec.state === 'denied' ? tv('Autorise le micro dans les réglages (demande à un adulte).', 'Autorisez le micro dans les réglages de l’appareil.')
+              : rec.state === 'error' ? `Erreur : ${rec.error ?? 'inconnue'}` : tv('Touche le micro et parle', 'Touchez le micro et parlez')}
           </T>
           {blocked ? <Card tone={C.badSoft} style={{ marginTop: 12 }}><T>{blocked}</T></Card> : null}
-          {result ? <><Gap /><ScoreView result={result} lang={lang} spoken /></> : null}
+          {result ? <><Gap /><ScoreView result={{ ...result, verdict: verdictOf(result.score, teacher) }} lang={lang} spoken simple={!pedagogy.detailedMetrics} /></> : null}
+          {result ? <Feedback ok={verdictOf(result.score, teacher) !== 'retry'} onNext={() => onDone(result.score)} /> : null}
           <Gap />
           {result ? (
-            <Row>
-              <Btn style={{ flex: 1 }} title="Réessayer" variant="ghost" onPress={() => { setResult(null); rec.reset(); }} />
-              <Btn style={{ flex: 1 }} title="Continuer" onPress={() => onDone(result.score)} />
-            </Row>
+            <Btn title="Réessayer" variant="ghost" small onPress={() => { stopSpeaking(); setResult(null); rec.reset(); }} />
           ) : tries === 0 && rec.state !== 'listening' ? (
             <Btn title="Passer" variant="ghost" small onPress={() => onDone(0)} />
           ) : null}
@@ -384,7 +557,8 @@ function Speak({ pid, lang, refLang, onDone }: P) {
 }
 
 function Write({ pid, lang, refLang, onDone }: P) {
-  const { age, band, profile } = useStore();
+  const { age, band, profile, teacher, pedagogy } = useStore();
+  const tv = useTv();
   const p = PHRASE[pid];
   const [text, setText] = useState('');
   const [result, setResult] = useState<ScoreResult | null>(null);
@@ -399,7 +573,8 @@ function Write({ pid, lang, refLang, onDone }: P) {
   };
   return (
     <View>
-      <T v="h2">Écrivez en {LANG[lang].name.toLowerCase()}</T>
+      <Instruction cat="write" />
+      <T v="h2">{tv('Écris en', 'Écrivez en')} {LANG[lang].name.toLowerCase()}</T>
       <Gap h={8} />
       <Card tone={C.primarySoft}><Text style={{ fontSize: 18, color: C.ink, writingDirection: LANG[refLang].rtl ? 'rtl' : 'ltr' }}>{p.t[refLang]}</Text></Card>
       <Gap />
@@ -412,10 +587,10 @@ function Write({ pid, lang, refLang, onDone }: P) {
       <Gap />
       {result ? (
         <>
-          <ScoreView result={result} lang={lang} />
+          <ScoreView result={{ ...result, verdict: verdictOf(result.score, teacher) }} lang={lang} simple={!pedagogy.detailedMetrics} />
           {profile?.settings.showRomanization && rom ? <T v="small" style={{ marginTop: 6 }}>Transcription : {rom}</T> : null}
-          <Gap />
-          <Btn title="Continuer" onPress={() => onDone(result.score)} />
+          <Feedback ok={verdictOf(result.score, teacher) !== 'retry'} onNext={() => onDone(result.score)}
+            answer={result.score < 100 ? <Text style={{ color: C.ink, fontSize: 17 }}>{scriptText(p, lang)}</Text> : undefined} />
         </>
       ) : (
         <Row>

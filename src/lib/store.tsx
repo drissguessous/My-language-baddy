@@ -6,6 +6,9 @@ import {
   Attempt, DB, LangProgress, Profile, Usage, dayKey, emptyDB, emptyProgress, hashPin, loadDB, saveDB, uid, defaultSettings,
 } from './db';
 import { review } from './srs';
+import { setVoicePrefs } from './speech';
+import { TeacherMode, teacherFor } from './teacher';
+import { PEDAGOGY, Pedagogy, STICKERS } from '../data/pedagogy';
 
 interface Store {
   ready: boolean;
@@ -16,6 +19,10 @@ interface Store {
   companion: Companion;
   progress: LangProgress;
   usage: Usage;
+  teacher: TeacherMode;
+  pedagogy: Pedagogy;
+  parentUnlocked: boolean;
+  unlockParent: () => void;
   attempts: Attempt[];
   currentLevel: Level;
   unitState: (u: Unit) => 'locked' | 'open' | 'done' | 'soon' | 'hidden';
@@ -24,7 +31,8 @@ interface Store {
   switchProfile: (id: string) => void;
   deleteProfile: (id: string) => void;
   record: (a: Omit<Attempt, 'ts'>) => void;
-  completeUnit: (unitId: string, best: number) => { stars: number; xp: number };
+  completeUnit: (unitId: string, best: number) => { stars: number; xp: number; sticker?: string };
+  setCanDo: (unitId: string, v: 0 | 1 | 2) => void;
   setPlacement: (level: Level, score: number) => void;
   addMinutes: (m: number) => void;
   checkPin: (pin: string, profile?: Profile) => boolean;
@@ -54,7 +62,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
-  const profile = db.profiles.find((p) => p.id === db.activeProfileId);
+  const rawProfile = db.profiles.find((p) => p.id === db.activeProfileId);
+  const profile = useMemo(() => (rawProfile ? { ...rawProfile, settings: { ...defaultSettings(), ...rawProfile.settings } } : undefined), [rawProfile]);
+  const [parentUnlockedAt, setParentUnlockedAt] = useState(0);
   const age = profile ? ageOf(profile.birthYear) : 30;
   const band = bandOf(age);
   const companion = (profile && COMPANION[profile.companionId]) || COMPANION.nadia;
@@ -62,6 +72,16 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const rawUsage = (profile && db.usage[profile.id]) || freshUsage();
   const usage: Usage = rawUsage.today === dayKey() ? rawUsage : { ...rawUsage, today: dayKey(), minutesToday: 0 };
   const attempts = (profile && db.attempts[profile.id]) || [];
+  const teacher = teacherFor(band, profile?.settings.teacher);
+  const pedagogy = PEDAGOGY[band];
+
+  useEffect(() => {
+    setVoicePrefs({
+      mode: profile?.settings.voice ?? 'auto',
+      deviceVoices: profile?.settings.deviceVoices ?? {},
+      rate: (profile?.settings.slowAudio ? 0.85 : 1) * pedagogy.audioRate,
+    });
+  }, [profile?.settings.voice, profile?.settings.deviceVoices, profile?.settings.slowAudio, pedagogy.audioRate]);
 
   const currentLevel: Level = useMemo(() => {
     if (!profile) return 'A1';
@@ -108,12 +128,14 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   }, [pid, commit]);
 
   const store: Store = {
-    ready, db, profile, age, band, companion, progress, usage, attempts, currentLevel, unitState,
+    ready, db, profile, age, band, companion, progress, usage, attempts, currentLevel, unitState, teacher, pedagogy,
+    parentUnlocked: Date.now() - parentUnlockedAt < 10 * 60_000,
+    unlockParent: () => setParentUnlockedAt(Date.now()),
     timeLeft: profile?.parental?.dailyMinutes ? Math.max(0, profile.parental.dailyMinutes - usage.minutesToday) : null,
 
     createProfile: async ({ pin, ...p }) => {
       const id = uid();
-      const prof: Profile = { ...p, id, createdAt: Date.now(), settings: defaultSettings() };
+      const prof: Profile = { ...p, id, createdAt: Date.now(), settings: { ...defaultSettings(), teacher: teacherFor(bandOf(ageOf(p.birthYear))) } };
       if (pin) prof.parental = { pinHash: hashPin(pin, id), dailyMinutes: bandOf(ageOf(p.birthYear)) === 'kid' ? 20 : 0, micAllowed: true };
       commit((d) => ({ ...d, profiles: [...d.profiles, prof], activeProfileId: id, usage: { ...d.usage, [id]: freshUsage() } }));
       return prof;
@@ -137,10 +159,12 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     completeUnit: (unitId, best) => {
       const stars = best >= 90 ? 3 : best >= 75 ? 2 : 1;
       const xp = (UNIT[unitId]?.phrases.length ?? 6) * 15 + best;
+      const prevSticker = progress.units[unitId]?.sticker;
+      const sticker = pedagogy.reward === 'stickers' ? prevSticker ?? STICKERS[Object.keys(progress.units).length % STICKERS.length] : undefined;
       patchProgress((p) => {
         const prev = p.units[unitId];
         return { ...p, xp: p.xp + xp,
-          units: { ...p.units, [unitId]: { best: Math.max(best, prev?.best ?? 0), stars: Math.max(stars, prev?.stars ?? 0), completedAt: Date.now() } } };
+          units: { ...p.units, [unitId]: { ...prev, best: Math.max(best, prev?.best ?? 0), stars: Math.max(stars, prev?.stars ?? 0), completedAt: Date.now(), sticker } } };
       });
       touchUsage((u) => {
         const today = dayKey();
@@ -148,8 +172,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         const yesterday = dayKey(new Date(Date.now() - 86_400_000));
         return { ...u, lastDay: today, streak: u.lastDay === yesterday ? u.streak + 1 : 1 };
       });
-      return { stars, xp };
+      return { stars, xp, sticker };
     },
+    setCanDo: (unitId, v) => patchProgress((p) => (p.units[unitId] ? { ...p, units: { ...p.units, [unitId]: { ...p.units[unitId], canDo: v } } } : p)),
     setPlacement: (level, score) => {
       patchProgress((p) => ({ ...p, placement: { level, score, at: Date.now() } }));
       if (pid) commit((d) => ({ ...d, profiles: d.profiles.map((p) => (p.id === pid ? { ...p, startLevel: level } : p)) }));

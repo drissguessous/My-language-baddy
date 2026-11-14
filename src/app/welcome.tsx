@@ -86,6 +86,22 @@ export default function Welcome() {
   );
   const Error = () => (err ? <Text style={{ color: C.bad, marginTop: 10, fontWeight: '600' }}>{err}</Text> : null);
 
+  // Un profil mineur protégé est actif : créer un autre profil demande le code parental.
+  if (store.profile?.parental && store.band !== 'adult' && !store.parentUnlocked) {
+    return (
+      <Screen>
+        <Gap h={40} />
+        <Text style={{ fontSize: 48, textAlign: 'center' }}>🛡️</Text>
+        <T v="title" style={{ textAlign: 'center' }}>Espace parent</T>
+        <T style={{ textAlign: 'center', color: C.sub, marginTop: 6 }}>La création d’un nouveau profil est réservée au parent.</T>
+        <Gap h={20} />
+        <Btn title="Saisir le code parental" onPress={() => router.replace('/parental')} />
+        <Gap h={10} />
+        <Btn title="Retour" variant="ghost" onPress={() => router.replace('/(tabs)')} />
+      </Screen>
+    );
+  }
+
   if (step === 'hero') {
     return (
       <Screen>

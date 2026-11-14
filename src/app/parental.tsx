@@ -11,7 +11,7 @@ export default function Parental() {
   const s = useStore();
   const { profile } = s;
   const [pin, setPin] = useState('');
-  const [unlocked, setUnlocked] = useState(!profile?.parental);
+  const [unlocked, setUnlocked] = useState(!profile?.parental || s.parentUnlocked);
   const [err, setErr] = useState('');
   const [newPin, setNewPin] = useState('');
   const [year, setYear] = useState(String(profile?.birthYear ?? ''));
@@ -30,7 +30,7 @@ export default function Parental() {
           placeholder="••••" style={{ backgroundColor: C.card, borderRadius: R.m, borderWidth: 1.5, borderColor: C.line, padding: 14, fontSize: 28, textAlign: 'center', letterSpacing: 12 }} />
         {err ? <Text style={{ color: C.bad, marginTop: 8, textAlign: 'center' }}>{err}</Text> : null}
         <Gap />
-        <Btn title="Déverrouiller" disabled={pin.length !== 4} onPress={() => (s.checkPin(pin) ? setUnlocked(true) : setErr('Code incorrect.'))} />
+        <Btn title="Déverrouiller" disabled={pin.length !== 4} onPress={() => (s.checkPin(pin) ? (setUnlocked(true), s.unlockParent()) : setErr('Code incorrect.'))} />
         {profile.demo ? <T v="small" style={{ textAlign: 'center', marginTop: 10 }}>Profil de démonstration : code 1234</T> : null}
       </Screen>
     );

@@ -106,7 +106,7 @@ export default function Placement() {
       <Gap />
       <Card>
         {q.audio
-          ? <Row style={{ justifyContent: 'center' }}><PlayButton text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" /></Row>
+          ? <Row style={{ justifyContent: 'center' }}><PlayButton pid={p.id} text={p.t[lang]!} lang={lang} companion={companion} size={64} label="Écouter" /></Row>
           : <PhraseView phrase={p} lang={lang} refLang={ref} showTranslation={false} big={false} />}
       </Card>
       <Gap />

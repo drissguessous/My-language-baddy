@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { LangCode } from '../data/languages';
 import type { Goal, Level, ProTrack } from '../data/curriculum';
 import type { Card } from './srs';
+import type { Intensity, Tone } from '../data/coachLines';
 
 // Base locale (AsyncStorage : stockage natif sur mobile, localStorage sur le web).
 // Le schéma reproduit celui d'un futur back-end : profils, progression par langue,
@@ -18,6 +19,9 @@ export interface Settings {
   showRomanization: boolean;
   autoPlay: boolean;
   coachVoice: boolean;        // le compagnon lit les consignes à voix haute
+  voice: 'auto' | 'f' | 'm' | 'device';            // voix intégrée (auto = genre du compagnon) ou voix du téléphone
+  deviceVoices: Partial<Record<LangCode, string>>; // voix du téléphone choisie par langue
+  teacher?: { tone: Tone; intensity: Intensity };  // mode professeur (défaut selon l'âge)
 }
 
 export interface Profile {
@@ -36,7 +40,7 @@ export interface Profile {
   demo?: boolean;
 }
 
-export interface UnitResult { stars: number; best: number; completedAt: number }
+export interface UnitResult { stars: number; best: number; completedAt: number; canDo?: 0 | 1 | 2; sticker?: string }
 export interface Attempt { ts: number; kind: 'listen' | 'speak' | 'write' | 'order' | 'dialogue' | 'placement'; phraseId?: string; score: number }
 
 export interface LangProgress {
@@ -61,7 +65,9 @@ const KEY = 'mlb.db.v1';
 
 export const emptyDB = (): DB => ({ version: 1, profiles: [], progress: {}, attempts: {}, usage: {} });
 export const emptyProgress = (): LangProgress => ({ units: {}, cards: {}, xp: 0 });
-export const defaultSettings = (): Settings => ({ slowAudio: false, showRomanization: true, autoPlay: true, coachVoice: true });
+export const defaultSettings = (): Settings => ({
+  slowAudio: false, showRomanization: true, autoPlay: true, coachVoice: true, voice: 'auto', deviceVoices: {},
+});
 
 export async function loadDB(): Promise<DB> {
   try {

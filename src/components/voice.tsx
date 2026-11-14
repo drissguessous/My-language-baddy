@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Pressable, Text, View } from 'react-native';
+import { router } from 'expo-router';
 import { C, F, R } from '../theme';
 import { LANG, LangCode } from '../data/languages';
 import type { Phrase } from '../data/phrases/types';
@@ -11,8 +12,8 @@ import { Avatar } from './Avatar';
 import { Bar, Row } from './ui';
 
 /** Bouton lecture audio (vitesse normale ou ralentie). */
-export function PlayButton({ text, lang, slow, companion, label, onState, size = 52 }: {
-  text: string; lang: LangCode; slow?: boolean; companion?: Companion; label?: string; size?: number;
+export function PlayButton({ text, pid, lang, slow, companion, label, onState, size = 52 }: {
+  text: string; pid?: string; lang: LangCode; slow?: boolean; companion?: Companion; label?: string; size?: number;
   onState?: (playing: boolean) => void;
 }) {
   const [playing, setPlaying] = useState(false);
@@ -21,7 +22,7 @@ export function PlayButton({ text, lang, slow, companion, label, onState, size =
     if (playing) { await stopSpeaking(); setPlaying(false); onState?.(false); return; }
     setPlaying(true); onState?.(true);
     const ok = await speak(text, lang, {
-      slow, gender: companion?.voice.gender, pitch: companion?.voice.pitch,
+      pid, slow, gender: companion?.voice.gender, pitch: companion?.voice.pitch,
       onDone: () => { setPlaying(false); onState?.(false); },
     });
     if (!ok) { setNoVoice(true); setPlaying(false); onState?.(false); }
@@ -33,7 +34,8 @@ export function PlayButton({ text, lang, slow, companion, label, onState, size =
           alignItems: 'center', justifyContent: 'center', opacity: noVoice ? 0.4 : 1 }}>
         <Text style={{ fontSize: size * 0.42, color: slow ? C.ink : '#fff' }}>{playing ? '■' : slow ? '🐢' : '🔊'}</Text>
       </Pressable>
-      {label ? <Text style={[F.small, { marginTop: 4 }]}>{noVoice ? 'Voix absente' : label}</Text> : null}
+      {noVoice ? <Text onPress={() => router.push('/voices')} style={[F.small, { marginTop: 4, color: C.accent, fontWeight: '700' }]}>Installer une voix ›</Text>
+        : label ? <Text style={[F.small, { marginTop: 4 }]}>{label}</Text> : null}
     </View>
   );
 }
@@ -80,14 +82,16 @@ export function MicButton({ listening, volume, onPress, disabled }: { listening:
 }
 
 /** Retour détaillé de l'analyse vocale ou écrite. */
-export function ScoreView({ result, lang, spoken }: { result: ScoreResult; lang: LangCode; spoken?: boolean }) {
+export function ScoreView({ result, lang, spoken, simple }: { result: ScoreResult; lang: LangCode; spoken?: boolean; simple?: boolean }) {
   const color = result.verdict === 'excellent' ? C.ok : result.verdict === 'good' ? C.warn : C.bad;
   const rtl = LANG[lang].rtl;
   const seg = LANG[lang].segmented;
   return (
     <View style={{ backgroundColor: C.card, borderRadius: R.m, padding: 14, borderWidth: 2, borderColor: color }}>
       <Row style={{ justifyContent: 'space-between' }}>
-        <Text style={{ fontSize: 34, fontWeight: '800', color }}>{result.score}<Text style={{ fontSize: 16 }}>/100</Text></Text>
+        {simple
+          ? <Text style={{ fontSize: 30 }}>{result.verdict === 'excellent' ? '⭐⭐⭐' : result.verdict === 'good' ? '⭐⭐' : '⭐'}</Text>
+          : <Text style={{ fontSize: 34, fontWeight: '800', color }}>{result.score}<Text style={{ fontSize: 16 }}>/100</Text></Text>}
         <Text style={{ fontWeight: '700', color }}>{result.verdict === 'excellent' ? 'Excellent' : result.verdict === 'good' ? 'Bien' : 'À retravailler'}</Text>
       </Row>
       <View style={{ flexDirection: rtl ? 'row-reverse' : 'row', flexWrap: 'wrap', gap: seg ? 6 : 1, marginTop: 8 }}>
@@ -98,11 +102,11 @@ export function ScoreView({ result, lang, spoken }: { result: ScoreResult; lang:
         ))}
       </View>
       {result.heard ? <Text style={[F.small, { marginTop: 8 }]}>{spoken ? 'Entendu' : 'Votre réponse'} : « {result.heard} »</Text> : null}
-      <View style={{ marginTop: 10, gap: 6 }}>
+      {simple ? null : <View style={{ marginTop: 10, gap: 6 }}>
         <Metric label="Précision" v={result.accuracy} />
         <Metric label="Complétude" v={result.completeness} />
         {spoken && result.fluency !== undefined ? <Metric label="Fluidité (débit)" v={result.fluency} /> : null}
-      </View>
+      </View>}
     </View>
   );
 }

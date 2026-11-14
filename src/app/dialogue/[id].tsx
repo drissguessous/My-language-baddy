@@ -12,6 +12,7 @@ import { scoreAttempt } from '../../lib/scoring';
 import { speak, speakCoach, stopSpeaking } from '../../lib/speech';
 import { romanText, scriptText } from '../../lib/text';
 import { useRecognizer } from '../../lib/useRecognizer';
+import { line } from '../../lib/teacher';
 import { useStore } from '../../lib/store';
 import { C, F, R } from '../../theme';
 
@@ -20,7 +21,7 @@ interface Msg { who: 'c' | 'l'; pid: string; score?: number }
 export default function Dialogue() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const store = useStore();
-  const { profile, companion, age, band } = store;
+  const { profile, companion, age, band, teacher } = store;
   const unit = UNIT[id ?? ''];
   const lang = profile?.targetLang ?? 'en';
   const ref = profile?.refLang ?? 'fr';
@@ -43,7 +44,7 @@ export default function Dialogue() {
     setLog((l) => [...l, { who: 'c', pid: current.id }]);
     setSpeaking(true);
     speak(current.t[lang]!, lang, {
-      gender: companion.voice.gender, pitch: companion.voice.pitch, slow: profile?.settings.slowAudio,
+      pid: current.id, gender: companion.voice.gender, pitch: companion.voice.pitch,
       onDone: () => { setSpeaking(false); setTimeout(() => setPos((p) => p + 1), 500); },
     }).then((ok) => { if (!ok) setTimeout(() => { setSpeaking(false); setPos((p) => p + 1); }, 1800); });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -62,7 +63,7 @@ export default function Dialogue() {
     const r = scoreAttempt({ heard, target: current.t[lang]!, lang, alternatives: rom && lang !== 'ber' ? [rom] : [], durationMs: rec.durationMs });
     store.record({ kind: 'dialogue', phraseId: current.id, score: r.score });
     if (r.score >= 55) accept(r.score);
-    else { setFeedback(`${companion.nudges[0]} (score ${r.score}/100 · entendu : « ${r.heard} »)`); rec.reset(); }
+    else { setFeedback(`${line(band, teacher, 'nudge')} (score ${r.score}/100 · entendu : « ${r.heard} »)`); rec.reset(); }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rec.state]);
 
@@ -126,7 +127,7 @@ export default function Dialogue() {
             ) : null}
             <Row style={{ justifyContent: 'space-between', marginTop: 4 }}>
               <Text onPress={() => setReveal(!reveal)} style={{ color: C.primary, fontWeight: '700' }} accessibilityRole="button">{reveal ? 'Masquer' : 'Voir la phrase'}</Text>
-              <PlayButton text={current.t[lang]!} lang={lang} companion={companion} size={40} />
+              <PlayButton pid={current.id} text={current.t[lang]!} lang={lang} companion={companion} size={40} />
             </Row>
             {selfAssess ? (
               <Row style={{ marginTop: 12 }}>

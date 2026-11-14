@@ -25,19 +25,19 @@ interface Spec {
 
 const SPECS: Spec[] = [
   { profile: { id: 'demo-yasmine', name: 'Yasmine', birthYear: year - 9, refLang: 'fr', targetLang: 'en', goal: 'formation',
-      startLevel: 'A1', companionId: 'lina', parental: { pinHash: hashPin('1234', 'demo-yasmine'), dailyMinutes: 20, micAllowed: true } },
+      startLevel: 'A1', companionId: 'lina', settings: { teacher: { tone: 'funny', intensity: 2 } }, parental: { pinHash: hashPin('1234', 'demo-yasmine'), dailyMinutes: 20, micAllowed: true } },
     done: ['u-kids', 'u-greet', 'u-intro'], days: 18, streak: 6, skill: 0.82 },
   { profile: { id: 'demo-adam', name: 'Adam', birthYear: year - 15, refLang: 'fr', targetLang: 'es', goal: 'formation',
-      startLevel: 'A1', companionId: 'omar', parental: { pinHash: hashPin('1234', 'demo-adam'), dailyMinutes: 45, micAllowed: true } },
+      startLevel: 'A1', companionId: 'omar', settings: { teacher: { tone: 'funny', intensity: 3 } }, parental: { pinHash: hashPin('1234', 'demo-adam'), dailyMinutes: 45, micAllowed: true } },
     done: ['u-greet', 'u-intro', 'u-time', 'u-cafe', 'u-dir', 'u-shop'], days: 41, streak: 12, skill: 0.76 },
   { profile: { id: 'demo-salma', name: 'Salma', birthYear: year - 24, refLang: 'fr', targetLang: 'ja', goal: 'remise',
-      startLevel: 'A2', companionId: 'elena' },
+      startLevel: 'A2', companionId: 'elena', settings: { teacher: { tone: 'friendly', intensity: 2 } } },
     done: ['u-shop', 'u-day'], days: 9, streak: 4, skill: 0.68 },
   { profile: { id: 'demo-karim', name: 'Karim', birthYear: year - 42, refLang: 'fr', targetLang: 'en', goal: 'pro', proTrack: 'logistics',
-      startLevel: 'B2', companionId: 'karim' },
+      startLevel: 'B2', companionId: 'karim', settings: { teacher: { tone: 'serious', intensity: 3 }, voice: 'm' } },
     done: ['u-nego', 'u-pro-logistics', 'u-debate'], days: 27, streak: 3, skill: 0.88 },
   { profile: { id: 'demo-helene', name: 'Hélène', birthYear: year - 35, refLang: 'en', targetLang: 'zh', goal: 'pro', proTrack: 'hospitality',
-      startLevel: 'A1', companionId: 'nadia', settings: { slowAudio: true } },
+      startLevel: 'A1', companionId: 'nadia', settings: { slowAudio: true, teacher: { tone: 'normal', intensity: 1 } } },
     done: ['u-greet', 'u-pro-hospitality'], days: 14, streak: 9, skill: 0.71 },
 ];
 

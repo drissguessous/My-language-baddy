@@ -7,6 +7,7 @@ import { BAND_LABEL, COMPANION } from '../../data/companions';
 import { GOALS, PRO_TRACKS } from '../../data/curriculum';
 import { LANGUAGES, LANG, LangCode, REFERENCE_LANGS } from '../../data/languages';
 import type { Settings } from '../../lib/db';
+import { INTENSITIES, TONES } from '../../data/coachLines';
 import { useStore } from '../../lib/store';
 import { C, F } from '../../theme';
 
@@ -17,7 +18,7 @@ function confirm(msg: string, ok: () => void) {
 
 export default function Me() {
   const s = useStore();
-  const { profile, age, band, currentLevel, progress, db } = s;
+  const { profile, age, band, currentLevel, progress, db, teacher } = s;
   const [langOpen, setLangOpen] = useState(false);
   if (!profile) return null;
   const set = (k: keyof Settings) => (v: boolean) => s.updateProfile({ settings: { ...profile.settings, [k]: v } });
@@ -63,6 +64,41 @@ export default function Me() {
           <Chip key={c} label={LANG[c].native} active={profile.refLang === c} onPress={() => s.updateProfile({ refLang: c })} />
         ))}
       </Row>
+
+      <Gap h={18} />
+      <T v="label">Mode professeur</T>
+      <Gap h={8} />
+      <Card>
+        <T v="small">Ton du compagnon</T>
+        <Row style={{ flexWrap: 'wrap', gap: 8, marginTop: 6 }}>
+          {TONES.map((t) => (
+            <Chip key={t.id} label={t.label} active={teacher.tone === t.id}
+              onPress={() => s.updateProfile({ settings: { ...profile.settings, teacher: { ...teacher, tone: t.id } } })} />
+          ))}
+        </Row>
+        <T v="small" style={{ marginTop: 6 }}>{TONES.find((t) => t.id === teacher.tone)?.text}</T>
+        <Gap h={12} />
+        <T v="small">Intensité</T>
+        <Row style={{ flexWrap: 'wrap', gap: 8, marginTop: 6 }}>
+          {INTENSITIES.map((n) => (
+            <Chip key={n.id} label={n.label} active={teacher.intensity === n.id}
+              onPress={() => s.updateProfile({ settings: { ...profile.settings, teacher: { ...teacher, intensity: n.id } } })} />
+          ))}
+        </Row>
+        <T v="small" style={{ marginTop: 6 }}>
+          {teacher.intensity === 1 ? 'Le compagnon intervient seulement pour corriger et féliciter.'
+            : teacher.intensity === 2 ? 'Le compagnon donne aussi les consignes.'
+            : 'Le compagnon parle beaucoup : consignes, retours et anecdotes.'}
+        </T>
+      </Card>
+
+      <Gap h={18} />
+      <Card onPress={() => router.push('/voices')}>
+        <Row><Text style={{ fontSize: 24 }}>🎧</Text><View style={{ flex: 1 }}>
+          <Text style={{ fontWeight: '700' }}>Voix et écoute</Text>
+          <T v="small">Choisir la voix, tester et améliorer la voix du téléphone</T>
+        </View><Text style={{ color: C.sub, fontSize: 20 }}>›</Text></Row>
+      </Card>
 
       <Gap h={18} />
       <T v="label">Écoute et affichage</T>
