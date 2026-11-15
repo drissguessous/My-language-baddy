@@ -16,6 +16,19 @@ MIN_RATE = 0.6  # une voix n'est retenue que si au moins 60 % de ses clips sont 
 COMMERCIAL = {'Apache-2.0', 'CC0', 'CC-BY-4.0', 'CC-BY-3.0', 'Apache-2.0 / CC BY', 'MIT'}
 
 
+def rates(c):
+    """Taux de réussite sur les phrases des leçons (sert au choix des voix) et sur le dictionnaire.
+    Les mots isolés sont plus durs à valider par la reconnaissance vocale : ils n'entrent pas dans le choix
+    des voix, mais chaque clip n'est gardé que s'il est validé."""
+    def rate(items):
+        graded = [v for v in items if v.get('pass') is not None]
+        return round(sum(1 for v in graded if v['pass']) / len(graded), 3) if graded else None
+    lessons = [v for k, v in c.get('clips', {}).items() if '-' not in k]
+    vocab = [v for k, v in c.get('clips', {}).items() if '-' in k]
+    c['pass_rate'] = rate(lessons)
+    c['vocab_rate'] = rate(vocab)
+
+
 def rank(c):
     return (c.get('pass_rate') or 0, -(c.get('mean_cer') or 1))
 
@@ -45,9 +58,11 @@ def main():
         res = json.load(open(path, encoding='utf-8'))
         lang = res['lang']
         base = os.path.dirname(path)
+        for c in res['candidates']:
+            rates(c)
         chosen = choose(res['candidates'], res['validated'])
         report[lang] = {'validated': res['validated'], 'candidates': [
-            {k: c.get(k) for k in ('id', 'engine', 'name', 'gender', 'accent', 'license', 'pass_rate', 'mean_cer', 'error')}
+            {k: c.get(k) for k in ('id', 'engine', 'name', 'gender', 'accent', 'license', 'pass_rate', 'vocab_rate', 'mean_cer', 'error')}
             for c in res['candidates']], 'chosen': [c['id'] for c in chosen], 'clips_total': 0, 'clips_kept': 0, 'failed': []}
         voices[lang] = [dict(idx=i, name=c['name'], gender=c['gender'], engine=c['engine'], accent=c['accent'],
                              license=c['license'], passRate=c.get('pass_rate')) for i, c in enumerate(chosen)]
@@ -102,14 +117,15 @@ def main():
              'hiragana pour le japonais). Un clip est conservé si CER ≤ 0,25 ; une voix est retenue si au moins 60 % de',
              'ses clips sont validés. Sans clip validé, l’application utilise la voix du téléphone.', '',
              f'Taille totale des clips : {size / 1048576:.1f} Mo.', '',
-             '| Langue | Voix retenues | Clips validés | Candidates (taux de réussite · CER moyen) |', '|---|---|---|---|']
+             '| Langue | Voix retenues | Clips validés | Candidates (réussite sur les phrases des leçons · sur le dictionnaire · CER moyen) |', '|---|---|---|---|']
     for lang, r in report.items():
         def desc(c):
             if c['error']:
                 return f"{c['id']} (erreur)"
             if not r['validated']:
                 return f"{c['id']} (non vérifiable)"
-            return f"{c['id']} ({(c['pass_rate'] or 0) * 100:.0f} % · {c['mean_cer']})"
+            voc = f" · dictionnaire {(c['vocab_rate'] or 0) * 100:.0f} %" if c.get('vocab_rate') is not None else ''
+            return f"{c['id']} ({(c['pass_rate'] or 0) * 100:.0f} %{voc} · {c['mean_cer']})"
         cands = ', '.join(desc(c) for c in r['candidates'])
         lines.append(f"| {LANG_NAMES.get(lang, lang)} | {', '.join(r['chosen']) or '—'} | {r['clips_kept']}/{r['clips_total']} | {cands} |")
     if 'fr' in report:

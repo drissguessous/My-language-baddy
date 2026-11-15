@@ -794,7 +794,10 @@
     "error": null
    }
   ],
-  "chosen": [],
+  "chosen": [
+   "ganji",
+   "reza_ibrahim"
+  ],
   "clips_total": 738,
   "clips_kept": 0,
   "failed": [
@@ -3790,7 +3793,8 @@
    }
   ],
   "chosen": [
-   "ff_siwis"
+   "ff_siwis",
+   "gilles"
   ],
   "clips_total": 738,
   "clips_kept": 696,
@@ -4102,7 +4106,10 @@
     "error": null
    }
   ],
-  "chosen": [],
+  "chosen": [
+   "hm_omega",
+   "hf_alpha"
+  ],
   "clips_total": 738,
   "clips_kept": 0,
   "failed": [
