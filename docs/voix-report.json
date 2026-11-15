@@ -9,7 +9,7 @@
     "gender": "f",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
+    "pass_rate": 0.154,
     "mean_cer": 0.023,
     "error": null
    },
@@ -20,8 +20,8 @@
     "gender": "f",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.967,
-    "mean_cer": 0.016,
+    "pass_rate": 0.824,
+    "mean_cer": 0.121,
     "error": null
    },
    {
@@ -31,8 +31,8 @@
     "gender": "m",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.022,
+    "pass_rate": 0.775,
+    "mean_cer": 0.157,
     "error": null
    },
    {
@@ -42,7 +42,7 @@
     "gender": "m",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
+    "pass_rate": 0.156,
     "mean_cer": 0.025,
     "error": null
    }
@@ -51,9 +51,275 @@
    "bf_isabella",
    "bm_george"
   ],
-  "clips_total": 120,
-  "clips_kept": 116,
+  "clips_total": 738,
+  "clips_kept": 668,
   "failed": [
+   {
+    "key": "accessories-folding_hand_fan",
+    "heard": {
+     "bf_isabella": "Fun.",
+     "bm_george": "Van."
+    }
+   },
+   {
+    "key": "accessories-handbag",
+    "heard": {
+     "bf_isabella": "Hand buggy.",
+     "bm_george": "Handbargy"
+    }
+   },
+   {
+    "key": "actions-cooking",
+    "heard": {
+     "bf_isabella": "to cook it.",
+     "bm_george": "Too cocky."
+    }
+   },
+   {
+    "key": "bathroom-bathtub",
+    "heard": {
+     "bf_isabella": "Bath Derby",
+     "bm_george": "Bath Derby."
+    }
+   },
+   {
+    "key": "bathroom-shower",
+    "heard": {
+     "bf_isabella": "Showered.",
+     "bm_george": "Jowl."
+    }
+   },
+   {
+    "key": "bathroom-soap",
+    "heard": {
+     "bf_isabella": "So you'll be there.",
+     "bm_george": "Zobe."
+    }
+   },
+   {
+    "key": "birds-ant",
+    "heard": {
+     "bf_isabella": "and",
+     "bm_george": "And..."
+    }
+   },
+   {
+    "key": "birds-honeybee",
+    "heard": {
+     "bf_isabella": "be.",
+     "bm_george": "Bye."
+    }
+   },
+   {
+    "key": "birds-owl",
+    "heard": {
+     "bf_isabella": "Owl is it?",
+     "bm_george": "Aule"
+    }
+   },
+   {
+    "key": "body-ear",
+    "heard": {
+     "bf_isabella": "Yes.",
+     "bm_george": "Yeah."
+    }
+   },
+   {
+    "key": "body-eye",
+    "heard": {
+     "bf_isabella": "I...",
+     "bm_george": "I..."
+    }
+   },
+   {
+    "key": "body-flexed_biceps",
+    "heard": {
+     "bf_isabella": "um",
+     "bm_george": "Omnit."
+    }
+   },
+   {
+    "key": "clothes-billed_cap",
+    "heard": {
+     "bf_isabella": "Caps.",
+     "bm_george": "Gab"
+    }
+   },
+   {
+    "key": "clothes-coat",
+    "heard": {
+     "bf_isabella": "Quote.",
+     "bm_george": "Code."
+    }
+   },
+   {
+    "key": "clothes-sari",
+    "heard": {
+     "bf_isabella": "Sorry.",
+     "bm_george": "Sorry."
+    }
+   },
+   {
+    "key": "clothes-scarf",
+    "heard": {
+     "bf_isabella": "Scarfed.",
+     "bm_george": "Sgov."
+    }
+   },
+   {
+    "key": "clothes-socks",
+    "heard": {
+     "bf_isabella": "Zox.",
+     "bm_george": "Zogs."
+    }
+   },
+   {
+    "key": "clothes-woman_s_hat",
+    "heard": {
+     "bf_isabella": "Hurt.",
+     "bm_george": "Hard."
+    }
+   },
+   {
+    "key": "colors-white_large_square",
+    "heard": {
+     "bf_isabella": "Wait.",
+     "bm_george": "Wide."
+    }
+   },
+   {
+    "key": "family-people_hugging",
+    "heard": {
+     "bf_isabella": "Huggy.",
+     "bm_george": "Huggy."
+    }
+   },
+   {
+    "key": "farm-cat",
+    "heard": {
+     "bf_isabella": "Cut.",
+     "bm_george": "God."
+    }
+   },
+   {
+    "key": "farm-chicken",
+    "heard": {
+     "bf_isabella": "Hent.",
+     "bm_george": "Handle."
+    }
+   },
+   {
+    "key": "farm-ewe",
+    "heard": {
+     "bf_isabella": "Sheba.",
+     "bm_george": "Jib."
+    }
+   },
+   {
+    "key": "fruits-pear",
+    "heard": {
+     "bf_isabella": "Paird.",
+     "bm_george": "Pay!"
+    }
+   },
+   {
+    "key": "games-chess_pawn",
+    "heard": {
+     "bf_isabella": "Jess.",
+     "bm_george": "Jazz"
+    }
+   },
+   {
+    "key": "health-adhesive_bandage",
+    "heard": {
+     "bf_isabella": "Plasty.",
+     "bm_george": "Blast-Doo."
+    }
+   },
+   {
+    "key": "health-crutch",
+    "heard": {
+     "bf_isabella": "Crutched.",
+     "bm_george": "Crunchy."
+    }
+   },
+   {
+    "key": "house-bed",
+    "heard": {
+     "bf_isabella": "Better.",
+     "bm_george": "Med."
+    }
+   },
+   {
+    "key": "house-chair",
+    "heard": {
+     "bf_isabella": "Check.",
+     "bm_george": "Joe."
+    }
+   },
+   {
+    "key": "jobs-cook",
+    "heard": {
+     "bf_isabella": "Cookie.",
+     "bm_george": "GOOG"
+    }
+   },
+   {
+    "key": "jobs-guard",
+    "heard": {
+     "bf_isabella": "God.",
+     "bm_george": "God."
+    }
+   },
+   {
+    "key": "jobs-judge",
+    "heard": {
+     "bf_isabella": "Jaji.",
+     "bm_george": "John G."
+    }
+   },
+   {
+    "key": "kitchen-canned_food",
+    "heard": {
+     "bf_isabella": "Tindle.",
+     "bm_george": "Tin loop."
+    }
+   },
+   {
+    "key": "kitchen-jar",
+    "heard": {
+     "bf_isabella": "John.",
+     "bm_george": "John."
+    }
+   },
+   {
+    "key": "landscapes-beach_with_umbrella",
+    "heard": {
+     "bf_isabella": "Beach had",
+     "bm_george": "Bye-bye."
+    }
+   },
+   {
+    "key": "landscapes-globe_showing_europe_africa",
+    "heard": {
+     "bf_isabella": "Oh, thank you.",
+     "bm_george": "With..."
+    }
+   },
+   {
+    "key": "landscapes-rock",
+    "heard": {
+     "bf_isabella": "Rock it.",
+     "bm_george": "Rogue"
+    }
+   },
+   {
+    "key": "landscapes-wood",
+    "heard": {
+     "bf_isabella": "Would.",
+     "bm_george": "Wooden"
+    }
+   },
    {
     "key": "m1",
     "heard": {
@@ -69,6 +335,34 @@
     }
    },
    {
+    "key": "meals-bowl_with_spoon",
+    "heard": {
+     "bf_isabella": "Super.",
+     "bm_george": "Zoob."
+    }
+   },
+   {
+    "key": "meals-butter",
+    "heard": {
+     "bf_isabella": "Butty.",
+     "bm_george": "But hey."
+    }
+   },
+   {
+    "key": "meals-croissant",
+    "heard": {
+     "bf_isabella": "Quasite.",
+     "bm_george": "Quasin."
+    }
+   },
+   {
+    "key": "music-guitar",
+    "heard": {
+     "bf_isabella": "Get all.",
+     "bm_george": "Get all."
+    }
+   },
+   {
     "key": "n4",
     "heard": {
      "bf_isabella": "That's 20 euros.",
@@ -76,10 +370,178 @@
     }
    },
    {
+    "key": "numbers-g1",
+    "heard": {
+     "bf_isabella": "123",
+     "bm_george": "1, 2, 3."
+    }
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {
+     "bf_isabella": "Forced.",
+     "bm_george": "Voll."
+    }
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {
+     "bf_isabella": "Zixxed.",
+     "bm_george": "Ziggs."
+    }
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {
+     "bf_isabella": "8.",
+     "bm_george": "Laid."
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "bf_isabella": "Nineth.",
+     "bm_george": "9."
+    }
+   },
+   {
+    "key": "objects-locked",
+    "heard": {
+     "bf_isabella": "padlock it.",
+     "bm_george": "Padlocking."
+    }
+   },
+   {
+    "key": "objects-package",
+    "heard": {
+     "bf_isabella": "parceled.",
+     "bm_george": "Possibly."
+    }
+   },
+   {
     "key": "p2",
     "heard": {
      "bf_isabella": "Revenue grew by 12%, mainly thanks to exports.",
      "bm_george": "Revenue grew by 12%, mainly thanks to exports."
+    }
+   },
+   {
+    "key": "places-mosque",
+    "heard": {
+     "bf_isabella": "Moschee.",
+     "bm_george": "Mozg."
+    }
+   },
+   {
+    "key": "plants-herb",
+    "heard": {
+     "bf_isabella": "Happy.",
+     "bm_george": "Hubby."
+    }
+   },
+   {
+    "key": "sea-fish",
+    "heard": {
+     "bf_isabella": "Vist.",
+     "bm_george": "Virgin."
+    }
+   },
+   {
+    "key": "sea-shark",
+    "heard": {
+     "bf_isabella": "Shock.",
+     "bm_george": "Jog."
+    }
+   },
+   {
+    "key": "signs-up_arrow",
+    "heard": {
+     "bf_isabella": "Oops.",
+     "bm_george": "Love it."
+    }
+   },
+   {
+    "key": "sweets-doughnut",
+    "heard": {
+     "bf_isabella": "donut",
+     "bm_george": "Donut."
+    }
+   },
+   {
+    "key": "time-stopwatch",
+    "heard": {
+     "bf_isabella": "Stop watching.",
+     "bm_george": "Stop watching."
+    }
+   },
+   {
+    "key": "time-watch",
+    "heard": {
+     "bf_isabella": "Watch it.",
+     "bm_george": "Watch it."
+    }
+   },
+   {
+    "key": "transport-automobile",
+    "heard": {
+     "bf_isabella": "card.",
+     "bm_george": "Call."
+    }
+   },
+   {
+    "key": "transport-bus",
+    "heard": {
+     "bf_isabella": "Boss.",
+     "bm_george": "Buzz"
+    }
+   },
+   {
+    "key": "transport-delivery_truck",
+    "heard": {
+     "bf_isabella": "lorries",
+     "bm_george": "Lori"
+    }
+   },
+   {
+    "key": "vegetables-bell_pepper",
+    "heard": {
+     "bf_isabella": "Pepple.",
+     "bm_george": "Pebble."
+    }
+   },
+   {
+    "key": "weather-fog",
+    "heard": {
+     "bf_isabella": "Foggy.",
+     "bm_george": "Foggy"
+    }
+   },
+   {
+    "key": "weather-sun",
+    "heard": {
+     "bf_isabella": "Sand.",
+     "bm_george": "Sonny."
+    }
+   },
+   {
+    "key": "wild-bear",
+    "heard": {
+     "bf_isabella": "Best.",
+     "bm_george": "Bell."
+    }
+   },
+   {
+    "key": "wild-frog",
+    "heard": {
+     "bf_isabella": "Frog it.",
+     "bm_george": "Froggy."
+    }
+   },
+   {
+    "key": "wild-gorilla",
+    "heard": {
+     "bf_isabella": "Gorillet.",
+     "bm_george": "Guerrilla."
     }
    }
   ]
@@ -94,8 +556,8 @@
     "gender": "f",
     "accent": "es",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.025,
+    "pass_rate": 0.955,
+    "mean_cer": 0.037,
     "error": null
    },
    {
@@ -105,8 +567,8 @@
     "gender": "m",
     "accent": "es",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.025,
+    "pass_rate": 0.955,
+    "mean_cer": 0.034,
     "error": null
    },
    {
@@ -116,7 +578,7 @@
     "gender": "m",
     "accent": "es-ES",
     "license": "CC0",
-    "pass_rate": 0.958,
+    "pass_rate": 0.156,
     "mean_cer": 0.035,
     "error": null
    },
@@ -127,51 +589,170 @@
     "gender": "m",
     "accent": "es-ES",
     "license": "CC-BY-3.0",
-    "pass_rate": 0.958,
+    "pass_rate": 0.156,
     "mean_cer": 0.029,
     "error": null
    }
   ],
   "chosen": [
-   "ef_dora",
-   "em_alex"
+   "em_alex",
+   "ef_dora"
   ],
-  "clips_total": 120,
-  "clips_kept": 115,
+  "clips_total": 738,
+  "clips_kept": 716,
   "failed": [
+   {
+    "key": "birds-owl",
+    "heard": {
+     "em_alex": "El burro.",
+     "ef_dora": "El Buat."
+    }
+   },
+   {
+    "key": "body-foot",
+    "heard": {
+     "em_alex": "LPA",
+     "ef_dora": "El Pierre"
+    }
+   },
+   {
+    "key": "clothes-thong_sandal",
+    "heard": {
+     "em_alex": "Las Junglas",
+     "ef_dora": "Las janglas."
+    }
+   },
+   {
+    "key": "colors-red_square",
+    "heard": {
+     "em_alex": "Droghut",
+     "ef_dora": "Real good."
+    }
+   },
+   {
+    "key": "drinks-glass_of_milk",
+    "heard": {
+     "em_alex": "La ley c'è.",
+     "ef_dora": "La ley c'è."
+    }
+   },
+   {
+    "key": "fruits-grapes",
+    "heard": {
+     "em_alex": "Las Ubers",
+     "ef_dora": "Las Ubers"
+    }
+   },
    {
     "key": "h4",
     "heard": {
-     "ef_dora": "Sí de 7 a 10 en la planta baja.",
-     "em_alex": "Sí de 7 a 10 en la planta baja."
+     "em_alex": "Sí de 7 a 10 en la planta baja.",
+     "ef_dora": "Sí de 7 a 10 en la planta baja."
     }
    },
    {
     "key": "m1",
     "heard": {
-     "ef_dora": "Podemos ofrecerle un descuento del 5%.",
-     "em_alex": "Podemos ofrecerle un descuento del 5%."
+     "em_alex": "Podemos ofrecerle un descuento del 5%.",
+     "ef_dora": "Podemos ofrecerle un descuento del 5%."
     }
    },
    {
     "key": "m3",
     "heard": {
-     "ef_dora": "Si se comprometen por un año, podemos llegar al 8%.",
-     "em_alex": "Si se comprometen por un año, podemos llegar al 8%."
+     "em_alex": "Si se comprometen por un año, podemos llegar al 8%.",
+     "ef_dora": "Si se comprometen por un año, podemos llegar al 8%."
+    }
+   },
+   {
+    "key": "meals-croissant",
+    "heard": {
+     "em_alex": "El croissant.",
+     "ef_dora": "El croissant."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "ef_dora": "Son 20 euros.",
-     "em_alex": "Son 20 euros."
+     "em_alex": "Son 20 euros.",
+     "ef_dora": "Son 20 euros."
+    }
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {
+     "em_alex": "1, 2, 3.",
+     "ef_dora": "1, 2, 3."
+    }
+   },
+   {
+    "key": "numbers-keycap_0",
+    "heard": {
+     "em_alex": "Stay tuned.",
+     "ef_dora": "¡Seguro!"
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "em_alex": "10.",
+     "ef_dora": "10."
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "em_alex": "Entonces...",
+     "ef_dora": "Entonces,"
+    }
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {
+     "em_alex": "Quadro.",
+     "ef_dora": "4."
+    }
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {
+     "em_alex": "5.",
+     "ef_dora": "5."
+    }
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {
+     "em_alex": "¡Suscríbete al canal!",
+     "ef_dora": "Gracias."
+    }
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {
+     "em_alex": "7.",
+     "ef_dora": "7"
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "em_alex": "9.",
+     "ef_dora": "9."
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "ef_dora": "Unos 800 durante 40 minutos, el servicio ya está restablecido.",
-     "em_alex": "Unos 800 durante 40 minutos, el servicio ya está restablecido."
+     "em_alex": "Unos 800 durante 40 minutos, el servicio ya está restablecido.",
+     "ef_dora": "Unos 800 durante 40 minutos, el servicio ya está restablecido."
+    }
+   },
+   {
+    "key": "signs-down_arrow",
+    "heard": {
+     "em_alex": "Está bien muy bien.",
+     "ef_dora": "Está bien bien."
     }
    }
   ]
@@ -186,7 +767,7 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.742,
+    "pass_rate": 0.121,
     "mean_cer": 0.207,
     "error": null
    },
@@ -197,8 +778,8 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.933,
-    "mean_cer": 0.077,
+    "pass_rate": 0.593,
+    "mean_cer": 0.28,
     "error": null
    },
    {
@@ -208,45 +789,2966 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.8,
-    "mean_cer": 0.188,
+    "pass_rate": 0.322,
+    "mean_cer": 0.467,
     "error": null
    }
   ],
-  "chosen": [
-   "ganji",
-   "reza_ibrahim"
-  ],
-  "clips_total": 120,
-  "clips_kept": 116,
+  "chosen": [],
+  "clips_total": 738,
+  "clips_kept": 0,
   "failed": [
    {
+    "key": "a1",
+    "heard": {}
+   },
+   {
+    "key": "a2",
+    "heard": {}
+   },
+   {
+    "key": "a3",
+    "heard": {}
+   },
+   {
+    "key": "a4",
+    "heard": {}
+   },
+   {
+    "key": "a5",
+    "heard": {}
+   },
+   {
+    "key": "a6",
+    "heard": {}
+   },
+   {
+    "key": "accessories-backpack",
+    "heard": {}
+   },
+   {
+    "key": "accessories-closed_umbrella",
+    "heard": {}
+   },
+   {
+    "key": "accessories-crown",
+    "heard": {}
+   },
+   {
+    "key": "accessories-folding_hand_fan",
+    "heard": {}
+   },
+   {
+    "key": "accessories-g1",
+    "heard": {}
+   },
+   {
+    "key": "accessories-g2",
+    "heard": {}
+   },
+   {
+    "key": "accessories-gem_stone",
+    "heard": {}
+   },
+   {
+    "key": "accessories-glasses",
+    "heard": {}
+   },
+   {
+    "key": "accessories-handbag",
+    "heard": {}
+   },
+   {
+    "key": "accessories-lipstick",
+    "heard": {}
+   },
+   {
+    "key": "accessories-purse",
+    "heard": {}
+   },
+   {
+    "key": "accessories-ring",
+    "heard": {}
+   },
+   {
+    "key": "accessories-sunglasses",
+    "heard": {}
+   },
+   {
+    "key": "actions-clapping_hands",
+    "heard": {}
+   },
+   {
+    "key": "actions-cooking",
+    "heard": {}
+   },
+   {
+    "key": "actions-ear",
+    "heard": {}
+   },
+   {
+    "key": "actions-eyes",
+    "heard": {}
+   },
+   {
+    "key": "actions-face_savoring_food",
+    "heard": {}
+   },
+   {
+    "key": "actions-g1",
+    "heard": {}
+   },
+   {
+    "key": "actions-g2",
+    "heard": {}
+   },
+   {
+    "key": "actions-handshake",
+    "heard": {}
+   },
+   {
+    "key": "actions-man_dancing",
+    "heard": {}
+   },
+   {
+    "key": "actions-microphone",
+    "heard": {}
+   },
+   {
+    "key": "actions-open_book",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_biking",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_climbing",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_raising_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_running",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_swimming",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_taking_bath",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_walking",
+    "heard": {}
+   },
+   {
+    "key": "actions-sleeping_face",
+    "heard": {}
+   },
+   {
+    "key": "actions-speaking_head",
+    "heard": {}
+   },
+   {
+    "key": "actions-telephone_receiver",
+    "heard": {}
+   },
+   {
+    "key": "actions-thinking_face",
+    "heard": {}
+   },
+   {
+    "key": "actions-tumbler_glass",
+    "heard": {}
+   },
+   {
+    "key": "actions-waving_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-writing_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-yawning_face",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-basket",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-bathtub",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-broom",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-bucket",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-g1",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-g2",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-lotion_bottle",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-razor",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-roll_of_paper",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-shower",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-soap",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-sponge",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-toilet",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-toothbrush",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-wastebasket",
+    "heard": {}
+   },
+   {
+    "key": "birds-ant",
+    "heard": {}
+   },
+   {
+    "key": "birds-bird",
+    "heard": {}
+   },
+   {
+    "key": "birds-butterfly",
+    "heard": {}
+   },
+   {
+    "key": "birds-dove",
+    "heard": {}
+   },
+   {
+    "key": "birds-eagle",
+    "heard": {}
+   },
+   {
+    "key": "birds-flamingo",
+    "heard": {}
+   },
+   {
+    "key": "birds-fly",
+    "heard": {}
+   },
+   {
+    "key": "birds-g1",
+    "heard": {}
+   },
+   {
+    "key": "birds-g2",
+    "heard": {}
+   },
+   {
+    "key": "birds-honeybee",
+    "heard": {}
+   },
+   {
+    "key": "birds-lady_beetle",
+    "heard": {}
+   },
+   {
+    "key": "birds-mosquito",
+    "heard": {}
+   },
+   {
+    "key": "birds-owl",
+    "heard": {}
+   },
+   {
+    "key": "birds-parrot",
+    "heard": {}
+   },
+   {
+    "key": "birds-peacock",
+    "heard": {}
+   },
+   {
+    "key": "birds-penguin",
+    "heard": {}
+   },
+   {
+    "key": "birds-snail",
+    "heard": {}
+   },
+   {
+    "key": "birds-spider",
+    "heard": {}
+   },
+   {
+    "key": "birds-swan",
+    "heard": {}
+   },
+   {
+    "key": "body-anatomical_heart",
+    "heard": {}
+   },
+   {
+    "key": "body-bone",
+    "heard": {}
+   },
+   {
+    "key": "body-brain",
+    "heard": {}
+   },
+   {
+    "key": "body-ear",
+    "heard": {}
+   },
+   {
+    "key": "body-eye",
+    "heard": {}
+   },
+   {
+    "key": "body-flexed_biceps",
+    "heard": {}
+   },
+   {
+    "key": "body-foot",
+    "heard": {}
+   },
+   {
+    "key": "body-g1",
+    "heard": {}
+   },
+   {
+    "key": "body-g2",
+    "heard": {}
+   },
+   {
+    "key": "body-index_pointing_up",
+    "heard": {}
+   },
+   {
+    "key": "body-lungs",
+    "heard": {}
+   },
+   {
+    "key": "body-mouth",
+    "heard": {}
+   },
+   {
+    "key": "body-nose",
+    "heard": {}
+   },
+   {
+    "key": "body-raised_hand",
+    "heard": {}
+   },
+   {
+    "key": "body-tongue",
+    "heard": {}
+   },
+   {
+    "key": "body-tooth",
+    "heard": {}
+   },
+   {
+    "key": "clothes-billed_cap",
+    "heard": {}
+   },
+   {
+    "key": "clothes-coat",
+    "heard": {}
+   },
+   {
+    "key": "clothes-dress",
+    "heard": {}
+   },
+   {
+    "key": "clothes-g1",
+    "heard": {}
+   },
+   {
+    "key": "clothes-g2",
+    "heard": {}
+   },
+   {
+    "key": "clothes-gloves",
+    "heard": {}
+   },
+   {
+    "key": "clothes-jeans",
+    "heard": {}
+   },
+   {
+    "key": "clothes-kimono",
+    "heard": {}
+   },
+   {
+    "key": "clothes-man_s_shoe",
+    "heard": {}
+   },
+   {
+    "key": "clothes-necktie",
+    "heard": {}
+   },
+   {
+    "key": "clothes-one_piece_swimsuit",
+    "heard": {}
+   },
+   {
+    "key": "clothes-running_shoe",
+    "heard": {}
+   },
+   {
+    "key": "clothes-sari",
+    "heard": {}
+   },
+   {
+    "key": "clothes-scarf",
+    "heard": {}
+   },
+   {
+    "key": "clothes-shorts",
+    "heard": {}
+   },
+   {
+    "key": "clothes-socks",
+    "heard": {}
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {}
+   },
+   {
+    "key": "clothes-thong_sandal",
+    "heard": {}
+   },
+   {
+    "key": "clothes-woman_s_boot",
+    "heard": {}
+   },
+   {
+    "key": "clothes-woman_s_hat",
+    "heard": {}
+   },
+   {
+    "key": "colors-black_large_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-blue_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-brown_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-g1",
+    "heard": {}
+   },
+   {
+    "key": "colors-g2",
+    "heard": {}
+   },
+   {
+    "key": "colors-green_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-orange_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-purple_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-red_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-white_large_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-yellow_square",
+    "heard": {}
+   },
+   {
+    "key": "d1",
+    "heard": {}
+   },
+   {
+    "key": "d2",
+    "heard": {}
+   },
+   {
+    "key": "d3",
+    "heard": {}
+   },
+   {
+    "key": "d4",
+    "heard": {}
+   },
+   {
+    "key": "d5",
+    "heard": {}
+   },
+   {
+    "key": "d6",
+    "heard": {}
+   },
+   {
+    "key": "drinks-beverage_box",
+    "heard": {}
+   },
+   {
+    "key": "drinks-bubble_tea",
+    "heard": {}
+   },
+   {
+    "key": "drinks-cup_with_straw",
+    "heard": {}
+   },
+   {
+    "key": "drinks-droplet",
+    "heard": {}
+   },
+   {
+    "key": "drinks-g1",
+    "heard": {}
+   },
+   {
+    "key": "drinks-g2",
+    "heard": {}
+   },
+   {
+    "key": "drinks-glass_of_milk",
+    "heard": {}
+   },
+   {
+    "key": "drinks-hot_beverage",
+    "heard": {}
+   },
+   {
+    "key": "drinks-ice",
+    "heard": {}
+   },
+   {
+    "key": "drinks-teacup_without_handle",
+    "heard": {}
+   },
+   {
+    "key": "drinks-teapot",
+    "heard": {}
+   },
+   {
+    "key": "f1",
+    "heard": {}
+   },
+   {
+    "key": "f2",
+    "heard": {}
+   },
+   {
+    "key": "f3",
+    "heard": {}
+   },
+   {
+    "key": "f4",
+    "heard": {}
+   },
+   {
+    "key": "f5",
+    "heard": {}
+   },
+   {
+    "key": "f6",
+    "heard": {}
+   },
+   {
+    "key": "family-baby",
+    "heard": {}
+   },
+   {
+    "key": "family-boy",
+    "heard": {}
+   },
+   {
+    "key": "family-bust_in_silhouette",
+    "heard": {}
+   },
+   {
+    "key": "family-child",
+    "heard": {}
+   },
+   {
+    "key": "family-couple_with_heart",
+    "heard": {}
+   },
+   {
+    "key": "family-family",
+    "heard": {}
+   },
+   {
+    "key": "family-family_man_boy",
+    "heard": {}
+   },
+   {
+    "key": "family-family_man_woman_boy",
+    "heard": {}
+   },
+   {
+    "key": "family-family_woman_girl",
+    "heard": {}
+   },
+   {
+    "key": "family-g1",
+    "heard": {}
+   },
+   {
+    "key": "family-g2",
+    "heard": {}
+   },
+   {
+    "key": "family-girl",
+    "heard": {}
+   },
+   {
+    "key": "family-man",
+    "heard": {}
+   },
+   {
+    "key": "family-old_man",
+    "heard": {}
+   },
+   {
+    "key": "family-old_woman",
+    "heard": {}
+   },
+   {
+    "key": "family-people_holding_hands",
+    "heard": {}
+   },
+   {
+    "key": "family-people_hugging",
+    "heard": {}
+   },
+   {
+    "key": "family-woman",
+    "heard": {}
+   },
+   {
+    "key": "farm-baby_chick",
+    "heard": {}
+   },
+   {
+    "key": "farm-camel",
+    "heard": {}
+   },
+   {
+    "key": "farm-cat",
+    "heard": {}
+   },
+   {
+    "key": "farm-chicken",
+    "heard": {}
+   },
+   {
+    "key": "farm-cow",
+    "heard": {}
+   },
+   {
+    "key": "farm-dog",
+    "heard": {}
+   },
+   {
+    "key": "farm-donkey",
+    "heard": {}
+   },
+   {
+    "key": "farm-duck",
+    "heard": {}
+   },
+   {
+    "key": "farm-ewe",
+    "heard": {}
+   },
+   {
+    "key": "farm-g1",
+    "heard": {}
+   },
+   {
+    "key": "farm-g2",
+    "heard": {}
+   },
+   {
+    "key": "farm-goat",
+    "heard": {}
+   },
+   {
+    "key": "farm-hamster",
+    "heard": {}
+   },
+   {
+    "key": "farm-horse",
+    "heard": {}
+   },
+   {
+    "key": "farm-mouse",
+    "heard": {}
+   },
+   {
+    "key": "farm-ox",
+    "heard": {}
+   },
+   {
+    "key": "farm-pig",
+    "heard": {}
+   },
+   {
+    "key": "farm-rabbit",
+    "heard": {}
+   },
+   {
+    "key": "farm-rooster",
+    "heard": {}
+   },
+   {
+    "key": "farm-turkey",
+    "heard": {}
+   },
+   {
+    "key": "feelings-angry_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-astonished_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-cold_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-crying_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-face_with_tears_of_joy",
+    "heard": {}
+   },
+   {
+    "key": "feelings-fearful_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-g1",
+    "heard": {}
+   },
+   {
+    "key": "feelings-g2",
+    "heard": {}
+   },
+   {
+    "key": "feelings-grinning_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-hot_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-pensive_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-red_heart",
+    "heard": {}
+   },
+   {
+    "key": "feelings-smiling_face_with_sunglasses",
+    "heard": {}
+   },
+   {
+    "key": "feelings-star_struck",
+    "heard": {}
+   },
+   {
+    "key": "feelings-tired_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-worried_face",
+    "heard": {}
+   },
+   {
+    "key": "fruits-avocado",
+    "heard": {}
+   },
+   {
+    "key": "fruits-banana",
+    "heard": {}
+   },
+   {
+    "key": "fruits-blueberries",
+    "heard": {}
+   },
+   {
+    "key": "fruits-cherries",
+    "heard": {}
+   },
+   {
+    "key": "fruits-coconut",
+    "heard": {}
+   },
+   {
+    "key": "fruits-g1",
+    "heard": {}
+   },
+   {
+    "key": "fruits-g2",
+    "heard": {}
+   },
+   {
+    "key": "fruits-grapes",
+    "heard": {}
+   },
+   {
+    "key": "fruits-kiwi_fruit",
+    "heard": {}
+   },
+   {
+    "key": "fruits-lemon",
+    "heard": {}
+   },
+   {
+    "key": "fruits-mango",
+    "heard": {}
+   },
+   {
+    "key": "fruits-melon",
+    "heard": {}
+   },
+   {
+    "key": "fruits-olive",
+    "heard": {}
+   },
+   {
+    "key": "fruits-peach",
+    "heard": {}
+   },
+   {
+    "key": "fruits-pear",
+    "heard": {}
+   },
+   {
+    "key": "fruits-pineapple",
+    "heard": {}
+   },
+   {
+    "key": "fruits-red_apple",
+    "heard": {}
+   },
+   {
+    "key": "fruits-strawberry",
+    "heard": {}
+   },
+   {
+    "key": "fruits-tangerine",
+    "heard": {}
+   },
+   {
+    "key": "fruits-watermelon",
+    "heard": {}
+   },
+   {
+    "key": "g1",
+    "heard": {}
+   },
+   {
+    "key": "g2",
+    "heard": {}
+   },
+   {
+    "key": "g3",
+    "heard": {}
+   },
+   {
     "key": "g4",
-    "heard": {
-     "ganji": "هیدی مامنون",
-     "reza_ibrahim": "حیمن"
-    }
+    "heard": {}
+   },
+   {
+    "key": "g5",
+    "heard": {}
+   },
+   {
+    "key": "g6",
+    "heard": {}
+   },
+   {
+    "key": "games-chess_pawn",
+    "heard": {}
+   },
+   {
+    "key": "games-circus_tent",
+    "heard": {}
+   },
+   {
+    "key": "games-confetti_ball",
+    "heard": {}
+   },
+   {
+    "key": "games-fireworks",
+    "heard": {}
+   },
+   {
+    "key": "games-g1",
+    "heard": {}
+   },
+   {
+    "key": "games-g2",
+    "heard": {}
+   },
+   {
+    "key": "games-game_die",
+    "heard": {}
+   },
+   {
+    "key": "games-kite",
+    "heard": {}
+   },
+   {
+    "key": "games-party_popper",
+    "heard": {}
+   },
+   {
+    "key": "games-puzzle_piece",
+    "heard": {}
+   },
+   {
+    "key": "games-ribbon",
+    "heard": {}
+   },
+   {
+    "key": "games-roller_coaster",
+    "heard": {}
+   },
+   {
+    "key": "games-video_game",
+    "heard": {}
+   },
+   {
+    "key": "games-yo_yo",
+    "heard": {}
+   },
+   {
+    "key": "h1",
+    "heard": {}
+   },
+   {
+    "key": "h2",
+    "heard": {}
+   },
+   {
+    "key": "h3",
+    "heard": {}
+   },
+   {
+    "key": "h4",
+    "heard": {}
+   },
+   {
+    "key": "h5",
+    "heard": {}
+   },
+   {
+    "key": "h6",
+    "heard": {}
+   },
+   {
+    "key": "health-adhesive_bandage",
+    "heard": {}
+   },
+   {
+    "key": "health-crutch",
+    "heard": {}
+   },
+   {
+    "key": "health-drop_of_blood",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_head_bandage",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_medical_mask",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_thermometer",
+    "heard": {}
+   },
+   {
+    "key": "health-g1",
+    "heard": {}
+   },
+   {
+    "key": "health-g2",
+    "heard": {}
+   },
+   {
+    "key": "health-nauseated_face",
+    "heard": {}
+   },
+   {
+    "key": "health-pill",
+    "heard": {}
+   },
+   {
+    "key": "health-sneezing_face",
+    "heard": {}
+   },
+   {
+    "key": "health-stethoscope",
+    "heard": {}
+   },
+   {
+    "key": "health-syringe",
+    "heard": {}
+   },
+   {
+    "key": "health-x_ray",
+    "heard": {}
+   },
+   {
+    "key": "house-bed",
+    "heard": {}
+   },
+   {
+    "key": "house-candle",
+    "heard": {}
+   },
+   {
+    "key": "house-chair",
+    "heard": {}
+   },
+   {
+    "key": "house-couch_and_lamp",
+    "heard": {}
+   },
+   {
+    "key": "house-door",
+    "heard": {}
+   },
+   {
+    "key": "house-elevator",
+    "heard": {}
+   },
+   {
+    "key": "house-framed_picture",
+    "heard": {}
+   },
+   {
+    "key": "house-g1",
+    "heard": {}
+   },
+   {
+    "key": "house-g2",
+    "heard": {}
+   },
+   {
+    "key": "house-house",
+    "heard": {}
+   },
+   {
+    "key": "house-house_with_garden",
+    "heard": {}
+   },
+   {
+    "key": "house-key",
+    "heard": {}
+   },
+   {
+    "key": "house-ladder",
+    "heard": {}
+   },
+   {
+    "key": "house-light_bulb",
+    "heard": {}
+   },
+   {
+    "key": "house-mirror",
+    "heard": {}
+   },
+   {
+    "key": "house-television",
+    "heard": {}
+   },
+   {
+    "key": "house-window",
+    "heard": {}
+   },
+   {
+    "key": "i1",
+    "heard": {}
    },
    {
     "key": "i2",
-    "heard": {
-     "ganji": "اس می من زمیست.",
-     "reza_ibrahim": "تزمان شمیتز"
-    }
+    "heard": {}
+   },
+   {
+    "key": "i3",
+    "heard": {}
+   },
+   {
+    "key": "i4",
+    "heard": {}
+   },
+   {
+    "key": "i5",
+    "heard": {}
+   },
+   {
+    "key": "i6",
+    "heard": {}
+   },
+   {
+    "key": "jobs-artist",
+    "heard": {}
+   },
+   {
+    "key": "jobs-astronaut",
+    "heard": {}
+   },
+   {
+    "key": "jobs-construction_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-cook",
+    "heard": {}
+   },
+   {
+    "key": "jobs-detective",
+    "heard": {}
+   },
+   {
+    "key": "jobs-factory_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-farmer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-firefighter",
+    "heard": {}
+   },
+   {
+    "key": "jobs-g1",
+    "heard": {}
+   },
+   {
+    "key": "jobs-g2",
+    "heard": {}
+   },
+   {
+    "key": "jobs-guard",
+    "heard": {}
+   },
+   {
+    "key": "jobs-health_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-judge",
+    "heard": {}
+   },
+   {
+    "key": "jobs-mechanic",
+    "heard": {}
+   },
+   {
+    "key": "jobs-office_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-pilot",
+    "heard": {}
+   },
+   {
+    "key": "jobs-police_officer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-scientist",
+    "heard": {}
+   },
+   {
+    "key": "jobs-singer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-student",
+    "heard": {}
+   },
+   {
+    "key": "jobs-teacher",
+    "heard": {}
+   },
+   {
+    "key": "jobs-technologist",
+    "heard": {}
+   },
+   {
+    "key": "k1",
+    "heard": {}
+   },
+   {
+    "key": "k2",
+    "heard": {}
+   },
+   {
+    "key": "k3",
+    "heard": {}
+   },
+   {
+    "key": "k4",
+    "heard": {}
+   },
+   {
+    "key": "k5",
+    "heard": {}
+   },
+   {
+    "key": "k6",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-baby_bottle",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-canned_food",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-chopsticks",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-cooking",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-fork_and_knife",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-fork_and_knife_with_plate",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-g1",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-g2",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-jar",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-kitchen_knife",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-spoon",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-beach_with_umbrella",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-camping",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-desert",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-desert_island",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-g1",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-g2",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-globe_showing_europe_africa",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-mountain",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-national_park",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-rock",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-snow_capped_mountain",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-volcano",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-wood",
+    "heard": {}
+   },
+   {
+    "key": "m1",
+    "heard": {}
+   },
+   {
+    "key": "m2",
+    "heard": {}
+   },
+   {
+    "key": "m3",
+    "heard": {}
+   },
+   {
+    "key": "m4",
+    "heard": {}
+   },
+   {
+    "key": "m5",
+    "heard": {}
+   },
+   {
+    "key": "m6",
+    "heard": {}
+   },
+   {
+    "key": "meals-baguette_bread",
+    "heard": {}
+   },
+   {
+    "key": "meals-bowl_with_spoon",
+    "heard": {}
+   },
+   {
+    "key": "meals-bread",
+    "heard": {}
+   },
+   {
+    "key": "meals-butter",
+    "heard": {}
+   },
+   {
+    "key": "meals-cheese_wedge",
+    "heard": {}
+   },
+   {
+    "key": "meals-cooked_rice",
+    "heard": {}
+   },
+   {
+    "key": "meals-croissant",
+    "heard": {}
+   },
+   {
+    "key": "meals-egg",
+    "heard": {}
+   },
+   {
+    "key": "meals-falafel",
+    "heard": {}
+   },
+   {
+    "key": "meals-flatbread",
+    "heard": {}
+   },
+   {
+    "key": "meals-french_fries",
+    "heard": {}
+   },
+   {
+    "key": "meals-g1",
+    "heard": {}
+   },
+   {
+    "key": "meals-g2",
+    "heard": {}
+   },
+   {
+    "key": "meals-green_salad",
+    "heard": {}
+   },
+   {
+    "key": "meals-hamburger",
+    "heard": {}
+   },
+   {
+    "key": "meals-honey_pot",
+    "heard": {}
+   },
+   {
+    "key": "meals-meat_on_bone",
+    "heard": {}
+   },
+   {
+    "key": "meals-pizza",
+    "heard": {}
+   },
+   {
+    "key": "meals-pot_of_food",
+    "heard": {}
+   },
+   {
+    "key": "meals-poultry_leg",
+    "heard": {}
+   },
+   {
+    "key": "meals-salt",
+    "heard": {}
+   },
+   {
+    "key": "meals-sandwich",
+    "heard": {}
+   },
+   {
+    "key": "meals-spaghetti",
+    "heard": {}
+   },
+   {
+    "key": "music-accordion",
+    "heard": {}
+   },
+   {
+    "key": "music-artist_palette",
+    "heard": {}
+   },
+   {
+    "key": "music-camera_with_flash",
+    "heard": {}
+   },
+   {
+    "key": "music-clapper_board",
+    "heard": {}
+   },
+   {
+    "key": "music-drum",
+    "heard": {}
+   },
+   {
+    "key": "music-flute",
+    "heard": {}
+   },
+   {
+    "key": "music-g1",
+    "heard": {}
+   },
+   {
+    "key": "music-g2",
+    "heard": {}
+   },
+   {
+    "key": "music-guitar",
+    "heard": {}
+   },
+   {
+    "key": "music-microphone",
+    "heard": {}
+   },
+   {
+    "key": "music-musical_keyboard",
+    "heard": {}
+   },
+   {
+    "key": "music-musical_note",
+    "heard": {}
+   },
+   {
+    "key": "music-paintbrush",
+    "heard": {}
+   },
+   {
+    "key": "music-performing_arts",
+    "heard": {}
+   },
+   {
+    "key": "music-saxophone",
+    "heard": {}
+   },
+   {
+    "key": "music-trumpet",
+    "heard": {}
+   },
+   {
+    "key": "music-violin",
+    "heard": {}
    },
    {
     "key": "n1",
-    "heard": {
-     "ganji": "تا چندست.",
-     "reza_ibrahim": "سوات چندست."
-    }
+    "heard": {}
+   },
+   {
+    "key": "n2",
+    "heard": {}
+   },
+   {
+    "key": "n3",
+    "heard": {}
+   },
+   {
+    "key": "n4",
+    "heard": {}
+   },
+   {
+    "key": "n5",
+    "heard": {}
+   },
+   {
+    "key": "n6",
+    "heard": {}
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {}
+   },
+   {
+    "key": "numbers-g2",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_0",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_2",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {}
+   },
+   {
+    "key": "o1",
+    "heard": {}
+   },
+   {
+    "key": "o2",
+    "heard": {}
+   },
+   {
+    "key": "o3",
+    "heard": {}
+   },
+   {
+    "key": "o4",
+    "heard": {}
+   },
+   {
+    "key": "o5",
+    "heard": {}
+   },
+   {
+    "key": "o6",
+    "heard": {}
+   },
+   {
+    "key": "objects-balloon",
+    "heard": {}
+   },
+   {
+    "key": "objects-battery",
+    "heard": {}
+   },
+   {
+    "key": "objects-camera",
+    "heard": {}
+   },
+   {
+    "key": "objects-electric_plug",
+    "heard": {}
+   },
+   {
+    "key": "objects-envelope",
+    "heard": {}
+   },
+   {
+    "key": "objects-flashlight",
+    "heard": {}
+   },
+   {
+    "key": "objects-g1",
+    "heard": {}
+   },
+   {
+    "key": "objects-g2",
+    "heard": {}
+   },
+   {
+    "key": "objects-hammer",
+    "heard": {}
+   },
+   {
+    "key": "objects-locked",
+    "heard": {}
+   },
+   {
+    "key": "objects-magnet",
+    "heard": {}
+   },
+   {
+    "key": "objects-mobile_phone",
+    "heard": {}
+   },
+   {
+    "key": "objects-package",
+    "heard": {}
+   },
+   {
+    "key": "objects-radio",
+    "heard": {}
+   },
+   {
+    "key": "objects-screwdriver",
+    "heard": {}
+   },
+   {
+    "key": "objects-teddy_bear",
+    "heard": {}
+   },
+   {
+    "key": "objects-wrapped_gift",
+    "heard": {}
+   },
+   {
+    "key": "objects-wrench",
+    "heard": {}
+   },
+   {
+    "key": "p1",
+    "heard": {}
+   },
+   {
+    "key": "p2",
+    "heard": {}
+   },
+   {
+    "key": "p3",
+    "heard": {}
+   },
+   {
+    "key": "p4",
+    "heard": {}
+   },
+   {
+    "key": "p5",
+    "heard": {}
+   },
+   {
+    "key": "p6",
+    "heard": {}
+   },
+   {
+    "key": "pb1",
+    "heard": {}
+   },
+   {
+    "key": "pb2",
+    "heard": {}
+   },
+   {
+    "key": "pb3",
+    "heard": {}
+   },
+   {
+    "key": "pb4",
+    "heard": {}
+   },
+   {
+    "key": "pb5",
+    "heard": {}
+   },
+   {
+    "key": "pb6",
+    "heard": {}
+   },
+   {
+    "key": "ph1",
+    "heard": {}
+   },
+   {
+    "key": "ph2",
+    "heard": {}
+   },
+   {
+    "key": "ph3",
+    "heard": {}
+   },
+   {
+    "key": "ph4",
+    "heard": {}
+   },
+   {
+    "key": "ph5",
+    "heard": {}
+   },
+   {
+    "key": "ph6",
+    "heard": {}
+   },
+   {
+    "key": "pl1",
+    "heard": {}
+   },
+   {
+    "key": "pl2",
+    "heard": {}
+   },
+   {
+    "key": "pl3",
+    "heard": {}
+   },
+   {
+    "key": "pl4",
+    "heard": {}
+   },
+   {
+    "key": "pl5",
+    "heard": {}
+   },
+   {
+    "key": "pl6",
+    "heard": {}
+   },
+   {
+    "key": "places-bank",
+    "heard": {}
+   },
+   {
+    "key": "places-bridge_at_night",
+    "heard": {}
+   },
+   {
+    "key": "places-castle",
+    "heard": {}
+   },
+   {
+    "key": "places-church",
+    "heard": {}
+   },
+   {
+    "key": "places-cityscape",
+    "heard": {}
+   },
+   {
+    "key": "places-classical_building",
+    "heard": {}
+   },
+   {
+    "key": "places-convenience_store",
+    "heard": {}
+   },
+   {
+    "key": "places-department_store",
+    "heard": {}
+   },
+   {
+    "key": "places-factory",
+    "heard": {}
+   },
+   {
+    "key": "places-ferris_wheel",
+    "heard": {}
+   },
+   {
+    "key": "places-fountain",
+    "heard": {}
+   },
+   {
+    "key": "places-g1",
+    "heard": {}
+   },
+   {
+    "key": "places-g2",
+    "heard": {}
+   },
+   {
+    "key": "places-hospital",
+    "heard": {}
+   },
+   {
+    "key": "places-hotel",
+    "heard": {}
+   },
+   {
+    "key": "places-houses",
+    "heard": {}
+   },
+   {
+    "key": "places-mosque",
+    "heard": {}
+   },
+   {
+    "key": "places-office_building",
+    "heard": {}
+   },
+   {
+    "key": "places-playground_slide",
+    "heard": {}
+   },
+   {
+    "key": "places-post_office",
+    "heard": {}
+   },
+   {
+    "key": "places-school",
+    "heard": {}
+   },
+   {
+    "key": "places-stadium",
+    "heard": {}
+   },
+   {
+    "key": "plants-cactus",
+    "heard": {}
+   },
+   {
+    "key": "plants-cherry_blossom",
+    "heard": {}
+   },
+   {
+    "key": "plants-deciduous_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-evergreen_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-fallen_leaf",
+    "heard": {}
+   },
+   {
+    "key": "plants-g1",
+    "heard": {}
+   },
+   {
+    "key": "plants-g2",
+    "heard": {}
+   },
+   {
+    "key": "plants-herb",
+    "heard": {}
+   },
+   {
+    "key": "plants-hibiscus",
+    "heard": {}
+   },
+   {
+    "key": "plants-leaf_fluttering_in_wind",
+    "heard": {}
+   },
+   {
+    "key": "plants-palm_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-potted_plant",
+    "heard": {}
+   },
+   {
+    "key": "plants-rose",
+    "heard": {}
+   },
+   {
+    "key": "plants-seedling",
+    "heard": {}
+   },
+   {
+    "key": "plants-sunflower",
+    "heard": {}
+   },
+   {
+    "key": "plants-tulip",
+    "heard": {}
+   },
+   {
+    "key": "ps1",
+    "heard": {}
    },
    {
     "key": "ps2",
-    "heard": {
-     "ganji": "از صبح تفاصل زینم درد می کند.",
-     "reza_ibrahim": "از سوپ و قفصه سینان درد می کند."
-    }
+    "heard": {}
+   },
+   {
+    "key": "ps3",
+    "heard": {}
+   },
+   {
+    "key": "ps4",
+    "heard": {}
+   },
+   {
+    "key": "ps5",
+    "heard": {}
+   },
+   {
+    "key": "ps6",
+    "heard": {}
+   },
+   {
+    "key": "pt1",
+    "heard": {}
+   },
+   {
+    "key": "pt2",
+    "heard": {}
+   },
+   {
+    "key": "pt3",
+    "heard": {}
+   },
+   {
+    "key": "pt4",
+    "heard": {}
+   },
+   {
+    "key": "pt5",
+    "heard": {}
+   },
+   {
+    "key": "pt6",
+    "heard": {}
+   },
+   {
+    "key": "r1",
+    "heard": {}
+   },
+   {
+    "key": "r2",
+    "heard": {}
+   },
+   {
+    "key": "r3",
+    "heard": {}
+   },
+   {
+    "key": "r4",
+    "heard": {}
+   },
+   {
+    "key": "r5",
+    "heard": {}
+   },
+   {
+    "key": "r6",
+    "heard": {}
+   },
+   {
+    "key": "s1",
+    "heard": {}
+   },
+   {
+    "key": "s2",
+    "heard": {}
+   },
+   {
+    "key": "s3",
+    "heard": {}
+   },
+   {
+    "key": "s4",
+    "heard": {}
+   },
+   {
+    "key": "s5",
+    "heard": {}
+   },
+   {
+    "key": "s6",
+    "heard": {}
+   },
+   {
+    "key": "school-abacus",
+    "heard": {}
+   },
+   {
+    "key": "school-bar_chart",
+    "heard": {}
+   },
+   {
+    "key": "school-briefcase",
+    "heard": {}
+   },
+   {
+    "key": "school-calendar",
+    "heard": {}
+   },
+   {
+    "key": "school-clipboard",
+    "heard": {}
+   },
+   {
+    "key": "school-closed_book",
+    "heard": {}
+   },
+   {
+    "key": "school-crayon",
+    "heard": {}
+   },
+   {
+    "key": "school-file_folder",
+    "heard": {}
+   },
+   {
+    "key": "school-g1",
+    "heard": {}
+   },
+   {
+    "key": "school-g2",
+    "heard": {}
+   },
+   {
+    "key": "school-graduation_cap",
+    "heard": {}
+   },
+   {
+    "key": "school-memo",
+    "heard": {}
+   },
+   {
+    "key": "school-notebook",
+    "heard": {}
+   },
+   {
+    "key": "school-page_facing_up",
+    "heard": {}
+   },
+   {
+    "key": "school-paperclip",
+    "heard": {}
+   },
+   {
+    "key": "school-pen",
+    "heard": {}
+   },
+   {
+    "key": "school-pencil",
+    "heard": {}
+   },
+   {
+    "key": "school-pushpin",
+    "heard": {}
+   },
+   {
+    "key": "school-scissors",
+    "heard": {}
+   },
+   {
+    "key": "school-straight_ruler",
+    "heard": {}
+   },
+   {
+    "key": "sea-coral",
+    "heard": {}
+   },
+   {
+    "key": "sea-crab",
+    "heard": {}
+   },
+   {
+    "key": "sea-dolphin",
+    "heard": {}
+   },
+   {
+    "key": "sea-fish",
+    "heard": {}
+   },
+   {
+    "key": "sea-g1",
+    "heard": {}
+   },
+   {
+    "key": "sea-g2",
+    "heard": {}
+   },
+   {
+    "key": "sea-jellyfish",
+    "heard": {}
+   },
+   {
+    "key": "sea-octopus",
+    "heard": {}
+   },
+   {
+    "key": "sea-seal",
+    "heard": {}
+   },
+   {
+    "key": "sea-shark",
+    "heard": {}
+   },
+   {
+    "key": "sea-shrimp",
+    "heard": {}
+   },
+   {
+    "key": "sea-spiral_shell",
+    "heard": {}
+   },
+   {
+    "key": "sea-tropical_fish",
+    "heard": {}
+   },
+   {
+    "key": "sea-water_wave",
+    "heard": {}
+   },
+   {
+    "key": "sea-whale",
+    "heard": {}
+   },
+   {
+    "key": "signs-check_mark_button",
+    "heard": {}
+   },
+   {
+    "key": "signs-cross_mark",
+    "heard": {}
+   },
+   {
+    "key": "signs-down_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-g1",
+    "heard": {}
+   },
+   {
+    "key": "signs-g2",
+    "heard": {}
+   },
+   {
+    "key": "signs-left_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-minus",
+    "heard": {}
+   },
+   {
+    "key": "signs-plus",
+    "heard": {}
+   },
+   {
+    "key": "signs-red_question_mark",
+    "heard": {}
+   },
+   {
+    "key": "signs-right_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-up_arrow",
+    "heard": {}
+   },
+   {
+    "key": "sports-badminton",
+    "heard": {}
+   },
+   {
+    "key": "sports-baseball",
+    "heard": {}
+   },
+   {
+    "key": "sports-basketball",
+    "heard": {}
+   },
+   {
+    "key": "sports-boxing_glove",
+    "heard": {}
+   },
+   {
+    "key": "sports-g1",
+    "heard": {}
+   },
+   {
+    "key": "sports-g2",
+    "heard": {}
+   },
+   {
+    "key": "sports-goal_net",
+    "heard": {}
+   },
+   {
+    "key": "sports-horse_racing",
+    "heard": {}
+   },
+   {
+    "key": "sports-ice_skate",
+    "heard": {}
+   },
+   {
+    "key": "sports-martial_arts_uniform",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_golfing",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_in_lotus_position",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_lifting_weights",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_surfing",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_swimming",
+    "heard": {}
+   },
+   {
+    "key": "sports-ping_pong",
+    "heard": {}
+   },
+   {
+    "key": "sports-rugby_football",
+    "heard": {}
+   },
+   {
+    "key": "sports-running_shirt",
+    "heard": {}
+   },
+   {
+    "key": "sports-skier",
+    "heard": {}
+   },
+   {
+    "key": "sports-soccer_ball",
+    "heard": {}
+   },
+   {
+    "key": "sports-sports_medal",
+    "heard": {}
+   },
+   {
+    "key": "sports-tennis",
+    "heard": {}
+   },
+   {
+    "key": "sports-trophy",
+    "heard": {}
+   },
+   {
+    "key": "sports-volleyball",
+    "heard": {}
+   },
+   {
+    "key": "sweets-birthday_cake",
+    "heard": {}
+   },
+   {
+    "key": "sweets-candy",
+    "heard": {}
+   },
+   {
+    "key": "sweets-chocolate_bar",
+    "heard": {}
+   },
+   {
+    "key": "sweets-cookie",
+    "heard": {}
+   },
+   {
+    "key": "sweets-doughnut",
+    "heard": {}
+   },
+   {
+    "key": "sweets-g1",
+    "heard": {}
+   },
+   {
+    "key": "sweets-g2",
+    "heard": {}
+   },
+   {
+    "key": "sweets-ice_cream",
+    "heard": {}
+   },
+   {
+    "key": "sweets-lollipop",
+    "heard": {}
+   },
+   {
+    "key": "sweets-pancakes",
+    "heard": {}
+   },
+   {
+    "key": "sweets-pie",
+    "heard": {}
+   },
+   {
+    "key": "sweets-popcorn",
+    "heard": {}
+   },
+   {
+    "key": "sweets-shortcake",
+    "heard": {}
+   },
+   {
+    "key": "tech-computer_mouse",
+    "heard": {}
+   },
+   {
+    "key": "tech-desktop_computer",
+    "heard": {}
+   },
+   {
+    "key": "tech-e_mail",
+    "heard": {}
+   },
+   {
+    "key": "tech-g1",
+    "heard": {}
+   },
+   {
+    "key": "tech-g2",
+    "heard": {}
+   },
+   {
+    "key": "tech-headphone",
+    "heard": {}
+   },
+   {
+    "key": "tech-keyboard",
+    "heard": {}
+   },
+   {
+    "key": "tech-laptop",
+    "heard": {}
+   },
+   {
+    "key": "tech-microscope",
+    "heard": {}
+   },
+   {
+    "key": "tech-printer",
+    "heard": {}
+   },
+   {
+    "key": "tech-robot",
+    "heard": {}
+   },
+   {
+    "key": "tech-satellite",
+    "heard": {}
+   },
+   {
+    "key": "tech-satellite_antenna",
+    "heard": {}
+   },
+   {
+    "key": "tech-telescope",
+    "heard": {}
+   },
+   {
+    "key": "tech-video_camera",
+    "heard": {}
+   },
+   {
+    "key": "time-alarm_clock",
+    "heard": {}
+   },
+   {
+    "key": "time-calendar",
+    "heard": {}
+   },
+   {
+    "key": "time-g1",
+    "heard": {}
+   },
+   {
+    "key": "time-g2",
+    "heard": {}
+   },
+   {
+    "key": "time-hourglass_done",
+    "heard": {}
+   },
+   {
+    "key": "time-mantelpiece_clock",
+    "heard": {}
+   },
+   {
+    "key": "time-night_with_stars",
+    "heard": {}
+   },
+   {
+    "key": "time-stopwatch",
+    "heard": {}
+   },
+   {
+    "key": "time-sunrise",
+    "heard": {}
+   },
+   {
+    "key": "time-sunset",
+    "heard": {}
+   },
+   {
+    "key": "time-watch",
+    "heard": {}
+   },
+   {
+    "key": "transport-airplane",
+    "heard": {}
+   },
+   {
+    "key": "transport-ambulance",
+    "heard": {}
+   },
+   {
+    "key": "transport-automobile",
+    "heard": {}
+   },
+   {
+    "key": "transport-bicycle",
+    "heard": {}
+   },
+   {
+    "key": "transport-bus",
+    "heard": {}
+   },
+   {
+    "key": "transport-canoe",
+    "heard": {}
+   },
+   {
+    "key": "transport-delivery_truck",
+    "heard": {}
+   },
+   {
+    "key": "transport-fire_engine",
+    "heard": {}
+   },
+   {
+    "key": "transport-g1",
+    "heard": {}
+   },
+   {
+    "key": "transport-g2",
+    "heard": {}
+   },
+   {
+    "key": "transport-helicopter",
+    "heard": {}
+   },
+   {
+    "key": "transport-kick_scooter",
+    "heard": {}
+   },
+   {
+    "key": "transport-metro",
+    "heard": {}
+   },
+   {
+    "key": "transport-motor_scooter",
+    "heard": {}
+   },
+   {
+    "key": "transport-motorcycle",
+    "heard": {}
+   },
+   {
+    "key": "transport-police_car",
+    "heard": {}
+   },
+   {
+    "key": "transport-rocket",
+    "heard": {}
+   },
+   {
+    "key": "transport-sailboat",
+    "heard": {}
+   },
+   {
+    "key": "transport-ship",
+    "heard": {}
+   },
+   {
+    "key": "transport-taxi",
+    "heard": {}
+   },
+   {
+    "key": "transport-tractor",
+    "heard": {}
+   },
+   {
+    "key": "transport-train",
+    "heard": {}
+   },
+   {
+    "key": "transport-tram",
+    "heard": {}
+   },
+   {
+    "key": "travel-airplane_arrival",
+    "heard": {}
+   },
+   {
+    "key": "travel-airplane_departure",
+    "heard": {}
+   },
+   {
+    "key": "travel-bellhop_bell",
+    "heard": {}
+   },
+   {
+    "key": "travel-compass",
+    "heard": {}
+   },
+   {
+    "key": "travel-construction",
+    "heard": {}
+   },
+   {
+    "key": "travel-customs",
+    "heard": {}
+   },
+   {
+    "key": "travel-fuel_pump",
+    "heard": {}
+   },
+   {
+    "key": "travel-g1",
+    "heard": {}
+   },
+   {
+    "key": "travel-g2",
+    "heard": {}
+   },
+   {
+    "key": "travel-luggage",
+    "heard": {}
+   },
+   {
+    "key": "travel-motorway",
+    "heard": {}
+   },
+   {
+    "key": "travel-passport_control",
+    "heard": {}
+   },
+   {
+    "key": "travel-station",
+    "heard": {}
+   },
+   {
+    "key": "travel-stop_sign",
+    "heard": {}
+   },
+   {
+    "key": "travel-tent",
+    "heard": {}
+   },
+   {
+    "key": "travel-ticket",
+    "heard": {}
+   },
+   {
+    "key": "travel-vertical_traffic_light",
+    "heard": {}
+   },
+   {
+    "key": "travel-world_map",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-beans",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-bell_pepper",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-broccoli",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-carrot",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-chestnut",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-cucumber",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-ear_of_corn",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-eggplant",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-g1",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-g2",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-garlic",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-ginger_root",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-hot_pepper",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-leafy_green",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-mushroom",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-onion",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-pea_pod",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-peanuts",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-potato",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-tomato",
+    "heard": {}
+   },
+   {
+    "key": "w1",
+    "heard": {}
+   },
+   {
+    "key": "w2",
+    "heard": {}
+   },
+   {
+    "key": "w3",
+    "heard": {}
+   },
+   {
+    "key": "w4",
+    "heard": {}
+   },
+   {
+    "key": "w5",
+    "heard": {}
+   },
+   {
+    "key": "w6",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud_with_lightning",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud_with_rain",
+    "heard": {}
+   },
+   {
+    "key": "weather-crescent_moon",
+    "heard": {}
+   },
+   {
+    "key": "weather-fire",
+    "heard": {}
+   },
+   {
+    "key": "weather-fog",
+    "heard": {}
+   },
+   {
+    "key": "weather-g1",
+    "heard": {}
+   },
+   {
+    "key": "weather-g2",
+    "heard": {}
+   },
+   {
+    "key": "weather-rainbow",
+    "heard": {}
+   },
+   {
+    "key": "weather-snowflake",
+    "heard": {}
+   },
+   {
+    "key": "weather-snowman",
+    "heard": {}
+   },
+   {
+    "key": "weather-star",
+    "heard": {}
+   },
+   {
+    "key": "weather-sun",
+    "heard": {}
+   },
+   {
+    "key": "weather-thermometer",
+    "heard": {}
+   },
+   {
+    "key": "weather-tornado",
+    "heard": {}
+   },
+   {
+    "key": "weather-umbrella_with_rain_drops",
+    "heard": {}
+   },
+   {
+    "key": "weather-wind_face",
+    "heard": {}
+   },
+   {
+    "key": "wild-bear",
+    "heard": {}
+   },
+   {
+    "key": "wild-chipmunk",
+    "heard": {}
+   },
+   {
+    "key": "wild-crocodile",
+    "heard": {}
+   },
+   {
+    "key": "wild-deer",
+    "heard": {}
+   },
+   {
+    "key": "wild-elephant",
+    "heard": {}
+   },
+   {
+    "key": "wild-fox",
+    "heard": {}
+   },
+   {
+    "key": "wild-frog",
+    "heard": {}
+   },
+   {
+    "key": "wild-g1",
+    "heard": {}
+   },
+   {
+    "key": "wild-g2",
+    "heard": {}
+   },
+   {
+    "key": "wild-giraffe",
+    "heard": {}
+   },
+   {
+    "key": "wild-gorilla",
+    "heard": {}
+   },
+   {
+    "key": "wild-hedgehog",
+    "heard": {}
+   },
+   {
+    "key": "wild-hippopotamus",
+    "heard": {}
+   },
+   {
+    "key": "wild-kangaroo",
+    "heard": {}
+   },
+   {
+    "key": "wild-koala",
+    "heard": {}
+   },
+   {
+    "key": "wild-leopard",
+    "heard": {}
+   },
+   {
+    "key": "wild-lion",
+    "heard": {}
+   },
+   {
+    "key": "wild-monkey",
+    "heard": {}
+   },
+   {
+    "key": "wild-panda",
+    "heard": {}
+   },
+   {
+    "key": "wild-polar_bear",
+    "heard": {}
+   },
+   {
+    "key": "wild-rhinoceros",
+    "heard": {}
+   },
+   {
+    "key": "wild-snake",
+    "heard": {}
+   },
+   {
+    "key": "wild-tiger",
+    "heard": {}
+   },
+   {
+    "key": "wild-turtle",
+    "heard": {}
+   },
+   {
+    "key": "wild-wolf",
+    "heard": {}
+   },
+   {
+    "key": "wild-zebra",
+    "heard": {}
+   },
+   {
+    "key": "x1",
+    "heard": {}
+   },
+   {
+    "key": "x2",
+    "heard": {}
+   },
+   {
+    "key": "x3",
+    "heard": {}
+   },
+   {
+    "key": "x4",
+    "heard": {}
+   },
+   {
+    "key": "x5",
+    "heard": {}
+   },
+   {
+    "key": "x6",
+    "heard": {}
    }
   ]
  },
@@ -260,7 +3762,7 @@
     "gender": "f",
     "accent": "fr-FR",
     "license": "CC-BY-4.0",
-    "pass_rate": 0.95,
+    "pass_rate": 0.154,
     "mean_cer": 0.036,
     "error": null
    },
@@ -271,8 +3773,8 @@
     "gender": "f",
     "accent": "fr-FR",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
-    "mean_cer": 0.033,
+    "pass_rate": 0.943,
+    "mean_cer": 0.042,
     "error": null
    },
    {
@@ -282,37 +3784,267 @@
     "gender": "m",
     "accent": "fr-FR",
     "license": "CC0",
-    "pass_rate": 0.925,
-    "mean_cer": 0.054,
+    "pass_rate": 0.412,
+    "mean_cer": 0.493,
     "error": null
    }
   ],
   "chosen": [
-   "ff_siwis",
-   "gilles"
+   "ff_siwis"
   ],
-  "clips_total": 120,
-  "clips_kept": 117,
+  "clips_total": 738,
+  "clips_kept": 696,
   "failed": [
+   {
+    "key": "actions-cooking",
+    "heard": {
+     "ff_siwis": "Fusine."
+    }
+   },
+   {
+    "key": "actions-microphone",
+    "heard": {
+     "ff_siwis": "JANTÉ"
+    }
+   },
+   {
+    "key": "actions-yawning_face",
+    "heard": {
+     "ff_siwis": "Bayez."
+    }
+   },
+   {
+    "key": "bathroom-broom",
+    "heard": {
+     "ff_siwis": "Le ballet."
+    }
+   },
+   {
+    "key": "birds-swan",
+    "heard": {
+     "ff_siwis": "Le signe."
+    }
+   },
+   {
+    "key": "body-bone",
+    "heard": {
+     "ff_siwis": "L'eau."
+    }
+   },
+   {
+    "key": "clothes-jeans",
+    "heard": {
+     "ff_siwis": "Le genre"
+    }
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {
+     "ff_siwis": "Le T-Shot"
+    }
+   },
+   {
+    "key": "drinks-droplet",
+    "heard": {
+     "ff_siwis": "Lo"
+    }
+   },
+   {
+    "key": "drinks-glass_of_milk",
+    "heard": {
+     "ff_siwis": "Lule."
+    }
+   },
+   {
+    "key": "farm-rooster",
+    "heard": {
+     "ff_siwis": "Le Kogge."
+    }
+   },
+   {
+    "key": "h4",
+    "heard": {
+     "ff_siwis": "Oui de 7h à 10h au rez-de-chaussée."
+    }
+   },
+   {
+    "key": "health-crutch",
+    "heard": {
+     "ff_siwis": "La baissille"
+    }
+   },
+   {
+    "key": "health-x_ray",
+    "heard": {
+     "ff_siwis": "La Rédiou"
+    }
+   },
+   {
+    "key": "kitchen-spoon",
+    "heard": {
+     "ff_siwis": "La tuyère."
+    }
+   },
    {
     "key": "m1",
     "heard": {
-     "ff_siwis": "Nous pouvons vous proposer une remise de 5%.",
-     "gilles": "Nous pouvons vous proposer une remise de 5%."
+     "ff_siwis": "Nous pouvons vous proposer une remise de 5%."
+    }
+   },
+   {
+    "key": "meals-cooked_rice",
+    "heard": {
+     "ff_siwis": "Laurie"
+    }
+   },
+   {
+    "key": "meals-salt",
+    "heard": {
+     "ff_siwis": "Le sein."
+    }
+   },
+   {
+    "key": "n2",
+    "heard": {
+     "ff_siwis": "Il est 3h30."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "ff_siwis": "Ça fait 20 euros.",
-     "gilles": "Ça fait la trou."
+     "ff_siwis": "Ça fait 20 euros."
+    }
+   },
+   {
+    "key": "n5",
+    "heard": {
+     "ff_siwis": "J'ai rendez-vous lundi à 10h."
+    }
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {
+     "ff_siwis": "1, 2, 3."
+    }
+   },
+   {
+    "key": "numbers-keycap_0",
+    "heard": {
+     "ff_siwis": "0."
+    }
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {
+     "ff_siwis": "1."
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "ff_siwis": "10."
+    }
+   },
+   {
+    "key": "numbers-keycap_2",
+    "heard": {
+     "ff_siwis": "de"
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "ff_siwis": "Droits"
+    }
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {
+     "ff_siwis": "4."
+    }
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {
+     "ff_siwis": "5."
+    }
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {
+     "ff_siwis": "SIS."
+    }
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {
+     "ff_siwis": "7."
+    }
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {
+     "ff_siwis": "8."
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "ff_siwis": "9."
+    }
+   },
+   {
+    "key": "objects-radio",
+    "heard": {
+     "ff_siwis": "La Rédiou"
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "ff_siwis": "Environ 800, pendant 40 minutes, le service est rétabli.",
-     "gilles": "environ 800 pendant 40 minutes. Le service est rétabli."
+     "ff_siwis": "Environ 800, pendant 40 minutes, le service est rétabli."
+    }
+   },
+   {
+    "key": "sea-seal",
+    "heard": {
+     "ff_siwis": "Le Fouc"
+    }
+   },
+   {
+    "key": "signs-cross_mark",
+    "heard": {
+     "ff_siwis": "Vous."
+    }
+   },
+   {
+    "key": "signs-minus",
+    "heard": {
+     "ff_siwis": "Mouais."
+    }
+   },
+   {
+    "key": "signs-up_arrow",
+    "heard": {
+     "ff_siwis": "Le Vaux."
+    }
+   },
+   {
+    "key": "sports-badminton",
+    "heard": {
+     "ff_siwis": "Le basement thon."
+    }
+   },
+   {
+    "key": "sports-person_surfing",
+    "heard": {
+     "ff_siwis": "Le sort."
+    }
+   },
+   {
+    "key": "vegetables-peanuts",
+    "heard": {
+     "ff_siwis": "Les cacaillettes"
     }
    }
   ],
@@ -320,11 +4052,6 @@
    "voice": "ff_siwis",
    "kept": 298,
    "total": 302
-  },
-  "coach_m": {
-   "voice": "gilles",
-   "kept": 247,
-   "total": 300
   }
  },
  "hi": {
@@ -337,8 +4064,8 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.942,
-    "mean_cer": 0.073,
+    "pass_rate": 0.501,
+    "mean_cer": 0.346,
     "error": null
    },
    {
@@ -348,7 +4075,7 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.925,
+    "pass_rate": 0.15,
     "mean_cer": 0.078,
     "error": null
    },
@@ -359,8 +4086,8 @@
     "gender": "m",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
-    "mean_cer": 0.064,
+    "pass_rate": 0.518,
+    "mean_cer": 0.354,
     "error": null
    },
    {
@@ -370,52 +4097,2966 @@
     "gender": "m",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.925,
+    "pass_rate": 0.15,
     "mean_cer": 0.08,
     "error": null
    }
   ],
-  "chosen": [
-   "hm_omega",
-   "hf_alpha"
-  ],
-  "clips_total": 120,
-  "clips_kept": 115,
+  "chosen": [],
+  "clips_total": 738,
+  "clips_kept": 0,
   "failed": [
    {
+    "key": "a1",
+    "heard": {}
+   },
+   {
+    "key": "a2",
+    "heard": {}
+   },
+   {
+    "key": "a3",
+    "heard": {}
+   },
+   {
     "key": "a4",
-    "heard": {
-     "hm_omega": "इसलिए मैं Hybrid Model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हूँ.",
-     "hf_alpha": "इसलिए मैं hybrid moral का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हो।"
-    }
+    "heard": {}
+   },
+   {
+    "key": "a5",
+    "heard": {}
+   },
+   {
+    "key": "a6",
+    "heard": {}
+   },
+   {
+    "key": "accessories-backpack",
+    "heard": {}
+   },
+   {
+    "key": "accessories-closed_umbrella",
+    "heard": {}
+   },
+   {
+    "key": "accessories-crown",
+    "heard": {}
+   },
+   {
+    "key": "accessories-folding_hand_fan",
+    "heard": {}
+   },
+   {
+    "key": "accessories-g1",
+    "heard": {}
+   },
+   {
+    "key": "accessories-g2",
+    "heard": {}
+   },
+   {
+    "key": "accessories-gem_stone",
+    "heard": {}
+   },
+   {
+    "key": "accessories-glasses",
+    "heard": {}
+   },
+   {
+    "key": "accessories-handbag",
+    "heard": {}
+   },
+   {
+    "key": "accessories-lipstick",
+    "heard": {}
+   },
+   {
+    "key": "accessories-purse",
+    "heard": {}
+   },
+   {
+    "key": "accessories-ring",
+    "heard": {}
+   },
+   {
+    "key": "accessories-sunglasses",
+    "heard": {}
+   },
+   {
+    "key": "actions-clapping_hands",
+    "heard": {}
+   },
+   {
+    "key": "actions-cooking",
+    "heard": {}
+   },
+   {
+    "key": "actions-ear",
+    "heard": {}
+   },
+   {
+    "key": "actions-eyes",
+    "heard": {}
+   },
+   {
+    "key": "actions-face_savoring_food",
+    "heard": {}
+   },
+   {
+    "key": "actions-g1",
+    "heard": {}
+   },
+   {
+    "key": "actions-g2",
+    "heard": {}
+   },
+   {
+    "key": "actions-handshake",
+    "heard": {}
+   },
+   {
+    "key": "actions-man_dancing",
+    "heard": {}
+   },
+   {
+    "key": "actions-microphone",
+    "heard": {}
+   },
+   {
+    "key": "actions-open_book",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_biking",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_climbing",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_raising_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_running",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_swimming",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_taking_bath",
+    "heard": {}
+   },
+   {
+    "key": "actions-person_walking",
+    "heard": {}
+   },
+   {
+    "key": "actions-sleeping_face",
+    "heard": {}
+   },
+   {
+    "key": "actions-speaking_head",
+    "heard": {}
+   },
+   {
+    "key": "actions-telephone_receiver",
+    "heard": {}
+   },
+   {
+    "key": "actions-thinking_face",
+    "heard": {}
+   },
+   {
+    "key": "actions-tumbler_glass",
+    "heard": {}
+   },
+   {
+    "key": "actions-waving_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-writing_hand",
+    "heard": {}
+   },
+   {
+    "key": "actions-yawning_face",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-basket",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-bathtub",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-broom",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-bucket",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-g1",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-g2",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-lotion_bottle",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-razor",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-roll_of_paper",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-shower",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-soap",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-sponge",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-toilet",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-toothbrush",
+    "heard": {}
+   },
+   {
+    "key": "bathroom-wastebasket",
+    "heard": {}
+   },
+   {
+    "key": "birds-ant",
+    "heard": {}
+   },
+   {
+    "key": "birds-bird",
+    "heard": {}
+   },
+   {
+    "key": "birds-butterfly",
+    "heard": {}
+   },
+   {
+    "key": "birds-dove",
+    "heard": {}
+   },
+   {
+    "key": "birds-eagle",
+    "heard": {}
+   },
+   {
+    "key": "birds-flamingo",
+    "heard": {}
+   },
+   {
+    "key": "birds-fly",
+    "heard": {}
+   },
+   {
+    "key": "birds-g1",
+    "heard": {}
+   },
+   {
+    "key": "birds-g2",
+    "heard": {}
+   },
+   {
+    "key": "birds-honeybee",
+    "heard": {}
+   },
+   {
+    "key": "birds-lady_beetle",
+    "heard": {}
+   },
+   {
+    "key": "birds-mosquito",
+    "heard": {}
+   },
+   {
+    "key": "birds-owl",
+    "heard": {}
+   },
+   {
+    "key": "birds-parrot",
+    "heard": {}
+   },
+   {
+    "key": "birds-peacock",
+    "heard": {}
+   },
+   {
+    "key": "birds-penguin",
+    "heard": {}
+   },
+   {
+    "key": "birds-snail",
+    "heard": {}
+   },
+   {
+    "key": "birds-spider",
+    "heard": {}
+   },
+   {
+    "key": "birds-swan",
+    "heard": {}
+   },
+   {
+    "key": "body-anatomical_heart",
+    "heard": {}
+   },
+   {
+    "key": "body-bone",
+    "heard": {}
+   },
+   {
+    "key": "body-brain",
+    "heard": {}
+   },
+   {
+    "key": "body-ear",
+    "heard": {}
+   },
+   {
+    "key": "body-eye",
+    "heard": {}
+   },
+   {
+    "key": "body-flexed_biceps",
+    "heard": {}
+   },
+   {
+    "key": "body-foot",
+    "heard": {}
+   },
+   {
+    "key": "body-g1",
+    "heard": {}
+   },
+   {
+    "key": "body-g2",
+    "heard": {}
+   },
+   {
+    "key": "body-index_pointing_up",
+    "heard": {}
+   },
+   {
+    "key": "body-lungs",
+    "heard": {}
+   },
+   {
+    "key": "body-mouth",
+    "heard": {}
+   },
+   {
+    "key": "body-nose",
+    "heard": {}
+   },
+   {
+    "key": "body-raised_hand",
+    "heard": {}
+   },
+   {
+    "key": "body-tongue",
+    "heard": {}
+   },
+   {
+    "key": "body-tooth",
+    "heard": {}
+   },
+   {
+    "key": "clothes-billed_cap",
+    "heard": {}
+   },
+   {
+    "key": "clothes-coat",
+    "heard": {}
+   },
+   {
+    "key": "clothes-dress",
+    "heard": {}
+   },
+   {
+    "key": "clothes-g1",
+    "heard": {}
+   },
+   {
+    "key": "clothes-g2",
+    "heard": {}
+   },
+   {
+    "key": "clothes-gloves",
+    "heard": {}
+   },
+   {
+    "key": "clothes-jeans",
+    "heard": {}
+   },
+   {
+    "key": "clothes-kimono",
+    "heard": {}
+   },
+   {
+    "key": "clothes-man_s_shoe",
+    "heard": {}
+   },
+   {
+    "key": "clothes-necktie",
+    "heard": {}
+   },
+   {
+    "key": "clothes-one_piece_swimsuit",
+    "heard": {}
+   },
+   {
+    "key": "clothes-running_shoe",
+    "heard": {}
+   },
+   {
+    "key": "clothes-sari",
+    "heard": {}
+   },
+   {
+    "key": "clothes-scarf",
+    "heard": {}
+   },
+   {
+    "key": "clothes-shorts",
+    "heard": {}
+   },
+   {
+    "key": "clothes-socks",
+    "heard": {}
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {}
+   },
+   {
+    "key": "clothes-thong_sandal",
+    "heard": {}
+   },
+   {
+    "key": "clothes-woman_s_boot",
+    "heard": {}
+   },
+   {
+    "key": "clothes-woman_s_hat",
+    "heard": {}
+   },
+   {
+    "key": "colors-black_large_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-blue_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-brown_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-g1",
+    "heard": {}
+   },
+   {
+    "key": "colors-g2",
+    "heard": {}
+   },
+   {
+    "key": "colors-green_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-orange_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-purple_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-red_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-white_large_square",
+    "heard": {}
+   },
+   {
+    "key": "colors-yellow_square",
+    "heard": {}
+   },
+   {
+    "key": "d1",
+    "heard": {}
+   },
+   {
+    "key": "d2",
+    "heard": {}
+   },
+   {
+    "key": "d3",
+    "heard": {}
+   },
+   {
+    "key": "d4",
+    "heard": {}
+   },
+   {
+    "key": "d5",
+    "heard": {}
+   },
+   {
+    "key": "d6",
+    "heard": {}
+   },
+   {
+    "key": "drinks-beverage_box",
+    "heard": {}
+   },
+   {
+    "key": "drinks-bubble_tea",
+    "heard": {}
+   },
+   {
+    "key": "drinks-cup_with_straw",
+    "heard": {}
+   },
+   {
+    "key": "drinks-droplet",
+    "heard": {}
+   },
+   {
+    "key": "drinks-g1",
+    "heard": {}
+   },
+   {
+    "key": "drinks-g2",
+    "heard": {}
+   },
+   {
+    "key": "drinks-glass_of_milk",
+    "heard": {}
+   },
+   {
+    "key": "drinks-hot_beverage",
+    "heard": {}
+   },
+   {
+    "key": "drinks-ice",
+    "heard": {}
+   },
+   {
+    "key": "drinks-teacup_without_handle",
+    "heard": {}
+   },
+   {
+    "key": "drinks-teapot",
+    "heard": {}
+   },
+   {
+    "key": "f1",
+    "heard": {}
+   },
+   {
+    "key": "f2",
+    "heard": {}
+   },
+   {
+    "key": "f3",
+    "heard": {}
+   },
+   {
+    "key": "f4",
+    "heard": {}
+   },
+   {
+    "key": "f5",
+    "heard": {}
+   },
+   {
+    "key": "f6",
+    "heard": {}
+   },
+   {
+    "key": "family-baby",
+    "heard": {}
+   },
+   {
+    "key": "family-boy",
+    "heard": {}
+   },
+   {
+    "key": "family-bust_in_silhouette",
+    "heard": {}
+   },
+   {
+    "key": "family-child",
+    "heard": {}
+   },
+   {
+    "key": "family-couple_with_heart",
+    "heard": {}
+   },
+   {
+    "key": "family-family",
+    "heard": {}
+   },
+   {
+    "key": "family-family_man_boy",
+    "heard": {}
+   },
+   {
+    "key": "family-family_man_woman_boy",
+    "heard": {}
+   },
+   {
+    "key": "family-family_woman_girl",
+    "heard": {}
+   },
+   {
+    "key": "family-g1",
+    "heard": {}
+   },
+   {
+    "key": "family-g2",
+    "heard": {}
+   },
+   {
+    "key": "family-girl",
+    "heard": {}
+   },
+   {
+    "key": "family-man",
+    "heard": {}
+   },
+   {
+    "key": "family-old_man",
+    "heard": {}
+   },
+   {
+    "key": "family-old_woman",
+    "heard": {}
+   },
+   {
+    "key": "family-people_holding_hands",
+    "heard": {}
+   },
+   {
+    "key": "family-people_hugging",
+    "heard": {}
+   },
+   {
+    "key": "family-woman",
+    "heard": {}
+   },
+   {
+    "key": "farm-baby_chick",
+    "heard": {}
+   },
+   {
+    "key": "farm-camel",
+    "heard": {}
+   },
+   {
+    "key": "farm-cat",
+    "heard": {}
+   },
+   {
+    "key": "farm-chicken",
+    "heard": {}
+   },
+   {
+    "key": "farm-cow",
+    "heard": {}
+   },
+   {
+    "key": "farm-dog",
+    "heard": {}
+   },
+   {
+    "key": "farm-donkey",
+    "heard": {}
+   },
+   {
+    "key": "farm-duck",
+    "heard": {}
+   },
+   {
+    "key": "farm-ewe",
+    "heard": {}
+   },
+   {
+    "key": "farm-g1",
+    "heard": {}
+   },
+   {
+    "key": "farm-g2",
+    "heard": {}
+   },
+   {
+    "key": "farm-goat",
+    "heard": {}
+   },
+   {
+    "key": "farm-hamster",
+    "heard": {}
+   },
+   {
+    "key": "farm-horse",
+    "heard": {}
+   },
+   {
+    "key": "farm-mouse",
+    "heard": {}
+   },
+   {
+    "key": "farm-ox",
+    "heard": {}
+   },
+   {
+    "key": "farm-pig",
+    "heard": {}
+   },
+   {
+    "key": "farm-rabbit",
+    "heard": {}
+   },
+   {
+    "key": "farm-rooster",
+    "heard": {}
+   },
+   {
+    "key": "farm-turkey",
+    "heard": {}
+   },
+   {
+    "key": "feelings-angry_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-astonished_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-cold_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-crying_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-face_with_tears_of_joy",
+    "heard": {}
+   },
+   {
+    "key": "feelings-fearful_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-g1",
+    "heard": {}
+   },
+   {
+    "key": "feelings-g2",
+    "heard": {}
+   },
+   {
+    "key": "feelings-grinning_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-hot_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-pensive_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-red_heart",
+    "heard": {}
+   },
+   {
+    "key": "feelings-smiling_face_with_sunglasses",
+    "heard": {}
+   },
+   {
+    "key": "feelings-star_struck",
+    "heard": {}
+   },
+   {
+    "key": "feelings-tired_face",
+    "heard": {}
+   },
+   {
+    "key": "feelings-worried_face",
+    "heard": {}
+   },
+   {
+    "key": "fruits-avocado",
+    "heard": {}
+   },
+   {
+    "key": "fruits-banana",
+    "heard": {}
+   },
+   {
+    "key": "fruits-blueberries",
+    "heard": {}
+   },
+   {
+    "key": "fruits-cherries",
+    "heard": {}
+   },
+   {
+    "key": "fruits-coconut",
+    "heard": {}
+   },
+   {
+    "key": "fruits-g1",
+    "heard": {}
+   },
+   {
+    "key": "fruits-g2",
+    "heard": {}
+   },
+   {
+    "key": "fruits-grapes",
+    "heard": {}
+   },
+   {
+    "key": "fruits-kiwi_fruit",
+    "heard": {}
+   },
+   {
+    "key": "fruits-lemon",
+    "heard": {}
+   },
+   {
+    "key": "fruits-mango",
+    "heard": {}
+   },
+   {
+    "key": "fruits-melon",
+    "heard": {}
+   },
+   {
+    "key": "fruits-olive",
+    "heard": {}
+   },
+   {
+    "key": "fruits-peach",
+    "heard": {}
+   },
+   {
+    "key": "fruits-pear",
+    "heard": {}
+   },
+   {
+    "key": "fruits-pineapple",
+    "heard": {}
+   },
+   {
+    "key": "fruits-red_apple",
+    "heard": {}
+   },
+   {
+    "key": "fruits-strawberry",
+    "heard": {}
+   },
+   {
+    "key": "fruits-tangerine",
+    "heard": {}
+   },
+   {
+    "key": "fruits-watermelon",
+    "heard": {}
+   },
+   {
+    "key": "g1",
+    "heard": {}
+   },
+   {
+    "key": "g2",
+    "heard": {}
+   },
+   {
+    "key": "g3",
+    "heard": {}
+   },
+   {
+    "key": "g4",
+    "heard": {}
+   },
+   {
+    "key": "g5",
+    "heard": {}
+   },
+   {
+    "key": "g6",
+    "heard": {}
+   },
+   {
+    "key": "games-chess_pawn",
+    "heard": {}
+   },
+   {
+    "key": "games-circus_tent",
+    "heard": {}
+   },
+   {
+    "key": "games-confetti_ball",
+    "heard": {}
+   },
+   {
+    "key": "games-fireworks",
+    "heard": {}
+   },
+   {
+    "key": "games-g1",
+    "heard": {}
+   },
+   {
+    "key": "games-g2",
+    "heard": {}
+   },
+   {
+    "key": "games-game_die",
+    "heard": {}
+   },
+   {
+    "key": "games-kite",
+    "heard": {}
+   },
+   {
+    "key": "games-party_popper",
+    "heard": {}
+   },
+   {
+    "key": "games-puzzle_piece",
+    "heard": {}
+   },
+   {
+    "key": "games-ribbon",
+    "heard": {}
+   },
+   {
+    "key": "games-roller_coaster",
+    "heard": {}
+   },
+   {
+    "key": "games-video_game",
+    "heard": {}
+   },
+   {
+    "key": "games-yo_yo",
+    "heard": {}
+   },
+   {
+    "key": "h1",
+    "heard": {}
+   },
+   {
+    "key": "h2",
+    "heard": {}
+   },
+   {
+    "key": "h3",
+    "heard": {}
+   },
+   {
+    "key": "h4",
+    "heard": {}
+   },
+   {
+    "key": "h5",
+    "heard": {}
+   },
+   {
+    "key": "h6",
+    "heard": {}
+   },
+   {
+    "key": "health-adhesive_bandage",
+    "heard": {}
+   },
+   {
+    "key": "health-crutch",
+    "heard": {}
+   },
+   {
+    "key": "health-drop_of_blood",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_head_bandage",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_medical_mask",
+    "heard": {}
+   },
+   {
+    "key": "health-face_with_thermometer",
+    "heard": {}
+   },
+   {
+    "key": "health-g1",
+    "heard": {}
+   },
+   {
+    "key": "health-g2",
+    "heard": {}
+   },
+   {
+    "key": "health-nauseated_face",
+    "heard": {}
+   },
+   {
+    "key": "health-pill",
+    "heard": {}
+   },
+   {
+    "key": "health-sneezing_face",
+    "heard": {}
+   },
+   {
+    "key": "health-stethoscope",
+    "heard": {}
+   },
+   {
+    "key": "health-syringe",
+    "heard": {}
+   },
+   {
+    "key": "health-x_ray",
+    "heard": {}
+   },
+   {
+    "key": "house-bed",
+    "heard": {}
+   },
+   {
+    "key": "house-candle",
+    "heard": {}
+   },
+   {
+    "key": "house-chair",
+    "heard": {}
+   },
+   {
+    "key": "house-couch_and_lamp",
+    "heard": {}
+   },
+   {
+    "key": "house-door",
+    "heard": {}
+   },
+   {
+    "key": "house-elevator",
+    "heard": {}
+   },
+   {
+    "key": "house-framed_picture",
+    "heard": {}
+   },
+   {
+    "key": "house-g1",
+    "heard": {}
+   },
+   {
+    "key": "house-g2",
+    "heard": {}
+   },
+   {
+    "key": "house-house",
+    "heard": {}
+   },
+   {
+    "key": "house-house_with_garden",
+    "heard": {}
+   },
+   {
+    "key": "house-key",
+    "heard": {}
+   },
+   {
+    "key": "house-ladder",
+    "heard": {}
+   },
+   {
+    "key": "house-light_bulb",
+    "heard": {}
+   },
+   {
+    "key": "house-mirror",
+    "heard": {}
+   },
+   {
+    "key": "house-television",
+    "heard": {}
+   },
+   {
+    "key": "house-window",
+    "heard": {}
+   },
+   {
+    "key": "i1",
+    "heard": {}
+   },
+   {
+    "key": "i2",
+    "heard": {}
+   },
+   {
+    "key": "i3",
+    "heard": {}
+   },
+   {
+    "key": "i4",
+    "heard": {}
+   },
+   {
+    "key": "i5",
+    "heard": {}
+   },
+   {
+    "key": "i6",
+    "heard": {}
+   },
+   {
+    "key": "jobs-artist",
+    "heard": {}
+   },
+   {
+    "key": "jobs-astronaut",
+    "heard": {}
+   },
+   {
+    "key": "jobs-construction_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-cook",
+    "heard": {}
+   },
+   {
+    "key": "jobs-detective",
+    "heard": {}
+   },
+   {
+    "key": "jobs-factory_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-farmer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-firefighter",
+    "heard": {}
+   },
+   {
+    "key": "jobs-g1",
+    "heard": {}
+   },
+   {
+    "key": "jobs-g2",
+    "heard": {}
+   },
+   {
+    "key": "jobs-guard",
+    "heard": {}
+   },
+   {
+    "key": "jobs-health_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-judge",
+    "heard": {}
+   },
+   {
+    "key": "jobs-mechanic",
+    "heard": {}
+   },
+   {
+    "key": "jobs-office_worker",
+    "heard": {}
+   },
+   {
+    "key": "jobs-pilot",
+    "heard": {}
+   },
+   {
+    "key": "jobs-police_officer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-scientist",
+    "heard": {}
+   },
+   {
+    "key": "jobs-singer",
+    "heard": {}
+   },
+   {
+    "key": "jobs-student",
+    "heard": {}
+   },
+   {
+    "key": "jobs-teacher",
+    "heard": {}
+   },
+   {
+    "key": "jobs-technologist",
+    "heard": {}
+   },
+   {
+    "key": "k1",
+    "heard": {}
+   },
+   {
+    "key": "k2",
+    "heard": {}
+   },
+   {
+    "key": "k3",
+    "heard": {}
+   },
+   {
+    "key": "k4",
+    "heard": {}
+   },
+   {
+    "key": "k5",
+    "heard": {}
+   },
+   {
+    "key": "k6",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-baby_bottle",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-canned_food",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-chopsticks",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-cooking",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-fork_and_knife",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-fork_and_knife_with_plate",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-g1",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-g2",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-jar",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-kitchen_knife",
+    "heard": {}
+   },
+   {
+    "key": "kitchen-spoon",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-beach_with_umbrella",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-camping",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-desert",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-desert_island",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-g1",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-g2",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-globe_showing_europe_africa",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-mountain",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-national_park",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-rock",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-snow_capped_mountain",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-volcano",
+    "heard": {}
+   },
+   {
+    "key": "landscapes-wood",
+    "heard": {}
+   },
+   {
+    "key": "m1",
+    "heard": {}
+   },
+   {
+    "key": "m2",
+    "heard": {}
+   },
+   {
+    "key": "m3",
+    "heard": {}
+   },
+   {
+    "key": "m4",
+    "heard": {}
+   },
+   {
+    "key": "m5",
+    "heard": {}
+   },
+   {
+    "key": "m6",
+    "heard": {}
+   },
+   {
+    "key": "meals-baguette_bread",
+    "heard": {}
+   },
+   {
+    "key": "meals-bowl_with_spoon",
+    "heard": {}
+   },
+   {
+    "key": "meals-bread",
+    "heard": {}
+   },
+   {
+    "key": "meals-butter",
+    "heard": {}
+   },
+   {
+    "key": "meals-cheese_wedge",
+    "heard": {}
+   },
+   {
+    "key": "meals-cooked_rice",
+    "heard": {}
+   },
+   {
+    "key": "meals-croissant",
+    "heard": {}
+   },
+   {
+    "key": "meals-egg",
+    "heard": {}
+   },
+   {
+    "key": "meals-falafel",
+    "heard": {}
+   },
+   {
+    "key": "meals-flatbread",
+    "heard": {}
+   },
+   {
+    "key": "meals-french_fries",
+    "heard": {}
+   },
+   {
+    "key": "meals-g1",
+    "heard": {}
+   },
+   {
+    "key": "meals-g2",
+    "heard": {}
+   },
+   {
+    "key": "meals-green_salad",
+    "heard": {}
+   },
+   {
+    "key": "meals-hamburger",
+    "heard": {}
+   },
+   {
+    "key": "meals-honey_pot",
+    "heard": {}
+   },
+   {
+    "key": "meals-meat_on_bone",
+    "heard": {}
+   },
+   {
+    "key": "meals-pizza",
+    "heard": {}
+   },
+   {
+    "key": "meals-pot_of_food",
+    "heard": {}
+   },
+   {
+    "key": "meals-poultry_leg",
+    "heard": {}
+   },
+   {
+    "key": "meals-salt",
+    "heard": {}
+   },
+   {
+    "key": "meals-sandwich",
+    "heard": {}
+   },
+   {
+    "key": "meals-spaghetti",
+    "heard": {}
+   },
+   {
+    "key": "music-accordion",
+    "heard": {}
+   },
+   {
+    "key": "music-artist_palette",
+    "heard": {}
+   },
+   {
+    "key": "music-camera_with_flash",
+    "heard": {}
+   },
+   {
+    "key": "music-clapper_board",
+    "heard": {}
+   },
+   {
+    "key": "music-drum",
+    "heard": {}
+   },
+   {
+    "key": "music-flute",
+    "heard": {}
+   },
+   {
+    "key": "music-g1",
+    "heard": {}
+   },
+   {
+    "key": "music-g2",
+    "heard": {}
+   },
+   {
+    "key": "music-guitar",
+    "heard": {}
+   },
+   {
+    "key": "music-microphone",
+    "heard": {}
+   },
+   {
+    "key": "music-musical_keyboard",
+    "heard": {}
+   },
+   {
+    "key": "music-musical_note",
+    "heard": {}
+   },
+   {
+    "key": "music-paintbrush",
+    "heard": {}
+   },
+   {
+    "key": "music-performing_arts",
+    "heard": {}
+   },
+   {
+    "key": "music-saxophone",
+    "heard": {}
+   },
+   {
+    "key": "music-trumpet",
+    "heard": {}
+   },
+   {
+    "key": "music-violin",
+    "heard": {}
+   },
+   {
+    "key": "n1",
+    "heard": {}
+   },
+   {
+    "key": "n2",
+    "heard": {}
+   },
+   {
+    "key": "n3",
+    "heard": {}
+   },
+   {
+    "key": "n4",
+    "heard": {}
+   },
+   {
+    "key": "n5",
+    "heard": {}
+   },
+   {
+    "key": "n6",
+    "heard": {}
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {}
+   },
+   {
+    "key": "numbers-g2",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_0",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_2",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {}
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {}
+   },
+   {
+    "key": "o1",
+    "heard": {}
+   },
+   {
+    "key": "o2",
+    "heard": {}
+   },
+   {
+    "key": "o3",
+    "heard": {}
+   },
+   {
+    "key": "o4",
+    "heard": {}
+   },
+   {
+    "key": "o5",
+    "heard": {}
+   },
+   {
+    "key": "o6",
+    "heard": {}
+   },
+   {
+    "key": "objects-balloon",
+    "heard": {}
+   },
+   {
+    "key": "objects-battery",
+    "heard": {}
+   },
+   {
+    "key": "objects-camera",
+    "heard": {}
+   },
+   {
+    "key": "objects-electric_plug",
+    "heard": {}
+   },
+   {
+    "key": "objects-envelope",
+    "heard": {}
+   },
+   {
+    "key": "objects-flashlight",
+    "heard": {}
+   },
+   {
+    "key": "objects-g1",
+    "heard": {}
+   },
+   {
+    "key": "objects-g2",
+    "heard": {}
+   },
+   {
+    "key": "objects-hammer",
+    "heard": {}
+   },
+   {
+    "key": "objects-locked",
+    "heard": {}
+   },
+   {
+    "key": "objects-magnet",
+    "heard": {}
+   },
+   {
+    "key": "objects-mobile_phone",
+    "heard": {}
+   },
+   {
+    "key": "objects-package",
+    "heard": {}
+   },
+   {
+    "key": "objects-radio",
+    "heard": {}
+   },
+   {
+    "key": "objects-screwdriver",
+    "heard": {}
+   },
+   {
+    "key": "objects-teddy_bear",
+    "heard": {}
+   },
+   {
+    "key": "objects-wrapped_gift",
+    "heard": {}
+   },
+   {
+    "key": "objects-wrench",
+    "heard": {}
+   },
+   {
+    "key": "p1",
+    "heard": {}
+   },
+   {
+    "key": "p2",
+    "heard": {}
+   },
+   {
+    "key": "p3",
+    "heard": {}
+   },
+   {
+    "key": "p4",
+    "heard": {}
+   },
+   {
+    "key": "p5",
+    "heard": {}
+   },
+   {
+    "key": "p6",
+    "heard": {}
+   },
+   {
+    "key": "pb1",
+    "heard": {}
+   },
+   {
+    "key": "pb2",
+    "heard": {}
+   },
+   {
+    "key": "pb3",
+    "heard": {}
+   },
+   {
+    "key": "pb4",
+    "heard": {}
+   },
+   {
+    "key": "pb5",
+    "heard": {}
+   },
+   {
+    "key": "pb6",
+    "heard": {}
+   },
+   {
+    "key": "ph1",
+    "heard": {}
+   },
+   {
+    "key": "ph2",
+    "heard": {}
+   },
+   {
+    "key": "ph3",
+    "heard": {}
+   },
+   {
+    "key": "ph4",
+    "heard": {}
+   },
+   {
+    "key": "ph5",
+    "heard": {}
+   },
+   {
+    "key": "ph6",
+    "heard": {}
+   },
+   {
+    "key": "pl1",
+    "heard": {}
+   },
+   {
+    "key": "pl2",
+    "heard": {}
+   },
+   {
+    "key": "pl3",
+    "heard": {}
+   },
+   {
+    "key": "pl4",
+    "heard": {}
+   },
+   {
+    "key": "pl5",
+    "heard": {}
+   },
+   {
+    "key": "pl6",
+    "heard": {}
+   },
+   {
+    "key": "places-bank",
+    "heard": {}
+   },
+   {
+    "key": "places-bridge_at_night",
+    "heard": {}
+   },
+   {
+    "key": "places-castle",
+    "heard": {}
+   },
+   {
+    "key": "places-church",
+    "heard": {}
+   },
+   {
+    "key": "places-cityscape",
+    "heard": {}
+   },
+   {
+    "key": "places-classical_building",
+    "heard": {}
+   },
+   {
+    "key": "places-convenience_store",
+    "heard": {}
+   },
+   {
+    "key": "places-department_store",
+    "heard": {}
+   },
+   {
+    "key": "places-factory",
+    "heard": {}
+   },
+   {
+    "key": "places-ferris_wheel",
+    "heard": {}
+   },
+   {
+    "key": "places-fountain",
+    "heard": {}
+   },
+   {
+    "key": "places-g1",
+    "heard": {}
+   },
+   {
+    "key": "places-g2",
+    "heard": {}
+   },
+   {
+    "key": "places-hospital",
+    "heard": {}
+   },
+   {
+    "key": "places-hotel",
+    "heard": {}
+   },
+   {
+    "key": "places-houses",
+    "heard": {}
+   },
+   {
+    "key": "places-mosque",
+    "heard": {}
+   },
+   {
+    "key": "places-office_building",
+    "heard": {}
+   },
+   {
+    "key": "places-playground_slide",
+    "heard": {}
+   },
+   {
+    "key": "places-post_office",
+    "heard": {}
+   },
+   {
+    "key": "places-school",
+    "heard": {}
+   },
+   {
+    "key": "places-stadium",
+    "heard": {}
+   },
+   {
+    "key": "plants-cactus",
+    "heard": {}
+   },
+   {
+    "key": "plants-cherry_blossom",
+    "heard": {}
+   },
+   {
+    "key": "plants-deciduous_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-evergreen_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-fallen_leaf",
+    "heard": {}
+   },
+   {
+    "key": "plants-g1",
+    "heard": {}
+   },
+   {
+    "key": "plants-g2",
+    "heard": {}
+   },
+   {
+    "key": "plants-herb",
+    "heard": {}
+   },
+   {
+    "key": "plants-hibiscus",
+    "heard": {}
+   },
+   {
+    "key": "plants-leaf_fluttering_in_wind",
+    "heard": {}
+   },
+   {
+    "key": "plants-palm_tree",
+    "heard": {}
+   },
+   {
+    "key": "plants-potted_plant",
+    "heard": {}
+   },
+   {
+    "key": "plants-rose",
+    "heard": {}
+   },
+   {
+    "key": "plants-seedling",
+    "heard": {}
+   },
+   {
+    "key": "plants-sunflower",
+    "heard": {}
+   },
+   {
+    "key": "plants-tulip",
+    "heard": {}
+   },
+   {
+    "key": "ps1",
+    "heard": {}
+   },
+   {
+    "key": "ps2",
+    "heard": {}
+   },
+   {
+    "key": "ps3",
+    "heard": {}
+   },
+   {
+    "key": "ps4",
+    "heard": {}
+   },
+   {
+    "key": "ps5",
+    "heard": {}
+   },
+   {
+    "key": "ps6",
+    "heard": {}
+   },
+   {
+    "key": "pt1",
+    "heard": {}
    },
    {
     "key": "pt2",
-    "heard": {
-     "hm_omega": "मैंने लॉक देखे एक environment variable गायब था.",
-     "hf_alpha": "मैंने लॉक देखे एक environment variable कायब था।"
-    }
+    "heard": {}
+   },
+   {
+    "key": "pt3",
+    "heard": {}
    },
    {
     "key": "pt4",
-    "heard": {
-     "hm_omega": "लगभग 840 मिनट तक सेवा बहाल कर दी गई है।",
-     "hf_alpha": "लगभग 840 मिनट तक सेवा बहाल कर दी गई है।"
-    }
+    "heard": {}
    },
    {
     "key": "pt5",
-    "heard": {
-     "hm_omega": "ऐसा दोबारा नहो, इसके लिए एक automated test जोड़ना होगा.",
-     "hf_alpha": "ऐसा दोबारा नहो, इसके लिए एक automated test जोड़ना होगा."
-    }
+    "heard": {}
    },
    {
     "key": "pt6",
-    "heard": {
-     "hm_omega": "ठीक है मैं आज ही post mortem लिखकर एक टिकट खोलता हूँ.",
-     "hf_alpha": "ठीक है मैं आज ही post-mortem लिखकर एक टिकट खोलता हूँ."
-    }
+    "heard": {}
+   },
+   {
+    "key": "r1",
+    "heard": {}
+   },
+   {
+    "key": "r2",
+    "heard": {}
+   },
+   {
+    "key": "r3",
+    "heard": {}
+   },
+   {
+    "key": "r4",
+    "heard": {}
+   },
+   {
+    "key": "r5",
+    "heard": {}
+   },
+   {
+    "key": "r6",
+    "heard": {}
+   },
+   {
+    "key": "s1",
+    "heard": {}
+   },
+   {
+    "key": "s2",
+    "heard": {}
+   },
+   {
+    "key": "s3",
+    "heard": {}
+   },
+   {
+    "key": "s4",
+    "heard": {}
+   },
+   {
+    "key": "s5",
+    "heard": {}
+   },
+   {
+    "key": "s6",
+    "heard": {}
+   },
+   {
+    "key": "school-abacus",
+    "heard": {}
+   },
+   {
+    "key": "school-bar_chart",
+    "heard": {}
+   },
+   {
+    "key": "school-briefcase",
+    "heard": {}
+   },
+   {
+    "key": "school-calendar",
+    "heard": {}
+   },
+   {
+    "key": "school-clipboard",
+    "heard": {}
+   },
+   {
+    "key": "school-closed_book",
+    "heard": {}
+   },
+   {
+    "key": "school-crayon",
+    "heard": {}
+   },
+   {
+    "key": "school-file_folder",
+    "heard": {}
+   },
+   {
+    "key": "school-g1",
+    "heard": {}
+   },
+   {
+    "key": "school-g2",
+    "heard": {}
+   },
+   {
+    "key": "school-graduation_cap",
+    "heard": {}
+   },
+   {
+    "key": "school-memo",
+    "heard": {}
+   },
+   {
+    "key": "school-notebook",
+    "heard": {}
+   },
+   {
+    "key": "school-page_facing_up",
+    "heard": {}
+   },
+   {
+    "key": "school-paperclip",
+    "heard": {}
+   },
+   {
+    "key": "school-pen",
+    "heard": {}
+   },
+   {
+    "key": "school-pencil",
+    "heard": {}
+   },
+   {
+    "key": "school-pushpin",
+    "heard": {}
+   },
+   {
+    "key": "school-scissors",
+    "heard": {}
+   },
+   {
+    "key": "school-straight_ruler",
+    "heard": {}
+   },
+   {
+    "key": "sea-coral",
+    "heard": {}
+   },
+   {
+    "key": "sea-crab",
+    "heard": {}
+   },
+   {
+    "key": "sea-dolphin",
+    "heard": {}
+   },
+   {
+    "key": "sea-fish",
+    "heard": {}
+   },
+   {
+    "key": "sea-g1",
+    "heard": {}
+   },
+   {
+    "key": "sea-g2",
+    "heard": {}
+   },
+   {
+    "key": "sea-jellyfish",
+    "heard": {}
+   },
+   {
+    "key": "sea-octopus",
+    "heard": {}
+   },
+   {
+    "key": "sea-seal",
+    "heard": {}
+   },
+   {
+    "key": "sea-shark",
+    "heard": {}
+   },
+   {
+    "key": "sea-shrimp",
+    "heard": {}
+   },
+   {
+    "key": "sea-spiral_shell",
+    "heard": {}
+   },
+   {
+    "key": "sea-tropical_fish",
+    "heard": {}
+   },
+   {
+    "key": "sea-water_wave",
+    "heard": {}
+   },
+   {
+    "key": "sea-whale",
+    "heard": {}
+   },
+   {
+    "key": "signs-check_mark_button",
+    "heard": {}
+   },
+   {
+    "key": "signs-cross_mark",
+    "heard": {}
+   },
+   {
+    "key": "signs-down_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-g1",
+    "heard": {}
+   },
+   {
+    "key": "signs-g2",
+    "heard": {}
+   },
+   {
+    "key": "signs-left_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-minus",
+    "heard": {}
+   },
+   {
+    "key": "signs-plus",
+    "heard": {}
+   },
+   {
+    "key": "signs-red_question_mark",
+    "heard": {}
+   },
+   {
+    "key": "signs-right_arrow",
+    "heard": {}
+   },
+   {
+    "key": "signs-up_arrow",
+    "heard": {}
+   },
+   {
+    "key": "sports-badminton",
+    "heard": {}
+   },
+   {
+    "key": "sports-baseball",
+    "heard": {}
+   },
+   {
+    "key": "sports-basketball",
+    "heard": {}
+   },
+   {
+    "key": "sports-boxing_glove",
+    "heard": {}
+   },
+   {
+    "key": "sports-g1",
+    "heard": {}
+   },
+   {
+    "key": "sports-g2",
+    "heard": {}
+   },
+   {
+    "key": "sports-goal_net",
+    "heard": {}
+   },
+   {
+    "key": "sports-horse_racing",
+    "heard": {}
+   },
+   {
+    "key": "sports-ice_skate",
+    "heard": {}
+   },
+   {
+    "key": "sports-martial_arts_uniform",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_golfing",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_in_lotus_position",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_lifting_weights",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_surfing",
+    "heard": {}
+   },
+   {
+    "key": "sports-person_swimming",
+    "heard": {}
+   },
+   {
+    "key": "sports-ping_pong",
+    "heard": {}
+   },
+   {
+    "key": "sports-rugby_football",
+    "heard": {}
+   },
+   {
+    "key": "sports-running_shirt",
+    "heard": {}
+   },
+   {
+    "key": "sports-skier",
+    "heard": {}
+   },
+   {
+    "key": "sports-soccer_ball",
+    "heard": {}
+   },
+   {
+    "key": "sports-sports_medal",
+    "heard": {}
+   },
+   {
+    "key": "sports-tennis",
+    "heard": {}
+   },
+   {
+    "key": "sports-trophy",
+    "heard": {}
+   },
+   {
+    "key": "sports-volleyball",
+    "heard": {}
+   },
+   {
+    "key": "sweets-birthday_cake",
+    "heard": {}
+   },
+   {
+    "key": "sweets-candy",
+    "heard": {}
+   },
+   {
+    "key": "sweets-chocolate_bar",
+    "heard": {}
+   },
+   {
+    "key": "sweets-cookie",
+    "heard": {}
+   },
+   {
+    "key": "sweets-doughnut",
+    "heard": {}
+   },
+   {
+    "key": "sweets-g1",
+    "heard": {}
+   },
+   {
+    "key": "sweets-g2",
+    "heard": {}
+   },
+   {
+    "key": "sweets-ice_cream",
+    "heard": {}
+   },
+   {
+    "key": "sweets-lollipop",
+    "heard": {}
+   },
+   {
+    "key": "sweets-pancakes",
+    "heard": {}
+   },
+   {
+    "key": "sweets-pie",
+    "heard": {}
+   },
+   {
+    "key": "sweets-popcorn",
+    "heard": {}
+   },
+   {
+    "key": "sweets-shortcake",
+    "heard": {}
+   },
+   {
+    "key": "tech-computer_mouse",
+    "heard": {}
+   },
+   {
+    "key": "tech-desktop_computer",
+    "heard": {}
+   },
+   {
+    "key": "tech-e_mail",
+    "heard": {}
+   },
+   {
+    "key": "tech-g1",
+    "heard": {}
+   },
+   {
+    "key": "tech-g2",
+    "heard": {}
+   },
+   {
+    "key": "tech-headphone",
+    "heard": {}
+   },
+   {
+    "key": "tech-keyboard",
+    "heard": {}
+   },
+   {
+    "key": "tech-laptop",
+    "heard": {}
+   },
+   {
+    "key": "tech-microscope",
+    "heard": {}
+   },
+   {
+    "key": "tech-printer",
+    "heard": {}
+   },
+   {
+    "key": "tech-robot",
+    "heard": {}
+   },
+   {
+    "key": "tech-satellite",
+    "heard": {}
+   },
+   {
+    "key": "tech-satellite_antenna",
+    "heard": {}
+   },
+   {
+    "key": "tech-telescope",
+    "heard": {}
+   },
+   {
+    "key": "tech-video_camera",
+    "heard": {}
+   },
+   {
+    "key": "time-alarm_clock",
+    "heard": {}
+   },
+   {
+    "key": "time-calendar",
+    "heard": {}
+   },
+   {
+    "key": "time-g1",
+    "heard": {}
+   },
+   {
+    "key": "time-g2",
+    "heard": {}
+   },
+   {
+    "key": "time-hourglass_done",
+    "heard": {}
+   },
+   {
+    "key": "time-mantelpiece_clock",
+    "heard": {}
+   },
+   {
+    "key": "time-night_with_stars",
+    "heard": {}
+   },
+   {
+    "key": "time-stopwatch",
+    "heard": {}
+   },
+   {
+    "key": "time-sunrise",
+    "heard": {}
+   },
+   {
+    "key": "time-sunset",
+    "heard": {}
+   },
+   {
+    "key": "time-watch",
+    "heard": {}
+   },
+   {
+    "key": "transport-airplane",
+    "heard": {}
+   },
+   {
+    "key": "transport-ambulance",
+    "heard": {}
+   },
+   {
+    "key": "transport-automobile",
+    "heard": {}
+   },
+   {
+    "key": "transport-bicycle",
+    "heard": {}
+   },
+   {
+    "key": "transport-bus",
+    "heard": {}
+   },
+   {
+    "key": "transport-canoe",
+    "heard": {}
+   },
+   {
+    "key": "transport-delivery_truck",
+    "heard": {}
+   },
+   {
+    "key": "transport-fire_engine",
+    "heard": {}
+   },
+   {
+    "key": "transport-g1",
+    "heard": {}
+   },
+   {
+    "key": "transport-g2",
+    "heard": {}
+   },
+   {
+    "key": "transport-helicopter",
+    "heard": {}
+   },
+   {
+    "key": "transport-kick_scooter",
+    "heard": {}
+   },
+   {
+    "key": "transport-metro",
+    "heard": {}
+   },
+   {
+    "key": "transport-motor_scooter",
+    "heard": {}
+   },
+   {
+    "key": "transport-motorcycle",
+    "heard": {}
+   },
+   {
+    "key": "transport-police_car",
+    "heard": {}
+   },
+   {
+    "key": "transport-rocket",
+    "heard": {}
+   },
+   {
+    "key": "transport-sailboat",
+    "heard": {}
+   },
+   {
+    "key": "transport-ship",
+    "heard": {}
+   },
+   {
+    "key": "transport-taxi",
+    "heard": {}
+   },
+   {
+    "key": "transport-tractor",
+    "heard": {}
+   },
+   {
+    "key": "transport-train",
+    "heard": {}
+   },
+   {
+    "key": "transport-tram",
+    "heard": {}
+   },
+   {
+    "key": "travel-airplane_arrival",
+    "heard": {}
+   },
+   {
+    "key": "travel-airplane_departure",
+    "heard": {}
+   },
+   {
+    "key": "travel-bellhop_bell",
+    "heard": {}
+   },
+   {
+    "key": "travel-compass",
+    "heard": {}
+   },
+   {
+    "key": "travel-construction",
+    "heard": {}
+   },
+   {
+    "key": "travel-customs",
+    "heard": {}
+   },
+   {
+    "key": "travel-fuel_pump",
+    "heard": {}
+   },
+   {
+    "key": "travel-g1",
+    "heard": {}
+   },
+   {
+    "key": "travel-g2",
+    "heard": {}
+   },
+   {
+    "key": "travel-luggage",
+    "heard": {}
+   },
+   {
+    "key": "travel-motorway",
+    "heard": {}
+   },
+   {
+    "key": "travel-passport_control",
+    "heard": {}
+   },
+   {
+    "key": "travel-station",
+    "heard": {}
+   },
+   {
+    "key": "travel-stop_sign",
+    "heard": {}
+   },
+   {
+    "key": "travel-tent",
+    "heard": {}
+   },
+   {
+    "key": "travel-ticket",
+    "heard": {}
+   },
+   {
+    "key": "travel-vertical_traffic_light",
+    "heard": {}
+   },
+   {
+    "key": "travel-world_map",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-beans",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-bell_pepper",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-broccoli",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-carrot",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-chestnut",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-cucumber",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-ear_of_corn",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-eggplant",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-g1",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-g2",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-garlic",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-ginger_root",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-hot_pepper",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-leafy_green",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-mushroom",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-onion",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-pea_pod",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-peanuts",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-potato",
+    "heard": {}
+   },
+   {
+    "key": "vegetables-tomato",
+    "heard": {}
+   },
+   {
+    "key": "w1",
+    "heard": {}
+   },
+   {
+    "key": "w2",
+    "heard": {}
+   },
+   {
+    "key": "w3",
+    "heard": {}
+   },
+   {
+    "key": "w4",
+    "heard": {}
+   },
+   {
+    "key": "w5",
+    "heard": {}
+   },
+   {
+    "key": "w6",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud_with_lightning",
+    "heard": {}
+   },
+   {
+    "key": "weather-cloud_with_rain",
+    "heard": {}
+   },
+   {
+    "key": "weather-crescent_moon",
+    "heard": {}
+   },
+   {
+    "key": "weather-fire",
+    "heard": {}
+   },
+   {
+    "key": "weather-fog",
+    "heard": {}
+   },
+   {
+    "key": "weather-g1",
+    "heard": {}
+   },
+   {
+    "key": "weather-g2",
+    "heard": {}
+   },
+   {
+    "key": "weather-rainbow",
+    "heard": {}
+   },
+   {
+    "key": "weather-snowflake",
+    "heard": {}
+   },
+   {
+    "key": "weather-snowman",
+    "heard": {}
+   },
+   {
+    "key": "weather-star",
+    "heard": {}
+   },
+   {
+    "key": "weather-sun",
+    "heard": {}
+   },
+   {
+    "key": "weather-thermometer",
+    "heard": {}
+   },
+   {
+    "key": "weather-tornado",
+    "heard": {}
+   },
+   {
+    "key": "weather-umbrella_with_rain_drops",
+    "heard": {}
+   },
+   {
+    "key": "weather-wind_face",
+    "heard": {}
+   },
+   {
+    "key": "wild-bear",
+    "heard": {}
+   },
+   {
+    "key": "wild-chipmunk",
+    "heard": {}
+   },
+   {
+    "key": "wild-crocodile",
+    "heard": {}
+   },
+   {
+    "key": "wild-deer",
+    "heard": {}
+   },
+   {
+    "key": "wild-elephant",
+    "heard": {}
+   },
+   {
+    "key": "wild-fox",
+    "heard": {}
+   },
+   {
+    "key": "wild-frog",
+    "heard": {}
+   },
+   {
+    "key": "wild-g1",
+    "heard": {}
+   },
+   {
+    "key": "wild-g2",
+    "heard": {}
+   },
+   {
+    "key": "wild-giraffe",
+    "heard": {}
+   },
+   {
+    "key": "wild-gorilla",
+    "heard": {}
+   },
+   {
+    "key": "wild-hedgehog",
+    "heard": {}
+   },
+   {
+    "key": "wild-hippopotamus",
+    "heard": {}
+   },
+   {
+    "key": "wild-kangaroo",
+    "heard": {}
+   },
+   {
+    "key": "wild-koala",
+    "heard": {}
+   },
+   {
+    "key": "wild-leopard",
+    "heard": {}
+   },
+   {
+    "key": "wild-lion",
+    "heard": {}
+   },
+   {
+    "key": "wild-monkey",
+    "heard": {}
+   },
+   {
+    "key": "wild-panda",
+    "heard": {}
+   },
+   {
+    "key": "wild-polar_bear",
+    "heard": {}
+   },
+   {
+    "key": "wild-rhinoceros",
+    "heard": {}
+   },
+   {
+    "key": "wild-snake",
+    "heard": {}
+   },
+   {
+    "key": "wild-tiger",
+    "heard": {}
+   },
+   {
+    "key": "wild-turtle",
+    "heard": {}
+   },
+   {
+    "key": "wild-wolf",
+    "heard": {}
+   },
+   {
+    "key": "wild-zebra",
+    "heard": {}
+   },
+   {
+    "key": "x1",
+    "heard": {}
+   },
+   {
+    "key": "x2",
+    "heard": {}
+   },
+   {
+    "key": "x3",
+    "heard": {}
+   },
+   {
+    "key": "x4",
+    "heard": {}
+   },
+   {
+    "key": "x5",
+    "heard": {}
+   },
+   {
+    "key": "x6",
+    "heard": {}
    }
   ]
  },
@@ -429,8 +7070,8 @@
     "gender": "f",
     "accent": "it-IT",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.026,
+    "pass_rate": 0.959,
+    "mean_cer": 0.031,
     "error": null
    },
    {
@@ -440,7 +7081,7 @@
     "gender": "f",
     "accent": "it-IT",
     "license": "CC0",
-    "pass_rate": 0.95,
+    "pass_rate": 0.154,
     "mean_cer": 0.038,
     "error": null
    },
@@ -451,8 +7092,8 @@
     "gender": "m",
     "accent": "it-IT",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.027,
+    "pass_rate": 0.944,
+    "mean_cer": 0.042,
     "error": null
    }
   ],
@@ -460,14 +7101,35 @@
    "if_sara",
    "im_nicola"
   ],
-  "clips_total": 120,
-  "clips_kept": 115,
+  "clips_total": 738,
+  "clips_kept": 717,
   "failed": [
+   {
+    "key": "birds-honeybee",
+    "heard": {
+     "if_sara": "L'abbè.",
+     "im_nicola": "La Pesce."
+    }
+   },
    {
     "key": "d4",
     "heard": {
      "if_sara": "No, è a 5 minuti a piedi.",
      "im_nicola": "No, è a 5 minuti a piedi."
+    }
+   },
+   {
+    "key": "feelings-tired_face",
+    "heard": {
+     "if_sara": "Ti stanco.",
+     "im_nicola": "Stanggo."
+    }
+   },
+   {
+    "key": "games-puzzle_piece",
+    "heard": {
+     "if_sara": "Il pazzo.",
+     "im_nicola": "Il pazzo."
     }
    },
    {
@@ -485,6 +7147,20 @@
     }
    },
    {
+    "key": "meals-egg",
+    "heard": {
+     "if_sara": "L'oive.",
+     "im_nicola": "Lo a vostro."
+    }
+   },
+   {
+    "key": "meals-hamburger",
+    "heard": {
+     "if_sara": "Lamborgher",
+     "im_nicola": "Lamborghini"
+    }
+   },
+   {
     "key": "n4",
     "heard": {
      "if_sara": "Sono 20 euro.",
@@ -492,10 +7168,87 @@
     }
    },
    {
+    "key": "numbers-g1",
+    "heard": {
+     "if_sara": "1 2 3",
+     "im_nicola": "1, 2, 3."
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "if_sara": "10.",
+     "im_nicola": "Di a chi."
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "if_sara": "3",
+     "im_nicola": "Grazie a tutti."
+    }
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {
+     "if_sara": "Sì.",
+     "im_nicola": "See you."
+    }
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {
+     "if_sara": "noto",
+     "im_nicola": "No, tu..."
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "if_sara": "9.",
+     "im_nicola": "9"
+    }
+   },
+   {
     "key": "pt4",
     "heard": {
      "if_sara": "Circa 800 per 40 minuti, il servizio è stato ripristinato.",
      "im_nicola": "Circa 800 per 40 minuti, il servizio è stato ripristinato."
+    }
+   },
+   {
+    "key": "signs-down_arrow",
+    "heard": {
+     "if_sara": "Ciao!",
+     "im_nicola": "Ciao."
+    }
+   },
+   {
+    "key": "signs-plus",
+    "heard": {
+     "if_sara": "Pio.",
+     "im_nicola": "Viuo?"
+    }
+   },
+   {
+    "key": "signs-up_arrow",
+    "heard": {
+     "if_sara": "Sì.",
+     "im_nicola": "Grazie."
+    }
+   },
+   {
+    "key": "tech-e_mail",
+    "heard": {
+     "if_sara": "le meila",
+     "im_nicola": "Clemade."
+    }
+   },
+   {
+    "key": "vegetables-garlic",
+    "heard": {
+     "if_sara": "Laio",
+     "im_nicola": "La io..."
     }
    }
   ]
@@ -510,8 +7263,8 @@
     "gender": "f",
     "accent": "ja-JP",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
-    "mean_cer": 0.041,
+    "pass_rate": 0.767,
+    "mean_cer": 0.178,
     "error": null
    },
    {
@@ -521,7 +7274,7 @@
     "gender": "f",
     "accent": "ja-JP",
     "license": "Apache-2.0 / CC BY",
-    "pass_rate": 0.942,
+    "pass_rate": 0.153,
     "mean_cer": 0.043,
     "error": null
    },
@@ -532,8 +7285,8 @@
     "gender": "m",
     "accent": "ja-JP",
     "license": "Apache-2.0 / CC BY",
-    "pass_rate": 0.95,
-    "mean_cer": 0.042,
+    "pass_rate": 0.626,
+    "mean_cer": 0.292,
     "error": null
    }
   ],
@@ -541,9 +7294,226 @@
    "jf_alpha",
    "jm_kumo"
   ],
-  "clips_total": 120,
-  "clips_kept": 114,
+  "clips_total": 738,
+  "clips_kept": 601,
   "failed": [
+   {
+    "key": "accessories-folding_hand_fan",
+    "heard": {
+     "jf_alpha": "ゼンス",
+     "jm_kumo": "戦争"
+    }
+   },
+   {
+    "key": "accessories-purse",
+    "heard": {
+     "jf_alpha": "財布を",
+     "jm_kumo": "サイフー"
+    }
+   },
+   {
+    "key": "actions-ear",
+    "heard": {
+     "jf_alpha": "ぎく",
+     "jm_kumo": "次回予告"
+    }
+   },
+   {
+    "key": "actions-eyes",
+    "heard": {
+     "jf_alpha": "見える?",
+     "jm_kumo": "ミドル"
+    }
+   },
+   {
+    "key": "actions-man_dancing",
+    "heard": {
+     "jf_alpha": "踊るへ。",
+     "jm_kumo": "おだろう。"
+    }
+   },
+   {
+    "key": "actions-microphone",
+    "heard": {
+     "jf_alpha": "歌おう。",
+     "jm_kumo": "ウダウザウ"
+    }
+   },
+   {
+    "key": "actions-writing_hand",
+    "heard": {
+     "jf_alpha": "家具",
+     "jm_kumo": "架空"
+    }
+   },
+   {
+    "key": "bathroom-basket",
+    "heard": {
+     "jf_alpha": "タゴ",
+     "jm_kumo": "加工"
+    }
+   },
+   {
+    "key": "bathroom-soap",
+    "heard": {
+     "jf_alpha": "政権",
+     "jm_kumo": "2."
+    }
+   },
+   {
+    "key": "birds-ant",
+    "heard": {
+     "jf_alpha": "あげー",
+     "jm_kumo": "アーディーズ"
+    }
+   },
+   {
+    "key": "birds-butterfly",
+    "heard": {
+     "jf_alpha": "以上",
+     "jm_kumo": "ちょうど"
+    }
+   },
+   {
+    "key": "birds-fly",
+    "heard": {
+     "jf_alpha": "はい。",
+     "jm_kumo": "はい。"
+    }
+   },
+   {
+    "key": "birds-mosquito",
+    "heard": {
+     "jf_alpha": "かん",
+     "jm_kumo": "カープ"
+    }
+   },
+   {
+    "key": "birds-parrot",
+    "heard": {
+     "jf_alpha": "おむえ。",
+     "jm_kumo": "オームズ"
+    }
+   },
+   {
+    "key": "birds-peacock",
+    "heard": {
+     "jf_alpha": "空弱",
+     "jm_kumo": "くざく"
+    }
+   },
+   {
+    "key": "birds-penguin",
+    "heard": {
+     "jf_alpha": "天元",
+     "jm_kumo": "TENGIN"
+    }
+   },
+   {
+    "key": "birds-snail",
+    "heard": {
+     "jf_alpha": "片つむり",
+     "jm_kumo": "片つむり"
+    }
+   },
+   {
+    "key": "body-brain",
+    "heard": {
+     "jf_alpha": "なぁ",
+     "jm_kumo": "の"
+    }
+   },
+   {
+    "key": "body-ear",
+    "heard": {
+     "jf_alpha": "イエハ",
+     "jm_kumo": "今日"
+    }
+   },
+   {
+    "key": "body-eye",
+    "heard": {
+     "jf_alpha": "ねえ",
+     "jm_kumo": "おめでとう"
+    }
+   },
+   {
+    "key": "body-index_pointing_up",
+    "heard": {
+     "jf_alpha": "ユーベー。",
+     "jm_kumo": "よびよ"
+    }
+   },
+   {
+    "key": "body-mouth",
+    "heard": {
+     "jf_alpha": "ぐじぇ。",
+     "jm_kumo": "こちら。"
+    }
+   },
+   {
+    "key": "body-nose",
+    "heard": {
+     "jf_alpha": "B",
+     "jm_kumo": "ブリード"
+    }
+   },
+   {
+    "key": "body-raised_hand",
+    "heard": {
+     "jf_alpha": "では",
+     "jm_kumo": "ご視聴ありがとうございました"
+    }
+   },
+   {
+    "key": "body-tongue",
+    "heard": {
+     "jf_alpha": "次だ!",
+     "jm_kumo": "次の動画でお会いしましょう。"
+    }
+   },
+   {
+    "key": "body-tooth",
+    "heard": {
+     "jf_alpha": "はい",
+     "jm_kumo": "ハウン"
+    }
+   },
+   {
+    "key": "clothes-man_s_shoe",
+    "heard": {
+     "jf_alpha": "グズ",
+     "jm_kumo": "こぞ。"
+    }
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {
+     "jf_alpha": "でしゃーす。",
+     "jm_kumo": "では、次の動画でお会いしましょう。"
+    }
+   },
+   {
+    "key": "clothes-woman_s_hat",
+    "heard": {
+     "jf_alpha": "ハト",
+     "jm_kumo": "8等。"
+    }
+   },
+   {
+    "key": "colors-blue_square",
+    "heard": {
+     "jf_alpha": "L",
+     "jm_kumo": "ローッ"
+    }
+   },
+   {
+    "key": "colors-red_square",
+    "heard": {
+     "jf_alpha": "バカ。",
+     "jm_kumo": "WACO"
+    }
+   },
    {
     "key": "d4",
     "heard": {
@@ -552,10 +7522,318 @@
     }
    },
    {
+    "key": "drinks-droplet",
+    "heard": {
+     "jf_alpha": "見えず",
+     "jm_kumo": "ミザ"
+    }
+   },
+   {
+    "key": "drinks-teacup_without_handle",
+    "heard": {
+     "jf_alpha": "おじゃ。",
+     "jm_kumo": "おじゃん"
+    }
+   },
+   {
+    "key": "family-family_man_boy",
+    "heard": {
+     "jf_alpha": "おじじさん",
+     "jm_kumo": "おじいさん"
+    }
+   },
+   {
+    "key": "family-family_man_woman_boy",
+    "heard": {
+     "jf_alpha": "利用心",
+     "jm_kumo": "利用心"
+    }
+   },
+   {
+    "key": "farm-cow",
+    "heard": {
+     "jf_alpha": "うせっ",
+     "jm_kumo": "おすすめ"
+    }
+   },
+   {
+    "key": "farm-dog",
+    "heard": {
+     "jf_alpha": "犬を",
+     "jm_kumo": "いいの?"
+    }
+   },
+   {
+    "key": "farm-donkey",
+    "heard": {
+     "jf_alpha": "どうば。",
+     "jm_kumo": "ロバーズ"
+    }
+   },
+   {
+    "key": "farm-ewe",
+    "heard": {
+     "jf_alpha": "次見。",
+     "jm_kumo": "ヒッツデュー"
+    }
+   },
+   {
+    "key": "farm-goat",
+    "heard": {
+     "jf_alpha": "やげー",
+     "jm_kumo": "やぎよ"
+    }
+   },
+   {
+    "key": "farm-horse",
+    "heard": {
+     "jf_alpha": "うまっ",
+     "jm_kumo": "うまっ"
+    }
+   },
+   {
+    "key": "farm-ox",
+    "heard": {
+     "jf_alpha": "おうしえ。",
+     "jm_kumo": "おしまい。"
+    }
+   },
+   {
+    "key": "farm-turkey",
+    "heard": {
+     "jf_alpha": "斜面鳥",
+     "jm_kumo": "ななめんトルギー"
+    }
+   },
+   {
+    "key": "feelings-red_heart",
+    "heard": {
+     "jf_alpha": "マナ",
+     "jm_kumo": "マナー"
+    }
+   },
+   {
+    "key": "fruits-coconut",
+    "heard": {
+     "jf_alpha": "ココナス",
+     "jm_kumo": "9頭。"
+    }
+   },
+   {
+    "key": "fruits-kiwi_fruit",
+    "heard": {
+     "jf_alpha": "よい",
+     "jm_kumo": "最後までご視聴ありがとうございました"
+    }
+   },
+   {
+    "key": "games-chess_pawn",
+    "heard": {
+     "jf_alpha": "Yes?",
+     "jm_kumo": "です。"
+    }
+   },
+   {
+    "key": "games-kite",
+    "heard": {
+     "jf_alpha": "いいか?",
+     "jm_kumo": "以下"
+    }
+   },
+   {
+    "key": "games-ribbon",
+    "heard": {
+     "jf_alpha": "2番",
+     "jm_kumo": "リボーン"
+    }
+   },
+   {
+    "key": "games-yo_yo",
+    "heard": {
+     "jf_alpha": "ようよう",
+     "jm_kumo": "よよ"
+    }
+   },
+   {
     "key": "h4",
     "heard": {
      "jf_alpha": "はい、7時から10時まで1回でございます。",
      "jm_kumo": "廃止時から10時まで1回でございます。"
+    }
+   },
+   {
+    "key": "health-crutch",
+    "heard": {
+     "jf_alpha": "まずばつえ",
+     "jm_kumo": "まずばつい"
+    }
+   },
+   {
+    "key": "health-drop_of_blood",
+    "heard": {
+     "jf_alpha": "次回は、ご視聴ありがとうございました。",
+     "jm_kumo": "次は、次の動画でお会いしましょう。"
+    }
+   },
+   {
+    "key": "health-nauseated_face",
+    "heard": {
+     "jf_alpha": "美容器",
+     "jm_kumo": "ブローキー"
+    }
+   },
+   {
+    "key": "health-stethoscope",
+    "heard": {
+     "jf_alpha": "常心器",
+     "jm_kumo": "とおすんきる"
+    }
+   },
+   {
+    "key": "health-syringe",
+    "heard": {
+     "jf_alpha": "住者",
+     "jm_kumo": "ずさあ"
+    }
+   },
+   {
+    "key": "house-chair",
+    "heard": {
+     "jf_alpha": "いっす",
+     "jm_kumo": "おやすさ"
+    }
+   },
+   {
+    "key": "house-couch_and_lamp",
+    "heard": {
+     "jf_alpha": "そうは。",
+     "jm_kumo": "さようなら"
+    }
+   },
+   {
+    "key": "house-door",
+    "heard": {
+     "jf_alpha": "では",
+     "jm_kumo": "ドアス"
+    }
+   },
+   {
+    "key": "house-framed_picture",
+    "heard": {
+     "jf_alpha": "えぐ",
+     "jm_kumo": "ご視聴ありがとうございました"
+    }
+   },
+   {
+    "key": "house-house",
+    "heard": {
+     "jf_alpha": "いや",
+     "jm_kumo": "ユープ"
+    }
+   },
+   {
+    "key": "house-house_with_garden",
+    "heard": {
+     "jf_alpha": "2話",
+     "jm_kumo": "では"
+    }
+   },
+   {
+    "key": "jobs-health_worker",
+    "heard": {
+     "jf_alpha": "以上。",
+     "jm_kumo": "以上"
+    }
+   },
+   {
+    "key": "jobs-singer",
+    "heard": {
+     "jf_alpha": "ガジュ",
+     "jm_kumo": "かわいいですよ。"
+    }
+   },
+   {
+    "key": "kitchen-jar",
+    "heard": {
+     "jf_alpha": "バイン",
+     "jm_kumo": "Bring"
+    }
+   },
+   {
+    "key": "kitchen-spoon",
+    "heard": {
+     "jf_alpha": "スブー",
+     "jm_kumo": "スポン"
+    }
+   },
+   {
+    "key": "landscapes-beach_with_umbrella",
+    "heard": {
+     "jf_alpha": "バイジェ",
+     "jm_kumo": "もいつよ"
+    }
+   },
+   {
+    "key": "landscapes-desert_island",
+    "heard": {
+     "jf_alpha": "どう?",
+     "jm_kumo": "と"
+    }
+   },
+   {
+    "key": "landscapes-g2",
+    "heard": {
+     "jf_alpha": "ビーチでの1日",
+     "jm_kumo": "v 1での1日"
+    }
+   },
+   {
+    "key": "meals-cheese_wedge",
+    "heard": {
+     "jf_alpha": "チーザー",
+     "jm_kumo": "チーズオ"
+    }
+   },
+   {
+    "key": "meals-flatbread",
+    "heard": {
+     "jf_alpha": "なぁ",
+     "jm_kumo": "なんと"
+    }
+   },
+   {
+    "key": "meals-pot_of_food",
+    "heard": {
+     "jf_alpha": "以上",
+     "jm_kumo": "シジョー"
+    }
+   },
+   {
+    "key": "meals-poultry_leg",
+    "heard": {
+     "jf_alpha": "経肉",
+     "jm_kumo": "キャニコ"
+    }
+   },
+   {
+    "key": "meals-salt",
+    "heard": {
+     "jf_alpha": "しよう。",
+     "jm_kumo": "ご視聴ありがとうございました"
+    }
+   },
+   {
+    "key": "meals-spaghetti",
+    "heard": {
+     "jf_alpha": "わすだ。",
+     "jm_kumo": "バスダー"
+    }
+   },
+   {
+    "key": "music-paintbrush",
+    "heard": {
+     "jf_alpha": "Fで。",
+     "jm_kumo": "エフーダー"
     }
    },
    {
@@ -573,6 +7851,160 @@
     }
    },
    {
+    "key": "numbers-g1",
+    "heard": {
+     "jf_alpha": "123",
+     "jm_kumo": "123"
+    }
+   },
+   {
+    "key": "numbers-keycap_0",
+    "heard": {
+     "jf_alpha": "0",
+     "jm_kumo": "0"
+    }
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {
+     "jf_alpha": "以上。",
+     "jm_kumo": "うちよ"
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "jf_alpha": "じゃ",
+     "jm_kumo": "ジョー"
+    }
+   },
+   {
+    "key": "numbers-keycap_2",
+    "heard": {
+     "jf_alpha": "いやー",
+     "jm_kumo": "ニューコ"
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "jf_alpha": "3.",
+     "jm_kumo": "3"
+    }
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {
+     "jf_alpha": "4",
+     "jm_kumo": "ヨン"
+    }
+   },
+   {
+    "key": "numbers-keycap_6",
+    "heard": {
+     "jf_alpha": "6",
+     "jm_kumo": "6"
+    }
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {
+     "jf_alpha": "7.",
+     "jm_kumo": "なな"
+    }
+   },
+   {
+    "key": "numbers-keycap_8",
+    "heard": {
+     "jf_alpha": "8",
+     "jm_kumo": "8"
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "jf_alpha": "Q",
+     "jm_kumo": "今日"
+    }
+   },
+   {
+    "key": "objects-locked",
+    "heard": {
+     "jf_alpha": "よ",
+     "jm_kumo": "上"
+    }
+   },
+   {
+    "key": "objects-magnet",
+    "heard": {
+     "jf_alpha": "ディシャク",
+     "jm_kumo": "自作"
+    }
+   },
+   {
+    "key": "objects-wrench",
+    "heard": {
+     "jf_alpha": "すばな。",
+     "jm_kumo": "すばなぁ。"
+    }
+   },
+   {
+    "key": "places-bridge_at_night",
+    "heard": {
+     "jf_alpha": "足。",
+     "jm_kumo": "ハシー"
+    }
+   },
+   {
+    "key": "places-castle",
+    "heard": {
+     "jf_alpha": "以上",
+     "jm_kumo": "上"
+    }
+   },
+   {
+    "key": "places-cityscape",
+    "heard": {
+     "jf_alpha": "どうし",
+     "jm_kumo": "とりあえず"
+    }
+   },
+   {
+    "key": "plants-deciduous_tree",
+    "heard": {
+     "jf_alpha": "次は、次の動画でお会いしましょう。",
+     "jm_kumo": "おちよう"
+    }
+   },
+   {
+    "key": "plants-leaf_fluttering_in_wind",
+    "heard": {
+     "jf_alpha": "はい。",
+     "jm_kumo": "ほん"
+    }
+   },
+   {
+    "key": "plants-rose",
+    "heard": {
+     "jf_alpha": "バラッ",
+     "jm_kumo": "バラッ"
+    }
+   },
+   {
+    "key": "plants-seedling",
+    "heard": {
+     "jf_alpha": "ねえ",
+     "jm_kumo": "おめでとうございます"
+    }
+   },
+   {
+    "key": "plants-tulip",
+    "heard": {
+     "jf_alpha": "ジューリープ",
+     "jm_kumo": "とりぽ"
+    }
+   },
+   {
     "key": "pt4",
     "heard": {
      "jf_alpha": "約800人で40分間でしたサービスは復旧済みです。",
@@ -584,6 +8016,244 @@
     "heard": {
      "jf_alpha": "7時に起きて朝ごはんを食べます。",
      "jm_kumo": "7時に起きて朝ごはんを食べます"
+    }
+   },
+   {
+    "key": "school-calendar",
+    "heard": {
+     "jf_alpha": "でしょ。",
+     "jm_kumo": "That's all"
+    }
+   },
+   {
+    "key": "school-pen",
+    "heard": {
+     "jf_alpha": "でん",
+     "jm_kumo": "PEN"
+    }
+   },
+   {
+    "key": "school-pushpin",
+    "heard": {
+     "jf_alpha": "ガビオー",
+     "jm_kumo": "ガブヨ"
+    }
+   },
+   {
+    "key": "sea-shrimp",
+    "heard": {
+     "jf_alpha": "エベイ",
+     "jm_kumo": "エビー"
+    }
+   },
+   {
+    "key": "signs-down_arrow",
+    "heard": {
+     "jf_alpha": "かん",
+     "jm_kumo": "カープ"
+    }
+   },
+   {
+    "key": "signs-minus",
+    "heard": {
+     "jf_alpha": "行く。",
+     "jm_kumo": "リコー"
+    }
+   },
+   {
+    "key": "signs-plus",
+    "heard": {
+     "jf_alpha": "だす。",
+     "jm_kumo": "多数"
+    }
+   },
+   {
+    "key": "signs-right_arrow",
+    "heard": {
+     "jf_alpha": "むえげ",
+     "jm_kumo": "メギア"
+    }
+   },
+   {
+    "key": "sports-goal_net",
+    "heard": {
+     "jf_alpha": "ゴーリ",
+     "jm_kumo": "ゴーラ"
+    }
+   },
+   {
+    "key": "sports-person_golfing",
+    "heard": {
+     "jf_alpha": "ゴルフへ。",
+     "jm_kumo": "ゴルフォー"
+    }
+   },
+   {
+    "key": "sports-skier",
+    "heard": {
+     "jf_alpha": "好き。",
+     "jm_kumo": "スキング"
+    }
+   },
+   {
+    "key": "sweets-pie",
+    "heard": {
+     "jf_alpha": "バイ",
+     "jm_kumo": "バイ。"
+    }
+   },
+   {
+    "key": "time-mantelpiece_clock",
+    "heard": {
+     "jf_alpha": "どけ",
+     "jm_kumo": "とくえ"
+    }
+   },
+   {
+    "key": "transport-metro",
+    "heard": {
+     "jf_alpha": "自我デズ",
+     "jm_kumo": "次回です。"
+    }
+   },
+   {
+    "key": "travel-airplane_departure",
+    "heard": {
+     "jf_alpha": "ジュバス",
+     "jm_kumo": "シュポーズ"
+    }
+   },
+   {
+    "key": "travel-compass",
+    "heard": {
+     "jf_alpha": "放位受信",
+     "jm_kumo": "ホイズシーン"
+    }
+   },
+   {
+    "key": "travel-construction",
+    "heard": {
+     "jf_alpha": "麹へ",
+     "jm_kumo": "こうずゆ"
+    }
+   },
+   {
+    "key": "travel-station",
+    "heard": {
+     "jf_alpha": "駅へ。",
+     "jm_kumo": "IQ"
+    }
+   },
+   {
+    "key": "travel-ticket",
+    "heard": {
+     "jf_alpha": "ぎっぷ",
+     "jm_kumo": "スポーツ"
+    }
+   },
+   {
+    "key": "travel-world_map",
+    "heard": {
+     "jf_alpha": "ジーザー",
+     "jm_kumo": "チーズを"
+    }
+   },
+   {
+    "key": "vegetables-carrot",
+    "heard": {
+     "jf_alpha": "民間",
+     "jm_kumo": "リンジェン"
+    }
+   },
+   {
+    "key": "weather-cloud_with_rain",
+    "heard": {
+     "jf_alpha": "アメー。",
+     "jm_kumo": "アメン"
+    }
+   },
+   {
+    "key": "weather-crescent_moon",
+    "heard": {
+     "jf_alpha": "次。",
+     "jm_kumo": "次よ。"
+    }
+   },
+   {
+    "key": "weather-fire",
+    "heard": {
+     "jf_alpha": "いえさ",
+     "jm_kumo": "ご視聴ありがとうございました"
+    }
+   },
+   {
+    "key": "weather-fog",
+    "heard": {
+     "jf_alpha": "キャリー",
+     "jm_kumo": "クリア"
+    }
+   },
+   {
+    "key": "weather-rainbow",
+    "heard": {
+     "jf_alpha": "ニーザ",
+     "jm_kumo": "実際よ"
+    }
+   },
+   {
+    "key": "weather-snowflake",
+    "heard": {
+     "jf_alpha": "ゆけ。",
+     "jm_kumo": "よきよ"
+    }
+   },
+   {
+    "key": "weather-wind_face",
+    "heard": {
+     "jf_alpha": "ふぅ。",
+     "jm_kumo": "5"
+    }
+   },
+   {
+    "key": "wild-bear",
+    "heard": {
+     "jf_alpha": "くまい",
+     "jm_kumo": "くまっ"
+    }
+   },
+   {
+    "key": "wild-chipmunk",
+    "heard": {
+     "jf_alpha": "レース",
+     "jm_kumo": "リース"
+    }
+   },
+   {
+    "key": "wild-elephant",
+    "heard": {
+     "jf_alpha": "ゾー。",
+     "jm_kumo": "ぞ"
+    }
+   },
+   {
+    "key": "wild-fox",
+    "heard": {
+     "jf_alpha": "ギツネ",
+     "jm_kumo": "キズナ"
+    }
+   },
+   {
+    "key": "wild-koala",
+    "heard": {
+     "jf_alpha": "こわら。",
+     "jm_kumo": "クオラ"
+    }
+   },
+   {
+    "key": "wild-snake",
+    "heard": {
+     "jf_alpha": "ヘビー",
+     "jm_kumo": "ハビー"
     }
    }
   ]
@@ -598,7 +8268,7 @@
     "gender": "m",
     "accent": "pt-PT",
     "license": "CC0",
-    "pass_rate": 0.825,
+    "pass_rate": 0.134,
     "mean_cer": 0.139,
     "error": null
    },
@@ -609,8 +8279,8 @@
     "gender": "f",
     "accent": "pt-BR",
     "license": "Apache-2.0",
-    "pass_rate": 0.967,
-    "mean_cer": 0.026,
+    "pass_rate": 0.874,
+    "mean_cer": 0.096,
     "error": null
    },
    {
@@ -620,44 +8290,485 @@
     "gender": "m",
     "accent": "pt-BR",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.027,
+    "pass_rate": 0.881,
+    "mean_cer": 0.092,
     "error": null
    }
   ],
   "chosen": [
-   "pf_dora",
-   "pm_alex"
+   "pm_alex",
+   "pf_dora"
   ],
-  "clips_total": 120,
-  "clips_kept": 116,
+  "clips_total": 738,
+  "clips_kept": 671,
   "failed": [
+   {
+    "key": "accessories-lipstick",
+    "heard": {
+     "pm_alex": "Ubatzong.",
+     "pf_dora": "Ubatong."
+    }
+   },
+   {
+    "key": "bathroom-basket",
+    "heard": {
+     "pm_alex": "O sexto.",
+     "pf_dora": "O sexto."
+    }
+   },
+   {
+    "key": "birds-penguin",
+    "heard": {
+     "pm_alex": "O Penguins.",
+     "pf_dora": "O Penguins."
+    }
+   },
+   {
+    "key": "birds-spider",
+    "heard": {
+     "pm_alex": "Avaranhas.",
+     "pf_dora": "Avaranhas."
+    }
+   },
+   {
+    "key": "birds-swan",
+    "heard": {
+     "pm_alex": "Ou se esnei.",
+     "pf_dora": "Os seis ne."
+    }
+   },
+   {
+    "key": "body-bone",
+    "heard": {
+     "pm_alex": "O ócio.",
+     "pf_dora": "Uvas."
+    }
+   },
+   {
+    "key": "body-ear",
+    "heard": {
+     "pm_alex": "Aurelias",
+     "pf_dora": "A Aurelia"
+    }
+   },
+   {
+    "key": "body-eye",
+    "heard": {
+     "pm_alex": "Tuholio.",
+     "pf_dora": "Sua folha."
+    }
+   },
+   {
+    "key": "clothes-billed_cap",
+    "heard": {
+     "pm_alex": "Tu boné.",
+     "pf_dora": "Subo né."
+    }
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {
+     "pm_alex": "Até xírat.",
+     "pf_dora": "Até xeirat."
+    }
+   },
+   {
+    "key": "colors-purple_square",
+    "heard": {
+     "pm_alex": "Não for a chute.",
+     "pf_dora": "Horshub."
+    }
+   },
+   {
+    "key": "colors-yellow_square",
+    "heard": {
+     "pm_alex": "Camarcelo.",
+     "pf_dora": "Camarcelo."
+    }
+   },
+   {
+    "key": "family-baby",
+    "heard": {
+     "pm_alex": "Tu bebé.",
+     "pf_dora": "Su bebé."
+    }
+   },
+   {
+    "key": "family-boy",
+    "heard": {
+     "pm_alex": "Humaninos.",
+     "pf_dora": "Humaninos."
+    }
+   },
+   {
+    "key": "family-family_man_boy",
+    "heard": {
+     "pm_alex": "do país.",
+     "pf_dora": "Super!"
+    }
+   },
+   {
+    "key": "family-man",
+    "heard": {
+     "pm_alex": "Tuvamente.",
+     "pf_dora": "Tua mentira."
+    }
+   },
+   {
+    "key": "family-people_hugging",
+    "heard": {
+     "pm_alex": "Um abraço.",
+     "pf_dora": "Um abraço."
+    }
+   },
+   {
+    "key": "farm-donkey",
+    "heard": {
+     "pm_alex": "Doe burguer.",
+     "pf_dora": "Tô burguer."
+    }
+   },
+   {
+    "key": "farm-ox",
+    "heard": {
+     "pm_alex": "To boy.",
+     "pf_dora": "Suboy."
+    }
+   },
+   {
+    "key": "feelings-face_with_tears_of_joy",
+    "heard": {
+     "pm_alex": "É o que eu falo.",
+     "pf_dora": "Híra, não."
+    }
+   },
+   {
+    "key": "feelings-red_heart",
+    "heard": {
+     "pm_alex": "Um amor.",
+     "pf_dora": "Do one more."
+    }
+   },
+   {
+    "key": "fruits-coconut",
+    "heard": {
+     "pm_alex": "Luka o que?",
+     "pf_dora": "Zucarquit."
+    }
+   },
+   {
+    "key": "fruits-kiwi_fruit",
+    "heard": {
+     "pm_alex": "Ok, we...",
+     "pf_dora": "O QE."
+    }
+   },
+   {
+    "key": "fruits-pineapple",
+    "heard": {
+     "pm_alex": "Urannade nas.",
+     "pf_dora": "Urana Nas"
+    }
+   },
+   {
+    "key": "games-yo_yo",
+    "heard": {
+     "pm_alex": "Pudio e outro.",
+     "pf_dora": "Puyo, eu."
+    }
+   },
    {
     "key": "h4",
     "heard": {
-     "pf_dora": "Sim, das 7 às 10 no res do chão.",
-     "pm_alex": "Sim, das 7 às 10 no res do chão."
+     "pm_alex": "Sim, das 7 às 10 no res do chão.",
+     "pf_dora": "Sim, das 7 às 10 no res do chão."
     }
    },
    {
     "key": "m1",
     "heard": {
-     "pf_dora": "Podemos oferecer-lhe um desconto de 5%.",
-     "pm_alex": "Podemos oferecer-lhe um desconto de 5%."
+     "pm_alex": "Podemos oferecer-lhe um desconto de 5%.",
+     "pf_dora": "Podemos oferecer-lhe um desconto de 5%."
+    }
+   },
+   {
+    "key": "meals-bread",
+    "heard": {
+     "pm_alex": "O pé é um.",
+     "pf_dora": "Tupém!"
+    }
+   },
+   {
+    "key": "meals-cooked_rice",
+    "heard": {
+     "pm_alex": "Guajos.",
+     "pf_dora": "Guajos."
+    }
+   },
+   {
+    "key": "meals-egg",
+    "heard": {
+     "pm_alex": "Do over.",
+     "pf_dora": "To have it."
+    }
+   },
+   {
+    "key": "meals-honey_pot",
+    "heard": {
+     "pm_alex": "Tu mel.",
+     "pf_dora": "To melt."
+    }
+   },
+   {
+    "key": "meals-salt",
+    "heard": {
+     "pm_alex": "Uçaut.",
+     "pf_dora": "Usao"
+    }
+   },
+   {
+    "key": "music-drum",
+    "heard": {
+     "pm_alex": "Utenborg",
+     "pf_dora": "Tutambor."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "pf_dora": "São 20 euros.",
-     "pm_alex": "São 20 euros."
+     "pm_alex": "São 20 euros.",
+     "pf_dora": "São 20 euros."
+    }
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {
+     "pm_alex": "1, 2, 3.",
+     "pf_dora": "1, 2, 3."
+    }
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {
+     "pm_alex": "Dung!",
+     "pf_dora": "Doan lhe."
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "pm_alex": "10.",
+     "pf_dora": "10."
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "pm_alex": "Toreis.",
+     "pf_dora": "Dores."
+    }
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {
+     "pm_alex": "5.",
+     "pf_dora": "5."
+    }
+   },
+   {
+    "key": "numbers-keycap_9",
+    "heard": {
+     "pm_alex": "9.",
+     "pf_dora": "9."
+    }
+   },
+   {
+    "key": "objects-balloon",
+    "heard": {
+     "pm_alex": "O balanço.",
+     "pf_dora": "O balanço."
+    }
+   },
+   {
+    "key": "objects-magnet",
+    "heard": {
+     "pm_alex": "Fuziman.",
+     "pf_dora": "Sujimã,"
+    }
+   },
+   {
+    "key": "places-hotel",
+    "heard": {
+     "pm_alex": "O O Tzeu.",
+     "pf_dora": "What's out?"
+    }
+   },
+   {
+    "key": "places-houses",
+    "heard": {
+     "pm_alex": "Doe bem bem.",
+     "pf_dora": "To buy hood."
+    }
+   },
+   {
+    "key": "plants-tulip",
+    "heard": {
+     "pm_alex": "A sulíper.",
+     "pf_dora": "A Zulipe."
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "pf_dora": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido.",
-     "pm_alex": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido."
+     "pm_alex": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido.",
+     "pf_dora": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido."
+    }
+   },
+   {
+    "key": "school-abacus",
+    "heard": {
+     "pm_alex": "Dua Bekir.",
+     "pf_dora": "Uabeku."
+    }
+   },
+   {
+    "key": "school-pen",
+    "heard": {
+     "pm_alex": "Akanete",
+     "pf_dora": "Akanete"
+    }
+   },
+   {
+    "key": "sea-octopus",
+    "heard": {
+     "pm_alex": "O pauze.",
+     "pf_dora": "O pauze."
+    }
+   },
+   {
+    "key": "sports-person_in_lotus_position",
+    "heard": {
+     "pm_alex": "Usioga",
+     "pf_dora": "Tuzi Ogre."
+    }
+   },
+   {
+    "key": "sports-person_surfing",
+    "heard": {
+     "pm_alex": "Ou seja, graças a Deus.",
+     "pf_dora": "Ou será?"
+    }
+   },
+   {
+    "key": "sports-rugby_football",
+    "heard": {
+     "pm_alex": "O HGB.",
+     "pf_dora": "Tu Haguebe."
+    }
+   },
+   {
+    "key": "sports-skier",
+    "heard": {
+     "pm_alex": "Uesquim.",
+     "pf_dora": "Uesquê."
+    }
+   },
+   {
+    "key": "sports-volleyball",
+    "heard": {
+     "pm_alex": "ou volleyball.",
+     "pf_dora": "Do volleyball."
+    }
+   },
+   {
+    "key": "sweets-shortcake",
+    "heard": {
+     "pm_alex": "Tu bole.",
+     "pf_dora": "Subalhe."
+    }
+   },
+   {
+    "key": "tech-e_mail",
+    "heard": {
+     "pm_alex": "Fui mails.",
+     "pf_dora": "Tuemails."
+    }
+   },
+   {
+    "key": "tech-robot",
+    "heard": {
+     "pm_alex": "O que é que é?",
+     "pf_dora": "Tucho B."
+    }
+   },
+   {
+    "key": "tech-satellite_antenna",
+    "heard": {
+     "pm_alex": "Antenna",
+     "pf_dora": "Antenna."
+    }
+   },
+   {
+    "key": "transport-delivery_truck",
+    "heard": {
+     "pm_alex": "O caminhão.",
+     "pf_dora": "O caminhão."
+    }
+   },
+   {
+    "key": "transport-motorcycle",
+    "heard": {
+     "pm_alex": "A morte.",
+     "pf_dora": "A morte."
+    }
+   },
+   {
+    "key": "vegetables-ear_of_corn",
+    "heard": {
+     "pm_alex": "O melhor.",
+     "pf_dora": "O melhor."
+    }
+   },
+   {
+    "key": "vegetables-garlic",
+    "heard": {
+     "pm_alex": "Turralho",
+     "pf_dora": "Suralho"
+    }
+   },
+   {
+    "key": "wild-bear",
+    "heard": {
+     "pm_alex": "Uou, olha só.",
+     "pf_dora": "O que é isso?"
+    }
+   },
+   {
+    "key": "wild-frog",
+    "heard": {
+     "pm_alex": "Achei.",
+     "pf_dora": "Tachanque."
+    }
+   },
+   {
+    "key": "wild-koala",
+    "heard": {
+     "pm_alex": "O Koalek",
+     "pf_dora": "O koalê."
+    }
+   },
+   {
+    "key": "wild-tiger",
+    "heard": {
+     "pm_alex": "O cegre.",
+     "pf_dora": "ou cegre."
+    }
+   },
+   {
+    "key": "wild-wolf",
+    "heard": {
+     "pm_alex": "Kulab.",
+     "pf_dora": "Tudo bem."
     }
    }
   ]
@@ -672,8 +8783,8 @@
     "gender": "f",
     "accent": "zh-CN",
     "license": "Apache-2.0",
-    "pass_rate": 0.975,
-    "mean_cer": 0.015,
+    "pass_rate": 0.774,
+    "mean_cer": 0.149,
     "error": null
    },
    {
@@ -683,7 +8794,7 @@
     "gender": "f",
     "accent": "zh-CN",
     "license": "Apache-2.0",
-    "pass_rate": 0.975,
+    "pass_rate": 0.159,
     "mean_cer": 0.016,
     "error": null
    },
@@ -694,8 +8805,8 @@
     "gender": "m",
     "accent": "zh-CN",
     "license": "Apache-2.0",
-    "pass_rate": 0.975,
-    "mean_cer": 0.015,
+    "pass_rate": 0.858,
+    "mean_cer": 0.096,
     "error": null
    },
    {
@@ -705,37 +8816,471 @@
     "gender": "m",
     "accent": "zh-CN",
     "license": "Apache-2.0",
-    "pass_rate": 0.975,
+    "pass_rate": 0.159,
     "mean_cer": 0.015,
     "error": null
    }
   ],
   "chosen": [
-   "zf_xiaobei",
-   "zm_yunjian"
+   "zm_yunjian",
+   "zf_xiaobei"
   ],
-  "clips_total": 120,
-  "clips_kept": 117,
+  "clips_total": 738,
+  "clips_kept": 673,
   "failed": [
+   {
+    "key": "actions-face_savoring_food",
+    "heard": {
+     "zm_yunjian": "去",
+     "zf_xiaobei": "去"
+    }
+   },
+   {
+    "key": "actions-open_book",
+    "heard": {
+     "zm_yunjian": "都",
+     "zf_xiaobei": "多"
+    }
+   },
+   {
+    "key": "actions-tumbler_glass",
+    "heard": {
+     "zm_yunjian": "呦",
+     "zf_xiaobei": "嗯"
+    }
+   },
+   {
+    "key": "bathroom-bathtub",
+    "heard": {
+     "zm_yunjian": "预告",
+     "zf_xiaobei": "预告"
+    }
+   },
+   {
+    "key": "bathroom-broom",
+    "heard": {
+     "zm_yunjian": "三五周",
+     "zf_xiaobei": "造柔"
+    }
+   },
+   {
+    "key": "bathroom-toothbrush",
+    "heard": {
+     "zm_yunjian": "叶阿爽",
+     "zf_xiaobei": "鸭妆"
+    }
+   },
+   {
+    "key": "birds-bird",
+    "heard": {
+     "zm_yunjian": "要",
+     "zf_xiaobei": "娘"
+    }
+   },
+   {
+    "key": "birds-parrot",
+    "heard": {
+     "zm_yunjian": "烟雾",
+     "zf_xiaobei": "煙窩"
+    }
+   },
+   {
+    "key": "body-flexed_biceps",
+    "heard": {
+     "zm_yunjian": "哥哥",
+     "zf_xiaobei": "哥不啊"
+    }
+   },
+   {
+    "key": "body-nose",
+    "heard": {
+     "zm_yunjian": "beez",
+     "zf_xiaobei": "比喻"
+    }
+   },
+   {
+    "key": "clothes-t_shirt",
+    "heard": {
+     "zm_yunjian": "7",
+     "zf_xiaobei": "你"
+    }
+   },
+   {
+    "key": "clothes-woman_s_boot",
+    "heard": {
+     "zm_yunjian": "谢谢",
+     "zf_xiaobei": "谢谢你了"
+    }
+   },
+   {
+    "key": "drinks-teacup_without_handle",
+    "heard": {
+     "zm_yunjian": "他",
+     "zf_xiaobei": "呀"
+    }
+   },
+   {
+    "key": "family-family_man_boy",
+    "heard": {
+     "zm_yunjian": "拜拜",
+     "zf_xiaobei": "拜拜"
+    }
+   },
+   {
+    "key": "farm-dog",
+    "heard": {
+     "zm_yunjian": "Goal",
+     "zf_xiaobei": "Go"
+    }
+   },
+   {
+    "key": "farm-donkey",
+    "heard": {
+     "zm_yunjian": "厉害",
+     "zf_xiaobei": "对"
+    }
+   },
+   {
+    "key": "farm-horse",
+    "heard": {
+     "zm_yunjian": "晚安",
+     "zf_xiaobei": "那"
+    }
+   },
+   {
+    "key": "farm-ox",
+    "heard": {
+     "zm_yunjian": "公尿",
+     "zf_xiaobei": "公邀"
+    }
+   },
+   {
+    "key": "farm-rabbit",
+    "heard": {
+     "zm_yunjian": "土豆",
+     "zf_xiaobei": "当時"
+    }
+   },
+   {
+    "key": "feelings-crying_face",
+    "heard": {
+     "zm_yunjian": "哭了",
+     "zf_xiaobei": "呼"
+    }
+   },
+   {
+    "key": "feelings-red_heart",
+    "heard": {
+     "zm_yunjian": "Aye",
+     "zf_xiaobei": "by bwd6"
+    }
+   },
+   {
+    "key": "fruits-lemon",
+    "heard": {
+     "zm_yunjian": "您吗?",
+     "zf_xiaobei": "年轻人"
+    }
+   },
+   {
+    "key": "games-game_die",
+    "heard": {
+     "zm_yunjian": "陶贼",
+     "zf_xiaobei": "pose。"
+    }
+   },
+   {
+    "key": "health-syringe",
+    "heard": {
+     "zm_yunjian": "大人",
+     "zf_xiaobei": "大人"
+    }
+   },
+   {
+    "key": "house-couch_and_lamp",
+    "heard": {
+     "zm_yunjian": "詞曲 李宗盛",
+     "zf_xiaobei": "招王"
+    }
+   },
+   {
+    "key": "house-ladder",
+    "heard": {
+     "zm_yunjian": "teeth",
+     "zf_xiaobei": "T哥"
+    }
+   },
+   {
+    "key": "jobs-cook",
+    "heard": {
+     "zm_yunjian": "初日",
+     "zf_xiaobei": "兔子"
+    }
+   },
+   {
+    "key": "jobs-mechanic",
+    "heard": {
+     "zm_yunjian": "鸡胸拱",
+     "zf_xiaobei": "雞首拱"
+    }
+   },
+   {
+    "key": "jobs-police_officer",
+    "heard": {
+     "zm_yunjian": "惊唱",
+     "zf_xiaobei": "經常"
+    }
+   },
    {
     "key": "m1",
     "heard": {
-     "zf_xiaobei": "我们可以给您5%的折扣。",
-     "zm_yunjian": "我们可以给您5%的折扣。"
+     "zm_yunjian": "我们可以给您5%的折扣。",
+     "zf_xiaobei": "我们可以给您5%的折扣。"
+    }
+   },
+   {
+    "key": "meals-french_fries",
+    "heard": {
+     "zm_yunjian": "15跳",
+     "zf_xiaobei": "15条"
+    }
+   },
+   {
+    "key": "meals-green_salad",
+    "heard": {
+     "zm_yunjian": "下了",
+     "zf_xiaobei": "沙郎"
+    }
+   },
+   {
+    "key": "meals-salt",
+    "heard": {
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶恩"
+    }
+   },
+   {
+    "key": "music-drum",
+    "heard": {
+     "zm_yunjian": "中文字幕志愿者 李宗盛",
+     "zf_xiaobei": "郭"
+    }
+   },
+   {
+    "key": "music-flute",
+    "heard": {
+     "zm_yunjian": "第一次。",
+     "zf_xiaobei": "依然"
     }
    },
    {
     "key": "n4",
     "heard": {
-     "zf_xiaobei": "一共20欧元。",
-     "zm_yunjian": "一共20欧元。"
+     "zm_yunjian": "一共20欧元。",
+     "zf_xiaobei": "一共20欧元。"
+    }
+   },
+   {
+    "key": "numbers-g1",
+    "heard": {
+     "zm_yunjian": "123",
+     "zf_xiaobei": "123"
+    }
+   },
+   {
+    "key": "numbers-keycap_1",
+    "heard": {
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶"
+    }
+   },
+   {
+    "key": "numbers-keycap_10",
+    "heard": {
+     "zm_yunjian": "感谢观看",
+     "zf_xiaobei": "嗯"
+    }
+   },
+   {
+    "key": "numbers-keycap_2",
+    "heard": {
+     "zm_yunjian": "好了",
+     "zf_xiaobei": "嗯"
+    }
+   },
+   {
+    "key": "numbers-keycap_3",
+    "heard": {
+     "zm_yunjian": "3",
+     "zf_xiaobei": "讚!"
+    }
+   },
+   {
+    "key": "numbers-keycap_4",
+    "heard": {
+     "zm_yunjian": "字",
+     "zf_xiaobei": "字"
+    }
+   },
+   {
+    "key": "numbers-keycap_5",
+    "heard": {
+     "zm_yunjian": "我",
+     "zf_xiaobei": "5"
+    }
+   },
+   {
+    "key": "numbers-keycap_7",
+    "heard": {
+     "zm_yunjian": "7.",
+     "zf_xiaobei": "D"
+    }
+   },
+   {
+    "key": "objects-locked",
+    "heard": {
+     "zm_yunjian": "错",
+     "zf_xiaobei": "坐"
+    }
+   },
+   {
+    "key": "objects-wrench",
+    "heard": {
+     "zm_yunjian": "白恩秀",
+     "zf_xiaobei": "斑绕。"
     }
    },
    {
     "key": "p2",
     "heard": {
-     "zf_xiaobei": "营业额增长了12%,主要得益于出口。",
-     "zm_yunjian": "营业额增长了12%,主要得益于出口。"
+     "zm_yunjian": "营业额增长了12%,主要得益于出口。",
+     "zf_xiaobei": "营业额增长了12%,主要得益于出口。"
+    }
+   },
+   {
+    "key": "plants-deciduous_tree",
+    "heard": {
+     "zm_yunjian": "说",
+     "zf_xiaobei": "乌"
+    }
+   },
+   {
+    "key": "school-closed_book",
+    "heard": {
+     "zm_yunjian": "说",
+     "zf_xiaobei": "中"
+    }
+   },
+   {
+    "key": "school-graduation_cap",
+    "heard": {
+     "zm_yunjian": "比",
+     "zf_xiaobei": "比较"
+    }
+   },
+   {
+    "key": "school-pen",
+    "heard": {
+     "zm_yunjian": "别",
+     "zf_xiaobei": "爹"
+    }
+   },
+   {
+    "key": "school-straight_ruler",
+    "heard": {
+     "zm_yunjian": "直播剧场——YoYo Television Series Exclusive",
+     "zf_xiaobei": "接着"
+    }
+   },
+   {
+    "key": "sea-fish",
+    "heard": {
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶"
+    }
+   },
+   {
+    "key": "signs-right_arrow",
+    "heard": {
+     "zm_yunjian": "右邊",
+     "zf_xiaobei": "用"
+    }
+   },
+   {
+    "key": "sports-running_shirt",
+    "heard": {
+     "zm_yunjian": "就",
+     "zf_xiaobei": "乔姨"
+    }
+   },
+   {
+    "key": "time-mantelpiece_clock",
+    "heard": {
+     "zm_yunjian": "中天",
+     "zf_xiaobei": "中文"
+    }
+   },
+   {
+    "key": "transport-metro",
+    "heard": {
+     "zm_yunjian": "第一天",
+     "zf_xiaobei": "第一天"
+    }
+   },
+   {
+    "key": "vegetables-carrot",
+    "heard": {
+     "zm_yunjian": "倘若",
+     "zf_xiaobei": "古老闆"
+    }
+   },
+   {
+    "key": "vegetables-eggplant",
+    "heard": {
+     "zm_yunjian": "请",
+     "zf_xiaobei": "接"
+    }
+   },
+   {
+    "key": "weather-cloud",
+    "heard": {
+     "zm_yunjian": "因",
+     "zf_xiaobei": "言人了"
+    }
+   },
+   {
+    "key": "weather-cloud_with_rain",
+    "heard": {
+     "zm_yunjian": "也算",
+     "zf_xiaobei": "耶"
+    }
+   },
+   {
+    "key": "weather-fog",
+    "heard": {
+     "zm_yunjian": "我",
+     "zf_xiaobei": "不"
+    }
+   },
+   {
+    "key": "wild-leopard",
+    "heard": {
+     "zm_yunjian": "吧",
+     "zf_xiaobei": "到"
+    }
+   },
+   {
+    "key": "wild-lion",
+    "heard": {
+     "zm_yunjian": "余子",
+     "zf_xiaobei": "中文字幕志愿者 杨茜茜"
+    }
+   },
+   {
+    "key": "wild-snake",
+    "heard": {
+     "zm_yunjian": "你",
+     "zf_xiaobei": "是"
     }
    }
   ]
