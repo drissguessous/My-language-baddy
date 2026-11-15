@@ -79,6 +79,74 @@ class Synth:
             write_wav(path, out, self.model.config.sampling_rate)
 
 
+def worker(args, lang, cand, jobs):
+    """Génère et vérifie les clips d'une voix ; chaque résultat est écrit dans le cache au fil de l'eau."""
+    asr = None
+    if lang in WHISPER_LANG:
+        from faster_whisper import WhisperModel
+        asr = WhisperModel(args.whisper, device='cpu', compute_type='int8')
+    cdir = os.path.join(args.cache, lang, cand['id'])
+    os.makedirs(cdir, exist_ok=True)
+    tmp = tempfile.mkdtemp()
+    synth = None
+    for it in jobs:
+        h = fnv(it['text'] + '|' + cand['id'] + '|' + args.whisper)
+        cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
+        if os.path.exists(cmp3) and os.path.exists(cjson):
+            continue
+        if synth is None:
+            synth = Synth(cand)  # une erreur ici arrête le worker : la voix est signalée par le parent
+        entry = {}
+        try:
+            wav = os.path.join(tmp, 'x.wav')
+            synth.wav(it['text'], wav)
+            encode(wav, cmp3)
+            entry['bytes'] = os.path.getsize(cmp3)
+            if asr:
+                segs, _ = asr.transcribe(cmp3, language=WHISPER_LANG[lang], beam_size=1, condition_on_previous_text=False,
+                                         vad_filter=False, without_timestamps=True)
+                heard = ''.join(x.text for x in segs).strip()
+                entry['heard'] = heard
+                entry['cer'] = round(cer(it['text'], heard, lang), 3)
+                entry['pass'] = entry['cer'] <= CER_PASS
+            else:
+                entry['pass'] = None
+        except Exception as ex:  # erreur non mise en cache : le clip sera retenté à la prochaine génération
+            if os.path.exists(cmp3):
+                os.remove(cmp3)
+            print(f"{cand['id']} {it['key']} {type(ex).__name__}: {ex}", flush=True)
+            continue
+        json.dump(entry, open(cjson, 'w', encoding='utf-8'), ensure_ascii=False)
+        print(f"{cand['id']} {it['key']} {entry.get('cer')}", flush=True)
+
+
+def run_watched(cmd, limit, stall):
+    """Lance un worker ; l'arrête s'il dépasse `limit` secondes ou reste `stall` secondes sans produire de clip."""
+    import selectors
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+    sel = selectors.DefaultSelector()
+    sel.register(p.stdout, selectors.EVENT_READ)
+    start = last = time.time()
+    why = None
+    while True:
+        if sel.select(timeout=15):
+            line = p.stdout.readline()
+            if not line:
+                break
+            sys.stdout.write(line)
+            last = time.time()
+        now = time.time()
+        if now - start > limit:
+            why = f'limite de {round(limit / 60)} min atteinte'
+        elif now - last > stall:
+            why = f'aucun clip depuis {round(stall / 60)} min'
+        if why:
+            p.kill()
+            break
+    p.wait()
+    return (None if why else p.returncode), why
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--lang', required=True)
@@ -86,93 +154,74 @@ def main():
     ap.add_argument('--out', default='out/voices')
     ap.add_argument('--whisper', default='large-v3-turbo')
     ap.add_argument('--cache', default='cache/voices', help='clips déjà générés et vérifiés (réutilisés si le texte est inchangé)')
-    ap.add_argument('--budget', type=float, default=260, help='minutes ; au-delà, les répliques du professeur non encore générées sont ignorées')
+    ap.add_argument('--budget', type=float, default=270, help='minutes au total pour la langue')
+    ap.add_argument('--stall', type=float, default=10, help='minutes sans nouveau clip avant d\'arrêter une voix bloquée')
+    ap.add_argument('--worker', help=argparse.SUPPRESS)
+    ap.add_argument('--kind', help=argparse.SUPPRESS)
     args = ap.parse_args()
     lang = args.lang
     corpus = json.load(open(args.corpus, encoding='utf-8'))
     items = [dict(key=p['id'], text=p['text']) for p in corpus['phrases'] if p['lang'] == lang]
     coach = [dict(key=c['key'], text=c['text'], gender=c['gender']) for c in corpus['coach']] if lang == 'fr' else []
+    cands = {c['id']: c for c in CANDIDATES[lang]}
 
-    asr = None
-    if lang in WHISPER_LANG:
-        from faster_whisper import WhisperModel
-        asr = WhisperModel(args.whisper, device='cpu', compute_type='int8')
+    def jobs_for(cand, kind):
+        return items if kind == 'clips' else [it for it in coach if it['gender'] == cand['gender']]
 
-    def transcribe(mp3):
-        segs, _ = asr.transcribe(mp3, language=WHISPER_LANG[lang], beam_size=1, condition_on_previous_text=False,
-                                 vad_filter=False, without_timestamps=True)
-        return ''.join(s.text for s in segs).strip()
+    if args.worker:
+        cand = cands[args.worker]
+        worker(args, lang, cand, jobs_for(cand, args.kind))
+        return
 
-    results = {'lang': lang, 'validated': asr is not None, 'candidates': []}
-    tmp = tempfile.mkdtemp()
+    # Chaque voix tourne dans un processus séparé avec une limite de temps : un moteur bloqué
+    # n'empêche plus les autres voix ni la publication. Phrases des leçons d'abord, répliques ensuite.
     deadline = time.time() + args.budget * 60
-    recs, synths = [], {}
+    errors = {}
+    for kind in ('clips', 'coach'):
+        pending = [c for c in CANDIDATES[lang] if jobs_for(c, kind) and c['id'] not in errors]
+        for n, cand in enumerate(pending):
+            left = deadline - time.time()
+            if left < 60:
+                print(f"{lang}/{cand['id']} {kind} : budget épuisé", flush=True)
+                continue
+            share = left / (len(pending) - n)  # part équitable du temps restant
+            t0 = time.time()
+            cmd = [sys.executable, __file__, '--lang', lang, '--corpus', args.corpus, '--whisper', args.whisper,
+                   '--cache', args.cache, '--worker', cand['id'], '--kind', kind]
+            code, why = run_watched(cmd, share, args.stall * 60)
+            if why:
+                print(f"{lang}/{cand['id']} {kind} : arrêt ({why})", flush=True)
+            if code not in (0, None) and kind == 'clips':
+                errors[cand['id']] = why or f'processus terminé avec le code {code}'
+            print(f"{lang}/{cand['id']} {kind} : {round(time.time() - t0)} s", flush=True)
 
-    def run(cand, rec, kind, it):
-        dest = os.path.join(args.out, lang, cand['id'])
-        cdir = os.path.join(args.cache, lang, cand['id'])
-        mp3 = os.path.join(dest, ('coach-' if kind == 'coach' else '') + it['key'] + '.mp3')
-        entry = {}
-        h = fnv(it['text'] + '|' + cand['id'] + '|' + args.whisper)
-        cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
-        if os.path.exists(cmp3) and os.path.exists(cjson):
-            shutil.copy(cmp3, mp3)
-            rec[kind][it['key']] = json.load(open(cjson, encoding='utf-8'))
-            return
-        if kind == 'coach' and time.time() > deadline:
-            return  # budget dépassé : la réplique du professeur sera lue par la voix de l'appareil
-        if cand['id'] not in synths and rec['error'] is None:
-            try:
-                synths[cand['id']] = Synth(cand)
-            except Exception as ex:  # modèle indisponible : on le signale et on continue
-                rec['error'] = f'{type(ex).__name__}: {ex}'
-                traceback.print_exc()
-        synth = synths.get(cand['id'])
-        if synth is None:
-            rec[kind][it['key']] = {'error': rec['error'], 'pass': False}
-            return
-        try:
-            wav = os.path.join(tmp, 'x.wav')
-            synth.wav(it['text'], wav)
-            encode(wav, mp3)
-            entry['bytes'] = os.path.getsize(mp3)
-            if asr:
-                heard = transcribe(mp3)
-                entry['heard'] = heard
-                entry['cer'] = round(cer(it['text'], heard, lang), 3)
-                entry['pass'] = entry['cer'] <= CER_PASS
-            else:
-                entry['pass'] = None
-            shutil.copy(mp3, cmp3)
-            json.dump(entry, open(cjson, 'w', encoding='utf-8'), ensure_ascii=False)
-        except Exception as ex:
-            entry = {'error': f'{type(ex).__name__}: {ex}', 'pass': False}
-        rec[kind][it['key']] = entry
-
-    # 1er passage : les phrases des leçons pour toutes les voix (prioritaires) ;
-    # 2e passage : les répliques du professeur, dans la limite du budget de temps.
+    # Rassemblement : tout est lu dans le cache.
+    results = {'lang': lang, 'validated': lang in WHISPER_LANG, 'candidates': []}
     for cand in CANDIDATES[lang]:
-        os.makedirs(os.path.join(args.cache, lang, cand['id']), exist_ok=True)
-        os.makedirs(os.path.join(args.out, lang, cand['id']), exist_ok=True)
         rec = dict(cand, clips={}, coach={}, error=None)
-        t0 = time.time()
-        for it in items:
-            run(cand, rec, 'clips', it)
-        rec['seconds'] = round(time.time() - t0)
-        recs.append(rec)
-    for cand, rec in zip(CANDIDATES[lang], recs):
-        t0 = time.time()
-        for it in coach:
-            if it['gender'] == cand['gender']:
-                run(cand, rec, 'coach', it)
-        rec['seconds'] += round(time.time() - t0)
-        rec['coach_missing'] = sum(1 for it in coach if it['gender'] == cand['gender'] and it['key'] not in rec['coach'])
-    for rec in recs:
+        cdir = os.path.join(args.cache, lang, cand['id'])
+        dest = os.path.join(args.out, lang, cand['id'])
+        os.makedirs(dest, exist_ok=True)
+        for kind in ('clips', 'coach'):
+            for it in jobs_for(cand, kind):
+                h = fnv(it['text'] + '|' + cand['id'] + '|' + args.whisper)
+                cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
+                if os.path.exists(cjson) and os.path.exists(cmp3):
+                    e = json.load(open(cjson, encoding='utf-8'))
+                    if not e.get('error'):
+                        shutil.copy(cmp3, os.path.join(dest, ('coach-' if kind == 'coach' else '') + it['key'] + '.mp3'))
+                    rec[kind][it['key']] = e
+                elif kind == 'clips':
+                    rec[kind][it['key']] = {'error': 'non généré', 'pass': False}
+        if not any(not e.get('error') for e in rec['clips'].values()):
+            rec['error'] = errors.get(cand['id']) or 'aucun clip généré'
         graded = [v for v in rec['clips'].values() if v.get('pass') is not None]
         rec['pass_rate'] = round(sum(1 for v in graded if v['pass']) / len(graded), 3) if graded else None
         cers = [v['cer'] for v in rec['clips'].values() if 'cer' in v]
         rec['mean_cer'] = round(sum(cers) / len(cers), 3) if cers else None
-        print(f"{lang}/{rec['id']}: réussite {rec['pass_rate']} CER moyen {rec['mean_cer']} ({rec['seconds']} s, coach manquant {rec.get('coach_missing', 0)})", flush=True)
+        rec['coach_missing'] = len(jobs_for(cand, 'coach')) - len(rec['coach'])
+        print(f"{lang}/{cand['id']}: réussite {rec['pass_rate']} CER moyen {rec['mean_cer']} "
+              f"(répliques manquantes {rec['coach_missing']}, erreur {rec['error']})", flush=True)
         results['candidates'].append(rec)
 
     os.makedirs(os.path.join(args.out, lang), exist_ok=True)

@@ -1,0 +1,21 @@
+name: Retrait d'une release Android
+
+# Supprime une release Android (et son tag) publiée par erreur, par exemple une build contenant
+# des contenus dont la licence ne permet pas la distribution.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag de la release à supprimer (ex. android-10)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    steps:
+      - env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh release delete "${{ inputs.tag }}" --cleanup-tag --yes -R "${{ github.repository }}"

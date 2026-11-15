@@ -77,6 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { ref: main }
       - uses: actions/download-artifact@v4
         with: { pattern: voices-*, path: out/voices-dl }
       - name: Regroupement
@@ -91,7 +92,13 @@ jobs:
           git add assets/audio src/data/audio/manifest.ts docs/VOIX.md docs/voix-report.json
           git diff --cached --quiet && exit 0
           git commit -q -m "Voix : clips validés par Whisper ($(date -u +%F))"
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          # Les clips sont entièrement régénérés à chaque assemblage : en cas de conflit, cette version l'emporte.
+          for i in 1 2 3; do
+            git pull --rebase -X theirs -q && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "::error::Impossible de pousser les clips"; exit 1
       - name: Relance des builds Android et web
         env: { GH_TOKEN: '${{ github.token }}' }
         run: |

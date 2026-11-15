@@ -12,6 +12,8 @@ import shutil
 LANG_NAMES = {'en': 'Anglais', 'fr': 'Français', 'es': 'Espagnol', 'it': 'Italien', 'pt': 'Portugais', 'ar': 'Arabe',
               'fa': 'Persan', 'hi': 'Hindi', 'zh': 'Chinois', 'ja': 'Japonais', 'ber': 'Amazigh'}
 MIN_RATE = 0.6  # une voix n'est retenue que si au moins 60 % de ses clips sont validés
+# Garde-fou : seules les licences compatibles avec une distribution commerciale sont intégrées.
+COMMERCIAL = {'Apache-2.0', 'CC0', 'CC-BY-4.0', 'CC-BY-3.0', 'Apache-2.0 / CC BY', 'MIT'}
 
 
 def rank(c):
@@ -19,7 +21,7 @@ def rank(c):
 
 
 def choose(cands, validated):
-    ok = [c for c in cands if not c.get('error') and c['clips']]
+    ok = [c for c in cands if not c.get('error') and c['clips'] and c.get('license') in COMMERCIAL]
     if not validated:
         return ok[:2]
     ok = [c for c in ok if (c.get('pass_rate') or 0) >= MIN_RATE]
@@ -68,7 +70,8 @@ def main():
         if lang == 'fr':
             for g in ('f', 'm'):
                 c = next((x for x in sorted(res['candidates'], key=rank, reverse=True)
-                          if x['gender'] == g and not x.get('error') and (x.get('pass_rate') or 0) >= MIN_RATE), None)
+                          if x['gender'] == g and not x.get('error') and x.get('license') in COMMERCIAL
+                          and (x.get('pass_rate') or 0) >= MIN_RATE), None)
                 if not c:
                     continue
                 for key, e in c['coach'].items():
