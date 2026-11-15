@@ -54,3 +54,9 @@ export const shadowStrong = Platform.select({
   web: { boxShadow: '0 8px 30px rgba(15,118,110,0.22)' } as object,
   default: { shadowColor: '#0F766E', shadowOpacity: 0.22, shadowRadius: 20, shadowOffset: { width: 0, height: 8 }, elevation: 6 },
 });
+
+/** Teintes douces des thèmes de vocabulaire. */
+export const THEME_TINTS = ['#E3F2EF', '#FDEBE5', '#FBF1DE', '#EEEBFB', '#E4F6EE', '#E8F1FB'];
+
+/** Pastilles de maîtrise d'un mot : à découvrir, en cours, acquis. */
+export const MASTERY_COLOR = { new: '#D0D5DD', learning: C.gold, known: C.ok } as const;

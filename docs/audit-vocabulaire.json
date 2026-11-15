@@ -1,0 +1,3404 @@
+{
+ "translations": {
+  "fr": {
+   "agree": 515,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_1",
+     "word": "un",
+     "cldr": "touches : 1",
+     "keys": "1, touches, un"
+    },
+    {
+     "id": "numbers-keycap_10",
+     "word": "dix",
+     "cldr": "touches : 10",
+     "keys": "touches"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "correct",
+     "cldr": "bouton coché",
+     "keys": "✓, bouton coché, carré, coche, coche blanche, marque"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "faux",
+     "cldr": "croix",
+     "keys": "×, annuler, croix, croix rouge, multiplication, multiplier"
+    },
+    {
+     "id": "sweets-doughnut",
+     "word": "le beignet",
+     "cldr": "doughnut",
+     "keys": "dessert, donut, doughnut, goûter, nourriture, sucré"
+    },
+    {
+     "id": "plants-herb",
+     "word": "l’herbe aromatique",
+     "cldr": "feuille",
+     "keys": "arbre, feuille, feuilles, plante"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "les parents",
+     "cldr": "famille : homme, femme et garçon",
+     "keys": "enfant, famille, famille avec un père, une mère et un fils, femme, fils, garçon"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "les amis",
+     "cldr": "deux personnes se tenant la main",
+     "keys": "couple, couple homosexuel, deux personnes se tenant la main, gay, main, personne"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "la personne",
+     "cldr": "silhouette de buste",
+     "keys": "buste, mystère, ombre, silhouette de buste"
+    },
+    {
+     "id": "body-flexed_biceps",
+     "word": "le bras",
+     "cldr": "biceps contracté",
+     "keys": "bande dessinée, BD, biceps, bodybuilding, contracté, corps"
+    },
+    {
+     "id": "health-face_with_thermometer",
+     "word": "la fièvre",
+     "cldr": "visage avec thermomètre",
+     "keys": "indisposé, malade, thermomètre, visage, visage avec thermomètre"
+    },
+    {
+     "id": "jobs-farmer",
+     "word": "l’agriculteur",
+     "cldr": "fermier (tous genres)",
+     "keys": "fermier, fermier (tous genres), fermière, jardinier, jardinière"
+    },
+    {
+     "id": "jobs-construction_worker",
+     "word": "le maçon",
+     "cldr": "personnel du bâtiment",
+     "keys": "bâtiment, BTP, casque, chantier, construction, homme"
+    },
+    {
+     "id": "jobs-guard",
+     "word": "le gardien",
+     "cldr": "garde",
+     "keys": "Buckingham Palace, casque, garde, garde homme, Londres"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "boire",
+     "cldr": "verre tumbler",
+     "keys": "alcool, liqueur, tumbler, verre, whisky"
+    },
+    {
+     "id": "actions-clapping_hands",
+     "word": "applaudir",
+     "cldr": "applaudissements",
+     "keys": "applaudissements, bien joué, bon travail, bravo, félicitations, formidable"
+    },
+    {
+     "id": "feelings-astonished_face",
+     "word": "surpris",
+     "cldr": "visage stupéfait",
+     "keys": "choc, choqué, émoticône, étonné, impossible, incroyable"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "détendu",
+     "cldr": "visage avec lunettes de soleil",
+     "keys": "cool, lunettes de soleil, posé, tranquille, visage avec lunettes de soleil"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "émerveillé",
+     "cldr": "visage avec des étoiles à la place des yeux",
+     "keys": "étoile, étoiles dans les yeux, grand sourire, heureux, pressé, surexcité"
+    },
+    {
+     "id": "objects-flashlight",
+     "word": "la lampe de poche",
+     "cldr": "torche",
+     "keys": "lampe électrique, lampe torche, lumière, outil, torche"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "le musée",
+     "cldr": "monument classique",
+     "keys": "colonnes, monument, monument classique, voyage"
+    },
+    {
+     "id": "places-houses",
+     "word": "le quartier",
+     "cldr": "maisons",
+     "keys": "bâtiment, bâtiments, maison, maisons, pavillons"
+    },
+    {
+     "id": "school-crayon",
+     "word": "le crayon de couleur",
+     "cldr": "crayon pastel",
+     "keys": "crayon pastel, pastel, rouge"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "la feuille de papier",
+     "cldr": "page",
+     "keys": "document, page"
+    },
+    {
+     "id": "school-briefcase",
+     "word": "la mallette",
+     "cldr": "porte-documents",
+     "keys": "accessoire, bureau, cartable, porte-documents"
+    },
+    {
+     "id": "school-calendar",
+     "word": "l’agenda",
+     "cldr": "calendrier",
+     "keys": "calendrier, date"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "la photographie",
+     "cldr": "appareil photo avec flash",
+     "keys": "appareil photo, appareil photo avec flash, flash"
+    },
+    {
+     "id": "music-clapper_board",
+     "word": "le cinéma",
+     "cldr": "clap",
+     "keys": "action, ça tourne, clap, film"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "l’équitation",
+     "cldr": "course hippique",
+     "keys": "cheval, course de chevaux, course hippique, jockey, sport"
+    },
+    {
+     "id": "sports-person_lifting_weights",
+     "word": "la musculation",
+     "cldr": "haltérophile",
+     "keys": "bodybuilding, entraînement, force, haltérophile, haltérophilie, homme"
+    },
+    {
+     "id": "games-yo_yo",
+     "word": "le yo-yo",
+     "cldr": "yoyo",
+     "keys": "descendre, jouet, monter, osciller, yoyo"
+    }
+   ]
+  },
+  "en": {
+   "agree": 508,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "ten",
+     "cldr": "keycap: 10",
+     "keys": "keycap"
+    },
+    {
+     "id": "time-sunset",
+     "word": "evening",
+     "cldr": "sunset",
+     "keys": "building, dusk, sun, sunset"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "correct",
+     "cldr": "check mark button",
+     "keys": "✓, button, check, checked, checkmark, complete"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "wrong",
+     "cldr": "cross mark",
+     "keys": "×, cancel, cross, mark, multiplication, multiply"
+    },
+    {
+     "id": "vegetables-hot_pepper",
+     "word": "chilli",
+     "cldr": "hot pepper",
+     "keys": "hot, pepper"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "soup",
+     "cldr": "bowl with spoon",
+     "keys": "bowl, breakfast, cereal, congee, oatmeal, porridge"
+    },
+    {
+     "id": "sweets-cookie",
+     "word": "biscuit",
+     "cldr": "cookie",
+     "keys": "chip, chocolate, cookie, dessert, sweet"
+    },
+    {
+     "id": "kitchen-canned_food",
+     "word": "tin",
+     "cldr": "canned food",
+     "keys": "can, canned, food"
+    },
+    {
+     "id": "farm-chicken",
+     "word": "hen",
+     "cldr": "chicken",
+     "keys": "animal, bird, chicken, ornithology"
+    },
+    {
+     "id": "sea-shrimp",
+     "word": "prawn",
+     "cldr": "shrimp",
+     "keys": "food, shellfish, shrimp, small"
+    },
+    {
+     "id": "landscapes-camping",
+     "word": "campsite",
+     "cldr": "camping",
+     "keys": "camping"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "mother",
+     "cldr": "family: woman, girl",
+     "keys": "child, family, girl, woman"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "father",
+     "cldr": "family: man, boy",
+     "keys": "boy, child, family, man"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "parents",
+     "cldr": "family: man, woman, boy",
+     "keys": "boy, child, family, man, woman"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "person",
+     "cldr": "bust in silhouette",
+     "keys": "bust, mysterious, shadow, silhouette"
+    },
+    {
+     "id": "health-syringe",
+     "word": "injection",
+     "cldr": "syringe",
+     "keys": "doctor, flu, medicine, needle, shot, sick"
+    },
+    {
+     "id": "health-adhesive_bandage",
+     "word": "plaster",
+     "cldr": "adhesive bandage",
+     "keys": "adhesive, bandage"
+    },
+    {
+     "id": "health-face_with_thermometer",
+     "word": "fever",
+     "cldr": "face with thermometer",
+     "keys": "face, ill, sick, thermometer"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "cold",
+     "cldr": "sneezing face",
+     "keys": "face, fever, flu, gesundheit, sick, sneeze"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "to drink",
+     "cldr": "tumbler glass",
+     "keys": "glass, liquor, scotch, shot, tumbler, whiskey"
+    },
+    {
+     "id": "feelings-astonished_face",
+     "word": "surprised",
+     "cldr": "astonished face",
+     "keys": "astonished, cost, face, no, omg, shocked"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "amazed",
+     "cldr": "star-struck",
+     "keys": "excited, eyes, face, grinning, smile, star"
+    },
+    {
+     "id": "house-couch_and_lamp",
+     "word": "sofa",
+     "cldr": "couch and lamp",
+     "keys": "couch, hotel, lamp"
+    },
+    {
+     "id": "bathroom-wastebasket",
+     "word": "bin",
+     "cldr": "wastebasket",
+     "keys": "can, garbage, trash, waste, wastebasket"
+    },
+    {
+     "id": "clothes-running_shoe",
+     "word": "trainers",
+     "cldr": "running shoe",
+     "keys": "athletic, clothes, clothing, fast, kick, running"
+    },
+    {
+     "id": "transport-metro",
+     "word": "underground",
+     "cldr": "metro",
+     "keys": "metro, subway, travel"
+    },
+    {
+     "id": "transport-motorcycle",
+     "word": "motorbike",
+     "cldr": "motorcycle",
+     "keys": "motorcycle, racing"
+    },
+    {
+     "id": "transport-delivery_truck",
+     "word": "lorry",
+     "cldr": "delivery truck",
+     "keys": "car, delivery, drive, truck, vehicle"
+    },
+    {
+     "id": "places-convenience_store",
+     "word": "grocery shop",
+     "cldr": "convenience store",
+     "keys": "24, building, convenience, hours, store"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "museum",
+     "cldr": "classical building",
+     "keys": "building, classical"
+    },
+    {
+     "id": "places-houses",
+     "word": "neighbourhood",
+     "cldr": "houses",
+     "keys": "house, houses"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "reception",
+     "cldr": "bellhop bell",
+     "keys": "bell, bellhop, hotel"
+    },
+    {
+     "id": "travel-construction",
+     "word": "roadworks",
+     "cldr": "construction",
+     "keys": "barrier, construction"
+    },
+    {
+     "id": "school-paperclip",
+     "word": "paper clip",
+     "cldr": "paperclip",
+     "keys": "paperclip"
+    },
+    {
+     "id": "school-calendar",
+     "word": "diary",
+     "cldr": "calendar",
+     "keys": "calendar, date"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "photography",
+     "cldr": "camera with flash",
+     "keys": "camera, flash, video"
+    },
+    {
+     "id": "music-clapper_board",
+     "word": "cinema",
+     "cldr": "clapper board",
+     "keys": "action, board, clapper, movie"
+    },
+    {
+     "id": "sports-running_shirt",
+     "word": "jersey",
+     "cldr": "running shirt",
+     "keys": "athletics, running, sash, shirt"
+    }
+   ]
+  },
+  "es": {
+   "agree": 481,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "diez",
+     "cldr": "Teclas: 10",
+     "keys": "Teclas"
+    },
+    {
+     "id": "time-sunrise",
+     "word": "la mañana",
+     "cldr": "amanecer",
+     "keys": "amanecer, salida del sol"
+    },
+    {
+     "id": "time-sunset",
+     "word": "la tarde",
+     "cldr": "puesta del sol",
+     "keys": "edificios, puesta del sol"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "correcto",
+     "cldr": "botón de marca de verificación",
+     "keys": "✓, botón, botón de marca de verificación, marca, selección, verificación"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "incorrecto",
+     "cldr": "marca de cruz",
+     "keys": "×, cancelar, cruz, marca de cruz, marca de tachado, tachar"
+    },
+    {
+     "id": "vegetables-hot_pepper",
+     "word": "la guindilla",
+     "cldr": "chile picante",
+     "keys": "chile, picante, planta"
+    },
+    {
+     "id": "meals-flatbread",
+     "word": "el pan plano",
+     "cldr": "pan sin levadura",
+     "keys": "arepa, naan, pan sin levadura, pita, tortilla"
+    },
+    {
+     "id": "meals-pot_of_food",
+     "word": "el guiso",
+     "cldr": "olla de comida",
+     "keys": "comida de olla, olla de comida, puchero, restaurante"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "la sopa",
+     "cldr": "cuenco con cuchara",
+     "keys": "cereal, cuenco con cuchara, desayuno"
+    },
+    {
+     "id": "meals-falafel",
+     "word": "los faláfeles",
+     "cldr": "falafel",
+     "keys": "albóndiga, falafel, garbanzo"
+    },
+    {
+     "id": "kitchen-fork_and_knife",
+     "word": "los cubiertos",
+     "cldr": "tenedor y cuchillo",
+     "keys": "cuchillo, restaurante, tenedor, tenedor y cuchillo"
+    },
+    {
+     "id": "plants-evergreen_tree",
+     "word": "el abeto",
+     "cldr": "árbol de hoja perenne",
+     "keys": "árbol, árbol de hoja perenne, hoja perenne, perenne"
+    },
+    {
+     "id": "plants-seedling",
+     "word": "el brote",
+     "cldr": "planta joven",
+     "keys": "planta joven, plantón"
+    },
+    {
+     "id": "plants-fallen_leaf",
+     "word": "la hoja seca",
+     "cldr": "hojas caídas",
+     "keys": "caída, hojas, hojas caídas"
+    },
+    {
+     "id": "weather-cloud_with_lightning",
+     "word": "el relámpago",
+     "cldr": "nube con rayo",
+     "keys": "nube, nube con rayo, rayo"
+    },
+    {
+     "id": "landscapes-snow_capped_mountain",
+     "word": "la cumbre nevada",
+     "cldr": "montaña con nieve",
+     "keys": "frío, montaña, montaña con nieve, nieve"
+    },
+    {
+     "id": "family-child",
+     "word": "el niño",
+     "cldr": "infante",
+     "keys": "crío, género, infante, joven, neutro"
+    },
+    {
+     "id": "family-boy",
+     "word": "el chico",
+     "cldr": "niño",
+     "keys": "joven, niño"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "la madre",
+     "cldr": "familia: mujer y niña",
+     "keys": "familia, mujer, niña"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "el padre",
+     "cldr": "familia: hombre y niño",
+     "keys": "familia, hombre, niño"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "los padres",
+     "cldr": "familia: hombre, mujer, niño",
+     "keys": "familia, hombre, mujer, niño"
+    },
+    {
+     "id": "family-old_woman",
+     "word": "la abuela",
+     "cldr": "anciana",
+     "keys": "anciana, mayor, mujer"
+    },
+    {
+     "id": "family-old_man",
+     "word": "el abuelo",
+     "cldr": "anciano",
+     "keys": "anciano, hombre, mayor"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "los amigos",
+     "cldr": "dos personas de la mano",
+     "keys": "dos personas de la mano, mano, pareja, persona"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "la persona",
+     "cldr": "silueta de busto",
+     "keys": "busto, silueta, silueta de busto"
+    },
+    {
+     "id": "body-flexed_biceps",
+     "word": "el brazo",
+     "cldr": "bíceps flexionado",
+     "keys": "bíceps, cómic, flexionado, fuerte, músculo"
+    },
+    {
+     "id": "health-pill",
+     "word": "el medicamento",
+     "cldr": "píldora",
+     "keys": "comprimido, medicina, médico, pastilla, píldora"
+    },
+    {
+     "id": "health-syringe",
+     "word": "la inyección",
+     "cldr": "jeringuilla",
+     "keys": "aguja, jeringa, jeringuilla, medicina, médico"
+    },
+    {
+     "id": "health-face_with_thermometer",
+     "word": "la fiebre",
+     "cldr": "cara con termómetro",
+     "keys": "cara, cara con termómetro, enfermo, malo, termómetro"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "el resfriado",
+     "cldr": "cara estornudando",
+     "keys": "cara, cara estornudando, estornudar, estornudo, pañuelo"
+    },
+    {
+     "id": "health-nauseated_face",
+     "word": "enfermo",
+     "cldr": "cara de náuseas",
+     "keys": "cara, cara de náuseas, náuseas, vomitar"
+    },
+    {
+     "id": "jobs-construction_worker",
+     "word": "el albañil",
+     "cldr": "profesional de la construcción",
+     "keys": "casco, construcción, obrero, profesional de la construcción, trabajador"
+    },
+    {
+     "id": "actions-person_running",
+     "word": "correr",
+     "cldr": "persona corriendo",
+     "keys": "carrera, deporte, maratón, persona corriendo"
+    },
+    {
+     "id": "actions-person_biking",
+     "word": "montar en bici",
+     "cldr": "persona en bicicleta",
+     "keys": "bicicleta, ciclismo, ciclista, persona en bicicleta"
+    },
+    {
+     "id": "actions-person_climbing",
+     "word": "escalar",
+     "cldr": "persona escalando",
+     "keys": "alpinista, escalador, persona escalando"
+    },
+    {
+     "id": "actions-sleeping_face",
+     "word": "dormir",
+     "cldr": "cara durmiendo",
+     "keys": "cara, cara durmiendo, dormido, sueño, zzz"
+    },
+    {
+     "id": "actions-face_savoring_food",
+     "word": "comer",
+     "cldr": "cara saboreando comida",
+     "keys": "cara, cara saboreando comida, delicioso, hambre, rico"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "beber",
+     "cldr": "vaso de whisky",
+     "keys": "chupito, copa, licor, vaso, vaso de whisky, whisky"
+    },
+    {
+     "id": "actions-open_book",
+     "word": "leer",
+     "cldr": "libro abierto",
+     "keys": "abierto, libro"
+    },
+    {
+     "id": "actions-ear",
+     "word": "escuchar",
+     "cldr": "oreja",
+     "keys": "cuerpo, oreja"
+    },
+    {
+     "id": "actions-eyes",
+     "word": "mirar",
+     "cldr": "ojos",
+     "keys": "cara, ojos"
+    },
+    {
+     "id": "actions-microphone",
+     "word": "cantar",
+     "cldr": "micrófono",
+     "keys": "entretenimiento, karaoke, micro, micrófono"
+    },
+    {
+     "id": "actions-thinking_face",
+     "word": "pensar",
+     "cldr": "cara pensativa",
+     "keys": "cara, cara pensativa, duda, pensando"
+    },
+    {
+     "id": "actions-handshake",
+     "word": "dar la mano",
+     "cldr": "apretón de manos",
+     "keys": "acuerdo, apretón, apretón de manos, manos"
+    },
+    {
+     "id": "actions-person_taking_bath",
+     "word": "bañarse",
+     "cldr": "persona en la bañera",
+     "keys": "bañera, baño, persona, persona en la bañera"
+    },
+    {
+     "id": "actions-yawning_face",
+     "word": "bostezar",
+     "cldr": "cara de bostezo",
+     "keys": "aburrido, bostezo, cansado, cara de bostezo, dormido, sueño"
+    },
+    {
+     "id": "feelings-pensive_face",
+     "word": "triste",
+     "cldr": "cara desanimada",
+     "keys": "alicaído, cara, cara desanimada, desanimado, pensativo"
+    },
+    {
+     "id": "feelings-astonished_face",
+     "word": "sorprendido",
+     "cldr": "cara asombrada",
+     "keys": "alucinado, asombrado, cara, cara asombrada, pasmado"
+    },
+    {
+     "id": "feelings-face_with_tears_of_joy",
+     "word": "reír",
+     "cldr": "cara llorando de risa",
+     "keys": "cara, cara llorando de risa, felicidad, lágrima, risa"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "relajado",
+     "cldr": "cara sonriendo con gafas de sol",
+     "keys": "cara, cara sonriendo con gafas de sol, gafas, guay, sol"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "maravillado",
+     "cldr": "cara sonriendo con estrellas",
+     "keys": "cara, cara sonriendo con estrellas, estrellas, sonrisa"
+    },
+    {
+     "id": "feelings-red_heart",
+     "word": "el amor",
+     "cldr": "corazón rojo",
+     "keys": "corazón, emoción, rojo"
+    },
+    {
+     "id": "clothes-running_shoe",
+     "word": "las zapatillas",
+     "cldr": "zapatilla deportiva",
+     "keys": "calzado, correr, ropa, tenis, zapatilla deportiva"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "el museo",
+     "cldr": "edificio clásico",
+     "keys": "clásico, edificio"
+    },
+    {
+     "id": "places-houses",
+     "word": "el barrio",
+     "cldr": "casas",
+     "keys": "casas, edificio, urbanización"
+    },
+    {
+     "id": "travel-ticket",
+     "word": "el billete",
+     "cldr": "tique",
+     "keys": "acceso, admisión, tique"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "la recepción",
+     "cldr": "timbre de hotel",
+     "keys": "botones, campanilla, hotel, timbre, timbre de hotel"
+    },
+    {
+     "id": "travel-fuel_pump",
+     "word": "la gasolinera",
+     "cldr": "surtidor de gasolina",
+     "keys": "bomba de gasolina, combustible, gasolina, surtidor, surtidor de gasolina"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "la hoja de papel",
+     "cldr": "página hacia arriba",
+     "keys": "anverso, documento, página, página hacia arriba"
+    },
+    {
+     "id": "school-calendar",
+     "word": "la agenda",
+     "cldr": "calendario",
+     "keys": "calendario, fecha"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "la fotografía",
+     "cldr": "cámara con flash",
+     "keys": "cámara, cámara con flash, flash"
+    },
+    {
+     "id": "sports-ice_skate",
+     "word": "el patinaje",
+     "cldr": "patín de hielo",
+     "keys": "hielo, patín, patín de hielo"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "la equitación",
+     "cldr": "carrera de caballos",
+     "keys": "caballo, caballo de carreras, carrera de caballos, carreras, jinete"
+    },
+    {
+     "id": "sports-running_shirt",
+     "word": "la camiseta deportiva",
+     "cldr": "camiseta sin mangas",
+     "keys": "banda, camiseta con banda, camiseta de correr, camiseta sin mangas, deporte"
+    },
+    {
+     "id": "games-ribbon",
+     "word": "la cinta",
+     "cldr": "lazo",
+     "keys": "celebración, lazo"
+    }
+   ]
+  },
+  "it": {
+   "agree": 507,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "dieci",
+     "cldr": "tasto: 10",
+     "keys": "tasto"
+    },
+    {
+     "id": "time-sunrise",
+     "word": "la mattina",
+     "cldr": "alba",
+     "keys": "alba, finestra, mattino, natura, sole, sole che sorge"
+    },
+    {
+     "id": "time-sunset",
+     "word": "la sera",
+     "cldr": "tramonto",
+     "keys": "città, skyline, sole che tramonta sulla città, tramonto"
+    },
+    {
+     "id": "signs-up_arrow",
+     "word": "su",
+     "cldr": "freccia rivolta verso l’alto",
+     "keys": "alto, direzione, freccia, freccia in alto, freccia rivolta verso l’alto, nord"
+    },
+    {
+     "id": "signs-down_arrow",
+     "word": "giù",
+     "cldr": "freccia rivolta verso il basso",
+     "keys": "basso, direzione, freccia, freccia in basso, freccia rivolta verso il basso, punto cardinale"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "giusto",
+     "cldr": "pulsante segno di spunta",
+     "keys": "baffo, fatto, pulsante segno di spunta, segno di spunta, segno di spunta grande, spunta"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "sbagliato",
+     "cldr": "croce",
+     "keys": "croce, croce rossa, moltiplicazione, X"
+    },
+    {
+     "id": "sweets-lollipop",
+     "word": "il lecca-lecca",
+     "cldr": "lecca lecca",
+     "keys": "caramella, dolce, dolcetto, lecca lecca, ristorante, zucchero"
+    },
+    {
+     "id": "sweets-pie",
+     "word": "la crostata",
+     "cldr": "torta",
+     "keys": "apple pie, cibo, dolce, fetta, pasticceria, torta"
+    },
+    {
+     "id": "plants-herb",
+     "word": "l’erba aromatica",
+     "cldr": "pianta",
+     "keys": "foglia, natura, pianta, ramo, verde"
+    },
+    {
+     "id": "family-girl",
+     "word": "la ragazza",
+     "cldr": "bambina",
+     "keys": "bambina, bimba, bionda, codini, contenta, felice"
+    },
+    {
+     "id": "family-boy",
+     "word": "il ragazzo",
+     "cldr": "bambino",
+     "keys": "bambino, bimbo, giovane, persona, persone, ragazzino"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "la madre",
+     "cldr": "famiglia: donna e bambina",
+     "keys": "bambina, bambino, donna, famiglia, mamma, papà"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "il padre",
+     "cldr": "famiglia: uomo e bambino",
+     "keys": "bambino, famiglia, mamma, papà, persone, uomo"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "i genitori",
+     "cldr": "famiglia: uomo, donna e bambino",
+     "keys": "bambino, donna, famiglia, mamma, papà, persone"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "gli amici",
+     "cldr": "persone che si tengono per mano",
+     "keys": "coppia, coppia che si tiene per mano, coppia per mano, insieme, mano nella mano, persona"
+    },
+    {
+     "id": "jobs-police_officer",
+     "word": "il poliziotto",
+     "cldr": "agente di polizia",
+     "keys": "agente, arresto, controllo, fermo, polizia"
+    },
+    {
+     "id": "jobs-detective",
+     "word": "l’investigatore",
+     "cldr": "detective",
+     "keys": "detective, lavoro, lente, mistero, segugio, spia"
+    },
+    {
+     "id": "actions-person_climbing",
+     "word": "arrampicare",
+     "cldr": "persona che scala",
+     "keys": "arrampicarsi, arrampicata, arrampicatore, arrampicatrice, montagna, persona"
+    },
+    {
+     "id": "actions-face_savoring_food",
+     "word": "mangiare",
+     "cldr": "faccina che si lecca i baffi",
+     "keys": "buonissimo, buono, che buono, cibo delizioso, faccina che si lecca i baffi, gnam"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "bere",
+     "cldr": "bicchiere tumbler",
+     "keys": "alcool, bevanda, bicchiere, drink, liquore, tumbler"
+    },
+    {
+     "id": "actions-handshake",
+     "word": "stringere la mano",
+     "cldr": "stretta di mano",
+     "keys": "affare fatto, conoscere, d’accordo, mani che si stringono, ok, patto"
+    },
+    {
+     "id": "actions-person_raising_hand",
+     "word": "alzare la mano",
+     "cldr": "persona con mano alzata",
+     "keys": "ciao, eccomi, felice, gesto, mano alzata, persona"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "rilassato",
+     "cldr": "faccina con sorriso e occhiali da sole",
+     "keys": "cool, fighetto, figo, ganzo, luce, relax"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "meravigliato",
+     "cldr": "colpo di fulmine",
+     "keys": "emozionante, emozionato, faccia sorridente, faccina con le stelle, felice, figata"
+    },
+    {
+     "id": "bathroom-toilet",
+     "word": "il gabinetto",
+     "cldr": "toilette",
+     "keys": "bagno, toilette, trono, water"
+    },
+    {
+     "id": "clothes-man_s_shoe",
+     "word": "le scarpe",
+     "cldr": "scarpa da uomo",
+     "keys": "abbigliamento, accessori, mocassino, scarpa, scarpa da uomo, shopping"
+    },
+    {
+     "id": "clothes-woman_s_boot",
+     "word": "gli stivali",
+     "cldr": "stivale da donna",
+     "keys": "abbigliamento, donna, scarpa, scarpe, stivale, stivale da donna"
+    },
+    {
+     "id": "accessories-purse",
+     "word": "il portamonete",
+     "cldr": "borsellino",
+     "keys": "abbigliamento, accessori, borsellino, borsetta, denaro, elegante"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "il museo",
+     "cldr": "edificio classico",
+     "keys": "antichità, edificio, edificio classico, Grecia, palazzo, Partenone"
+    },
+    {
+     "id": "travel-fuel_pump",
+     "word": "il distributore",
+     "cldr": "stazione di servizio",
+     "keys": "benzina, carburante, fare il pieno, pieno, pompa di benzina, stazione"
+    },
+    {
+     "id": "travel-construction",
+     "word": "i lavori stradali",
+     "cldr": "area cantiere",
+     "keys": "area cantiere, costruzione, giallo e nero, simbolo, simbolo area cantiere"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "il foglio",
+     "cldr": "pagina",
+     "keys": "carta, di fronte, documento, fronte, lettera, pagina"
+    },
+    {
+     "id": "school-calendar",
+     "word": "l’agenda",
+     "cldr": "calendario",
+     "keys": "17, calendario, data, diciassette, giorno, ricorrenza"
+    },
+    {
+     "id": "school-clipboard",
+     "word": "la cartellina",
+     "cldr": "portablocco",
+     "keys": "appunti, blocco, blocco note, cartella, portablocco, tavoletta"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "la fotografia",
+     "cldr": "fotocamera con flash",
+     "keys": "flash, foto con flash, fotocamera, fotocamera con flash, fotografare, macchina fotografica"
+    },
+    {
+     "id": "sports-ping_pong",
+     "word": "il ping-pong",
+     "cldr": "ping pong",
+     "keys": "giocare, gioco, pallina, ping pong, racchetta, rete"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "l’equitazione",
+     "cldr": "ippica",
+     "keys": "cavallo, cavallo da corsa, corse, fantino, galoppare, galoppo"
+    },
+    {
+     "id": "games-ribbon",
+     "word": "il nastro",
+     "cldr": "fiocco",
+     "keys": "auguri, festa, fiocco"
+    }
+   ]
+  },
+  "pt": {
+   "agree": 504,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "dez",
+     "cldr": "tecla: 10",
+     "keys": "tecla"
+    },
+    {
+     "id": "time-sunset",
+     "word": "a tarde",
+     "cldr": "",
+     "keys": "anoitecer, crepúsculo, edifícios, pôr do sol, pôr do sol sobre prédios, pôr-do-sol"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "certo",
+     "cldr": "botão de visto",
+     "keys": "✓, botão, botão de visto, marca de seleção branca, verificação, visto"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "errado",
+     "cldr": "cruz",
+     "keys": "×, cancelar, cruz, multiplicação, multiplicar, x"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "a sopa",
+     "cldr": "",
+     "keys": "aveia, cereais, flocos, pequeno-almoço, tigela com colher"
+    },
+    {
+     "id": "drinks-droplet",
+     "word": "a água",
+     "cldr": "",
+     "keys": "desenho, frio, gota, lágrima, meteorologia, suor"
+    },
+    {
+     "id": "wild-frog",
+     "word": "a rã",
+     "cldr": "",
+     "keys": "animal, cara, cara de sapo, princesa, sapo"
+    },
+    {
+     "id": "plants-evergreen_tree",
+     "word": "o abeto",
+     "cldr": "árvore de folha perene",
+     "keys": "árvore, árvore de folha perene, árvore de natal, pinheiro, planta"
+    },
+    {
+     "id": "landscapes-snow_capped_mountain",
+     "word": "o pico nevado",
+     "cldr": "montanha coberta de neve",
+     "keys": "frio, montanha, montanha coberta de neve, neve"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "os amigos",
+     "cldr": "",
+     "keys": "casal, mão, mãos dadas, pessoa, pessoas de mãos dadas"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "a pessoa",
+     "cldr": "",
+     "keys": "busto, mistério, silhueta, silhueta de busto, sombra"
+    },
+    {
+     "id": "body-flexed_biceps",
+     "word": "o braço",
+     "cldr": "bíceps fletido",
+     "keys": "bíceps, bíceps fletido, corpo, culturismo, desenho, flexão"
+    },
+    {
+     "id": "health-pill",
+     "word": "o medicamento",
+     "cldr": "",
+     "keys": "comprimido, doente, medicina, médico, remédio"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "a constipação",
+     "cldr": "cara a espirrar",
+     "keys": "cara, cara a espirrar, espirro, gripe, santinho"
+    },
+    {
+     "id": "health-face_with_head_bandage",
+     "word": "a ferida",
+     "cldr": "cara com ligadura na cabeça",
+     "keys": "cara, cara com ligadura na cabeça, ferimento, ligadura, magoado"
+    },
+    {
+     "id": "health-nauseated_face",
+     "word": "doente",
+     "cldr": "cara nauseada",
+     "keys": "cara, enjoado, enjoo, nauseada, vómito"
+    },
+    {
+     "id": "health-x_ray",
+     "word": "a radiografia",
+     "cldr": "raios X",
+     "keys": "doutor, esqueleto, médico, ossos, raio x, raio X"
+    },
+    {
+     "id": "jobs-factory_worker",
+     "word": "o operário",
+     "cldr": "trabalhador fabril",
+     "keys": "fábrica, funcionário de fábrica, industrial, montagem, trabalhador, trabalhador fabril"
+    },
+    {
+     "id": "actions-face_savoring_food",
+     "word": "comer",
+     "cldr": "cara a saborear uma refeição deliciosa",
+     "keys": "apetitoso, cara, cara a saborear uma refeição deliciosa, delicioso, saborear, sorriso"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "beber",
+     "cldr": "copo de whisky",
+     "keys": "baixo, bebida, copo, copo de whisky, shot, whisky"
+    },
+    {
+     "id": "actions-open_book",
+     "word": "ler",
+     "cldr": "",
+     "keys": "aberto, educação, leitura, livro"
+    },
+    {
+     "id": "actions-clapping_hands",
+     "word": "aplaudir",
+     "cldr": "mãos a bater palmas",
+     "keys": "aplauso, aprovação, bater palmas, corpo, mão, mãos a bater palmas"
+    },
+    {
+     "id": "actions-telephone_receiver",
+     "word": "telefonar",
+     "cldr": "auscultador de telefone",
+     "keys": "auscultador, auscultador de telefone, comunicação, telefone"
+    },
+    {
+     "id": "feelings-grinning_face",
+     "word": "feliz",
+     "cldr": "cara sorridente",
+     "keys": "cara, cara sorridente, dentes, risada, sorriso"
+    },
+    {
+     "id": "feelings-astonished_face",
+     "word": "surpreendido",
+     "cldr": "cara espantada",
+     "keys": "cara, cara espantada, chocado, estupefacto, surpreso"
+    },
+    {
+     "id": "feelings-hot_face",
+     "word": "ter calor",
+     "cldr": "cara com calor",
+     "keys": "cara com calor, cara vermelha, febril, insolação, quente, transpiração"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "descontraído",
+     "cldr": "cara a sorrir com óculos de sol",
+     "keys": "cara, cara a sorrir com óculos de sol, fixe, luminoso, óculos, óculos de sol"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "maravilhado",
+     "cldr": "cara sorridente com estrelas nos olhos",
+     "keys": "cara, cara sorridente com estrelas nos olhos, entusiasmado, estrela, olhos"
+    },
+    {
+     "id": "house-ladder",
+     "word": "o escadote",
+     "cldr": "",
+     "keys": "degrau, descer, escada, subir, trepar"
+    },
+    {
+     "id": "bathroom-lotion_bottle",
+     "word": "o creme",
+     "cldr": "",
+     "keys": "champô, frasco de loção, hidratante, loção, protetor solar"
+    },
+    {
+     "id": "clothes-man_s_shoe",
+     "word": "os sapatos",
+     "cldr": "sapato de homem",
+     "keys": "calçado, calçado masculino, homem, sapato de homem, sapato masculino, vestuário"
+    },
+    {
+     "id": "objects-battery",
+     "word": "a pilha",
+     "cldr": "bateria",
+     "keys": ""
+    },
+    {
+     "id": "objects-wrench",
+     "word": "a chave inglesa",
+     "cldr": "",
+     "keys": "bricolage, chave de porcas, ferramenta"
+    },
+    {
+     "id": "transport-automobile",
+     "word": "o carro",
+     "cldr": "automóvel",
+     "keys": ""
+    },
+    {
+     "id": "places-convenience_store",
+     "word": "a mercearia",
+     "cldr": "",
+     "keys": "24 horas, conveniência, edifício, loja, loja de conveniência, prédio"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "o museu",
+     "cldr": "edifício clássico",
+     "keys": "clássico, edifício clássico, edifício da antiguidade"
+    },
+    {
+     "id": "places-houses",
+     "word": "o bairro",
+     "cldr": "",
+     "keys": "casas, edifícios, edifícios de habitação, habitação"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "a folha de papel",
+     "cldr": "página virada para cima",
+     "keys": "documento, página, página virada para cima"
+    },
+    {
+     "id": "school-calendar",
+     "word": "a agenda",
+     "cldr": "",
+     "keys": "calendário, data"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "a fotografia",
+     "cldr": "máquina fotográfica com flash",
+     "keys": "câmara, flash, máquina fotográfica com flash, vídeo"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "a equitação",
+     "cldr": "",
+     "keys": "cavalo, cavalo de corrida, corrida de cavalos, desporto, jóquei"
+    },
+    {
+     "id": "games-confetti_ball",
+     "word": "os confetes",
+     "cldr": "bola de confete",
+     "keys": "bola, bola de confete, bola de confetti, celebração, comemoração, confetti"
+    }
+   ]
+  },
+  "ar": {
+   "agree": 476,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "عشرة",
+     "cldr": "مفتاح: 10",
+     "keys": "مفتاح"
+    },
+    {
+     "id": "time-sunset",
+     "word": "المساء",
+     "cldr": "غسق",
+     "keys": "ابنية مرتفعة, شمس تغرب, غسق, مدينة, مغيب"
+    },
+    {
+     "id": "signs-up_arrow",
+     "word": "فوق",
+     "cldr": "سهم لأعلى",
+     "keys": "اتجاه, رمز, سهم, سهم لأعلى, شمال, كاردينال"
+    },
+    {
+     "id": "signs-down_arrow",
+     "word": "تحت",
+     "cldr": "سهم لأسفل",
+     "keys": "اتجاه, جنوب, رمز, سهم, سهم لأسفل, كاردينال"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "صحيح",
+     "cldr": "زر علامة تحديد",
+     "keys": "تحديد, تم, صح, علامة تحديد, علامة تحديد بيضاء"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "خطأ",
+     "cldr": "علامة X",
+     "keys": "x, إلغاء, اكس, رمز, ضرب, علامة"
+    },
+    {
+     "id": "meals-sandwich",
+     "word": "شطيرة",
+     "cldr": "ساندوتش",
+     "keys": "خبز, ساندوتش, ساندويتش, ساندويش, عروس, عيش"
+    },
+    {
+     "id": "sweets-cookie",
+     "word": "بسكويت",
+     "cldr": "كعكة",
+     "keys": "حلو, حلويات, كعكة, كوكي, مطعم"
+    },
+    {
+     "id": "sweets-shortcake",
+     "word": "كعكة",
+     "cldr": "قطعة من الكعك",
+     "keys": "أكل, تحلاية, تورتة, جاتو, حلا, حلو"
+    },
+    {
+     "id": "sweets-ice_cream",
+     "word": "مثلجات",
+     "cldr": "آيس كريم",
+     "keys": "آيس كريم, أيس كريم, بارد, برد, بوظة, حلو"
+    },
+    {
+     "id": "kitchen-fork_and_knife",
+     "word": "أدوات المائدة",
+     "cldr": "شوكة وسكينة",
+     "keys": "جائع, جوع, جوعان, سكينة, شوكة, شوكة وسكينة"
+    },
+    {
+     "id": "kitchen-chopsticks",
+     "word": "عيدان الأكل",
+     "cldr": "عيدان للأكل",
+     "keys": "أكل صيني, سوشي, شوبستيكس, عيدان للأكل"
+    },
+    {
+     "id": "kitchen-baby_bottle",
+     "word": "زجاجة رضاعة",
+     "cldr": "زجاجة الرضاعة",
+     "keys": "بيبرونة, بيبي, حليب, رضيع, زجاجة إرضاع, زجاجة الرضاعة"
+    },
+    {
+     "id": "farm-hamster",
+     "word": "هامستر",
+     "cldr": "وجه حيوان الهمستر",
+     "keys": "حديقة, حيوان, فار, همستر, وجه, وجه حيوان الهمستر"
+    },
+    {
+     "id": "wild-polar_bear",
+     "word": "الدب القطبي",
+     "cldr": "دب قطبي",
+     "keys": "أبيض, القطب الشمالي, دب, دب قطبي"
+    },
+    {
+     "id": "birds-flamingo",
+     "word": "فلامنغو",
+     "cldr": "فلامينغو",
+     "keys": "استوائي, طائر, طير, فلامينجو, فلامينغو, لامع"
+    },
+    {
+     "id": "plants-cherry_blossom",
+     "word": "زهر الكرز",
+     "cldr": "زهرة الكرز",
+     "keys": "بستان, جمال, حديقة, ربيع, زهرة, زهرة الكرز"
+    },
+    {
+     "id": "weather-wind_face",
+     "word": "ريح",
+     "cldr": "رياح",
+     "keys": "رياح, سحاب, طقس, هبوب, وجه, ينفث"
+    },
+    {
+     "id": "weather-thermometer",
+     "word": "ميزان الحرارة",
+     "cldr": "ترمومتر",
+     "keys": "ترمومتر, درجة الحرارة, طقس"
+    },
+    {
+     "id": "weather-snowman",
+     "word": "رجل الثلج",
+     "cldr": "رجل ثلج",
+     "keys": "برد, جليد, جمدة, رجل ثلج, صقيع, طقس"
+    },
+    {
+     "id": "landscapes-snow_capped_mountain",
+     "word": "قمة مثلجة",
+     "cldr": "جبل بقمة ثلجية",
+     "keys": "برد, جبل, جبل بقمة ثلجية, جليد, صقيع, قمة جبل"
+    },
+    {
+     "id": "landscapes-national_park",
+     "word": "محمية طبيعية",
+     "cldr": "حديقة وطنية",
+     "keys": "جنينة, حديقة وطنية, متنزه"
+    },
+    {
+     "id": "landscapes-camping",
+     "word": "مخيم",
+     "cldr": "تخييم",
+     "keys": "تخييم, خيمة"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "الوالدان",
+     "cldr": "أسرة: رجل، وسيدة، وصبي",
+     "keys": "أب, أسرة, أشخاص, أم, رجل, سيدة"
+    },
+    {
+     "id": "health-face_with_thermometer",
+     "word": "حمى",
+     "cldr": "وجه مع ميزان للحرارة",
+     "keys": "ترمومتر, تعبان, حرارة, ساخن, مريض, ميزان حرارة"
+    },
+    {
+     "id": "health-x_ray",
+     "word": "صورة الأشعة",
+     "cldr": "أشعة سينية",
+     "keys": "أشعة سينية, طبي, طبيب, عظام, هيكل عظمي"
+    },
+    {
+     "id": "health-drop_of_blood",
+     "word": "دم",
+     "cldr": "قطرة دم",
+     "keys": "تبرع بالدم, جرح, حيض, طب, طمث, قطرة دم"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "شرب",
+     "cldr": "كوب زجاجي",
+     "keys": "شراب كحول, كأس, كباية, كحول, كوب, كوب زجاجي"
+    },
+    {
+     "id": "feelings-astonished_face",
+     "word": "متفاجئ",
+     "cldr": "وجه مندهش",
+     "keys": "غير معقول, لا أصدق, مش معقول, مصدوم, مندهش, مندهش تمامًا"
+    },
+    {
+     "id": "feelings-hot_face",
+     "word": "الشعور بالحر",
+     "cldr": "وجه حار",
+     "keys": "حار, حرارة مرتفعة, حمى, سخن, ضربات القلب, ضربة شمس"
+    },
+    {
+     "id": "feelings-cold_face",
+     "word": "الشعور بالبرد",
+     "cldr": "وجه بارد",
+     "keys": "أزرق, بارد, تثليج, تحت الصفر, دون الصفر, رقاقات الثلج"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "مسترخ",
+     "cldr": "وجه مبتسم بنظارة شمس",
+     "keys": "ابتسام, ابتسامة, ابتسامة مع نظارة شمس, استرخاء, بحر, بسمة"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "منبهر",
+     "cldr": "وجه بعينين على شكل نجمة",
+     "keys": "أعين, بسمة, عينان, عيون, فرح, فرحان"
+    },
+    {
+     "id": "house-couch_and_lamp",
+     "word": "أريكة",
+     "cldr": "كنبة ومصباح",
+     "keys": "استراحة, استرخاء, اوتيل, صوفه, فندق, كنبة"
+    },
+    {
+     "id": "house-television",
+     "word": "تلفاز",
+     "cldr": "تليفزيون",
+     "keys": "تلفزيون, تليفزيون, تي في, سهرة, فيديو, مشاهدة"
+    },
+    {
+     "id": "house-framed_picture",
+     "word": "لوحة",
+     "cldr": "إطار وصورة",
+     "keys": "إطار, إطار وصورة, رسم, صورة, غاليري, فن"
+    },
+    {
+     "id": "bathroom-shower",
+     "word": "الدش",
+     "cldr": "دوش",
+     "keys": "استحمام شاور, بخاخ, دوش"
+    },
+    {
+     "id": "bathroom-roll_of_paper",
+     "word": "ورق التواليت",
+     "cldr": "لفة ورق",
+     "keys": "بكرة, بكرة ورق, كلينكس, لفة ورق, مناديل, مناديل حمام"
+    },
+    {
+     "id": "bathroom-lotion_bottle",
+     "word": "كريم",
+     "cldr": "زجاجة غسول",
+     "keys": "بلسم, زجاجة, شامبو, غسول, لوشن, مرطب"
+    },
+    {
+     "id": "clothes-shorts",
+     "word": "سروال قصير",
+     "cldr": "شورت",
+     "keys": "بدلة استحمام, ثياب, شورت, شورت أخضر, مايوه, ملابس تحتية"
+    },
+    {
+     "id": "clothes-necktie",
+     "word": "ربطة عنق",
+     "cldr": "رابطة عنق",
+     "keys": "تياب, ثياب, جاد, رابطة عنق, قميص, كرافات"
+    },
+    {
+     "id": "clothes-gloves",
+     "word": "قفازات",
+     "cldr": "قفّازان",
+     "keys": "قفّازان, كف, يد"
+    },
+    {
+     "id": "clothes-woman_s_boot",
+     "word": "جزمة",
+     "cldr": "حذاء طويل الساق حريمي",
+     "keys": "بوت حريمي, بوت ستاتي, بوتس, ثياب, حذاء, حذاء طويل"
+    },
+    {
+     "id": "accessories-backpack",
+     "word": "حقيبة ظهر",
+     "cldr": "حقيبة مدرسة",
+     "keys": "تعليم, حقيبة مدرسة, دراسة, شنطة, علم, مدرسة"
+    },
+    {
+     "id": "objects-electric_plug",
+     "word": "قابس",
+     "cldr": "فيشة كهرباء",
+     "keys": "بريز, فيش كهرباء, فيشة كهرباء, كهرباء"
+    },
+    {
+     "id": "objects-flashlight",
+     "word": "مصباح يدوي",
+     "cldr": "ضوء فلاش",
+     "keys": "اداة, الكتريك, ضوء, ضوء فلاش, كشاف, كهربائي"
+    },
+    {
+     "id": "objects-radio",
+     "word": "مذياع",
+     "cldr": "راديو",
+     "keys": "اذاعة, ترفيه, تسلية, راديو, فيديو"
+    },
+    {
+     "id": "transport-helicopter",
+     "word": "مروحية",
+     "cldr": "هليكوبتر",
+     "keys": "سفر, طائرة, مركبة, نقل, هليكوبتر"
+    },
+    {
+     "id": "transport-motorcycle",
+     "word": "دراجة نارية",
+     "cldr": "دراجة بخارية",
+     "keys": "دباب, دراجة بخارية, سباق, سبق, طقطاقي, موتسيك"
+    },
+    {
+     "id": "transport-taxi",
+     "word": "سيارة أجرة",
+     "cldr": "تاكسي",
+     "keys": "uber, اوبر, تاكسي, سيرفيس, مركبة"
+    },
+    {
+     "id": "places-department_store",
+     "word": "متجر كبير",
+     "cldr": "متجر شامل",
+     "keys": "سنتر تسوق, سوق, سوق شامل, متجر شامل"
+    },
+    {
+     "id": "places-houses",
+     "word": "حي",
+     "cldr": "منازل",
+     "keys": "بلدة, بناء, بيت, منازل, منزل"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "الاستقبال",
+     "cldr": "جرس فندق",
+     "keys": "اوتيل, جرس, فندق, مساعدة"
+    },
+    {
+     "id": "travel-stop_sign",
+     "word": "إشارة قف",
+     "cldr": "علامة توقف",
+     "keys": "توقف, ستوب, شكل سداسي, علامة"
+    },
+    {
+     "id": "school-crayon",
+     "word": "قلم تلوين",
+     "cldr": "قلم شمع ملون",
+     "keys": "قلم ألوان, قلم شمع ملون"
+    },
+    {
+     "id": "school-calendar",
+     "word": "المفكرة",
+     "cldr": "تقويم",
+     "keys": "تقويم, رزنامة, روزنامة"
+    },
+    {
+     "id": "school-clipboard",
+     "word": "حافظة أوراق",
+     "cldr": "لوح كتابة مشبكي",
+     "keys": "لائحة, لوح كتابة مشبكي, لوحة ملصقات, ليسته, مشبك"
+    },
+    {
+     "id": "school-bar_chart",
+     "word": "رسم بياني",
+     "cldr": "مخطط بياني شريطي",
+     "keys": "احصائيات, بيانات, تخطيط, مخطط, مخطط بياني شريطي, مخطط شريطي"
+    },
+    {
+     "id": "tech-desktop_computer",
+     "word": "حاسوب",
+     "cldr": "كمبيوتر",
+     "keys": "ايكران, ايكرون, سطح مكتب, سكرين, شاشة كمبيوتر, كمبيوتر"
+    },
+    {
+     "id": "tech-keyboard",
+     "word": "لوحة المفاتيح",
+     "cldr": "لوحة مفاتيح",
+     "keys": "ازرار, الكمبيوتر, كمبيوتر, كومبيوتر, كيبورد, لوحة مفاتيح"
+    },
+    {
+     "id": "tech-headphone",
+     "word": "سماعات الرأس",
+     "cldr": "سماعة رأس",
+     "keys": "ترفيه, سماعة رأس, صوت, هيدفون"
+    },
+    {
+     "id": "tech-microscope",
+     "word": "مجهر",
+     "cldr": "ميكروسكوب",
+     "keys": "أداة, بحث, تجارب, طب, طبابة, علم"
+    },
+    {
+     "id": "tech-telescope",
+     "word": "تلسكوب",
+     "cldr": "تليسكوب",
+     "keys": "أداة, تليسكوب, سماء, علم, فضاء, معاينة"
+    },
+    {
+     "id": "music-trumpet",
+     "word": "بوق",
+     "cldr": "آلة نفخ",
+     "keys": "آلة موسيقية, آلة نفخ, ترومبت, عزف, موسيقى"
+    },
+    {
+     "id": "music-clapper_board",
+     "word": "السينما",
+     "cldr": "كلاكيت",
+     "keys": "أكشون, أكشيون, ترفيه, فيلم, كلاكيت, موفي"
+    },
+    {
+     "id": "sports-martial_arts_uniform",
+     "word": "الفنون القتالية",
+     "cldr": "زي فنون قتالية",
+     "keys": "تايكوندو, جودو, رياضة, زي, زي فنون قتالية, فنون قتالية"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "الفروسية",
+     "cldr": "سباق خيول",
+     "keys": "حصان, خيل, ركوب الخيل, رياضة, سباق, سباق خيول"
+    },
+    {
+     "id": "games-fireworks",
+     "word": "الألعاب النارية",
+     "cldr": "ألعاب نارية",
+     "keys": "ألعاب نارية, ابتهاج, احتفال, العاب نارية, بووم, حفلة"
+    },
+    {
+     "id": "games-confetti_ball",
+     "word": "قصاصات الورق",
+     "cldr": "كرة أوراق ملونة",
+     "keys": "احتفال, حفلة, زينة, فرح, كرة أوراق ملونة, كرة كونفتي"
+    },
+    {
+     "id": "games-roller_coaster",
+     "word": "الأفعوانية",
+     "cldr": "قطار ملاهي",
+     "keys": "ترفيه, حديقة, رعب, قطار, قطار ملاهي, مدينة العاب"
+    }
+   ]
+  },
+  "fa": {
+   "agree": 479,
+   "total": 546,
+   "misses": [
+    {
+     "id": "colors-black_large_square",
+     "word": "سیاه",
+     "cldr": "مربع مشکی بزرگ",
+     "keys": "شکل هندسی, مربع, مربع مشکی بزرگ"
+    },
+    {
+     "id": "numbers-keycap_10",
+     "word": "ده",
+     "cldr": "جلد کلید: 10",
+     "keys": "جلد کلید"
+    },
+    {
+     "id": "time-sunset",
+     "word": "عصر",
+     "cldr": "غروب",
+     "keys": "چشم‌انداز, خورشید, ساختمان, غروب, غروب آفتاب, گرگ و میش"
+    },
+    {
+     "id": "signs-left_arrow",
+     "word": "چپ",
+     "cldr": "پیکان چپ",
+     "keys": "پیکان, پیکان چپ, جهت اصلی, غرب, مسیر"
+    },
+    {
+     "id": "signs-plus",
+     "word": "به اضافه",
+     "cldr": "بعلاوه",
+     "keys": "+, بعلاوه, به‌علاوه, ریاضی, علامت"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "درست",
+     "cldr": "علامت تأیید",
+     "keys": "✓, دکمه, علامت تأیید, علامت تیک, علامت تیک سبز"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "غلط",
+     "cldr": "ضربدر",
+     "keys": "x, ایکس قرمز, ضرب, ضربدر, علامت ضرب, لغو"
+    },
+    {
+     "id": "fruits-melon",
+     "word": "خربزه",
+     "cldr": "طالبی",
+     "keys": "طالبی, گیاه, میوه"
+    },
+    {
+     "id": "fruits-blueberries",
+     "word": "بلوبری",
+     "cldr": "توت آبی",
+     "keys": "آبی, تمشک آبی, توت, توت‌آبی, سیاه گیله, غذا"
+    },
+    {
+     "id": "vegetables-chestnut",
+     "word": "شاه‌بلوط",
+     "cldr": "فندق",
+     "keys": "فندق, گیاه"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "سوپ",
+     "cldr": "کاسه و قاشق",
+     "keys": "آش برنج, حلیم صبحانه, خوراک, خوراکی, شله, صبحانه"
+    },
+    {
+     "id": "sweets-cookie",
+     "word": "بیسکویت",
+     "cldr": "کلوچه",
+     "keys": "دسر, شیرین, شیرینی, کلوچه, کوکی"
+    },
+    {
+     "id": "sweets-popcorn",
+     "word": "پاپ‌کورن",
+     "cldr": "ذرت بوداده",
+     "keys": "بوداده, پاپ کرن, ذرت"
+    },
+    {
+     "id": "drinks-droplet",
+     "word": "آب",
+     "cldr": "قطره",
+     "keys": "آب‌وهوا, سرما, عرق, قطره, کمیک, مصور"
+    },
+    {
+     "id": "drinks-beverage_box",
+     "word": "آبمیوه",
+     "cldr": "پاکت نوشیدنی",
+     "keys": "آب میوه, پاکت, پاکت آب‌میوه, شیرین, نوشیدنی, نی"
+    },
+    {
+     "id": "drinks-ice",
+     "word": "تکه یخ",
+     "cldr": "قالب یخ",
+     "keys": "سرد, قالب یخ, کوه یخ, کوه یخی, یخ"
+    },
+    {
+     "id": "kitchen-jar",
+     "word": "شیشه مربا",
+     "cldr": "شیشه دهان‌گشاد",
+     "keys": "ادویه, تهی, خالی, خوراک, سس, شیشه دهان‌گشاد"
+    },
+    {
+     "id": "farm-duck",
+     "word": "اردک",
+     "cldr": "مرغابی",
+     "keys": "پرنده, مرغابی"
+    },
+    {
+     "id": "sea-seal",
+     "word": "فوک",
+     "cldr": "فُک",
+     "keys": "اقیانوس, جاندار, جانور, حیوان, دریا, شیر دریایی"
+    },
+    {
+     "id": "plants-evergreen_tree",
+     "word": "کاج",
+     "cldr": "همیشه‌سبز",
+     "keys": "درخت, گیاه, همیشه‌سبز"
+    },
+    {
+     "id": "plants-seedling",
+     "word": "نهال",
+     "cldr": "جوانه",
+     "keys": "جوان, جوانه, گیاه"
+    },
+    {
+     "id": "plants-herb",
+     "word": "سبزی معطر",
+     "cldr": "گیاه دارویی",
+     "keys": "برگ, گیاه, گیاه دارویی"
+    },
+    {
+     "id": "plants-rose",
+     "word": "گل رز",
+     "cldr": "رز",
+     "keys": "رز, گل, گیاه"
+    },
+    {
+     "id": "weather-cloud_with_lightning",
+     "word": "آذرخش",
+     "cldr": "ابر با برق",
+     "keys": "آب‌وهوا, ابر, ابر با برق, رعدوبرق"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "مادر",
+     "cldr": "خانواده: زن،‏ دختر",
+     "keys": "خانه‌وار, خانواده, دختر, زن, عائله, فامیل"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "پدر",
+     "cldr": "خانواده: مرد،‏ پسر",
+     "keys": "پسر, خانه‌وار, خانواده, عائله, فامیل, فرزند"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "والدین",
+     "cldr": "خانواده: مرد،‏ زن، و پسر",
+     "keys": "پسر, خانه‌وار, خانواده, زن, عائله, فامیل"
+    },
+    {
+     "id": "family-old_woman",
+     "word": "مادربزرگ",
+     "cldr": "پیرزن",
+     "keys": "پیر, پیرزن, زن"
+    },
+    {
+     "id": "family-old_man",
+     "word": "پدربزرگ",
+     "cldr": "پیرمرد",
+     "keys": "آدم, پیر, پیرمرد, صورت, مرد"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "دوستان",
+     "cldr": "اشخاصی دست در دست هم",
+     "keys": "اشخاصی دست در دست هم, دست, دست در دست, زوج, شخص, نگهداشتن"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "شخص",
+     "cldr": "تندیس سایه‌نما",
+     "keys": "بالاتنه سایه نما, تندیس, سایه نما, سایه‌نما, سیاه‌نما, سیلوئت"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "سرماخوردگی",
+     "cldr": "عطسه",
+     "keys": "خیر باشد, درحال عطسه, دماغ قزمز, صورت, صورت در حال عطسه, عافیت باشد"
+    },
+    {
+     "id": "health-face_with_head_bandage",
+     "word": "زخم",
+     "cldr": "سر باندپیچی‌شده",
+     "keys": "آسیب, با سر باندپیچی, باندپیچی, حادثه, درد, سر"
+    },
+    {
+     "id": "health-nauseated_face",
+     "word": "بیمار",
+     "cldr": "حالت تهوع",
+     "keys": "استفراغ, بالا آوردن, بهم خوردن حال, تهوع, حال بد, حال به‌هم خوردن"
+    },
+    {
+     "id": "health-x_ray",
+     "word": "عکس رادیولوژی",
+     "cldr": "اشعه ایکس",
+     "keys": "استخوان, اسکلت, اشعه ایکس, اشیاء, پرتو ایکس, پزشکی"
+    },
+    {
+     "id": "jobs-construction_worker",
+     "word": "بنّا",
+     "cldr": "کارگر",
+     "keys": "بازسازی, تعمیر, ساختمان سازی, ساختن, ساخت‌وساز, شغل"
+    },
+    {
+     "id": "jobs-guard",
+     "word": "نگهبان",
+     "cldr": "گارد نظامی",
+     "keys": "سرباز هنگ, گارد, گارد سلطنتی انگلستان, گارد نظامی, لندن"
+    },
+    {
+     "id": "actions-person_climbing",
+     "word": "بالا رفتن",
+     "cldr": "فردی کوه‌نوردی می‌کند",
+     "keys": "بدن, زن, زن کوه نورد, صخره نورد, صخره نوردی, فردی کوه‌نوردی می‌کند"
+    },
+    {
+     "id": "actions-face_savoring_food",
+     "word": "خوردن",
+     "cldr": "صورت درحال لیسیدن لب",
+     "keys": "به‌به, خوشمزه, صورت, صورت با زبان آب افتاده, صورت درحال لیسیدن لب, لبخند"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "نوشیدن",
+     "cldr": "لیوان ته‌گنبدی",
+     "keys": "الکل, بی‌دسته, جرعه, قُلُپ, لیوان, لیوان پهن"
+    },
+    {
+     "id": "actions-open_book",
+     "word": "خواندن",
+     "cldr": "کتاب باز",
+     "keys": "باز, کتاب"
+    },
+    {
+     "id": "actions-speaking_head",
+     "word": "حرف زدن",
+     "cldr": "درحال صحبت کردن",
+     "keys": "در حال صحبت, درحال صحبت کردن, سایه, سایه‌نما, سر, صحبت"
+    },
+    {
+     "id": "actions-eyes",
+     "word": "نگاه کردن",
+     "cldr": "دو چشم",
+     "keys": "بدن, چشم, دو چشم, دیدن, صورت"
+    },
+    {
+     "id": "actions-microphone",
+     "word": "آواز خواندن",
+     "cldr": "میکروفون",
+     "keys": "کارائوکه, میکروفن, میکروفون"
+    },
+    {
+     "id": "feelings-grinning_face",
+     "word": "خوشحال",
+     "cldr": "خنده",
+     "keys": "خنده, صورت, صورت با لبخند, لبخند, نیش باز"
+    },
+    {
+     "id": "feelings-face_with_tears_of_joy",
+     "word": "خندیدن",
+     "cldr": "صورت با اشک شادی",
+     "keys": "احساس, اشک شادی, بامزه, خنده, خنده بلند, خوشحالی"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "آرام",
+     "cldr": "چهره خندان با عینک دودی",
+     "keys": "باحال, جالب, خورشید, روشن, صورت, صورت خندان با عینک آفتابی"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "شگفت‌زده",
+     "cldr": "فوق‌العاده",
+     "keys": "جذاب, چشمان, خندان, خنده, ستاره, صورت"
+    },
+    {
+     "id": "feelings-red_heart",
+     "word": "عشق",
+     "cldr": "قلب قرمز",
+     "keys": "قلب, قلب قرمز"
+    },
+    {
+     "id": "house-framed_picture",
+     "word": "تابلو",
+     "cldr": "عکس در قاب",
+     "keys": "تصویر, عکس در قاب, قاب, قاب عکس, موزه, نقاشی"
+    },
+    {
+     "id": "bathroom-razor",
+     "word": "تیغ",
+     "cldr": "ریش‌تراش",
+     "keys": "اصلاح, تراشیدن, تیز, خودتراش, ریش‌تراش"
+    },
+    {
+     "id": "clothes-one_piece_swimsuit",
+     "word": "لباس شنا",
+     "cldr": "مایو یک‌تکه",
+     "keys": "لباس حمام, مایو, مایو یک‌تکه"
+    },
+    {
+     "id": "accessories-ring",
+     "word": "انگشتر",
+     "cldr": "حلقه",
+     "keys": "الماس, حلقه, عاشقانه"
+    },
+    {
+     "id": "accessories-lipstick",
+     "word": "رژ لب",
+     "cldr": "رژلب",
+     "keys": "آرایش, رژلب, لوازم آرایش"
+    },
+    {
+     "id": "places-office_building",
+     "word": "اداره",
+     "cldr": "ساختمان اداری",
+     "keys": "ساختمان, ساختمان اداری"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "موزه",
+     "cldr": "ساختمان باستانی",
+     "keys": "ساختمان, ساختمان باستانی, قدیمی, کلاسیک"
+    },
+    {
+     "id": "places-houses",
+     "word": "محله",
+     "cldr": "منازل",
+     "keys": "چند خانه, خانه, ‌خانه‌ها, ساختمان, ساختمان‌ها, منازل"
+    },
+    {
+     "id": "travel-construction",
+     "word": "کار جاده‌ای",
+     "cldr": "ساخت‌وساز",
+     "keys": "راه‌بند, ساخت‌وساز, سد, مانع"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "برگه",
+     "cldr": "صفحهٔ روبه‌بالا",
+     "keys": "سند, صفحه, صفحه روبه‌بالا, صفحهٔ روبه‌بالا"
+    },
+    {
+     "id": "school-calendar",
+     "word": "سررسید",
+     "cldr": "تقویم",
+     "keys": "تاریخ, تقویم"
+    },
+    {
+     "id": "school-clipboard",
+     "word": "تخته‌شاسی",
+     "cldr": "تختهٔ گیره‌دار",
+     "keys": "تخته رسم, تخته رسم گیره‌دار, تخته زیردستی, تخته گیره‌دار, تختهٔ گیره‌دار"
+    },
+    {
+     "id": "tech-laptop",
+     "word": "لپ‌تاپ",
+     "cldr": "رایانهٔ کیفی",
+     "keys": "پی‌سی, رایانه, رایانه کیفی, رایانهٔ کیفی, شخصی, لبتاب"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "عکاسی",
+     "cldr": "دوربین با فلاش",
+     "keys": "دوربین, دوربین با فلاش, فلاش, ویدیو"
+    },
+    {
+     "id": "music-clapper_board",
+     "word": "سینما",
+     "cldr": "کلاکت",
+     "keys": "تخته‌نشان, فیلم, کلاکت"
+    },
+    {
+     "id": "sports-ping_pong",
+     "word": "پینگ‌پنگ",
+     "cldr": "پینگ‌پونگ",
+     "keys": "پینگ پونگ, پینگ‌پونگ, تنیس, تنیس روی میز, توپ, دسته"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "سوارکاری",
+     "cldr": "مسابقه اسب‌سواری",
+     "keys": "اسب, اسب‌سواری, مسابقه, ورزش"
+    },
+    {
+     "id": "games-confetti_ball",
+     "word": "کاغذ رنگی",
+     "cldr": "توپ پولکی",
+     "keys": "پولک, توپ, توپ پولکی, جشن"
+    }
+   ]
+  },
+  "hi": {
+   "agree": 432,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "दस",
+     "cldr": "कीकैप: 10",
+     "keys": "कीकैप"
+    },
+    {
+     "id": "time-sunset",
+     "word": "शाम",
+     "cldr": "सूर्यास्त",
+     "keys": "इमारत, इमारतों के पीछे सूर्यास्त, भवन, संध्या, संध्याकाल, सूर्यास्त"
+    },
+    {
+     "id": "signs-red_question_mark",
+     "word": "सवाल",
+     "cldr": "प्रश्न चिह्न",
+     "keys": "?, चिह्न, चिह्न विचार, प्रश्न, लाल प्रश्न चिह्न"
+    },
+    {
+     "id": "signs-plus",
+     "word": "जोड़",
+     "cldr": "धन चिह्न",
+     "keys": "+, गणित, चिह्न, धन, भारी प्लस चिह्न"
+    },
+    {
+     "id": "signs-minus",
+     "word": "घटा",
+     "cldr": "ऋण",
+     "keys": "-, −, ऋण, गणित, चिह्न"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "गलत",
+     "cldr": "क्रॉस चिह्न",
+     "keys": "x, क्रॉस चिह्न, गुणन, गुणा"
+    },
+    {
+     "id": "fruits-tangerine",
+     "word": "कीनू",
+     "cldr": "संतरा, फल",
+     "keys": "नारंगी, फल, संतरा, संतरा, फल"
+    },
+    {
+     "id": "fruits-lemon",
+     "word": "नींबू",
+     "cldr": "नीबू",
+     "keys": "चकोतरा, नीबू, फल"
+    },
+    {
+     "id": "fruits-pineapple",
+     "word": "अनानास",
+     "cldr": "अन्नानास, फल",
+     "keys": "अन्नानास, अन्नानास, फल, फल"
+    },
+    {
+     "id": "fruits-avocado",
+     "word": "एवोकाडो",
+     "cldr": "अवोकाडो",
+     "keys": "अवोकाडो, खाना, फल, भोजन"
+    },
+    {
+     "id": "meals-bread",
+     "word": "रोटी",
+     "cldr": "ब्रेड",
+     "keys": "खाना, ब्रेड, ब्रेड लोफ़, भोजन, रेस्टोरेंट"
+    },
+    {
+     "id": "meals-baguette_bread",
+     "word": "बैगेट",
+     "cldr": "बीगट ब्रेड",
+     "keys": "खाना, फ्रेंच, बीगट ब्रेड, भोजन, रोटी"
+    },
+    {
+     "id": "meals-croissant",
+     "word": "क्रोसां",
+     "cldr": "क्रोइसैन",
+     "keys": "crescent रोल, क्रोइसैन, खाना, फ्रेंच, भोजन, रोटी"
+    },
+    {
+     "id": "meals-french_fries",
+     "word": "फ्रेंच फ्राइज़",
+     "cldr": "फ़्रेंच फ़्राइस",
+     "keys": "आलू के चिप्स, आलू के लच्छे, खाना, जंक, फ़्राइस, फ़्रेंच फ़्राइस"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "सूप",
+     "cldr": "चम्मच के साथ कटोरी",
+     "keys": "अनाज, चमच्च के साथ कटोरा, चम्मच के साथ कटोरी, चावल की दलिया, नाश्ता"
+    },
+    {
+     "id": "sweets-cookie",
+     "word": "बिस्कुट",
+     "cldr": "कुकी",
+     "keys": "कुकी, मिठाई, रेस्टोरेंट"
+    },
+    {
+     "id": "sweets-candy",
+     "word": "टॉफ़ी",
+     "cldr": "कैंडी",
+     "keys": "कैंडी, मिठाई, रेस्टोरेंट"
+    },
+    {
+     "id": "drinks-droplet",
+     "word": "पानी",
+     "cldr": "ठंडा पसीना",
+     "keys": "आंसू, कॉमिक, ठंडा पसीना, पसीना, पसीनेदार"
+    },
+    {
+     "id": "drinks-cup_with_straw",
+     "word": "ठंडा पेय",
+     "cldr": "स्ट्रॉ के साथ कप",
+     "keys": "जूस, पानी, रस, सोडा, स्ट्रॉ के साथ कप"
+    },
+    {
+     "id": "drinks-bubble_tea",
+     "word": "बबल टी",
+     "cldr": "बुलबुला चाय",
+     "keys": "कॉफ़ी, कोल्ड कॉफ़ी, कोल्ड ड्रिंक, खाना, चाय, ड्रिंक"
+    },
+    {
+     "id": "kitchen-fork_and_knife_with_plate",
+     "word": "थाली",
+     "cldr": "प्लेट के साथ काँटा और छुरी",
+     "keys": "काँटा, कांटा, खाना बनाना, चाकू, प्लेट, प्लेट के साथ काँटा और छुरी"
+    },
+    {
+     "id": "kitchen-fork_and_knife",
+     "word": "छुरी-काँटे",
+     "cldr": "फ़ोर्क और छुरी–चाकू",
+     "keys": "खाना, खाना पकाना, छुरी–चाकू, नाइफ़, नाश्ता, फ़ोर्क"
+    },
+    {
+     "id": "kitchen-cooking",
+     "word": "कड़ाही",
+     "cldr": "भोजन पकाना",
+     "keys": "अंडा, फ़्राइंग पैन, भोजन पकाना, रेस्टोरेंट, सुबह का नाश्ता"
+    },
+    {
+     "id": "farm-pig",
+     "word": "सूअर",
+     "cldr": "सुअर",
+     "keys": "पशु, सुअर"
+    },
+    {
+     "id": "farm-duck",
+     "word": "बत्तख़",
+     "cldr": "बतख",
+     "keys": "पक्षी, पशु, बतख"
+    },
+    {
+     "id": "farm-mouse",
+     "word": "चूहा",
+     "cldr": "मूषक",
+     "keys": "पशु, मूषक"
+    },
+    {
+     "id": "wild-wolf",
+     "word": "भेड़िया",
+     "cldr": "सियार का चेहरा",
+     "keys": "चेहरा, पशु, सियार, सियार का चेहरा"
+    },
+    {
+     "id": "wild-snake",
+     "word": "साँप",
+     "cldr": "सांप",
+     "keys": "पशु, राशि, सांप"
+    },
+    {
+     "id": "birds-penguin",
+     "word": "पेंगुइन",
+     "cldr": "पेंग्विन",
+     "keys": "पशु, पेंग्विन"
+    },
+    {
+     "id": "birds-flamingo",
+     "word": "राजहंस",
+     "cldr": "लाल हंस",
+     "keys": "गुल-मोहर, ट्रॉपिकल, पक्षी, फ़्लेमिंगो, लाल हंस"
+    },
+    {
+     "id": "sea-spiral_shell",
+     "word": "सीप",
+     "cldr": "गोल शंख",
+     "keys": "गोल शंख, पशु, शंख"
+    },
+    {
+     "id": "sea-coral",
+     "word": "मूँगा",
+     "cldr": "कोरल",
+     "keys": "कोरल, क्लाइमेट चेंज, चट्टान, जल शैल, मूंगा, रीफ़"
+    },
+    {
+     "id": "plants-evergreen_tree",
+     "word": "देवदार",
+     "cldr": "सदाबहार वृक्ष",
+     "keys": "पेड़, वृक्ष, सदाबहार"
+    },
+    {
+     "id": "plants-leaf_fluttering_in_wind",
+     "word": "पत्ता",
+     "cldr": "हवा में पत्ती",
+     "keys": "गिरता हुआ, गिरती पत्ती, पत्ती, हवा, हवा में पत्तियां, हवा में पत्ती"
+    },
+    {
+     "id": "plants-herb",
+     "word": "जड़ी-बूटी",
+     "cldr": "जड़ी–बूटी, पत्ती",
+     "keys": "जड़ी–बूटी, जड़ी–बूटी, पत्ती, पत्ती"
+    },
+    {
+     "id": "plants-sunflower",
+     "word": "सूरजमुखी",
+     "cldr": "सूर्यमुखी",
+     "keys": "फूल, सनफ़्लॉवर, सूर्यमुखी"
+    },
+    {
+     "id": "plants-fallen_leaf",
+     "word": "सूखा पत्ता",
+     "cldr": "गिरी हुई पत्ती",
+     "keys": "गिरता हुआ, गिरता हुआ पत्ता, गिरती हुई पत्तियां, गिरा हुआ पत्ता, गिरी हुई पत्ती, पत्तियां"
+    },
+    {
+     "id": "weather-sun",
+     "word": "सूरज",
+     "cldr": "सूर्य",
+     "keys": "किरणें, मौसम, सूर्य"
+    },
+    {
+     "id": "weather-tornado",
+     "word": "बवंडर",
+     "cldr": "तूफ़ान",
+     "keys": "तूफ़ान, मौसम"
+    },
+    {
+     "id": "weather-snowman",
+     "word": "हिममानव",
+     "cldr": "स्नोमैन",
+     "keys": "बर्फ, बर्फ़, मौसम, शीत, स्नोमैन"
+    },
+    {
+     "id": "landscapes-beach_with_umbrella",
+     "word": "समुद्र तट",
+     "cldr": "छाते के साथ समुद्री किनारा, छाता",
+     "keys": "छाता, छाते के साथ समुद्री किनारा, छाते के साथ समुद्री किनारा, छाता"
+    },
+    {
+     "id": "landscapes-camping",
+     "word": "शिविर",
+     "cldr": "तंबू, तंबू लगाना",
+     "keys": "कैंपिंग, तंबू, तंबू लगाना, तंबू, तंबू लगाना"
+    },
+    {
+     "id": "family-man",
+     "word": "आदमी",
+     "cldr": "पुरुष",
+     "keys": "दोस्त, पुरुष, मित्र, लोग"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "माँ",
+     "cldr": "परिवार: महिला, लड़की",
+     "keys": "परिवार, पिता, बच्चा, महिला, माता, लड़की"
+    },
+    {
+     "id": "family-old_woman",
+     "word": "दादी",
+     "cldr": "बूढ़ी महिला",
+     "keys": "बुजुर्ग, बूढ़ी महिला, महिला, लोग"
+    },
+    {
+     "id": "family-old_man",
+     "word": "दादा",
+     "cldr": "बूढ़ा पुरुष",
+     "keys": "गंजा, पुरुष, बुजुर्ग, बुद्धिमान, बूढ़ा पुरुष, लोग"
+    },
+    {
+     "id": "family-bust_in_silhouette",
+     "word": "व्यक्ति",
+     "cldr": "ऊपर के शरीर की छाया",
+     "keys": "ऊपर का शरीर, ऊपर के शरीर की छाया, चेहरे की छाया, छाया, रहस्यमय, लोग"
+    },
+    {
+     "id": "family-couple_with_heart",
+     "word": "जोड़ा",
+     "cldr": "दिल वाली जोड़ी",
+     "keys": "जोड़ी, दिल, दिल वाली जोड़ी, प्यार, प्रेम, युगल"
+    },
+    {
+     "id": "body-index_pointing_up",
+     "word": "उँगली",
+     "cldr": "ऊपर की ओर इशारा करती तर्जनी",
+     "keys": "उंगली, ऊपर, ऊपर इशारा करती हुई उंगली, ऊपर की ओर इशारा करती तर्जनी, पॉइंट, शरीर"
+    },
+    {
+     "id": "body-flexed_biceps",
+     "word": "बाँह",
+     "cldr": "बाइसेप्स",
+     "keys": "कॉमिक, डोले, द्विशिर, बलशाली, बाइसेप्स, भारोत्तोलन"
+    },
+    {
+     "id": "health-syringe",
+     "word": "इंजेक्शन",
+     "cldr": "सिरींज, सूई",
+     "keys": "डॉक्टर, दवाई, बीमार, मरीज़, सिरिंज, सिरींज"
+    },
+    {
+     "id": "health-face_with_thermometer",
+     "word": "बुख़ार",
+     "cldr": "थर्मामीटर वाला चेहरा",
+     "keys": "चेहरा, थर्मामीटर, थर्मामीटर वाला चेहरा, बीमार"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "ज़ुकाम",
+     "cldr": "छींकता चेहरा",
+     "keys": "चेहरा, छींक, छींकता चेहरा, बीमार"
+    },
+    {
+     "id": "health-nauseated_face",
+     "word": "बीमार",
+     "cldr": "उल्टी करता चेहरा",
+     "keys": "उल्टी, उल्टी करता चेहरा, चेहरा"
+    },
+    {
+     "id": "jobs-teacher",
+     "word": "अध्यापक",
+     "cldr": "शिक्षक",
+     "keys": "प्रशिक्षक, प्रोफ़ेसर, शिक्षक"
+    },
+    {
+     "id": "jobs-student",
+     "word": "छात्र",
+     "cldr": "विद्यार्थी",
+     "keys": "विद्यार्थी, स्नातक"
+    },
+    {
+     "id": "jobs-mechanic",
+     "word": "मिस्त्री",
+     "cldr": "मैकेनिक",
+     "keys": "नलसाज़, बिजली का काम करने वाला, मैकेनिक, व्यापारी"
+    },
+    {
+     "id": "jobs-technologist",
+     "word": "प्रोग्रामर",
+     "cldr": "टेक्नोलॉजिस्ट",
+     "keys": "आविष्कारक, कोडर, टेक्नोलॉजिस्ट, डेवलपर, सॉफ़्टवेयर"
+    },
+    {
+     "id": "jobs-construction_worker",
+     "word": "राजमिस्त्री",
+     "cldr": "निर्माण मजदूर",
+     "keys": "टोपी, निर्माण, निर्माण कार्य, निर्माण मजदूर, बिल्डिंग बनाने वाला, मज़दूर"
+    },
+    {
+     "id": "jobs-firefighter",
+     "word": "दमकलकर्मी",
+     "cldr": "अग्निशमक",
+     "keys": "अग्निशमक, फ़ायरट्रक"
+    },
+    {
+     "id": "jobs-guard",
+     "word": "पहरेदार",
+     "cldr": "गार्ड",
+     "keys": "गार्ड, बकिंघम महल, लंदन, लोग"
+    },
+    {
+     "id": "actions-person_walking",
+     "word": "चलना",
+     "cldr": "पैदल चलता व्यक्ति",
+     "keys": "पैदल, पैदल चलता आदमी, पैदल चलता व्यक्ति, पैदल चाल, मॉर्निंग वॉक, सैर"
+    },
+    {
+     "id": "actions-sleeping_face",
+     "word": "सोना",
+     "cldr": "सोया हुआ चेहरा",
+     "keys": "खर्राटे, गुड नाईट, चेहरा, झपकी, थकान, नींद"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "पीना",
+     "cldr": "गिलास",
+     "keys": "गिलास, ग्लास, व्हिस्की, शराब, शॉट"
+    },
+    {
+     "id": "actions-open_book",
+     "word": "पढ़ना",
+     "cldr": "खुली किताब",
+     "keys": "खुली किताब, पुस्तक"
+    },
+    {
+     "id": "actions-speaking_head",
+     "word": "बोलना",
+     "cldr": "बोलता चेहरा",
+     "keys": "चेहरे का आकार, बोलता चेहरा"
+    },
+    {
+     "id": "actions-eyes",
+     "word": "देखना",
+     "cldr": "आँखें",
+     "keys": "आँखें, आंखें, चेहरा"
+    },
+    {
+     "id": "actions-thinking_face",
+     "word": "सोचना",
+     "cldr": "सोचता हुआ चेहरा",
+     "keys": "चेहरा, विचारमग्न चेहरा, सोचता हुआ चेहरा"
+    },
+    {
+     "id": "actions-person_taking_bath",
+     "word": "नहाना",
+     "cldr": "नहाता हुआ व्यक्ति",
+     "keys": "टब, नहाता हुआ व्यक्ति, बाथ, स्नान"
+    },
+    {
+     "id": "actions-cooking",
+     "word": "खाना बनाना",
+     "cldr": "भोजन पकाना",
+     "keys": "अंडा, फ़्राइंग पैन, भोजन पकाना, रेस्टोरेंट, सुबह का नाश्ता"
+    },
+    {
+     "id": "feelings-angry_face",
+     "word": "नाराज़",
+     "cldr": "गुस्सैल चेहरा",
+     "keys": "गुस्सा, गुस्सैल चेहरा, चेहरा, पागल, पागलपन"
+    },
+    {
+     "id": "feelings-face_with_tears_of_joy",
+     "word": "हँसना",
+     "cldr": "खुशी के आँसुओं वाला चेहरा",
+     "keys": "अजीब, आँसू, आंसू, कितना फ़नी है, खुश, खुशी"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "निश्चिंत",
+     "cldr": "धूप के चश्मे के साथ मुस्काता चेहरा",
+     "keys": "चश्मा, चश्मे के साथ मुस्काना, चेहरा, धूप के चश्मे के साथ मुस्काता चेहरा, धूप के चश्मे वाला मुस्काता चेहरा, मुस्काना"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "चकित",
+     "cldr": "सितारा आँखें",
+     "keys": "आँखें, उत्तेजित, चेहरा, चेहरे पर सितारे वाली आँखें, तारा, मुस्कुराहट"
+    },
+    {
+     "id": "feelings-red_heart",
+     "word": "प्यार",
+     "cldr": "लाल दिल",
+     "keys": "दिल, लाल दिल"
+    },
+    {
+     "id": "house-framed_picture",
+     "word": "तस्वीर",
+     "cldr": "फ़्रेम वाला चित्र",
+     "keys": "कला, चित्र, पेंटिंग, फ़्रेम वाला चित्र, संग्रहालय"
+    },
+    {
+     "id": "bathroom-shower",
+     "word": "शावर",
+     "cldr": "स्नान",
+     "keys": "पानी, स्नान"
+    },
+    {
+     "id": "bathroom-wastebasket",
+     "word": "कूड़ेदान",
+     "cldr": "कचरा पेटी",
+     "keys": "कचरा पेटी, कचरे की टोकरी, रद्दी की टोकरी"
+    },
+    {
+     "id": "clothes-shorts",
+     "word": "निकर",
+     "cldr": "शॉर्ट्स",
+     "keys": "अंडरवियर, पतलून, पैंट, बाथिंग सूट, बेदिंग सूट, बॉक्सर"
+    },
+    {
+     "id": "clothes-dress",
+     "word": "पोशाक",
+     "cldr": "पोषाक",
+     "keys": "कपडे, ड्रेस, पोषाक, वन पीस"
+    },
+    {
+     "id": "clothes-scarf",
+     "word": "मफ़लर",
+     "cldr": "स्कार्फ़",
+     "keys": "गर्दन, गला, गुलूबंद, ठण्ड, दुपट्टा, सर्दी"
+    },
+    {
+     "id": "accessories-purse",
+     "word": "बटुआ",
+     "cldr": "पर्स",
+     "keys": "कपडे, कॉइन पर्स, पर्स, पोषाक, सिक्का"
+    },
+    {
+     "id": "objects-teddy_bear",
+     "word": "टेडी बियर",
+     "cldr": "टेडी बेअर",
+     "keys": "क्यूट, खिलौना, खिलौने, जन्मदिन, टेडी बेअर, टेडी बेयर"
+    },
+    {
+     "id": "transport-train",
+     "word": "रेलगाड़ी",
+     "cldr": "ट्रेन",
+     "keys": "ट्रेन, रेलवे, वाहन"
+    },
+    {
+     "id": "transport-motorcycle",
+     "word": "मोटरसाइकिल",
+     "cldr": "मोटर साइकिल",
+     "keys": "बाइक, मोटर साइकिल, रेसिंग"
+    },
+    {
+     "id": "transport-ambulance",
+     "word": "एम्बुलेंस",
+     "cldr": "एंबुलेंस",
+     "keys": "आपातकालीन, एंबुलेंस, वाहन"
+    },
+    {
+     "id": "places-office_building",
+     "word": "दफ़्तर",
+     "cldr": "कार्यालय का भवन, कार्यालय",
+     "keys": "कार्यालय, कार्यालय का भवन, कार्यालय का भवन, कार्यालय, नौकरी, भवन, शहर"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "संग्रहालय",
+     "cldr": "उत्कृष्ट इमारत",
+     "keys": "उत्कृष्ट, उत्कृष्ट इमारत"
+    },
+    {
+     "id": "places-houses",
+     "word": "मोहल्ला",
+     "cldr": "घर की इमारतें, भवन",
+     "keys": "घर, घर की इमारतें, घर की इमारतें, भवन, भवन, मकान"
+    },
+    {
+     "id": "places-playground_slide",
+     "word": "खेल का मैदान",
+     "cldr": "फिसल पट्टी",
+     "keys": "खेलना, झूला, प्लेग्राउंड, फिसल पट्टी, फिसलना, फिसलने वाला झूला"
+    },
+    {
+     "id": "travel-luggage",
+     "word": "सूटकेस",
+     "cldr": "सामान",
+     "keys": "घूमना, घूमने, जा, बैग, यात्रा, सामान"
+    },
+    {
+     "id": "travel-world_map",
+     "word": "नक़्शा",
+     "cldr": "विश्व मानचित्र, विश्व",
+     "keys": "विश्व, विश्व मानचित्र, विश्व मानचित्र, विश्व"
+    },
+    {
+     "id": "travel-compass",
+     "word": "कम्पास",
+     "cldr": "दिशासूचक",
+     "keys": "उत्तर, ओरिएंटीयरिंग, कंपास, चुंबकीय, डायरेक्शन, दक्षिण"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "रिसेप्शन",
+     "cldr": "बेलहॉप घंटी, होटल",
+     "keys": "घंटी, बेलहॉप घंटी, बेलहॉप घंटी, होटल, होटल"
+    },
+    {
+     "id": "travel-tent",
+     "word": "तंबू",
+     "cldr": "टेंट, कैंपिंग",
+     "keys": "कैंपिंग, टेंट, टेंट, कैंपिंग, तम्बू"
+    },
+    {
+     "id": "travel-construction",
+     "word": "सड़क का काम",
+     "cldr": "निर्माण चालू, निर्माण का संकेत",
+     "keys": "निर्माण, निर्माण का संकेत, निर्माण चालू, निर्माण चालू, निर्माण का संकेत, बाधा, संकेत"
+    },
+    {
+     "id": "travel-motorway",
+     "word": "राजमार्ग",
+     "cldr": "मोटरवे",
+     "keys": "मोटर का रास्ता, मोटरवे, सड़क, हाइवे"
+    },
+    {
+     "id": "school-notebook",
+     "word": "कॉपी",
+     "cldr": "नोटबुक",
+     "keys": "नोटबुक"
+    },
+    {
+     "id": "school-straight_ruler",
+     "word": "पटरी",
+     "cldr": "स्ट्रेट रूलर",
+     "keys": "कोण, गणित, पैमाना, मापक, सीधा रूलर, स्ट्रेट रूलर"
+    },
+    {
+     "id": "school-memo",
+     "word": "नोट",
+     "cldr": "मेमो",
+     "keys": "पेंसिल, मीडिया, मेमो, संचार, स्मृतिपत्र"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "काग़ज़",
+     "cldr": "ऊपरी पृष्ठ",
+     "keys": "ऊपरी पृष्ठ, दस्तावेज़, पृष्ठ, सामने की ओर पृष्ठ"
+    },
+    {
+     "id": "school-calendar",
+     "word": "डायरी",
+     "cldr": "कैलेंडर",
+     "keys": "कैलेंडर, तारीख, तारीख़, तिथि, दिनांक"
+    },
+    {
+     "id": "school-graduation_cap",
+     "word": "दीक्षांत",
+     "cldr": "स्नातक टोप",
+     "keys": "टोपी, समारोह, स्नातक, स्नातक टोप"
+    },
+    {
+     "id": "tech-satellite_antenna",
+     "word": "एंटीना",
+     "cldr": "सैटेलाइट एंटेना",
+     "keys": "उपग्रह, डिश, सैटेलाइट एंटेना, सैटेलाइट डिश"
+    },
+    {
+     "id": "tech-microscope",
+     "word": "सूक्ष्मदर्शी",
+     "cldr": "माइक्रोस्कोप",
+     "keys": "उपकरण, प्रयोग, माइक्रोस्कोप, विज्ञान"
+    },
+    {
+     "id": "music-drum",
+     "word": "ढोल",
+     "cldr": "ड्रम",
+     "keys": "ड्रम, ड्रमस्टिक, संगीत"
+    },
+    {
+     "id": "music-flute",
+     "word": "बाँसुरी",
+     "cldr": "बांसुरी",
+     "keys": "काठ का बना वाद्य यंत्र, पाइप, बंसी, बांसुरी, बैंड, रिकॉर्डर"
+    },
+    {
+     "id": "music-artist_palette",
+     "word": "चित्रकारी",
+     "cldr": "रंग पट्टिका, कलाकार पैलेट",
+     "keys": "कला, कलाकार, पेंट, पैलेट, रंग, रंग पट्टिका"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "फ़ोटोग्राफ़ी",
+     "cldr": "फ़्लैश वाला कैमरा",
+     "keys": "कैमरा, फ्लैश के साथ कैमरा, फ़्लैश वाला कैमरा, वीडियो"
+    },
+    {
+     "id": "music-clapper_board",
+     "word": "सिनेमा",
+     "cldr": "क्लैपर बोर्ड",
+     "keys": "क्लैपर, क्लैपर बोर्ड, क्लैपरबोर्ड, फिल्म, मनोरंजन, मूवी"
+    },
+    {
+     "id": "music-performing_arts",
+     "word": "रंगमंच",
+     "cldr": "प्रदर्शन कला, मुखौटे",
+     "keys": "कला, नकाब, प्रदर्शन, प्रदर्शन कला, मुखौटे, मनोरंजन, मास्क"
+    },
+    {
+     "id": "sports-horse_racing",
+     "word": "घुड़सवारी",
+     "cldr": "घुड़दौड़",
+     "keys": "खेल, घुड़दौड़, घोड़ा, जॉकी, दौड़ का घोड़ा, रेस"
+    },
+    {
+     "id": "sports-running_shirt",
+     "word": "जर्सी",
+     "cldr": "रनिंग शर्ट",
+     "keys": "खेल, दौड़ना, पट्टी, पट्टे वाली रनिंग शर्ट, भागना, रनिंग शर्ट"
+    },
+    {
+     "id": "games-confetti_ball",
+     "word": "कंफ़ेटी",
+     "cldr": "कॉनफ़ेटी बॉल",
+     "keys": "उत्सव, कॉनफ़ेटी, कॉनफ़ेटी बॉल, गेंद, पार्टी, समारोह"
+    }
+   ]
+  },
+  "zh": {
+   "agree": 507,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_10",
+     "word": "十",
+     "cldr": "按键: 10",
+     "keys": "按键"
+    },
+    {
+     "id": "time-sunrise",
+     "word": "早上",
+     "cldr": "日出",
+     "keys": "大自然, 太阳, 日出, 早晨, 清晨"
+    },
+    {
+     "id": "time-sunset",
+     "word": "晚上",
+     "cldr": "日落",
+     "keys": "夕阳, 日落"
+    },
+    {
+     "id": "signs-red_question_mark",
+     "word": "问题",
+     "cldr": "红色问号",
+     "keys": "为什么, 标点, 标点符号, 疑问, 红色问号, 问号"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "对",
+     "cldr": "勾号按钮",
+     "keys": "勾, 勾号, 勾号按钮, 完成, 打勾, 按钮"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "错",
+     "cldr": "叉号",
+     "keys": "x, 乘, 交叉, 叉号, 取消, 相乘"
+    },
+    {
+     "id": "vegetables-bell_pepper",
+     "word": "甜椒",
+     "cldr": "灯笼椒",
+     "keys": "灯笼椒, 蔬菜, 辣椒, 青椒, 食物"
+    },
+    {
+     "id": "meals-baguette_bread",
+     "word": "法棍",
+     "cldr": "法式长棍面包",
+     "keys": "法式, 法式长条面包, 法式长棍面包, 面包, 食物"
+    },
+    {
+     "id": "meals-flatbread",
+     "word": "馕",
+     "cldr": "扁面包",
+     "keys": "圆盘状烤饼, 扁面包, 玉米饼, 皮塔饼, 薄脆饼, 面包"
+    },
+    {
+     "id": "sea-spiral_shell",
+     "word": "贝壳",
+     "cldr": "海螺",
+     "keys": "海螺, 螺, 螺旋"
+    },
+    {
+     "id": "landscapes-camping",
+     "word": "营地",
+     "cldr": "露营",
+     "keys": "帐篷, 露营"
+    },
+    {
+     "id": "family-baby",
+     "word": "婴儿",
+     "cldr": "小宝贝",
+     "keys": "孩子, 宝宝, 小宝贝, 小毛头"
+    },
+    {
+     "id": "family-child",
+     "word": "孩子",
+     "cldr": "儿童",
+     "keys": "中性, 儿童, 小孩, 年轻人, 性别不明, 性别中立"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "妈妈",
+     "cldr": "家庭: 女人女孩",
+     "keys": "亲子, 女人, 女孩, 家庭, 父母和儿子"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "爸爸",
+     "cldr": "家庭: 男人男孩",
+     "keys": "亲子, 家庭, 父母和儿子, 男人, 男孩"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "朋友",
+     "cldr": "手拉手的两个人",
+     "keys": "两个人手牵手, 人, 情侣, 手, 手拉手的两个人, 手牵手的人"
+    },
+    {
+     "id": "body-flexed_biceps",
+     "word": "胳膊",
+     "cldr": "肌肉",
+     "keys": "二头肌, 健身房, 强壮, 肌肉"
+    },
+    {
+     "id": "health-sneezing_face",
+     "word": "感冒",
+     "cldr": "打喷嚏",
+     "keys": "喷嚏, 打喷嚏, 打喷嚏的脸, 生病, 脸, 鼻涕"
+    },
+    {
+     "id": "health-nauseated_face",
+     "word": "生病",
+     "cldr": "恶心",
+     "keys": "吐, 呕, 恶心, 恶心作呕的脸, 脸, 脸绿了"
+    },
+    {
+     "id": "health-x_ray",
+     "word": "X光片",
+     "cldr": "X射线",
+     "keys": "X 射线, X射线, 医生, 医疗, 骨架, 骨骼"
+    },
+    {
+     "id": "jobs-mechanic",
+     "word": "机修工",
+     "cldr": "技工",
+     "keys": "技工, 水管工, 电工"
+    },
+    {
+     "id": "jobs-office_worker",
+     "word": "职员",
+     "cldr": "白领",
+     "keys": "商人, 建筑师, 白领, 经理"
+    },
+    {
+     "id": "jobs-guard",
+     "word": "警卫",
+     "cldr": "卫兵",
+     "keys": "伦敦, 卫兵, 卫士, 守卫, 白金汉宫"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "喝",
+     "cldr": "平底杯",
+     "keys": "一杯威士忌, 威士忌, 平底无脚杯, 平底杯, 杯, 玻璃杯"
+    },
+    {
+     "id": "actions-cooking",
+     "word": "做饭",
+     "cldr": "煎蛋",
+     "keys": "一面老一面嫩的煎蛋, 做菜, 只煎一面老, 平底锅, 早餐, 煎"
+    },
+    {
+     "id": "feelings-pensive_face",
+     "word": "难过",
+     "cldr": "沉思",
+     "keys": "失落, 心事重重, 忧虑, 沉思, 脸"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "放松",
+     "cldr": "墨镜笑脸",
+     "keys": "太阳镜, 眼镜, 耶, 脸, 酷, 墨镜"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "惊叹",
+     "cldr": "好崇拜哦",
+     "keys": "兴奋, 咧嘴笑, 好崇拜哦, 满天星, 满眼星, 脸"
+    },
+    {
+     "id": "clothes-coat",
+     "word": "大衣",
+     "cldr": "外套",
+     "keys": "冷, 外套, 夹克, 超冷"
+    },
+    {
+     "id": "places-stadium",
+     "word": "体育场",
+     "cldr": "体育馆",
+     "keys": "体育馆, 竞技场"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "博物馆",
+     "cldr": "古典建筑",
+     "keys": "古典, 古典建筑, 古建筑"
+    },
+    {
+     "id": "places-houses",
+     "word": "街区",
+     "cldr": "房屋建筑",
+     "keys": "住宅, 小区, 房, 房子, 房屋建筑"
+    },
+    {
+     "id": "travel-airplane_departure",
+     "word": "出发",
+     "cldr": "航班起飞",
+     "keys": "值机, 出境, 报到, 登机, 离境, 航班"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "前台",
+     "cldr": "服务铃",
+     "keys": "服务铃, 行李员, 酒店, 铃"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "纸",
+     "cldr": "文件",
+     "keys": "文书, 文件, 文档, 页面向上"
+    },
+    {
+     "id": "school-calendar",
+     "word": "日程本",
+     "cldr": "日历",
+     "keys": "日历, 日期"
+    },
+    {
+     "id": "music-flute",
+     "word": "笛子",
+     "cldr": "长笛",
+     "keys": "乐器, 乐队, 木管乐器, 横笛, 短笛, 竖笛"
+    },
+    {
+     "id": "music-camera_with_flash",
+     "word": "摄影",
+     "cldr": "开闪光灯的相机",
+     "keys": "带闪光灯的相机, 开闪光灯的相机, 拍照, 相机, 闪光灯, 闪光灯打开"
+    },
+    {
+     "id": "sports-running_shirt",
+     "word": "球衣",
+     "cldr": "运动背心",
+     "keys": "上衣, 跑步, 运动服, 运动背心, 饰带"
+    }
+   ]
+  },
+  "ja": {
+   "agree": 506,
+   "total": 546,
+   "misses": [
+    {
+     "id": "numbers-keycap_0",
+     "word": "ゼロ",
+     "cldr": "囲み数字: 0",
+     "keys": "0, 囲み数字"
+    },
+    {
+     "id": "numbers-keycap_10",
+     "word": "十",
+     "cldr": "囲み数字: 10",
+     "keys": "囲み数字"
+    },
+    {
+     "id": "signs-red_question_mark",
+     "word": "質問",
+     "cldr": "赤い疑問符",
+     "keys": "?, クエスチョンマーク, はてなマーク, 疑問符, 約物, 記号"
+    },
+    {
+     "id": "signs-check_mark_button",
+     "word": "正しい",
+     "cldr": "白抜きのチェック",
+     "keys": "チェック, チェックマーク, 済, 白抜きのチェック, 記号"
+    },
+    {
+     "id": "signs-cross_mark",
+     "word": "間違い",
+     "cldr": "バツ",
+     "keys": "キャンセル, バツ, ペケ, 乗算, 掛け算, 記号"
+    },
+    {
+     "id": "fruits-pear",
+     "word": "洋梨",
+     "cldr": "洋ナシ",
+     "keys": "ナシ, 果物, 洋ナシ, 西洋ナシ"
+    },
+    {
+     "id": "vegetables-carrot",
+     "word": "にんじん",
+     "cldr": "人参",
+     "keys": "ニンジン, 人参, 野菜"
+    },
+    {
+     "id": "vegetables-garlic",
+     "word": "にんにく",
+     "cldr": "ニンニク",
+     "keys": "ガーリック, におい, ニンニク, 薬味, 野菜, 香り"
+    },
+    {
+     "id": "vegetables-cucumber",
+     "word": "きゅうり",
+     "cldr": "キュウリ",
+     "keys": "キュウリ, ピクルス, 漬け物, 野菜"
+    },
+    {
+     "id": "vegetables-eggplant",
+     "word": "なす",
+     "cldr": "ナス",
+     "keys": "ナス, 野菜"
+    },
+    {
+     "id": "vegetables-hot_pepper",
+     "word": "唐辛子",
+     "cldr": "とうがらし",
+     "keys": "とうがらし, 辛い, 野菜, 香辛料"
+    },
+    {
+     "id": "vegetables-ginger_root",
+     "word": "しょうが",
+     "cldr": "ショウガ",
+     "keys": "ショウガ, ジンジャー, スパイス, ハーブ, 生姜, 薬味"
+    },
+    {
+     "id": "meals-cooked_rice",
+     "word": "ご飯",
+     "cldr": "ごはん",
+     "keys": "ごはん, ライス, 米"
+    },
+    {
+     "id": "meals-bowl_with_spoon",
+     "word": "スープ",
+     "cldr": "ボウルとスプーン",
+     "keys": "オートミール, おかゆ, シリアル, ボウルとスプーン, 朝食, 粥"
+    },
+    {
+     "id": "farm-chicken",
+     "word": "めんどり",
+     "cldr": "にわとり",
+     "keys": "にわとり, ニワトリ, 動物, 顔, 鳥"
+    },
+    {
+     "id": "family-family_woman_girl",
+     "word": "お母さん",
+     "cldr": "家族: 女性 女の子",
+     "keys": "女の子, 女性, 子供, 家族, 親子"
+    },
+    {
+     "id": "family-family_man_boy",
+     "word": "お父さん",
+     "cldr": "家族: 男性 男の子",
+     "keys": "子供, 家族, 男の子, 男性, 親子"
+    },
+    {
+     "id": "family-family_man_woman_boy",
+     "word": "両親",
+     "cldr": "家族: 男性 女性 男の子",
+     "keys": "女性, 子供, 家族, 男の子, 男性, 親子"
+    },
+    {
+     "id": "family-people_holding_hands",
+     "word": "友だち",
+     "cldr": "手をつなぐ2人",
+     "keys": "カップル, つなぐ, 人, 友達, 恋人, 手"
+    },
+    {
+     "id": "health-face_with_head_bandage",
+     "word": "けが",
+     "cldr": "包帯を巻いた顔",
+     "keys": "ケガ, ケガしてる顔, 包帯, 包帯を巻いた顔, 痛い, 顔"
+    },
+    {
+     "id": "actions-face_savoring_food",
+     "word": "食べる",
+     "cldr": "にこにこぺろり",
+     "keys": "うまい, おいしい, おいしそう, スマイル, にこにこぺろり, ぺろり"
+    },
+    {
+     "id": "actions-tumbler_glass",
+     "word": "飲む",
+     "cldr": "タンブラーグラス",
+     "keys": "ウィスキー, ウイスキー, グラス, ショット, スコッチ, タンブラー"
+    },
+    {
+     "id": "actions-open_book",
+     "word": "読む",
+     "cldr": "開いた本",
+     "keys": "図書館, 小説, 書籍, 本, 知識, 読書"
+    },
+    {
+     "id": "actions-eyes",
+     "word": "見る",
+     "cldr": "目",
+     "keys": "からだ, 両目, 動く目玉, 目"
+    },
+    {
+     "id": "actions-yawning_face",
+     "word": "あくびする",
+     "cldr": "あくびした顔",
+     "keys": "あくびした顔, おやすみ, ふあ～, 疲れ, 眠い, 退屈"
+    },
+    {
+     "id": "feelings-grinning_face",
+     "word": "うれしい",
+     "cldr": "にっこり笑う",
+     "keys": "スマイル, ナイス, にっこり, にっこり笑う, ハッピー, 笑う"
+    },
+    {
+     "id": "feelings-angry_face",
+     "word": "怒っている",
+     "cldr": "ぷんぷん",
+     "keys": "ぷんぷん, 不満, 怒った, 怒った顔, 怒り, 顔"
+    },
+    {
+     "id": "feelings-smiling_face_with_sunglasses",
+     "word": "リラックスした",
+     "cldr": "サングラスで笑顔",
+     "keys": "クール, サングラス, サングラスで笑顔, スマイル, 眼鏡, 笑顔"
+    },
+    {
+     "id": "feelings-star_struck",
+     "word": "感動した",
+     "cldr": "目が星の笑顔",
+     "keys": "スマイル, わーい, 星, 目が星の笑顔, 笑顔, 顔"
+    },
+    {
+     "id": "clothes-shorts",
+     "word": "半ズボン",
+     "cldr": "ショーツ",
+     "keys": "ショーツ, スイムウェア, パンツ, 下着, 水着"
+    },
+    {
+     "id": "clothes-woman_s_hat",
+     "word": "ハット",
+     "cldr": "婦人帽子",
+     "keys": "婦人帽子, 帽子, 麦わら, 麦わら帽子"
+    },
+    {
+     "id": "places-classical_building",
+     "word": "博物館",
+     "cldr": "歴史的な建物",
+     "keys": "古代, 史跡, 歴史, 歴史的な建物, 歴史的建造物"
+    },
+    {
+     "id": "places-playground_slide",
+     "word": "遊び場",
+     "cldr": "すべり台",
+     "keys": "すべり台, 公園, 遊具"
+    },
+    {
+     "id": "travel-airplane_departure",
+     "word": "出発",
+     "cldr": "飛行機離陸",
+     "keys": "乗り物, 航空機, 離陸, 飛行機, 飛行機離陸"
+    },
+    {
+     "id": "travel-airplane_arrival",
+     "word": "到着",
+     "cldr": "飛行機着陸",
+     "keys": "乗り物, 着陸, 航空機, 飛行機, 飛行機着陸"
+    },
+    {
+     "id": "travel-bellhop_bell",
+     "word": "フロント",
+     "cldr": "ベルボーイベル",
+     "keys": "ベル, ベルボーイベル, ホテル"
+    },
+    {
+     "id": "school-pushpin",
+     "word": "画びょう",
+     "cldr": "押しピン",
+     "keys": "押しピン, 文具, 文房具, 画鋲"
+    },
+    {
+     "id": "school-page_facing_up",
+     "word": "紙",
+     "cldr": "ページ",
+     "keys": "ドキュメント, ページ, 文書, 書類"
+    },
+    {
+     "id": "school-calendar",
+     "word": "手帳",
+     "cldr": "カレンダー",
+     "keys": "カレンダー, スケジュール, 予定, 日付"
+    },
+    {
+     "id": "sports-running_shirt",
+     "word": "ユニフォーム",
+     "cldr": "長距離走",
+     "keys": "スポーツ, たすき, ランニング, ランニングシャツ, 長距離走, 駅伝"
+    }
+   ]
+  }
+ },
+ "pinyin": [
+  {
+   "id": "house-g2",
+   "zh": "钥匙在哪儿？",
+   "mine": "yàoshi zài nǎr?",
+   "ref": "yào shi zài nǎ ér"
+  },
+  {
+   "id": "accessories-g1",
+   "zh": "我的眼镜在哪儿？",
+   "mine": "wǒ de yǎnjìng zài nǎr?",
+   "ref": "wǒ de yǎn jìng zài nǎ ér"
+  },
+  {
+   "id": "places-g1",
+   "zh": "医院在哪儿？",
+   "mine": "yīyuàn zài nǎr?",
+   "ref": "yī yuàn zài nǎ ér"
+  }
+ ],
+ "romaji": [
+  {
+   "id": "colors-orange_square",
+   "ja": "オレンジ色",
+   "mine": "orenji-iro",
+   "ref": "orenji shoku"
+  },
+  {
+   "id": "time-alarm_clock",
+   "ja": "目覚まし時計",
+   "mine": "mezamashi-dokei",
+   "ref": "mezamashi tokei"
+  },
+  {
+   "id": "time-g2",
+   "ja": "目覚ましは七時に鳴ります。",
+   "mine": "mezamashi wa shichiji ni narimasu.",
+   "ref": "mezamashi wa nana ji ni nari masu ."
+  },
+  {
+   "id": "meals-poultry_leg",
+   "ja": "鶏肉",
+   "mine": "toriniku",
+   "ref": "keiniku"
+  },
+  {
+   "id": "drinks-g2",
+   "ja": "水を一杯",
+   "mine": "mizu o ippai",
+   "ref": "mizu o ichi hai"
+  },
+  {
+   "id": "birds-swan",
+   "ja": "白鳥",
+   "mine": "hakuchō",
+   "ref": "shiratori"
+  },
+  {
+   "id": "jobs-cook",
+   "ja": "料理人",
+   "mine": "ryōrinin",
+   "ref": "ryōri jin"
+  },
+  {
+   "id": "music-g1",
+   "ja": "ギターを弾きます。",
+   "mine": "gitā o hikimasu.",
+   "ref": "gitā o hajiki masu ."
+  }
+ ]
+}

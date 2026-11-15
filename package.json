@@ -30,10 +30,12 @@
   "devDependencies": {
     "@dicebear/collection": "^9.4.2",
     "@dicebear/core": "^9.4.2",
+    "@lobehub/fluent-emoji-3d": "^1.1.0",
     "@types/node": "^22.20.5",
     "@types/react": "~19.3.0",
     "tsx": "^4.23.15",
-    "typescript": "~6.0.3"
+    "typescript": "~6.0.3",
+    "unicode-emoji-json": "^0.9.0"
   },
   "scripts": {
     "start": "expo start",

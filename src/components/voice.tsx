@@ -14,12 +14,18 @@ import { Avatar } from './Avatar';
 import { Bar, Row } from './ui';
 
 /** Bouton lecture audio (vitesse normale ou ralentie). */
-export function PlayButton({ text, pid, lang, slow, companion, label, onState, size = 52 }: {
+export function PlayButton({ text, pid, lang, slow, companion, label, onState, size = 52, disabled }: {
   text: string; pid?: string; lang: LangCode; slow?: boolean; companion?: Companion; label?: string; size?: number;
   onState?: (playing: boolean) => void;
+  /** Désactivé pendant que le micro écoute : sinon le micro capterait le modèle audio. */
+  disabled?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
   const [noVoice, setNoVoice] = useState(false);
+  useEffect(() => {
+    if (disabled && playing) { stopSpeaking(); setPlaying(false); onState?.(false); }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [disabled]);
   const play = async () => {
     if (playing) { await stopSpeaking(); setPlaying(false); onState?.(false); return; }
     setPlaying(true); onState?.(true);
@@ -31,10 +37,11 @@ export function PlayButton({ text, pid, lang, slow, companion, label, onState, s
   };
   return (
     <View style={{ alignItems: 'center' }}>
-      <Pressable accessibilityRole="button" accessibilityLabel={slow ? 'Écouter lentement' : 'Écouter'} onPress={play}
+      <Pressable accessibilityRole="button" accessibilityLabel={slow ? 'Écouter lentement' : 'Écouter'} onPress={play} disabled={disabled}
+        accessibilityState={{ disabled: !!disabled }}
         style={({ pressed }) => [{ width: size, height: size, borderRadius: size / 2, backgroundColor: slow ? C.card : C.primary,
           borderWidth: slow ? 1.5 : 0, borderColor: C.line, alignItems: 'center', justifyContent: 'center',
-          opacity: noVoice ? 0.4 : 1, transform: [{ scale: pressed ? 0.95 : 1 }] }, !slow && shadow]}>
+          opacity: noVoice || disabled ? 0.35 : 1, transform: [{ scale: pressed ? 0.95 : 1 }] }, !slow && shadow]}>
         {playing
           ? <Square size={size * 0.34} color={slow ? C.primary : '#fff'} fill={slow ? C.primary : '#fff'} />
           : slow ? <Snail size={size * 0.44} color={C.primary} strokeWidth={2} /> : <Volume2 size={size * 0.44} color="#fff" strokeWidth={2.2} />}

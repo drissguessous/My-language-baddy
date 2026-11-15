@@ -19,12 +19,12 @@ import shutil  # noqa: E402
 from common import CANDIDATES, CER_PASS, WHISPER_LANG, cer, fnv, to_mms_shi  # noqa: E402
 
 
-def encode(wav_path: str, mp3_path: str):
+def encode(wav_path: str, mp3_path: str, bitrate: str = '48k'):
     af = ('silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse,'
           'silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.12,areverse,'
           'loudnorm=I=-18:TP=-2:LRA=11')
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav_path, '-af', af, '-ac', '1', '-ar', '24000',
-                    '-codec:a', 'libmp3lame', '-b:a', '48k', mp3_path], check=True)
+                    '-codec:a', 'libmp3lame', '-b:a', bitrate, mp3_path], check=True)
 
 
 def write_wav(path, samples, sr):
@@ -101,7 +101,8 @@ def worker(args, lang, cand, jobs):
         try:
             wav = os.path.join(tmp, 'x.wav')
             synth.wav(it['text'], wav)
-            encode(wav, cmp3)
+            # Vocabulaire (identifiants « thème-illustration ») : clips courts encodés à 32 kbit/s pour limiter la taille de l'application.
+            encode(wav, cmp3, '32k' if 'gender' not in it and '-' in it['key'] else '48k')
             entry['bytes'] = os.path.getsize(cmp3)
             if asr:
                 segs, _ = asr.transcribe(cmp3, language=WHISPER_LANG[lang], beam_size=1, condition_on_previous_text=False,
@@ -161,6 +162,7 @@ def main():
     ap.add_argument('--cache', default='cache/voices', help='clips déjà générés et vérifiés (réutilisés si le texte est inchangé)')
     ap.add_argument('--budget', type=float, default=270, help='minutes au total pour la langue')
     ap.add_argument('--stall', type=float, default=4, help='minutes sans nouveau clip avant d\'arrêter une voix bloquée')
+    ap.add_argument('--report', default='docs/voix-report.json', help='voix déjà retenues par langue')
     ap.add_argument('--worker', help=argparse.SUPPRESS)
     ap.add_argument('--kind', help=argparse.SUPPRESS)
     args = ap.parse_args()
@@ -182,8 +184,13 @@ def main():
     # n'empêche plus les autres voix ni la publication. Phrases des leçons d'abord, répliques ensuite.
     deadline = time.time() + args.budget * 60
     errors = {}
+    # Une fois les deux voix d'une langue choisies (docs/voix-report.json), les nouveaux textes ne sont
+    # générés qu'avec elles : les autres candidates gardent leurs clips déjà vérifiés, sans nouveau calcul.
+    chosen = set()
+    if os.path.exists(args.report):
+        chosen = set(json.load(open(args.report, encoding='utf-8')).get(lang, {}).get('chosen', []))
     for kind in ('clips', 'coach'):
-        pending = [c for c in CANDIDATES[lang] if jobs_for(c, kind) and c['id'] not in errors]
+        pending = [c for c in CANDIDATES[lang] if jobs_for(c, kind) and c['id'] not in errors and (not chosen or c['id'] in chosen)]
         for n, cand in enumerate(pending):
             left = deadline - time.time()
             if left < 60:

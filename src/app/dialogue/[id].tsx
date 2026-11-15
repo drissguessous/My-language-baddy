@@ -31,6 +31,7 @@ export default function Dialogue() {
   const [pos, setPos] = useState(-1);          // -1 = introduction
   const [log, setLog] = useState<Msg[]>([]);
   const [speaking, setSpeaking] = useState(false);
+  const [modelPlaying, setModelPlaying] = useState(false);
   const [reveal, setReveal] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
   const rec = useRecognizer(lang);
@@ -129,7 +130,8 @@ export default function Dialogue() {
             ) : null}
             <Row style={{ justifyContent: 'space-between', marginTop: 4 }}>
               <Text onPress={() => setReveal(!reveal)} style={{ color: C.primary, fontWeight: '700' }} accessibilityRole="button">{reveal ? 'Masquer' : 'Voir la phrase'}</Text>
-              <PlayButton pid={current.id} text={current.t[lang]!} lang={lang} companion={companion} size={40} />
+              <PlayButton pid={current.id} text={current.t[lang]!} lang={lang} companion={companion} size={40}
+                disabled={rec.state === 'listening'} onState={setModelPlaying} />
             </Row>
             {selfAssess ? (
               <Row style={{ marginTop: 12 }}>
@@ -137,8 +139,8 @@ export default function Dialogue() {
               </Row>
             ) : (
               <>
-                <MicButton listening={rec.state === 'listening'} volume={rec.volume}
-                  onPress={() => { setFeedback(null); if (rec.state === 'listening') rec.stop(); else rec.start([current.t[lang]!]); }} />
+                <MicButton listening={rec.state === 'listening'} volume={rec.volume} disabled={(speaking || modelPlaying) && rec.state !== 'listening'}
+                  onPress={() => { setFeedback(null); if (rec.state === 'listening') rec.stop(); else { stopSpeaking(); rec.start([current.t[lang]!]); } }} />
                 <Row style={{ justifyContent: 'space-between' }}>
                   <T v="small">{rec.state === 'listening' ? 'Je vous écoute…' : rec.state === 'denied' ? 'Micro refusé' : 'Touchez le micro'}</T>
                   <Text onPress={() => accept(0)} style={{ color: C.sub, fontWeight: '600' }} accessibilityRole="button">Passer</Text>

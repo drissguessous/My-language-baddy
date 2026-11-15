@@ -15,6 +15,7 @@ const CREDITS: { name: string; use: string; license: string; url: string }[] = [
   { name: 'Sharvard Corpus (Aubanel et al.)', use: 'Voix « Sharvard »', license: 'CC-BY 3.0', url: 'https://datashare.ed.ac.uk/handle/10283/574' },
   { name: 'Notionists (Zoish), via DiceBear', use: 'Portraits des compagnons', license: 'CC0 1.0 (dessins), MIT (code)', url: 'https://www.dicebear.com/styles/notionists' },
   { name: 'Lucide', use: 'Icônes', license: 'ISC', url: 'https://lucide.dev' },
+  { name: 'Microsoft Fluent Emoji 3D', use: 'Illustrations du dictionnaire', license: 'MIT', url: 'https://github.com/microsoft/fluentui-emoji' },
   { name: 'Plus Jakarta Sans', use: 'Typographie', license: 'SIL Open Font License 1.1', url: 'https://fonts.google.com/specimen/Plus+Jakarta+Sans' },
 ];
 

@@ -3,6 +3,7 @@ import { A2, B1 } from './phrases/a2b1';
 import { B2, C1C2, PRO } from './phrases/b2c2pro';
 import type { Phrase } from './phrases/types';
 import type { LangCode } from './languages';
+import { VOCAB } from './vocab';
 
 export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 export const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -109,7 +110,8 @@ export const UNITS: Unit[] = [
     phrases: ['pl1', 'pl2', 'pl3', 'pl4', 'pl5', 'pl6'], grammar: 'Vocabulaire du transport' },
 ];
 
-export const ALL_PHRASES: Phrase[] = [...A1, ...A2, ...B1, ...B2, ...C1C2, ...PRO];
+// Le vocabulaire illustré (src/data/vocab.ts) fait partie du corpus : voix, analyse vocale, révision espacée.
+export const ALL_PHRASES: Phrase[] = [...A1, ...A2, ...B1, ...B2, ...C1C2, ...PRO, ...VOCAB];
 export const PHRASE: Record<string, Phrase> = Object.fromEntries(ALL_PHRASES.map((p) => [p.id, p]));
 export const UNIT: Record<string, Unit> = Object.fromEntries(UNITS.map((u) => [u.id, u]));
 
