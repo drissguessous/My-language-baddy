@@ -56,916 +56,496 @@
    "bm_george"
   ],
   "clips_total": 738,
-  "clips_kept": 608,
+  "clips_kept": 668,
   "failed": [
    {
     "key": "accessories-folding_hand_fan",
     "heard": {
      "bf_isabella": "Fun.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "accessories-gem_stone",
-    "heard": {
-     "bf_isabella": "gems",
-     "bm_fable": null
+     "bm_george": "Van."
     }
    },
    {
     "key": "accessories-handbag",
     "heard": {
      "bf_isabella": "Hand buggy.",
-     "bm_fable": null
+     "bm_george": "Handbargy"
     }
    },
    {
     "key": "actions-cooking",
     "heard": {
      "bf_isabella": "to cook it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-microphone",
-    "heard": {
-     "bf_isabella": "to sing it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-person_climbing",
-    "heard": {
-     "bf_isabella": "to climb the",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-sleeping_face",
-    "heard": {
-     "bf_isabella": "to sleep her.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-speaking_head",
-    "heard": {
-     "bf_isabella": "to speak it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-telephone_receiver",
-    "heard": {
-     "bf_isabella": "to phone it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-thinking_face",
-    "heard": {
-     "bf_isabella": "To think it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "actions-tumbler_glass",
-    "heard": {
-     "bf_isabella": "to drink it.",
-     "bm_fable": null
+     "bm_george": "Too cocky."
     }
    },
    {
     "key": "bathroom-bathtub",
     "heard": {
      "bf_isabella": "Bath Derby",
-     "bm_fable": null
+     "bm_george": "Bath Derby."
     }
    },
    {
     "key": "bathroom-shower",
     "heard": {
      "bf_isabella": "Showered.",
-     "bm_fable": null
+     "bm_george": "Jowl."
     }
    },
    {
     "key": "bathroom-soap",
     "heard": {
      "bf_isabella": "So you'll be there.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "bathroom-sponge",
-    "heard": {
-     "bf_isabella": "Sponge it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "bathroom-wastebasket",
-    "heard": {
-     "bf_isabella": "been.",
-     "bm_fable": null
+     "bm_george": "Zobe."
     }
    },
    {
     "key": "birds-ant",
     "heard": {
      "bf_isabella": "and",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "birds-bird",
-    "heard": {
-     "bf_isabella": "but",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "birds-fly",
-    "heard": {
-     "bf_isabella": "Flight.",
-     "bm_fable": null
+     "bm_george": "And..."
     }
    },
    {
     "key": "birds-honeybee",
     "heard": {
      "bf_isabella": "be.",
-     "bm_fable": null
+     "bm_george": "Bye."
     }
    },
    {
     "key": "birds-owl",
     "heard": {
      "bf_isabella": "Owl is it?",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "birds-snail",
-    "heard": {
-     "bf_isabella": "Snailed.",
-     "bm_fable": null
+     "bm_george": "Aule"
     }
    },
    {
     "key": "body-ear",
     "heard": {
      "bf_isabella": "Yes.",
-     "bm_fable": null
+     "bm_george": "Yeah."
     }
    },
    {
     "key": "body-eye",
     "heard": {
      "bf_isabella": "I...",
-     "bm_fable": null
+     "bm_george": "I..."
     }
    },
    {
     "key": "body-flexed_biceps",
     "heard": {
      "bf_isabella": "um",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "body-mouth",
-    "heard": {
-     "bf_isabella": "mouse",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "body-tongue",
-    "heard": {
-     "bf_isabella": "Tangdy.",
-     "bm_fable": null
+     "bm_george": "Omnit."
     }
    },
    {
     "key": "clothes-billed_cap",
     "heard": {
      "bf_isabella": "Caps.",
-     "bm_fable": null
+     "bm_george": "Gab"
     }
    },
    {
     "key": "clothes-coat",
     "heard": {
      "bf_isabella": "Quote.",
-     "bm_fable": null
+     "bm_george": "Code."
     }
    },
    {
     "key": "clothes-sari",
     "heard": {
      "bf_isabella": "Sorry.",
-     "bm_fable": null
+     "bm_george": "Sorry."
     }
    },
    {
     "key": "clothes-scarf",
     "heard": {
      "bf_isabella": "Scarfed.",
-     "bm_fable": null
+     "bm_george": "Sgov."
     }
    },
    {
     "key": "clothes-socks",
     "heard": {
      "bf_isabella": "Zox.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "clothes-t_shirt",
-    "heard": {
-     "bf_isabella": "T-shirt and...",
-     "bm_fable": null
+     "bm_george": "Zogs."
     }
    },
    {
     "key": "clothes-woman_s_hat",
     "heard": {
      "bf_isabella": "Hurt.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "colors-blue_square",
-    "heard": {
-     "bf_isabella": "Please.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "colors-g2",
-    "heard": {
-     "bf_isabella": "A red kai.",
-     "bm_fable": null
+     "bm_george": "Hard."
     }
    },
    {
     "key": "colors-white_large_square",
     "heard": {
      "bf_isabella": "Wait.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "drinks-cup_with_straw",
-    "heard": {
-     "bf_isabella": "Soft drink here.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "family-boy",
-    "heard": {
-     "bf_isabella": "Good boy.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "family-family_man_boy",
-    "heard": {
-     "bf_isabella": "fathered",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "family-man",
-    "heard": {
-     "bf_isabella": "Mad.",
-     "bm_fable": null
+     "bm_george": "Wide."
     }
    },
    {
     "key": "family-people_hugging",
     "heard": {
      "bf_isabella": "Huggy.",
-     "bm_fable": null
+     "bm_george": "Huggy."
     }
    },
    {
     "key": "farm-cat",
     "heard": {
      "bf_isabella": "Cut.",
-     "bm_fable": null
+     "bm_george": "God."
     }
    },
    {
     "key": "farm-chicken",
     "heard": {
      "bf_isabella": "Hent.",
-     "bm_fable": null
+     "bm_george": "Handle."
     }
    },
    {
     "key": "farm-ewe",
     "heard": {
      "bf_isabella": "Sheba.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "farm-hamster",
-    "heard": {
-     "bf_isabella": "Hampstead.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "farm-horse",
-    "heard": {
-     "bf_isabella": "Host.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "farm-pig",
-    "heard": {
-     "bf_isabella": "Piggy.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "fruits-banana",
-    "heard": {
-     "bf_isabella": "Ben on it.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "fruits-lemon",
-    "heard": {
-     "bf_isabella": "Lament.",
-     "bm_fable": null
+     "bm_george": "Jib."
     }
    },
    {
     "key": "fruits-pear",
     "heard": {
      "bf_isabella": "Paird.",
-     "bm_fable": null
+     "bm_george": "Pay!"
     }
    },
    {
     "key": "games-chess_pawn",
     "heard": {
      "bf_isabella": "Jess.",
-     "bm_fable": null
+     "bm_george": "Jazz"
     }
    },
    {
     "key": "health-adhesive_bandage",
     "heard": {
      "bf_isabella": "Plasty.",
-     "bm_fable": null
+     "bm_george": "Blast-Doo."
     }
    },
    {
     "key": "health-crutch",
     "heard": {
      "bf_isabella": "Crutched.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "health-face_with_head_bandage",
-    "heard": {
-     "bf_isabella": "Enjoy.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "health-g2",
-    "heard": {
-     "bf_isabella": "I have a toothache here.",
-     "bm_fable": null
+     "bm_george": "Crunchy."
     }
    },
    {
     "key": "house-bed",
     "heard": {
      "bf_isabella": "Better.",
-     "bm_fable": null
+     "bm_george": "Med."
     }
    },
    {
     "key": "house-chair",
     "heard": {
      "bf_isabella": "Check.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "house-ladder",
-    "heard": {
-     "bf_isabella": "Lade.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "house-mirror",
-    "heard": {
-     "bf_isabella": "merest",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "jobs-artist",
-    "heard": {
-     "bf_isabella": "artist did.",
-     "bm_fable": null
+     "bm_george": "Joe."
     }
    },
    {
     "key": "jobs-cook",
     "heard": {
      "bf_isabella": "Cookie.",
-     "bm_fable": null
+     "bm_george": "GOOG"
     }
    },
    {
     "key": "jobs-guard",
     "heard": {
      "bf_isabella": "God.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "jobs-health_worker",
-    "heard": {
-     "bf_isabella": "Dr.",
-     "bm_fable": null
+     "bm_george": "God."
     }
    },
    {
     "key": "jobs-judge",
     "heard": {
      "bf_isabella": "Jaji.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "jobs-mechanic",
-    "heard": {
-     "bf_isabella": "Mechanically.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "jobs-student",
-    "heard": {
-     "bf_isabella": "Stu didn't he?",
-     "bm_fable": null
+     "bm_george": "John G."
     }
    },
    {
     "key": "kitchen-canned_food",
     "heard": {
      "bf_isabella": "Tindle.",
-     "bm_fable": null
+     "bm_george": "Tin loop."
     }
    },
    {
     "key": "kitchen-jar",
     "heard": {
      "bf_isabella": "John.",
-     "bm_fable": null
+     "bm_george": "John."
     }
    },
    {
     "key": "landscapes-beach_with_umbrella",
     "heard": {
      "bf_isabella": "Beach had",
-     "bm_fable": null
+     "bm_george": "Bye-bye."
     }
    },
    {
     "key": "landscapes-globe_showing_europe_africa",
     "heard": {
      "bf_isabella": "Oh, thank you.",
-     "bm_fable": null
+     "bm_george": "With..."
     }
    },
    {
     "key": "landscapes-rock",
     "heard": {
      "bf_isabella": "Rock it.",
-     "bm_fable": null
+     "bm_george": "Rogue"
     }
    },
    {
     "key": "landscapes-wood",
     "heard": {
      "bf_isabella": "Would.",
-     "bm_fable": null
+     "bm_george": "Wooden"
     }
    },
    {
     "key": "m1",
     "heard": {
      "bf_isabella": "we can offer you a 5% discount.",
-     "bm_fable": "we can offer you a 5% discount."
+     "bm_george": "we can offer you a 5% discount."
     }
    },
    {
     "key": "m3",
     "heard": {
      "bf_isabella": "If you commit for a year, we can go up to 8%.",
-     "bm_fable": "If you commit for a year, we can go up to 8%."
+     "bm_george": "If you commit for a year, we can go up to 8%."
     }
    },
    {
     "key": "meals-bowl_with_spoon",
     "heard": {
      "bf_isabella": "Super.",
-     "bm_fable": null
+     "bm_george": "Zoob."
     }
    },
    {
     "key": "meals-butter",
     "heard": {
      "bf_isabella": "Butty.",
-     "bm_fable": null
+     "bm_george": "But hey."
     }
    },
    {
     "key": "meals-croissant",
     "heard": {
      "bf_isabella": "Quasite.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "meals-egg",
-    "heard": {
-     "bf_isabella": "Exit.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "meals-flatbread",
-    "heard": {
-     "bf_isabella": "Flatbread ear.",
-     "bm_fable": null
+     "bm_george": "Quasin."
     }
    },
    {
     "key": "music-guitar",
     "heard": {
      "bf_isabella": "Get all.",
-     "bm_fable": null
+     "bm_george": "Get all."
     }
    },
    {
     "key": "n4",
     "heard": {
      "bf_isabella": "That's 20 euros.",
-     "bm_fable": "That's 20 euros."
+     "bm_george": "That's 20 euros."
     }
    },
    {
     "key": "numbers-g1",
     "heard": {
      "bf_isabella": "123",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_1",
-    "heard": {
-     "bf_isabella": "Want?",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_10",
-    "heard": {
-     "bf_isabella": "10.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_2",
-    "heard": {
-     "bf_isabella": "2",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_3",
-    "heard": {
-     "bf_isabella": "3",
-     "bm_fable": null
+     "bm_george": "1, 2, 3."
     }
    },
    {
     "key": "numbers-keycap_4",
     "heard": {
      "bf_isabella": "Forced.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_5",
-    "heard": {
-     "bf_isabella": "5.",
-     "bm_fable": null
+     "bm_george": "Voll."
     }
    },
    {
     "key": "numbers-keycap_6",
     "heard": {
      "bf_isabella": "Zixxed.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "numbers-keycap_7",
-    "heard": {
-     "bf_isabella": "7.",
-     "bm_fable": null
+     "bm_george": "Ziggs."
     }
    },
    {
     "key": "numbers-keycap_8",
     "heard": {
      "bf_isabella": "8.",
-     "bm_fable": null
+     "bm_george": "Laid."
     }
    },
    {
     "key": "numbers-keycap_9",
     "heard": {
      "bf_isabella": "Nineth.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "objects-hammer",
-    "heard": {
-     "bf_isabella": "Hammersk",
-     "bm_fable": null
+     "bm_george": "9."
     }
    },
    {
     "key": "objects-locked",
     "heard": {
      "bf_isabella": "padlock it.",
-     "bm_fable": null
+     "bm_george": "Padlocking."
     }
    },
    {
     "key": "objects-package",
     "heard": {
      "bf_isabella": "parceled.",
-     "bm_fable": null
+     "bm_george": "Possibly."
     }
    },
    {
     "key": "p2",
     "heard": {
      "bf_isabella": "Revenue grew by 12%, mainly thanks to exports.",
-     "bm_fable": "Revenue grew by 12%, mainly thanks to exports."
-    }
-   },
-   {
-    "key": "places-hospital",
-    "heard": {
-     "bf_isabella": "Hospitality.",
-     "bm_fable": null
+     "bm_george": "Revenue grew by 12%, mainly thanks to exports."
     }
    },
    {
     "key": "places-mosque",
     "heard": {
      "bf_isabella": "Moschee.",
-     "bm_fable": null
+     "bm_george": "Mozg."
     }
    },
    {
     "key": "plants-herb",
     "heard": {
      "bf_isabella": "Happy.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "school-calendar",
-    "heard": {
-     "bf_isabella": "Diaries.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "school-crayon",
-    "heard": {
-     "bf_isabella": "Cray and",
-     "bm_fable": null
+     "bm_george": "Hubby."
     }
    },
    {
     "key": "sea-fish",
     "heard": {
      "bf_isabella": "Vist.",
-     "bm_fable": null
+     "bm_george": "Virgin."
     }
    },
    {
     "key": "sea-shark",
     "heard": {
      "bf_isabella": "Shock.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "sea-whale",
-    "heard": {
-     "bf_isabella": "Wales",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "signs-cross_mark",
-    "heard": {
-     "bf_isabella": "Wronged it.",
-     "bm_fable": null
+     "bm_george": "Jog."
     }
    },
    {
     "key": "signs-up_arrow",
     "heard": {
      "bf_isabella": "Oops.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "sports-person_in_lotus_position",
-    "heard": {
-     "bf_isabella": "Yogurt",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "sports-person_lifting_weights",
-    "heard": {
-     "bf_isabella": "Weightlifting here.",
-     "bm_fable": null
+     "bm_george": "Love it."
     }
    },
    {
     "key": "sweets-doughnut",
     "heard": {
      "bf_isabella": "donut",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "sweets-ice_cream",
-    "heard": {
-     "bf_isabella": "I screamed.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "tech-laptop",
-    "heard": {
-     "bf_isabella": "Laptop it.",
-     "bm_fable": null
+     "bm_george": "Donut."
     }
    },
    {
     "key": "time-stopwatch",
     "heard": {
      "bf_isabella": "Stop watching.",
-     "bm_fable": null
+     "bm_george": "Stop watching."
     }
    },
    {
     "key": "time-watch",
     "heard": {
      "bf_isabella": "Watch it.",
-     "bm_fable": null
+     "bm_george": "Watch it."
     }
    },
    {
     "key": "transport-automobile",
     "heard": {
      "bf_isabella": "card.",
-     "bm_fable": null
+     "bm_george": "Call."
     }
    },
    {
     "key": "transport-bus",
     "heard": {
      "bf_isabella": "Boss.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "transport-canoe",
-    "heard": {
-     "bf_isabella": "canoes it.",
-     "bm_fable": null
+     "bm_george": "Buzz"
     }
    },
    {
     "key": "transport-delivery_truck",
     "heard": {
      "bf_isabella": "lorries",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "transport-metro",
-    "heard": {
-     "bf_isabella": "underground here.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "transport-tractor",
-    "heard": {
-     "bf_isabella": "Tracty.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "travel-bellhop_bell",
-    "heard": {
-     "bf_isabella": "Receptionally",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "travel-customs",
-    "heard": {
-     "bf_isabella": "Customs eh.",
-     "bm_fable": null
+     "bm_george": "Lori"
     }
    },
    {
     "key": "vegetables-bell_pepper",
     "heard": {
      "bf_isabella": "Pepple.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "vegetables-tomato",
-    "heard": {
-     "bf_isabella": "to marty",
-     "bm_fable": null
+     "bm_george": "Pebble."
     }
    },
    {
     "key": "weather-fog",
     "heard": {
      "bf_isabella": "Foggy.",
-     "bm_fable": null
+     "bm_george": "Foggy"
     }
    },
    {
     "key": "weather-sun",
     "heard": {
      "bf_isabella": "Sand.",
-     "bm_fable": null
+     "bm_george": "Sonny."
     }
    },
    {
     "key": "wild-bear",
     "heard": {
      "bf_isabella": "Best.",
-     "bm_fable": null
+     "bm_george": "Bell."
     }
    },
    {
     "key": "wild-frog",
     "heard": {
      "bf_isabella": "Frog it.",
-     "bm_fable": null
+     "bm_george": "Froggy."
     }
    },
    {
     "key": "wild-gorilla",
     "heard": {
      "bf_isabella": "Gorillet.",
-     "bm_fable": null
-    }
-   },
-   {
-    "key": "wild-koala",
-    "heard": {
-     "bf_isabella": "Koalish.",
-     "bm_fable": null
+     "bm_george": "Guerrilla."
     }
    }
   ]
@@ -1023,241 +603,164 @@
    }
   ],
   "chosen": [
-   "ef_dora",
-   "em_alex"
+   "em_alex",
+   "ef_dora"
   ],
   "clips_total": 738,
-  "clips_kept": 705,
+  "clips_kept": 716,
   "failed": [
-   {
-    "key": "bathroom-basket",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "La sexta."
-    }
-   },
    {
     "key": "birds-owl",
     "heard": {
-     "sharvard": null,
+     "em_alex": "El burro.",
      "ef_dora": "El Buat."
     }
    },
    {
     "key": "body-foot",
     "heard": {
-     "sharvard": null,
+     "em_alex": "LPA",
      "ef_dora": "El Pierre"
     }
    },
    {
     "key": "clothes-thong_sandal",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Las Junglas",
      "ef_dora": "Las janglas."
     }
    },
    {
     "key": "colors-red_square",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Droghut",
      "ef_dora": "Real good."
     }
    },
    {
     "key": "drinks-glass_of_milk",
     "heard": {
-     "sharvard": null,
+     "em_alex": "La ley c'è.",
      "ef_dora": "La ley c'è."
-    }
-   },
-   {
-    "key": "feelings-grinning_face",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Gracias por ver el video."
     }
    },
    {
     "key": "fruits-grapes",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Las Ubers",
      "ef_dora": "Las Ubers"
     }
    },
    {
     "key": "h4",
     "heard": {
-     "sharvard": "Sí, de 7 a 10 en la planta baja.",
+     "em_alex": "Sí de 7 a 10 en la planta baja.",
      "ef_dora": "Sí de 7 a 10 en la planta baja."
-    }
-   },
-   {
-    "key": "house-key",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Las llaves."
     }
    },
    {
     "key": "m1",
     "heard": {
-     "sharvard": "podemos ofrecerle un descuento del 5%.",
+     "em_alex": "Podemos ofrecerle un descuento del 5%.",
      "ef_dora": "Podemos ofrecerle un descuento del 5%."
     }
    },
    {
     "key": "m3",
     "heard": {
-     "sharvard": "Si se comprometen por un año, podemos llegar al 8%.",
+     "em_alex": "Si se comprometen por un año, podemos llegar al 8%.",
      "ef_dora": "Si se comprometen por un año, podemos llegar al 8%."
     }
    },
    {
     "key": "meals-croissant",
     "heard": {
-     "sharvard": null,
+     "em_alex": "El croissant.",
      "ef_dora": "El croissant."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "sharvard": "Son 20 euros.",
+     "em_alex": "Son 20 euros.",
      "ef_dora": "Son 20 euros."
     }
    },
    {
     "key": "numbers-g1",
     "heard": {
-     "sharvard": null,
+     "em_alex": "1, 2, 3.",
      "ef_dora": "1, 2, 3."
     }
    },
    {
     "key": "numbers-keycap_0",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Stay tuned.",
      "ef_dora": "¡Seguro!"
-    }
-   },
-   {
-    "key": "numbers-keycap_1",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Lunar."
     }
    },
    {
     "key": "numbers-keycap_10",
     "heard": {
-     "sharvard": null,
+     "em_alex": "10.",
      "ef_dora": "10."
     }
    },
    {
     "key": "numbers-keycap_3",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Entonces...",
      "ef_dora": "Entonces,"
     }
    },
    {
     "key": "numbers-keycap_4",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Quadro.",
      "ef_dora": "4."
     }
    },
    {
     "key": "numbers-keycap_5",
     "heard": {
-     "sharvard": null,
+     "em_alex": "5.",
      "ef_dora": "5."
     }
    },
    {
     "key": "numbers-keycap_6",
     "heard": {
-     "sharvard": null,
+     "em_alex": "¡Suscríbete al canal!",
      "ef_dora": "Gracias."
     }
    },
    {
     "key": "numbers-keycap_7",
     "heard": {
-     "sharvard": null,
+     "em_alex": "7.",
      "ef_dora": "7"
-    }
-   },
-   {
-    "key": "numbers-keycap_8",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Mucha"
     }
    },
    {
     "key": "numbers-keycap_9",
     "heard": {
-     "sharvard": null,
+     "em_alex": "9.",
      "ef_dora": "9."
-    }
-   },
-   {
-    "key": "objects-package",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "el pacchete."
-    }
-   },
-   {
-    "key": "plants-evergreen_tree",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "El laveto."
-    }
-   },
-   {
-    "key": "plants-hibiscus",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Las flores."
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "sharvard": "unos 800 durante 40 minutos, el servicio ya está restablecido.",
+     "em_alex": "Unos 800 durante 40 minutos, el servicio ya está restablecido.",
      "ef_dora": "Unos 800 durante 40 minutos, el servicio ya está restablecido."
     }
    },
    {
     "key": "signs-down_arrow",
     "heard": {
-     "sharvard": null,
+     "em_alex": "Está bien muy bien.",
      "ef_dora": "Está bien bien."
-    }
-   },
-   {
-    "key": "sports-skier",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "Y let's keep."
-    }
-   },
-   {
-    "key": "vegetables-mushroom",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "La Z."
-    }
-   },
-   {
-    "key": "weather-g1",
-    "heard": {
-     "sharvard": null,
-     "ef_dora": "¿You have it?"
     }
    }
   ]
@@ -1272,9 +775,9 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.742,
+    "pass_rate": 0.75,
     "vocab_rate": 0.0,
-    "mean_cer": 0.207,
+    "mean_cer": 0.197,
     "error": null
    },
    {
@@ -1284,9 +787,9 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.933,
-    "vocab_rate": 0.528,
-    "mean_cer": 0.28,
+    "pass_rate": 0.942,
+    "vocab_rate": 0.553,
+    "mean_cer": 0.264,
     "error": null
    },
    {
@@ -1296,9 +799,9 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.8,
-    "vocab_rate": 0.23,
-    "mean_cer": 0.467,
+    "pass_rate": 0.825,
+    "vocab_rate": 0.243,
+    "mean_cer": 0.453,
     "error": null
    }
   ],
@@ -1307,20 +810,13 @@
    "reza_ibrahim"
   ],
   "clips_total": 738,
-  "clips_kept": 475,
+  "clips_kept": 493,
   "failed": [
    {
     "key": "accessories-crown",
     "heard": {
      "ganji": "تاوچه",
      "reza_ibrahim": "داروچ"
-    }
-   },
-   {
-    "key": "accessories-glasses",
-    "heard": {
-     "ganji": "ایناک",
-     "reza_ibrahim": "دید."
     }
    },
    {
@@ -1356,13 +852,6 @@
     "heard": {
      "ganji": "دا بیدان",
      "reza_ibrahim": "دا بیدن"
-    }
-   },
-   {
-    "key": "actions-speaking_head",
-    "heard": {
-     "ganji": "هرسادن",
-     "reza_ibrahim": "هرفزادن."
     }
    },
    {
@@ -1471,24 +960,10 @@
     }
    },
    {
-    "key": "birds-parrot",
-    "heard": {
-     "ganji": "توچی",
-     "reza_ibrahim": "تو تی"
-    }
-   },
-   {
     "key": "birds-penguin",
     "heard": {
      "ganji": "Pankوان",
      "reza_ibrahim": "و و وان"
-    }
-   },
-   {
-    "key": "birds-snail",
-    "heard": {
-     "ganji": "هلا زون",
-     "reza_ibrahim": "هنرزن"
     }
    },
    {
@@ -1629,13 +1104,6 @@
     "heard": {
      "ganji": "آب می بی",
      "reza_ibrahim": "اونی دی"
-    }
-   },
-   {
-    "key": "drinks-bubble_tea",
-    "heard": {
-     "ganji": "چا یهو باوی",
-     "reza_ibrahim": "یه خواب بی."
     }
    },
    {
@@ -1828,13 +1296,6 @@
     }
    },
    {
-    "key": "feelings-angry_face",
-    "heard": {
-     "ganji": "اصابانی",
-     "reza_ibrahim": "بسابونی"
-    }
-   },
-   {
     "key": "feelings-cold_face",
     "heard": {
      "ganji": "سارد بودم.",
@@ -2017,13 +1478,6 @@
     }
    },
    {
-    "key": "house-chair",
-    "heard": {
-     "ganji": "سندالی",
-     "reza_ibrahim": "سانداری"
-    }
-   },
-   {
     "key": "house-couch_and_lamp",
     "heard": {
      "ganji": "موبل",
@@ -2056,13 +1510,6 @@
     "heard": {
      "ganji": "اس می من زمیست.",
      "reza_ibrahim": "تزمان شمیتز"
-    }
-   },
-   {
-    "key": "jobs-astronaut",
-    "heard": {
-     "ganji": "فزانو برد",
-     "reza_ibrahim": "بزونانه."
     }
    },
    {
@@ -2129,24 +1576,10 @@
     }
    },
    {
-    "key": "jobs-teacher",
-    "heard": {
-     "ganji": "عالم",
-     "reza_ibrahim": "موارین"
-    }
-   },
-   {
     "key": "kitchen-baby_bottle",
     "heard": {
      "ganji": "شی شی شی",
      "reza_ibrahim": "دیشه شید"
-    }
-   },
-   {
-    "key": "kitchen-fork_and_knife",
-    "heard": {
-     "ganji": "با شغ و چمگال",
-     "reza_ibrahim": "با شکوه چندان."
     }
    },
    {
@@ -2171,13 +1604,6 @@
     }
    },
    {
-    "key": "landscapes-beach_with_umbrella",
-    "heard": {
-     "ganji": "سا هلی.",
-     "reza_ibrahim": "صلو رین"
-    }
-   },
-   {
     "key": "landscapes-camping",
     "heard": {
      "ganji": "چم",
@@ -2189,13 +1615,6 @@
     "heard": {
      "ganji": "خور",
      "reza_ibrahim": "کوووووو"
-    }
-   },
-   {
-    "key": "landscapes-rock",
-    "heard": {
-     "ganji": "سخری",
-     "reza_ibrahim": "سافری"
     }
    },
    {
@@ -2283,13 +1702,6 @@
     }
    },
    {
-    "key": "music-camera_with_flash",
-    "heard": {
-     "ganji": "اکرسی",
-     "reza_ibrahim": "اکران سی"
-    }
-   },
-   {
     "key": "music-clapper_board",
     "heard": {
      "ganji": "سینام",
@@ -2332,24 +1744,10 @@
     }
    },
    {
-    "key": "n1",
-    "heard": {
-     "ganji": "تا چندست.",
-     "reza_ibrahim": "سوات چندست."
-    }
-   },
-   {
     "key": "numbers-g1",
     "heard": {
      "ganji": "که کتو سه",
      "reza_ibrahim": "یک جو سی"
-    }
-   },
-   {
-    "key": "numbers-keycap_0",
-    "heard": {
-     "ganji": "سفر",
-     "reza_ibrahim": "زفل"
     }
    },
    {
@@ -2574,13 +1972,6 @@
     "heard": {
      "ganji": "گول روز",
      "reza_ibrahim": "بل روز"
-    }
-   },
-   {
-    "key": "ps2",
-    "heard": {
-     "ganji": "از صبح تفاصل زینم درد می کند.",
-     "reza_ibrahim": "از سوپ و قفصه سینان درد می کند."
     }
    },
    {
@@ -2892,13 +2283,6 @@
     }
    },
    {
-    "key": "travel-bellhop_bell",
-    "heard": {
-     "ganji": "بزیرش",
-     "reza_ibrahim": "پسیلیش"
-    }
-   },
-   {
     "key": "travel-compass",
     "heard": {
      "ganji": "پتنام آ",
@@ -3001,13 +2385,6 @@
     "heard": {
      "ganji": "کچه فرنگی",
      "reza_ibrahim": "گوگه فراندی."
-    }
-   },
-   {
-    "key": "weather-cloud_with_lightning",
-    "heard": {
-     "ganji": "ازرش",
-     "reza_ibrahim": "موسیقی"
     }
    },
    {
@@ -3197,3008 +2574,271 @@
    "gilles"
   ],
   "clips_total": 738,
-  "clips_kept": 310,
+  "clips_kept": 701,
   "failed": [
-   {
-    "key": "accessories-backpack",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "accessories-crown",
-    "heard": {
-     "siwis": null,
-     "gilles": "La coup-bonde."
-    }
-   },
-   {
-    "key": "accessories-folding_hand_fan",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le bataille..."
-    }
-   },
-   {
-    "key": "accessories-glasses",
-    "heard": {
-     "siwis": null,
-     "gilles": "Léa... Léa..."
-    }
-   },
-   {
-    "key": "accessories-handbag",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "accessories-lipstick",
-    "heard": {
-     "siwis": null,
-     "gilles": "Les lettres russes."
-    }
-   },
-   {
-    "key": "accessories-purse",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ne passe mon nez."
-    }
-   },
-   {
-    "key": "accessories-ring",
-    "heard": {
-     "siwis": null,
-     "gilles": "La paga."
-    }
-   },
-   {
-    "key": "actions-clapping_hands",
-    "heard": {
-     "siwis": null,
-     "gilles": "A la..."
-    }
-   },
    {
     "key": "actions-cooking",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Fusine.",
      "gilles": "on le disait mais"
-    }
-   },
-   {
-    "key": "actions-ear",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et, toi, c'est..."
-    }
-   },
-   {
-    "key": "actions-eyes",
-    "heard": {
-     "siwis": null,
-     "gilles": "J'ai appelé..."
-    }
-   },
-   {
-    "key": "actions-face_savoring_food",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "actions-g2",
-    "heard": {
-     "siwis": null,
-     "gilles": "Elle est arrivée."
-    }
-   },
-   {
-    "key": "actions-man_dancing",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
     }
    },
    {
     "key": "actions-microphone",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "JANTÉ",
      "gilles": "Il a vraiment bien du payer."
-    }
-   },
-   {
-    "key": "actions-open_book",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "actions-person_biking",
-    "heard": {
-     "siwis": null,
-     "gilles": "perdus."
-    }
-   },
-   {
-    "key": "actions-person_climbing",
-    "heard": {
-     "siwis": null,
-     "gilles": "du réveil."
-    }
-   },
-   {
-    "key": "actions-person_raising_hand",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le fait. La main."
-    }
-   },
-   {
-    "key": "actions-person_running",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est le débré. C'est le débré."
-    }
-   },
-   {
-    "key": "actions-person_swimming",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci d'avoir regardé cette vidéo !"
-    }
-   },
-   {
-    "key": "actions-person_taking_bath",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "actions-sleeping_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "actions-speaking_head",
-    "heard": {
-     "siwis": null,
-     "gilles": "Allez."
-    }
-   },
-   {
-    "key": "actions-telephone_receiver",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est une vie vune."
-    }
-   },
-   {
-    "key": "actions-thinking_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Neuf les chiffres."
-    }
-   },
-   {
-    "key": "actions-tumbler_glass",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "actions-writing_hand",
-    "heard": {
-     "siwis": null,
-     "gilles": "Elle existe."
     }
    },
    {
     "key": "actions-yawning_face",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Bayez.",
      "gilles": "..."
-    }
-   },
-   {
-    "key": "bathroom-basket",
-    "heard": {
-     "siwis": null,
-     "gilles": "La reine ne l'indique."
-    }
-   },
-   {
-    "key": "bathroom-bathtub",
-    "heard": {
-     "siwis": null,
-     "gilles": null
-    }
-   },
-   {
-    "key": "bathroom-bucket",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ue, so, blablabla, blablabla."
-    }
-   },
-   {
-    "key": "bathroom-lotion_bottle",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'extrême."
-    }
-   },
-   {
-    "key": "bathroom-razor",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "bathroom-roll_of_paper",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le papy, toi l'air."
-    }
-   },
-   {
-    "key": "bathroom-soap",
-    "heard": {
-     "siwis": null,
-     "gilles": "le savoir."
-    }
-   },
-   {
-    "key": "bathroom-sponge",
-    "heard": {
-     "siwis": null,
-     "gilles": "De l'air, de l'air, de l'air, de l'air."
-    }
-   },
-   {
-    "key": "bathroom-toothbrush",
-    "heard": {
-     "siwis": null,
-     "gilles": "La pince pas blanc."
-    }
-   },
-   {
-    "key": "birds-ant",
-    "heard": {
-     "siwis": null,
-     "gilles": "La fournumis"
-    }
-   },
-   {
-    "key": "birds-bird",
-    "heard": {
-     "siwis": null,
-     "gilles": "Tout va sur le vote."
-    }
-   },
-   {
-    "key": "birds-butterfly",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je parle pion."
-    }
-   },
-   {
-    "key": "birds-eagle",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "birds-flamingo",
-    "heard": {
-     "siwis": null,
-     "gilles": "être le fiamant rose."
-    }
-   },
-   {
-    "key": "birds-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le papillon vous vole."
-    }
-   },
-   {
-    "key": "birds-honeybee",
-    "heard": {
-     "siwis": null,
-     "gilles": "de l'élame et"
-    }
-   },
-   {
-    "key": "birds-owl",
-    "heard": {
-     "siwis": null,
-     "gilles": "à ce qu'il voulait."
-    }
-   },
-   {
-    "key": "birds-parrot",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le père qui est..."
-    }
-   },
-   {
-    "key": "birds-peacock",
-    "heard": {
-     "siwis": null,
-     "gilles": "Voilà."
-    }
-   },
-   {
-    "key": "birds-penguin",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le pegois."
-    }
-   },
-   {
-    "key": "birds-snail",
-    "heard": {
-     "siwis": null,
-     "gilles": "jusqu'à l'égo"
-    }
-   },
-   {
-    "key": "birds-spider",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'air d'une, n'y-y-y-y."
     }
    },
    {
     "key": "birds-swan",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le signe.",
      "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-anatomical_heart",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
     }
    },
    {
     "key": "body-bone",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "L'eau.",
      "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-brain",
-    "heard": {
-     "siwis": null,
-     "gilles": "Cervo."
-    }
-   },
-   {
-    "key": "body-ear",
-    "heard": {
-     "siwis": null,
-     "gilles": "c'est vraiment vraiment le roc de la voiture, allez-y, allez-y, allez-y, allez-y, allez-y, allez-y."
-    }
-   },
-   {
-    "key": "body-eye",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "body-flexed_biceps",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-foot",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-index_pointing_up",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est tout à fait."
-    }
-   },
-   {
-    "key": "body-mouth",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-nose",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci à mes Tipeurs et souscripteurs"
-    }
-   },
-   {
-    "key": "body-raised_hand",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "body-tongue",
-    "heard": {
-     "siwis": null,
-     "gilles": "Là, c'est..."
-    }
-   },
-   {
-    "key": "body-tooth",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est délicat."
-    }
-   },
-   {
-    "key": "clothes-billed_cap",
-    "heard": {
-     "siwis": null,
-     "gilles": "La castre."
-    }
-   },
-   {
-    "key": "clothes-coat",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le mat, salou, l'univers, salou, l'univers."
-    }
-   },
-   {
-    "key": "clothes-dress",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "clothes-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et je suis moi..."
-    }
-   },
-   {
-    "key": "clothes-gloves",
-    "heard": {
-     "siwis": null,
-     "gilles": "Euh l'œil l'œil l'œil l'œil... Euh l'œil l'œil..."
     }
    },
    {
     "key": "clothes-jeans",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le genre",
      "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "clothes-necktie",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le Lèvre, le Lèvre, le Lèvre, le Lèvre, le Lèvre."
-    }
-   },
-   {
-    "key": "clothes-one_piece_swimsuit",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "clothes-running_shoe",
-    "heard": {
-     "siwis": null,
-     "gilles": "Les basques."
-    }
-   },
-   {
-    "key": "clothes-sari",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "clothes-scarf",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et ça..."
-    }
-   },
-   {
-    "key": "clothes-shorts",
-    "heard": {
-     "siwis": null,
-     "gilles": "non, non, non, non"
-    }
-   },
-   {
-    "key": "clothes-socks",
-    "heard": {
-     "siwis": null,
-     "gilles": "les choses..."
     }
    },
    {
     "key": "clothes-t_shirt",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le T-Shot",
      "gilles": "Je t'échec les grilles de l'aventure."
-    }
-   },
-   {
-    "key": "clothes-thong_sandal",
-    "heard": {
-     "siwis": null,
-     "gilles": "les tombes."
-    }
-   },
-   {
-    "key": "clothes-woman_s_boot",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et bon, on se réveille."
-    }
-   },
-   {
-    "key": "clothes-woman_s_hat",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "colors-black_large_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "On dit le délire. On dit le délire. On dit le délire."
-    }
-   },
-   {
-    "key": "colors-blue_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
-    }
-   },
-   {
-    "key": "colors-brown_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ah, c'est vrai."
-    }
-   },
-   {
-    "key": "colors-g2",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et voilà les rousses !"
-    }
-   },
-   {
-    "key": "colors-green_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est très bien."
-    }
-   },
-   {
-    "key": "colors-orange_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Voilà."
-    }
-   },
-   {
-    "key": "colors-purple_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "colors-red_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
-    }
-   },
-   {
-    "key": "colors-white_large_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Leur, leur, leur, leur, leur."
-    }
-   },
-   {
-    "key": "colors-yellow_square",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et aujourd'hui,"
-    }
-   },
-   {
-    "key": "drinks-beverage_box",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "drinks-cup_with_straw",
-    "heard": {
-     "siwis": null,
-     "gilles": "Les rabois sont fraîches."
     }
    },
    {
     "key": "drinks-droplet",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Lo",
      "gilles": "le... le... le... le... le... le..."
-    }
-   },
-   {
-    "key": "drinks-g2",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
     }
    },
    {
     "key": "drinks-glass_of_milk",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Lule.",
      "gilles": "B."
-    }
-   },
-   {
-    "key": "drinks-hot_beverage",
-    "heard": {
-     "siwis": null,
-     "gilles": "Qu'est-ce que tu as fait ?"
-    }
-   },
-   {
-    "key": "drinks-ice",
-    "heard": {
-     "siwis": null,
-     "gilles": "Régulassons."
-    }
-   },
-   {
-    "key": "drinks-teacup_without_handle",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "drinks-teapot",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
-    }
-   },
-   {
-    "key": "family-boy",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rulga, ça..."
-    }
-   },
-   {
-    "key": "family-child",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "family-family",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "family-family_man_boy",
-    "heard": {
-     "siwis": null,
-     "gilles": "Lrrrrr P Lrrrrr"
-    }
-   },
-   {
-    "key": "family-family_man_woman_boy",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et pas mal."
-    }
-   },
-   {
-    "key": "family-family_woman_girl",
-    "heard": {
-     "siwis": null,
-     "gilles": "Voilà. Voilà. Voilà. Voilà. Voilà."
-    }
-   },
-   {
-    "key": "family-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Frammi."
-    }
-   },
-   {
-    "key": "family-girl",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "family-man",
-    "heard": {
-     "siwis": null,
-     "gilles": "Pas lui, là, là, là, là."
-    }
-   },
-   {
-    "key": "family-old_man",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "family-old_woman",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est l'heure, l'orbe. C'est l'heure, l'orbe. C'est l'heure, l'orbe."
-    }
-   },
-   {
-    "key": "family-people_hugging",
-    "heard": {
-     "siwis": null,
-     "gilles": "et que l'air, le brilleux, le brilleux."
-    }
-   },
-   {
-    "key": "family-woman",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
-    }
-   },
-   {
-    "key": "farm-baby_chick",
-    "heard": {
-     "siwis": null,
-     "gilles": "de poser les..."
-    }
-   },
-   {
-    "key": "farm-cat",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne t'ai pas dit, je ne t'ai pas dit."
-    }
-   },
-   {
-    "key": "farm-cow",
-    "heard": {
-     "siwis": null,
-     "gilles": "La... La lâche..."
-    }
-   },
-   {
-    "key": "farm-dog",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "farm-donkey",
-    "heard": {
-     "siwis": null,
-     "gilles": "R-R-R-R-R-E-R-R-R-R-R-R-R-R-R-R-R'R-R-R-R-R-R"
-    }
-   },
-   {
-    "key": "farm-duck",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le camar. C'est pour vous"
-    }
-   },
-   {
-    "key": "farm-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne sais pas."
-    }
-   },
-   {
-    "key": "farm-goat",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne sais pas."
-    }
-   },
-   {
-    "key": "farm-hamster",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci d'avoir regardé cette vidéo !"
-    }
-   },
-   {
-    "key": "farm-horse",
-    "heard": {
-     "siwis": null,
-     "gilles": "No, ça va."
-    }
-   },
-   {
-    "key": "farm-mouse",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "farm-ox",
-    "heard": {
-     "siwis": null,
-     "gilles": "le débat."
-    }
-   },
-   {
-    "key": "farm-pig",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le prochain..."
     }
    },
    {
     "key": "farm-rooster",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le Kogge.",
      "gilles": "et contre."
-    }
-   },
-   {
-    "key": "farm-turkey",
-    "heard": {
-     "siwis": null,
-     "gilles": "La..."
-    }
-   },
-   {
-    "key": "feelings-angry_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ah, là, là, là, là, là, là."
-    }
-   },
-   {
-    "key": "feelings-astonished_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-le le le le plus hавай"
-    }
-   },
-   {
-    "key": "feelings-cold_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Alors, allez-y, c'est vrai, c'est très, c'est vrai, c'est vrai."
-    }
-   },
-   {
-    "key": "feelings-crying_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "ce qui est le réel"
-    }
-   },
-   {
-    "key": "feelings-face_with_tears_of_joy",
-    "heard": {
-     "siwis": null,
-     "gilles": "bleh bleh bleh bleh bleh"
-    }
-   },
-   {
-    "key": "feelings-fearful_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et se veiller."
-    }
-   },
-   {
-    "key": "feelings-grinning_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Oui."
-    }
-   },
-   {
-    "key": "feelings-hot_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "À, toi, à, tu, à, tu, à, tu."
-    }
-   },
-   {
-    "key": "feelings-pensive_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est..."
-    }
-   },
-   {
-    "key": "feelings-red_heart",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "feelings-smiling_face_with_sunglasses",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "feelings-star_struck",
-    "heard": {
-     "siwis": null,
-     "gilles": "et tout un ambiance relier."
-    }
-   },
-   {
-    "key": "feelings-tired_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Fin d'émurie."
-    }
-   },
-   {
-    "key": "feelings-worried_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et que il y a l'air..."
-    }
-   },
-   {
-    "key": "fruits-avocado",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "fruits-banana",
-    "heard": {
-     "siwis": null,
-     "gilles": "avant."
-    }
-   },
-   {
-    "key": "fruits-blueberries",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et meurtillent."
-    }
-   },
-   {
-    "key": "fruits-cherries",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "fruits-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Une pomme dans la rouge."
-    }
-   },
-   {
-    "key": "fruits-grapes",
-    "heard": {
-     "siwis": null,
-     "gilles": "et je l'ai l'air très bien, je l'ai l'air très bien, je l'ai l'air bien"
-    }
-   },
-   {
-    "key": "fruits-kiwi_fruit",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est du lourd goût."
-    }
-   },
-   {
-    "key": "fruits-mango",
-    "heard": {
-     "siwis": null,
-     "gilles": "La mort..."
-    }
-   },
-   {
-    "key": "fruits-melon",
-    "heard": {
-     "siwis": null,
-     "gilles": "Dr."
-    }
-   },
-   {
-    "key": "fruits-olive",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "fruits-pear",
-    "heard": {
-     "siwis": null,
-     "gilles": "Elle a l'air d'offre."
-    }
-   },
-   {
-    "key": "fruits-pineapple",
-    "heard": {
-     "siwis": null,
-     "gilles": "Voilà là."
-    }
-   },
-   {
-    "key": "fruits-red_apple",
-    "heard": {
-     "siwis": null,
-     "gilles": "La pronde."
-    }
-   },
-   {
-    "key": "fruits-strawberry",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le leupeur... Le leupeur... Le leupeur... Leupeur... Leupeur..."
-    }
-   },
-   {
-    "key": "fruits-tangerine",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le mandarisme."
-    }
-   },
-   {
-    "key": "fruits-watermelon",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le pastel..."
-    }
-   },
-   {
-    "key": "games-circus_tent",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "games-game_die",
-    "heard": {
-     "siwis": null,
-     "gilles": "Tu y es."
-    }
-   },
-   {
-    "key": "games-kite",
-    "heard": {
-     "siwis": null,
-     "gilles": "Elle est servada."
-    }
-   },
-   {
-    "key": "games-party_popper",
-    "heard": {
-     "siwis": null,
-     "gilles": "La fait."
-    }
-   },
-   {
-    "key": "games-puzzle_piece",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "games-ribbon",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je veux dire... Je veux dire... Je veux dire..."
-    }
-   },
-   {
-    "key": "games-yo_yo",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "health-adhesive_bandage",
-    "heard": {
-     "siwis": null,
-     "gilles": "Deux pansements."
-    }
-   },
-   {
-    "key": "health-drop_of_blood",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "health-face_with_medical_mask",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "health-face_with_thermometer",
-    "heard": {
-     "siwis": null,
-     "gilles": "Véloigneur."
-    }
-   },
-   {
-    "key": "health-nauseated_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "Bah, blablabla."
-    }
-   },
-   {
-    "key": "health-sneezing_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "health-stethoscope",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ressentus-coe."
-    }
-   },
-   {
-    "key": "health-syringe",
-    "heard": {
-     "siwis": null,
-     "gilles": "La piqueuse."
     }
    },
    {
     "key": "health-x_ray",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "La Rédiou",
      "gilles": "..."
-    }
-   },
-   {
-    "key": "house-bed",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
-    }
-   },
-   {
-    "key": "house-chair",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne sais pas."
-    }
-   },
-   {
-    "key": "house-elevator",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "house-framed_picture",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'Ustabur."
-    }
-   },
-   {
-    "key": "house-g2",
-    "heard": {
-     "siwis": null,
-     "gilles": "Où est l'accueil ?"
-    }
-   },
-   {
-    "key": "house-house",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je le dis. Je le dis. Je le dis. Je le dis."
-    }
-   },
-   {
-    "key": "house-key",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "house-ladder",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'écran en remède."
-    }
-   },
-   {
-    "key": "house-light_bulb",
-    "heard": {
-     "siwis": null,
-     "gilles": "La la la la"
-    }
-   },
-   {
-    "key": "house-mirror",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je vous le visois."
-    }
-   },
-   {
-    "key": "jobs-artist",
-    "heard": {
-     "siwis": null,
-     "gilles": "La... Tis..."
-    }
-   },
-   {
-    "key": "jobs-astronaut",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'astron."
-    }
-   },
-   {
-    "key": "jobs-construction_worker",
-    "heard": {
-     "siwis": null,
-     "gilles": "que maçons..."
-    }
-   },
-   {
-    "key": "jobs-cook",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
-    }
-   },
-   {
-    "key": "jobs-factory_worker",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "jobs-firefighter",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le paupier est..."
-    }
-   },
-   {
-    "key": "jobs-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je suis Besset."
-    }
-   },
-   {
-    "key": "jobs-guard",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "jobs-health_worker",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le message."
-    }
-   },
-   {
-    "key": "jobs-judge",
-    "heard": {
-     "siwis": null,
-     "gilles": "J'ai eu..."
-    }
-   },
-   {
-    "key": "jobs-office_worker",
-    "heard": {
-     "siwis": null,
-     "gilles": "les entroyés de bureau."
-    }
-   },
-   {
-    "key": "jobs-scientist",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je le scientifie."
-    }
-   },
-   {
-    "key": "jobs-student",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "jobs-teacher",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "kitchen-baby_bottle",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je dis je bais du genre."
-    }
-   },
-   {
-    "key": "kitchen-chopsticks",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il est baguant."
-    }
-   },
-   {
-    "key": "kitchen-fork_and_knife_with_plate",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci à tous."
-    }
-   },
-   {
-    "key": "kitchen-kitchen_knife",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le Voodoo."
     }
    },
    {
     "key": "kitchen-spoon",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "La tuyère.",
      "gilles": "C'est vrai."
-    }
-   },
-   {
-    "key": "landscapes-camping",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le camp..."
-    }
-   },
-   {
-    "key": "landscapes-desert",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il t'existe ça."
-    }
-   },
-   {
-    "key": "landscapes-desert_island",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "landscapes-globe_showing_europe_africa",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "landscapes-rock",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "landscapes-volcano",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je vois quand."
-    }
-   },
-   {
-    "key": "landscapes-wood",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et voilà..."
     }
    },
    {
     "key": "m1",
     "heard": {
-     "siwis": "Nous pouvons vous proposer une remise de 5%.",
+     "ff_siwis": "Nous pouvons vous proposer une remise de 5%.",
      "gilles": "Nous pouvons vous proposer une remise de 5%."
-    }
-   },
-   {
-    "key": "meals-baguette_bread",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le lapin qui est..."
-    }
-   },
-   {
-    "key": "meals-bowl_with_spoon",
-    "heard": {
-     "siwis": null,
-     "gilles": "La sous."
-    }
-   },
-   {
-    "key": "meals-bread",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "meals-butter",
-    "heard": {
-     "siwis": null,
-     "gilles": "Et là-dedans, les gars, les gars, les gars, les gars"
-    }
-   },
-   {
-    "key": "meals-cheese_wedge",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le format..."
     }
    },
    {
     "key": "meals-cooked_rice",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Laurie",
      "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "meals-croissant",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le gros sang."
-    }
-   },
-   {
-    "key": "meals-egg",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "meals-flatbread",
-    "heard": {
-     "siwis": null,
-     "gilles": "La gueulette."
-    }
-   },
-   {
-    "key": "meals-french_fries",
-    "heard": {
-     "siwis": null,
-     "gilles": "qui frit"
-    }
-   },
-   {
-    "key": "meals-green_salad",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "meals-hamburger",
-    "heard": {
-     "siwis": null,
-     "gilles": "Un autre cas."
-    }
-   },
-   {
-    "key": "meals-honey_pot",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "meals-meat_on_bone",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "meals-pizza",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "meals-pot_of_food",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
     }
    },
    {
     "key": "meals-salt",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le sein.",
      "gilles": "A l'heure. A l'heure. A l'heure."
-    }
-   },
-   {
-    "key": "meals-spaghetti",
-    "heard": {
-     "siwis": null,
-     "gilles": "Vous n'avez pas..."
-    }
-   },
-   {
-    "key": "music-accordion",
-    "heard": {
-     "siwis": null,
-     "gilles": "Qu'est-ce que ça va ?"
-    }
-   },
-   {
-    "key": "music-artist_palette",
-    "heard": {
-     "siwis": null,
-     "gilles": "La pétuse."
-    }
-   },
-   {
-    "key": "music-flute",
-    "heard": {
-     "siwis": null,
-     "gilles": "La fût."
-    }
-   },
-   {
-    "key": "music-microphone",
-    "heard": {
-     "siwis": null,
-     "gilles": null
-    }
-   },
-   {
-    "key": "music-musical_keyboard",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je tiens."
-    }
-   },
-   {
-    "key": "music-paintbrush",
-    "heard": {
-     "siwis": null,
-     "gilles": "Du peso, le feu, le feu, le feu, le feu."
-    }
-   },
-   {
-    "key": "music-performing_arts",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je t'ai hâte."
-    }
-   },
-   {
-    "key": "music-saxophone",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est ça, c'est ça, c'est ça, c'est ça, c'est ça."
-    }
-   },
-   {
-    "key": "music-trumpet",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le trompette de..."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "siwis": "Ça fait 20 euros.",
+     "ff_siwis": "Ça fait 20 euros.",
      "gilles": "Ça fait la trou."
     }
    },
    {
     "key": "numbers-g1",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "1, 2, 3.",
      "gilles": "1, 2, 3, 4,"
     }
    },
    {
     "key": "numbers-keycap_0",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "0.",
      "gilles": "et l'exopressif."
     }
    },
    {
     "key": "numbers-keycap_1",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "1.",
      "gilles": "Sous-titrage Société Radio-Canada"
     }
    },
    {
     "key": "numbers-keycap_10",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "10.",
      "gilles": "Très bien, il n'y a rien."
     }
    },
    {
     "key": "numbers-keycap_2",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "de",
      "gilles": "et l'air de l'armée de 13 ans."
     }
    },
    {
     "key": "numbers-keycap_3",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Droits",
      "gilles": "... ... ... ... ... ... ... ..."
     }
    },
    {
     "key": "numbers-keycap_4",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "4.",
      "gilles": "C'est très bien."
     }
    },
    {
     "key": "numbers-keycap_5",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "5.",
      "gilles": "Merci."
     }
    },
    {
     "key": "numbers-keycap_6",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "SIS.",
      "gilles": "Sous-titrage Société Radio-Canada"
     }
    },
    {
     "key": "numbers-keycap_7",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "7.",
      "gilles": "Sous-titrage ST' 501"
     }
    },
    {
     "key": "numbers-keycap_8",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "8.",
      "gilles": "A l'œil de l'écoute."
     }
    },
    {
     "key": "numbers-keycap_9",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "9.",
      "gilles": "Et voilà, là, là, là, là, là, là."
-    }
-   },
-   {
-    "key": "objects-camera",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'appareil est faux."
-    }
-   },
-   {
-    "key": "objects-electric_plug",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je pleuris."
-    }
-   },
-   {
-    "key": "objects-envelope",
-    "heard": {
-     "siwis": null,
-     "gilles": "Dobré l'eau."
-    }
-   },
-   {
-    "key": "objects-hammer",
-    "heard": {
-     "siwis": null,
-     "gilles": "n'en m'a fait ça."
-    }
-   },
-   {
-    "key": "objects-locked",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "objects-magnet",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rebelle."
     }
    },
    {
     "key": "objects-radio",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "La Rédiou",
      "gilles": "..."
-    }
-   },
-   {
-    "key": "objects-screwdriver",
-    "heard": {
-     "siwis": null,
-     "gilles": "Elle le tourne lui."
-    }
-   },
-   {
-    "key": "places-bank",
-    "heard": {
-     "siwis": null,
-     "gilles": "La paix."
-    }
-   },
-   {
-    "key": "places-bridge_at_night",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je..."
-    }
-   },
-   {
-    "key": "places-castle",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le chaton..."
-    }
-   },
-   {
-    "key": "places-church",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il peut être l'idée, c'est là."
-    }
-   },
-   {
-    "key": "places-cityscape",
-    "heard": {
-     "siwis": null,
-     "gilles": "La la la la la"
-    }
-   },
-   {
-    "key": "places-classical_building",
-    "heard": {
-     "siwis": null,
-     "gilles": "J'ai l'air d'un mur. J'ai l'air d'un mur."
-    }
-   },
-   {
-    "key": "places-convenience_store",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rydit. Bien-ouvi-suit, c'est là."
-    }
-   },
-   {
-    "key": "places-department_store",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "places-factory",
-    "heard": {
-     "siwis": null,
-     "gilles": null
-    }
-   },
-   {
-    "key": "places-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ou une hôpital."
-    }
-   },
-   {
-    "key": "places-hotel",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'autre côté..."
-    }
-   },
-   {
-    "key": "places-office_building",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il biaut."
-    }
-   },
-   {
-    "key": "places-playground_slide",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est ça ?"
-    }
-   },
-   {
-    "key": "places-school",
-    "heard": {
-     "siwis": null,
-     "gilles": "Dépendez-le, je brûle."
-    }
-   },
-   {
-    "key": "places-stadium",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "plants-cherry_blossom",
-    "heard": {
-     "siwis": null,
-     "gilles": "la fin de ce visier."
-    }
-   },
-   {
-    "key": "plants-deciduous_tree",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est l'air."
-    }
-   },
-   {
-    "key": "plants-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Réalisé par Neo035"
-    }
-   },
-   {
-    "key": "plants-herb",
-    "heard": {
-     "siwis": null,
-     "gilles": "Herbe armatée."
-    }
-   },
-   {
-    "key": "plants-hibiscus",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est..."
-    }
-   },
-   {
-    "key": "plants-leaf_fluttering_in_wind",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "plants-palm_tree",
-    "heard": {
-     "siwis": null,
-     "gilles": "Luc Palmet."
-    }
-   },
-   {
-    "key": "plants-rose",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ah, les autres, les autres, les autres, les autres..."
-    }
-   },
-   {
-    "key": "plants-seedling",
-    "heard": {
-     "siwis": null,
-     "gilles": "La jambe pose."
-    }
-   },
-   {
-    "key": "plants-sunflower",
-    "heard": {
-     "siwis": null,
-     "gilles": "Les tournes sont..."
-    }
-   },
-   {
-    "key": "plants-tulip",
-    "heard": {
-     "siwis": null,
-     "gilles": "La tuvière..."
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "siwis": "Environ 800, pendant 40 minutes, le service est rétabli.",
+     "ff_siwis": "Environ 800, pendant 40 minutes, le service est rétabli.",
      "gilles": "environ 800 pendant 40 minutes. Le service est rétabli."
-    }
-   },
-   {
-    "key": "school-abacus",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est bon."
-    }
-   },
-   {
-    "key": "school-bar_chart",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "school-briefcase",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'amare..."
-    }
-   },
-   {
-    "key": "school-calendar",
-    "heard": {
-     "siwis": null,
-     "gilles": "Laissez-moi..."
-    }
-   },
-   {
-    "key": "school-closed_book",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le déjeuner le déjeuner."
-    }
-   },
-   {
-    "key": "school-file_folder",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je veux aussi..."
-    }
-   },
-   {
-    "key": "school-memo",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "school-notebook",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "school-page_facing_up",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'affreux de papier."
-    }
-   },
-   {
-    "key": "school-paperclip",
-    "heard": {
-     "siwis": null,
-     "gilles": "Mais tout mon monde..."
-    }
-   },
-   {
-    "key": "school-pen",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le sillon."
-    }
-   },
-   {
-    "key": "school-pencil",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je suis... C'était..."
-    }
-   },
-   {
-    "key": "school-scissors",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "school-straight_ruler",
-    "heard": {
-     "siwis": null,
-     "gilles": "Alors, voilà, non, non, non, non, non, non, non, non, non, non."
-    }
-   },
-   {
-    "key": "sea-crab",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est une crape."
-    }
-   },
-   {
-    "key": "sea-dolphin",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ludo fait."
-    }
-   },
-   {
-    "key": "sea-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le Dauphin s'offre."
-    }
-   },
-   {
-    "key": "sea-octopus",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
     }
    },
    {
     "key": "sea-seal",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le Fouc",
      "gilles": "Il est faux."
-    }
-   },
-   {
-    "key": "sea-shark",
-    "heard": {
-     "siwis": null,
-     "gilles": "Lure l'œil, l'œil, l'œil."
-    }
-   },
-   {
-    "key": "sea-shrimp",
-    "heard": {
-     "siwis": null,
-     "gilles": "D'accord, Europe."
-    }
-   },
-   {
-    "key": "sea-water_wave",
-    "heard": {
-     "siwis": null,
-     "gilles": "là, là, là là"
-    }
-   },
-   {
-    "key": "sea-whale",
-    "heard": {
-     "siwis": null,
-     "gilles": "La balade."
-    }
-   },
-   {
-    "key": "signs-check_mark_button",
-    "heard": {
-     "siwis": null,
-     "gilles": "Prerede. Prerede."
     }
    },
    {
     "key": "signs-cross_mark",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Vous.",
      "gilles": "Alors, là, c'est..."
-    }
-   },
-   {
-    "key": "signs-down_arrow",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne sais pas, je ne sais pas."
-    }
-   },
-   {
-    "key": "signs-left_arrow",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
     }
    },
    {
     "key": "signs-minus",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Mouais.",
      "gilles": "Merci."
-    }
-   },
-   {
-    "key": "signs-plus",
-    "heard": {
-     "siwis": null,
-     "gilles": "Benedeut."
-    }
-   },
-   {
-    "key": "signs-red_question_mark",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'anarxiste s'il y a eu l'ordre."
     }
    },
    {
     "key": "signs-up_arrow",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le Vaux.",
      "gilles": "C'est bon."
     }
    },
    {
     "key": "sports-badminton",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le basement thon.",
      "gilles": "Le pas de maison."
-    }
-   },
-   {
-    "key": "sports-baseball",
-    "heard": {
-     "siwis": null,
-     "gilles": "de besoins."
-    }
-   },
-   {
-    "key": "sports-basketball",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le basqueur."
-    }
-   },
-   {
-    "key": "sports-boxing_glove",
-    "heard": {
-     "siwis": null,
-     "gilles": "La bonne..."
-    }
-   },
-   {
-    "key": "sports-martial_arts_uniform",
-    "heard": {
-     "siwis": null,
-     "gilles": "C'est ça, c'est marqué."
-    }
-   },
-   {
-    "key": "sports-person_golfing",
-    "heard": {
-     "siwis": null,
-     "gilles": "De Gaulle, ça va..."
-    }
-   },
-   {
-    "key": "sports-person_in_lotus_position",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le repillon qui est..."
     }
    },
    {
     "key": "sports-person_surfing",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Le sort.",
      "gilles": "..."
-    }
-   },
-   {
-    "key": "sports-person_swimming",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'art de la tâche."
-    }
-   },
-   {
-    "key": "sports-rugby_football",
-    "heard": {
-     "siwis": null,
-     "gilles": "Réalisé par Neo035"
-    }
-   },
-   {
-    "key": "sports-running_shirt",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je vous remercie."
-    }
-   },
-   {
-    "key": "sports-skier",
-    "heard": {
-     "siwis": null,
-     "gilles": "YSJL"
-    }
-   },
-   {
-    "key": "sports-sports_medal",
-    "heard": {
-     "siwis": null,
-     "gilles": "La mêlée..."
-    }
-   },
-   {
-    "key": "sports-trophy",
-    "heard": {
-     "siwis": null,
-     "gilles": "D'accord."
-    }
-   },
-   {
-    "key": "sports-volleyball",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le Valais."
-    }
-   },
-   {
-    "key": "sweets-chocolate_bar",
-    "heard": {
-     "siwis": null,
-     "gilles": "Ils sont..."
-    }
-   },
-   {
-    "key": "sweets-cookie",
-    "heard": {
-     "siwis": null,
-     "gilles": "J'ai bichuï."
-    }
-   },
-   {
-    "key": "sweets-doughnut",
-    "heard": {
-     "siwis": null,
-     "gilles": "et bien sûr."
-    }
-   },
-   {
-    "key": "sweets-ice_cream",
-    "heard": {
-     "siwis": null,
-     "gilles": "On a un glace."
-    }
-   },
-   {
-    "key": "sweets-lollipop",
-    "heard": {
-     "siwis": null,
-     "gilles": "Alors, je suis seul."
-    }
-   },
-   {
-    "key": "sweets-pancakes",
-    "heard": {
-     "siwis": null,
-     "gilles": "Léa, délè, délè, délè, délè."
-    }
-   },
-   {
-    "key": "sweets-pie",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'acteur lit. C'est la suite."
-    }
-   },
-   {
-    "key": "sweets-popcorn",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le pop-corn, il est là, il dirait."
-    }
-   },
-   {
-    "key": "sweets-shortcake",
-    "heard": {
-     "siwis": null,
-     "gilles": "We got more."
-    }
-   },
-   {
-    "key": "tech-computer_mouse",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "tech-e_mail",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "tech-keyboard",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je vais la larguer."
-    }
-   },
-   {
-    "key": "tech-microscope",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'homifar pose pour l'heure à..."
-    }
-   },
-   {
-    "key": "tech-printer",
-    "heard": {
-     "siwis": null,
-     "gilles": "les piments, etc."
-    }
-   },
-   {
-    "key": "tech-robot",
-    "heard": {
-     "siwis": null,
-     "gilles": "Blah, blah, blah, blah, blah, blah, blah."
-    }
-   },
-   {
-    "key": "tech-satellite_antenna",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci."
-    }
-   },
-   {
-    "key": "time-alarm_clock",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "time-g2",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il est arrivé sans 7 heures."
-    }
-   },
-   {
-    "key": "time-mantelpiece_clock",
-    "heard": {
-     "siwis": null,
-     "gilles": "Alors, d'avoir regardé cette vidéo !"
-    }
-   },
-   {
-    "key": "time-night_with_stars",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
-    }
-   },
-   {
-    "key": "time-stopwatch",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je crois en nom 1."
-    }
-   },
-   {
-    "key": "time-sunrise",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le bateau..."
-    }
-   },
-   {
-    "key": "time-sunset",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "transport-airplane",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "transport-automobile",
-    "heard": {
-     "siwis": null,
-     "gilles": "la votus."
-    }
-   },
-   {
-    "key": "transport-bicycle",
-    "heard": {
-     "siwis": null,
-     "gilles": "Vélo."
-    }
-   },
-   {
-    "key": "transport-bus",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "transport-canoe",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le canon est..."
-    }
-   },
-   {
-    "key": "transport-delivery_truck",
-    "heard": {
-     "siwis": null,
-     "gilles": "« Je ne peux plus que les verres, les milliers, on mange. »"
-    }
-   },
-   {
-    "key": "transport-metro",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je mets trop..."
-    }
-   },
-   {
-    "key": "transport-motor_scooter",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "transport-motorcycle",
-    "heard": {
-     "siwis": null,
-     "gilles": "La manteau de..."
-    }
-   },
-   {
-    "key": "transport-rocket",
-    "heard": {
-     "siwis": null,
-     "gilles": "Merci d'avoir regardé cette vidéo !"
-    }
-   },
-   {
-    "key": "transport-sailboat",
-    "heard": {
-     "siwis": null,
-     "gilles": "le voyais."
-    }
-   },
-   {
-    "key": "transport-ship",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "transport-taxi",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le tassé."
-    }
-   },
-   {
-    "key": "transport-train",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "transport-tram",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il sera moins..."
-    }
-   },
-   {
-    "key": "travel-airplane_arrival",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "travel-airplane_departure",
-    "heard": {
-     "siwis": null,
-     "gilles": "le dit pas mal"
-    }
-   },
-   {
-    "key": "travel-construction",
-    "heard": {
-     "siwis": null,
-     "gilles": "Oui, ça va."
-    }
-   },
-   {
-    "key": "travel-customs",
-    "heard": {
-     "siwis": null,
-     "gilles": "La loi"
-    }
-   },
-   {
-    "key": "travel-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Mavali et l'Orbe."
-    }
-   },
-   {
-    "key": "travel-station",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "travel-stop_sign",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le panonston. Le..."
-    }
-   },
-   {
-    "key": "travel-tent",
-    "heard": {
-     "siwis": null,
-     "gilles": "ça s'est devenu"
-    }
-   },
-   {
-    "key": "travel-ticket",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "travel-world_map",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
-    }
-   },
-   {
-    "key": "vegetables-beans",
-    "heard": {
-     "siwis": null,
-     "gilles": "Lira Rico."
-    }
-   },
-   {
-    "key": "vegetables-bell_pepper",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le bras de l'œuf."
-    }
-   },
-   {
-    "key": "vegetables-broccoli",
-    "heard": {
-     "siwis": null,
-     "gilles": "du brocury."
-    }
-   },
-   {
-    "key": "vegetables-carrot",
-    "heard": {
-     "siwis": null,
-     "gilles": "La 40."
-    }
-   },
-   {
-    "key": "vegetables-chestnut",
-    "heard": {
-     "siwis": null,
-     "gilles": "La chatte."
-    }
-   },
-   {
-    "key": "vegetables-ear_of_corn",
-    "heard": {
-     "siwis": null,
-     "gilles": "le mal est seul."
-    }
-   },
-   {
-    "key": "vegetables-eggplant",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je veux bien que je vis."
-    }
-   },
-   {
-    "key": "vegetables-garlic",
-    "heard": {
-     "siwis": null,
-     "gilles": "Là, c'est le moment donné."
-    }
-   },
-   {
-    "key": "vegetables-ginger_root",
-    "heard": {
-     "siwis": null,
-     "gilles": "L'orage et jambes."
-    }
-   },
-   {
-    "key": "vegetables-hot_pepper",
-    "heard": {
-     "siwis": null,
-     "gilles": null
-    }
-   },
-   {
-    "key": "vegetables-leafy_green",
-    "heard": {
-     "siwis": null,
-     "gilles": "La leinture."
-    }
-   },
-   {
-    "key": "vegetables-mushroom",
-    "heard": {
-     "siwis": null,
-     "gilles": "Chant d'éunion."
-    }
-   },
-   {
-    "key": "vegetables-onion",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "vegetables-pea_pod",
-    "heard": {
-     "siwis": null,
-     "gilles": "les petits du poids, la terre d'herbe."
     }
    },
    {
     "key": "vegetables-peanuts",
     "heard": {
-     "siwis": null,
+     "ff_siwis": "Les cacaillettes",
      "gilles": "Et quelques heures..."
-    }
-   },
-   {
-    "key": "weather-cloud",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne lâche."
-    }
-   },
-   {
-    "key": "weather-cloud_with_lightning",
-    "heard": {
-     "siwis": null,
-     "gilles": "J-j-j-t-t-e."
-    }
-   },
-   {
-    "key": "weather-crescent_moon",
-    "heard": {
-     "siwis": null,
-     "gilles": "La zéro..."
-    }
-   },
-   {
-    "key": "weather-fire",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je dois dire ça. Fuge."
-    }
-   },
-   {
-    "key": "weather-fog",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "weather-g1",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il plus."
-    }
-   },
-   {
-    "key": "weather-snowflake",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage ST' 501"
-    }
-   },
-   {
-    "key": "weather-snowman",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le Madame de Nèche."
-    }
-   },
-   {
-    "key": "weather-star",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il y a deux fois."
-    }
-   },
-   {
-    "key": "weather-sun",
-    "heard": {
-     "siwis": null,
-     "gilles": "Sous-titrage Société Radio-Canada"
-    }
-   },
-   {
-    "key": "weather-wind_face",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "wild-bear",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "wild-chipmunk",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ..."
-    }
-   },
-   {
-    "key": "wild-deer",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ...."
-    }
-   },
-   {
-    "key": "wild-fox",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "wild-frog",
-    "heard": {
-     "siwis": null,
-     "gilles": "La grune lui..."
-    }
-   },
-   {
-    "key": "wild-giraffe",
-    "heard": {
-     "siwis": null,
-     "gilles": "La vie est là."
-    }
-   },
-   {
-    "key": "wild-gorilla",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ..."
-    }
-   },
-   {
-    "key": "wild-hedgehog",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "wild-hippopotamus",
-    "heard": {
-     "siwis": null,
-     "gilles": "Il est pas stand."
-    }
-   },
-   {
-    "key": "wild-kangaroo",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le commande de goudou."
-    }
-   },
-   {
-    "key": "wild-koala",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rippo à la..."
-    }
-   },
-   {
-    "key": "wild-leopard",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne vous ai pas d'avoir d'autres lettres."
-    }
-   },
-   {
-    "key": "wild-lion",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
-    }
-   },
-   {
-    "key": "wild-monkey",
-    "heard": {
-     "siwis": null,
-     "gilles": "... ... ... ... ... ..."
-    }
-   },
-   {
-    "key": "wild-panda",
-    "heard": {
-     "siwis": null,
-     "gilles": "Le papa."
-    }
-   },
-   {
-    "key": "wild-polar_bear",
-    "heard": {
-     "siwis": null,
-     "gilles": "Je ne sais pas, je ne sais pas, je ne sais pas."
-    }
-   },
-   {
-    "key": "wild-snake",
-    "heard": {
-     "siwis": null,
-     "gilles": "le serpa."
-    }
-   },
-   {
-    "key": "wild-tiger",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rétire. Rétire. Rétire."
-    }
-   },
-   {
-    "key": "wild-wolf",
-    "heard": {
-     "siwis": null,
-     "gilles": "Rrrrrrrrrrrrrrrrrrrrr"
-    }
-   },
-   {
-    "key": "wild-zebra",
-    "heard": {
-     "siwis": null,
-     "gilles": "..."
     }
    }
   ],
   "coach_f": {
-   "voice": "siwis",
-   "kept": 296,
+   "voice": "ff_siwis",
+   "kept": 298,
    "total": 302
   },
   "coach_m": {
@@ -6217,9 +2857,9 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.942,
-    "vocab_rate": 0.416,
-    "mean_cer": 0.346,
+    "pass_rate": 0.95,
+    "vocab_rate": 0.44,
+    "mean_cer": 0.336,
     "error": null
    },
    {
@@ -6229,9 +2869,9 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.925,
+    "pass_rate": 0.933,
     "vocab_rate": 0.0,
-    "mean_cer": 0.078,
+    "mean_cer": 0.066,
     "error": null
    },
    {
@@ -6241,9 +2881,9 @@
     "gender": "m",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
-    "vocab_rate": 0.434,
-    "mean_cer": 0.354,
+    "pass_rate": 0.958,
+    "vocab_rate": 0.447,
+    "mean_cer": 0.345,
     "error": null
    },
    {
@@ -6253,9 +2893,9 @@
     "gender": "m",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.925,
+    "pass_rate": 0.933,
     "vocab_rate": 0.0,
-    "mean_cer": 0.08,
+    "mean_cer": 0.069,
     "error": null
    }
   ],
@@ -6264,15 +2904,8 @@
    "hf_alpha"
   ],
   "clips_total": 738,
-  "clips_kept": 445,
+  "clips_kept": 460,
   "failed": [
-   {
-    "key": "a4",
-    "heard": {
-     "hm_omega": "इसलिए मैं Hybrid Model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हूँ.",
-     "hf_alpha": "इसलिए मैं hybrid moral का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हो।"
-    }
-   },
    {
     "key": "accessories-closed_umbrella",
     "heard": {
@@ -6498,6 +3131,13 @@
     }
    },
    {
+    "key": "birds-g2",
+    "heard": {
+     "hm_omega": "चिर्लिया गा रही हैं।",
+     "hf_alpha": "चिरिया का रही है"
+    }
+   },
+   {
     "key": "birds-lady_beetle",
     "heard": {
      "hm_omega": "ladybug",
@@ -6575,13 +3215,6 @@
     }
    },
    {
-    "key": "body-flexed_biceps",
-    "heard": {
-     "hm_omega": "बांद",
-     "hf_alpha": "बन्"
-    }
-   },
-   {
     "key": "body-foot",
     "heard": {
      "hm_omega": "बेर",
@@ -6593,13 +3226,6 @@
     "heard": {
      "hm_omega": "पेपर देई",
      "hf_alpha": "पेपल देए"
-    }
-   },
-   {
-    "key": "body-mouth",
-    "heard": {
-     "hm_omega": "मुंद",
-     "hf_alpha": "मुले"
     }
    },
    {
@@ -6743,13 +3369,6 @@
     }
    },
    {
-    "key": "drinks-hot_beverage",
-    "heard": {
-     "hm_omega": "काफी",
-     "hf_alpha": "काफी"
-    }
-   },
-   {
     "key": "drinks-teacup_without_handle",
     "heard": {
      "hm_omega": "जाई",
@@ -6803,13 +3422,6 @@
     "heard": {
      "hm_omega": "डड़ी",
      "hf_alpha": "डदी"
-    }
-   },
-   {
-    "key": "farm-baby_chick",
-    "heard": {
-     "hm_omega": "जूजा",
-     "hf_alpha": "चुजाए"
     }
    },
    {
@@ -6894,13 +3506,6 @@
     "heard": {
      "hm_omega": "दर की",
      "hf_alpha": "तर की"
-    }
-   },
-   {
-    "key": "feelings-face_with_tears_of_joy",
-    "heard": {
-     "hm_omega": "हन सनाए",
-     "hf_alpha": "हंसनाई"
     }
    },
    {
@@ -7016,13 +3621,6 @@
     }
    },
    {
-    "key": "games-confetti_ball",
-    "heard": {
-     "hm_omega": "कंफे दी",
-     "hf_alpha": "कन फेटी"
-    }
-   },
-   {
     "key": "games-party_popper",
     "heard": {
      "hm_omega": "पार दी",
@@ -7051,13 +3649,6 @@
     }
    },
    {
-    "key": "health-face_with_thermometer",
-    "heard": {
-     "hm_omega": "बुहारे",
-     "hf_alpha": "बुहार"
-    }
-   },
-   {
     "key": "health-pill",
     "heard": {
      "hm_omega": "दवाई!",
@@ -7069,13 +3660,6 @@
     "heard": {
      "hm_omega": "मुमा बती",
      "hf_alpha": "मुम बती"
-    }
-   },
-   {
-    "key": "house-couch_and_lamp",
-    "heard": {
-     "hm_omega": "उसो फफ़ाई",
-     "hf_alpha": "सोफाए"
     }
    },
    {
@@ -7139,13 +3723,6 @@
     "heard": {
      "hm_omega": "यास्टूस",
      "hf_alpha": "जास्तूसे"
-    }
-   },
-   {
-    "key": "jobs-factory_worker",
-    "heard": {
-     "hm_omega": "मस्दूर",
-     "hf_alpha": "मजदूरे"
     }
    },
    {
@@ -7286,13 +3863,6 @@
     "heard": {
      "hm_omega": "नट",
      "hf_alpha": "नंट"
-    }
-   },
-   {
-    "key": "meals-french_fries",
-    "heard": {
-     "hm_omega": "बरेंट प्राइज",
-     "hf_alpha": "ब्रेंट प्राइज"
     }
    },
    {
@@ -7443,13 +4013,6 @@
     }
    },
    {
-    "key": "objects-envelope",
-    "heard": {
-     "hm_omega": "लिफाफा है",
-     "hf_alpha": "लिफाफाद"
-    }
-   },
-   {
     "key": "objects-flashlight",
     "heard": {
      "hm_omega": "दर",
@@ -7506,13 +4069,6 @@
     }
    },
    {
-    "key": "places-castle",
-    "heard": {
-     "hm_omega": "इकिलाए",
-     "hf_alpha": "कि लाए"
-    }
-   },
-   {
     "key": "places-church",
     "heard": {
      "hm_omega": "जार",
@@ -7552,13 +4108,6 @@
     "heard": {
      "hm_omega": "मुहला",
      "hf_alpha": "मौहलाए"
-    }
-   },
-   {
-    "key": "places-office_building",
-    "heard": {
-     "hm_omega": "दटरे",
-     "hf_alpha": "दफ्तरी"
     }
    },
    {
@@ -7807,10 +4356,10 @@
     }
    },
    {
-    "key": "sports-person_golfing",
+    "key": "sports-person_surfing",
     "heard": {
-     "hm_omega": "गुल्फ",
-     "hf_alpha": "गुल्फ"
+     "hm_omega": "सर्फीन",
+     "hf_alpha": "सर्फी इंग"
     }
    },
    {
@@ -7825,13 +4374,6 @@
     "heard": {
      "hm_omega": "स्की इन अग",
      "hf_alpha": "स्कीन गग"
-    }
-   },
-   {
-    "key": "sports-soccer_ball",
-    "heard": {
-     "hm_omega": "फुटबाल",
-     "hf_alpha": "फुटबाल"
     }
    },
    {
@@ -8098,13 +4640,6 @@
     "heard": {
      "hm_omega": "ट्रेफिक लाए",
      "hf_alpha": "ट्रेफिक लाए"
-    }
-   },
-   {
-    "key": "travel-world_map",
-    "heard": {
-     "hm_omega": "नक्षा",
-     "hf_alpha": "नक्षाइ"
     }
    },
    {
@@ -9564,8 +6099,8 @@
    }
   ],
   "chosen": [
-   "pf_dora",
-   "pm_alex"
+   "pm_alex",
+   "pf_dora"
   ],
   "clips_total": 738,
   "clips_kept": 671,
@@ -9573,470 +6108,470 @@
    {
     "key": "accessories-lipstick",
     "heard": {
-     "pf_dora": "Ubatong.",
-     "pm_alex": "Ubatzong."
+     "pm_alex": "Ubatzong.",
+     "pf_dora": "Ubatong."
     }
    },
    {
     "key": "bathroom-basket",
     "heard": {
-     "pf_dora": "O sexto.",
-     "pm_alex": "O sexto."
+     "pm_alex": "O sexto.",
+     "pf_dora": "O sexto."
     }
    },
    {
     "key": "birds-penguin",
     "heard": {
-     "pf_dora": "O Penguins.",
-     "pm_alex": "O Penguins."
+     "pm_alex": "O Penguins.",
+     "pf_dora": "O Penguins."
     }
    },
    {
     "key": "birds-spider",
     "heard": {
-     "pf_dora": "Avaranhas.",
-     "pm_alex": "Avaranhas."
+     "pm_alex": "Avaranhas.",
+     "pf_dora": "Avaranhas."
     }
    },
    {
     "key": "birds-swan",
     "heard": {
-     "pf_dora": "Os seis ne.",
-     "pm_alex": "Ou se esnei."
+     "pm_alex": "Ou se esnei.",
+     "pf_dora": "Os seis ne."
     }
    },
    {
     "key": "body-bone",
     "heard": {
-     "pf_dora": "Uvas.",
-     "pm_alex": "O ócio."
+     "pm_alex": "O ócio.",
+     "pf_dora": "Uvas."
     }
    },
    {
     "key": "body-ear",
     "heard": {
-     "pf_dora": "A Aurelia",
-     "pm_alex": "Aurelias"
+     "pm_alex": "Aurelias",
+     "pf_dora": "A Aurelia"
     }
    },
    {
     "key": "body-eye",
     "heard": {
-     "pf_dora": "Sua folha.",
-     "pm_alex": "Tuholio."
+     "pm_alex": "Tuholio.",
+     "pf_dora": "Sua folha."
     }
    },
    {
     "key": "clothes-billed_cap",
     "heard": {
-     "pf_dora": "Subo né.",
-     "pm_alex": "Tu boné."
+     "pm_alex": "Tu boné.",
+     "pf_dora": "Subo né."
     }
    },
    {
     "key": "clothes-t_shirt",
     "heard": {
-     "pf_dora": "Até xeirat.",
-     "pm_alex": "Até xírat."
+     "pm_alex": "Até xírat.",
+     "pf_dora": "Até xeirat."
     }
    },
    {
     "key": "colors-purple_square",
     "heard": {
-     "pf_dora": "Horshub.",
-     "pm_alex": "Não for a chute."
+     "pm_alex": "Não for a chute.",
+     "pf_dora": "Horshub."
     }
    },
    {
     "key": "colors-yellow_square",
     "heard": {
-     "pf_dora": "Camarcelo.",
-     "pm_alex": "Camarcelo."
+     "pm_alex": "Camarcelo.",
+     "pf_dora": "Camarcelo."
     }
    },
    {
     "key": "family-baby",
     "heard": {
-     "pf_dora": "Su bebé.",
-     "pm_alex": "Tu bebé."
+     "pm_alex": "Tu bebé.",
+     "pf_dora": "Su bebé."
     }
    },
    {
     "key": "family-boy",
     "heard": {
-     "pf_dora": "Humaninos.",
-     "pm_alex": "Humaninos."
+     "pm_alex": "Humaninos.",
+     "pf_dora": "Humaninos."
     }
    },
    {
     "key": "family-family_man_boy",
     "heard": {
-     "pf_dora": "Super!",
-     "pm_alex": "do país."
+     "pm_alex": "do país.",
+     "pf_dora": "Super!"
     }
    },
    {
     "key": "family-man",
     "heard": {
-     "pf_dora": "Tua mentira.",
-     "pm_alex": "Tuvamente."
+     "pm_alex": "Tuvamente.",
+     "pf_dora": "Tua mentira."
     }
    },
    {
     "key": "family-people_hugging",
     "heard": {
-     "pf_dora": "Um abraço.",
-     "pm_alex": "Um abraço."
+     "pm_alex": "Um abraço.",
+     "pf_dora": "Um abraço."
     }
    },
    {
     "key": "farm-donkey",
     "heard": {
-     "pf_dora": "Tô burguer.",
-     "pm_alex": "Doe burguer."
+     "pm_alex": "Doe burguer.",
+     "pf_dora": "Tô burguer."
     }
    },
    {
     "key": "farm-ox",
     "heard": {
-     "pf_dora": "Suboy.",
-     "pm_alex": "To boy."
+     "pm_alex": "To boy.",
+     "pf_dora": "Suboy."
     }
    },
    {
     "key": "feelings-face_with_tears_of_joy",
     "heard": {
-     "pf_dora": "Híra, não.",
-     "pm_alex": "É o que eu falo."
+     "pm_alex": "É o que eu falo.",
+     "pf_dora": "Híra, não."
     }
    },
    {
     "key": "feelings-red_heart",
     "heard": {
-     "pf_dora": "Do one more.",
-     "pm_alex": "Um amor."
+     "pm_alex": "Um amor.",
+     "pf_dora": "Do one more."
     }
    },
    {
     "key": "fruits-coconut",
     "heard": {
-     "pf_dora": "Zucarquit.",
-     "pm_alex": "Luka o que?"
+     "pm_alex": "Luka o que?",
+     "pf_dora": "Zucarquit."
     }
    },
    {
     "key": "fruits-kiwi_fruit",
     "heard": {
-     "pf_dora": "O QE.",
-     "pm_alex": "Ok, we..."
+     "pm_alex": "Ok, we...",
+     "pf_dora": "O QE."
     }
    },
    {
     "key": "fruits-pineapple",
     "heard": {
-     "pf_dora": "Urana Nas",
-     "pm_alex": "Urannade nas."
+     "pm_alex": "Urannade nas.",
+     "pf_dora": "Urana Nas"
     }
    },
    {
     "key": "games-yo_yo",
     "heard": {
-     "pf_dora": "Puyo, eu.",
-     "pm_alex": "Pudio e outro."
+     "pm_alex": "Pudio e outro.",
+     "pf_dora": "Puyo, eu."
     }
    },
    {
     "key": "h4",
     "heard": {
-     "pf_dora": "Sim, das 7 às 10 no res do chão.",
-     "pm_alex": "Sim, das 7 às 10 no res do chão."
+     "pm_alex": "Sim, das 7 às 10 no res do chão.",
+     "pf_dora": "Sim, das 7 às 10 no res do chão."
     }
    },
    {
     "key": "m1",
     "heard": {
-     "pf_dora": "Podemos oferecer-lhe um desconto de 5%.",
-     "pm_alex": "Podemos oferecer-lhe um desconto de 5%."
+     "pm_alex": "Podemos oferecer-lhe um desconto de 5%.",
+     "pf_dora": "Podemos oferecer-lhe um desconto de 5%."
     }
    },
    {
     "key": "meals-bread",
     "heard": {
-     "pf_dora": "Tupém!",
-     "pm_alex": "O pé é um."
+     "pm_alex": "O pé é um.",
+     "pf_dora": "Tupém!"
     }
    },
    {
     "key": "meals-cooked_rice",
     "heard": {
-     "pf_dora": "Guajos.",
-     "pm_alex": "Guajos."
+     "pm_alex": "Guajos.",
+     "pf_dora": "Guajos."
     }
    },
    {
     "key": "meals-egg",
     "heard": {
-     "pf_dora": "To have it.",
-     "pm_alex": "Do over."
+     "pm_alex": "Do over.",
+     "pf_dora": "To have it."
     }
    },
    {
     "key": "meals-honey_pot",
     "heard": {
-     "pf_dora": "To melt.",
-     "pm_alex": "Tu mel."
+     "pm_alex": "Tu mel.",
+     "pf_dora": "To melt."
     }
    },
    {
     "key": "meals-salt",
     "heard": {
-     "pf_dora": "Usao",
-     "pm_alex": "Uçaut."
+     "pm_alex": "Uçaut.",
+     "pf_dora": "Usao"
     }
    },
    {
     "key": "music-drum",
     "heard": {
-     "pf_dora": "Tutambor.",
-     "pm_alex": "Utenborg"
+     "pm_alex": "Utenborg",
+     "pf_dora": "Tutambor."
     }
    },
    {
     "key": "n4",
     "heard": {
-     "pf_dora": "São 20 euros.",
-     "pm_alex": "São 20 euros."
+     "pm_alex": "São 20 euros.",
+     "pf_dora": "São 20 euros."
     }
    },
    {
     "key": "numbers-g1",
     "heard": {
-     "pf_dora": "1, 2, 3.",
-     "pm_alex": "1, 2, 3."
+     "pm_alex": "1, 2, 3.",
+     "pf_dora": "1, 2, 3."
     }
    },
    {
     "key": "numbers-keycap_1",
     "heard": {
-     "pf_dora": "Doan lhe.",
-     "pm_alex": "Dung!"
+     "pm_alex": "Dung!",
+     "pf_dora": "Doan lhe."
     }
    },
    {
     "key": "numbers-keycap_10",
     "heard": {
-     "pf_dora": "10.",
-     "pm_alex": "10."
+     "pm_alex": "10.",
+     "pf_dora": "10."
     }
    },
    {
     "key": "numbers-keycap_3",
     "heard": {
-     "pf_dora": "Dores.",
-     "pm_alex": "Toreis."
+     "pm_alex": "Toreis.",
+     "pf_dora": "Dores."
     }
    },
    {
     "key": "numbers-keycap_5",
     "heard": {
-     "pf_dora": "5.",
-     "pm_alex": "5."
+     "pm_alex": "5.",
+     "pf_dora": "5."
     }
    },
    {
     "key": "numbers-keycap_9",
     "heard": {
-     "pf_dora": "9.",
-     "pm_alex": "9."
+     "pm_alex": "9.",
+     "pf_dora": "9."
     }
    },
    {
     "key": "objects-balloon",
     "heard": {
-     "pf_dora": "O balanço.",
-     "pm_alex": "O balanço."
+     "pm_alex": "O balanço.",
+     "pf_dora": "O balanço."
     }
    },
    {
     "key": "objects-magnet",
     "heard": {
-     "pf_dora": "Sujimã,",
-     "pm_alex": "Fuziman."
+     "pm_alex": "Fuziman.",
+     "pf_dora": "Sujimã,"
     }
    },
    {
     "key": "places-hotel",
     "heard": {
-     "pf_dora": "What's out?",
-     "pm_alex": "O O Tzeu."
+     "pm_alex": "O O Tzeu.",
+     "pf_dora": "What's out?"
     }
    },
    {
     "key": "places-houses",
     "heard": {
-     "pf_dora": "To buy hood.",
-     "pm_alex": "Doe bem bem."
+     "pm_alex": "Doe bem bem.",
+     "pf_dora": "To buy hood."
     }
    },
    {
     "key": "plants-tulip",
     "heard": {
-     "pf_dora": "A Zulipe.",
-     "pm_alex": "A sulíper."
+     "pm_alex": "A sulíper.",
+     "pf_dora": "A Zulipe."
     }
    },
    {
     "key": "pt4",
     "heard": {
-     "pf_dora": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido.",
-     "pm_alex": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido."
+     "pm_alex": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido.",
+     "pf_dora": "Cerca de 800 durante 40 minutos, o serviço já foi restabelecido."
     }
    },
    {
     "key": "school-abacus",
     "heard": {
-     "pf_dora": "Uabeku.",
-     "pm_alex": "Dua Bekir."
+     "pm_alex": "Dua Bekir.",
+     "pf_dora": "Uabeku."
     }
    },
    {
     "key": "school-pen",
     "heard": {
-     "pf_dora": "Akanete",
-     "pm_alex": "Akanete"
+     "pm_alex": "Akanete",
+     "pf_dora": "Akanete"
     }
    },
    {
     "key": "sea-octopus",
     "heard": {
-     "pf_dora": "O pauze.",
-     "pm_alex": "O pauze."
+     "pm_alex": "O pauze.",
+     "pf_dora": "O pauze."
     }
    },
    {
     "key": "sports-person_in_lotus_position",
     "heard": {
-     "pf_dora": "Tuzi Ogre.",
-     "pm_alex": "Usioga"
+     "pm_alex": "Usioga",
+     "pf_dora": "Tuzi Ogre."
     }
    },
    {
     "key": "sports-person_surfing",
     "heard": {
-     "pf_dora": "Ou será?",
-     "pm_alex": "Ou seja, graças a Deus."
+     "pm_alex": "Ou seja, graças a Deus.",
+     "pf_dora": "Ou será?"
     }
    },
    {
     "key": "sports-rugby_football",
     "heard": {
-     "pf_dora": "Tu Haguebe.",
-     "pm_alex": "O HGB."
+     "pm_alex": "O HGB.",
+     "pf_dora": "Tu Haguebe."
     }
    },
    {
     "key": "sports-skier",
     "heard": {
-     "pf_dora": "Uesquê.",
-     "pm_alex": "Uesquim."
+     "pm_alex": "Uesquim.",
+     "pf_dora": "Uesquê."
     }
    },
    {
     "key": "sports-volleyball",
     "heard": {
-     "pf_dora": "Do volleyball.",
-     "pm_alex": "ou volleyball."
+     "pm_alex": "ou volleyball.",
+     "pf_dora": "Do volleyball."
     }
    },
    {
     "key": "sweets-shortcake",
     "heard": {
-     "pf_dora": "Subalhe.",
-     "pm_alex": "Tu bole."
+     "pm_alex": "Tu bole.",
+     "pf_dora": "Subalhe."
     }
    },
    {
     "key": "tech-e_mail",
     "heard": {
-     "pf_dora": "Tuemails.",
-     "pm_alex": "Fui mails."
+     "pm_alex": "Fui mails.",
+     "pf_dora": "Tuemails."
     }
    },
    {
     "key": "tech-robot",
     "heard": {
-     "pf_dora": "Tucho B.",
-     "pm_alex": "O que é que é?"
+     "pm_alex": "O que é que é?",
+     "pf_dora": "Tucho B."
     }
    },
    {
     "key": "tech-satellite_antenna",
     "heard": {
-     "pf_dora": "Antenna.",
-     "pm_alex": "Antenna"
+     "pm_alex": "Antenna",
+     "pf_dora": "Antenna."
     }
    },
    {
     "key": "transport-delivery_truck",
     "heard": {
-     "pf_dora": "O caminhão.",
-     "pm_alex": "O caminhão."
+     "pm_alex": "O caminhão.",
+     "pf_dora": "O caminhão."
     }
    },
    {
     "key": "transport-motorcycle",
     "heard": {
-     "pf_dora": "A morte.",
-     "pm_alex": "A morte."
+     "pm_alex": "A morte.",
+     "pf_dora": "A morte."
     }
    },
    {
     "key": "vegetables-ear_of_corn",
     "heard": {
-     "pf_dora": "O melhor.",
-     "pm_alex": "O melhor."
+     "pm_alex": "O melhor.",
+     "pf_dora": "O melhor."
     }
    },
    {
     "key": "vegetables-garlic",
     "heard": {
-     "pf_dora": "Suralho",
-     "pm_alex": "Turralho"
+     "pm_alex": "Turralho",
+     "pf_dora": "Suralho"
     }
    },
    {
     "key": "wild-bear",
     "heard": {
-     "pf_dora": "O que é isso?",
-     "pm_alex": "Uou, olha só."
+     "pm_alex": "Uou, olha só.",
+     "pf_dora": "O que é isso?"
     }
    },
    {
     "key": "wild-frog",
     "heard": {
-     "pf_dora": "Tachanque.",
-     "pm_alex": "Achei."
+     "pm_alex": "Achei.",
+     "pf_dora": "Tachanque."
     }
    },
    {
     "key": "wild-koala",
     "heard": {
-     "pf_dora": "O koalê.",
-     "pm_alex": "O Koalek"
+     "pm_alex": "O Koalek",
+     "pf_dora": "O koalê."
     }
    },
    {
     "key": "wild-tiger",
     "heard": {
-     "pf_dora": "ou cegre.",
-     "pm_alex": "O cegre."
+     "pm_alex": "O cegre.",
+     "pf_dora": "ou cegre."
     }
    },
    {
     "key": "wild-wolf",
     "heard": {
-     "pf_dora": "Tudo bem.",
-     "pm_alex": "Kulab."
+     "pm_alex": "Kulab.",
+     "pf_dora": "Tudo bem."
     }
    }
   ]
@@ -10094,4357 +6629,465 @@
    }
   ],
   "chosen": [
-   "zf_xiaobei",
-   "zm_yunjian"
+   "zm_yunjian",
+   "zf_xiaobei"
   ],
   "clips_total": 738,
-  "clips_kept": 117,
+  "clips_kept": 673,
   "failed": [
-   {
-    "key": "accessories-backpack",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-closed_umbrella",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-crown",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-folding_hand_fan",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-gem_stone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-glasses",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-handbag",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-lipstick",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-purse",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-ring",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "accessories-sunglasses",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-clapping_hands",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-cooking",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-ear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-eyes",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
    {
     "key": "actions-face_savoring_food",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-handshake",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-man_dancing",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-microphone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "去",
+     "zf_xiaobei": "去"
     }
    },
    {
     "key": "actions-open_book",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_biking",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_climbing",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_raising_hand",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_running",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_swimming",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_taking_bath",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-person_walking",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-sleeping_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-speaking_head",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-telephone_receiver",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-thinking_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "都",
+     "zf_xiaobei": "多"
     }
    },
    {
     "key": "actions-tumbler_glass",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-waving_hand",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-writing_hand",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "actions-yawning_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-basket",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "呦",
+     "zf_xiaobei": "嗯"
     }
    },
    {
     "key": "bathroom-bathtub",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "预告",
+     "zf_xiaobei": "预告"
     }
    },
    {
     "key": "bathroom-broom",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-bucket",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-lotion_bottle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-razor",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-roll_of_paper",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-shower",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-soap",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-sponge",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-toilet",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "三五周",
+     "zf_xiaobei": "造柔"
     }
    },
    {
     "key": "bathroom-toothbrush",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "bathroom-wastebasket",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-ant",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "叶阿爽",
+     "zf_xiaobei": "鸭妆"
     }
    },
    {
     "key": "birds-bird",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-butterfly",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-dove",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-eagle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-flamingo",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-fly",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-honeybee",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-lady_beetle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-mosquito",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-owl",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "要",
+     "zf_xiaobei": "娘"
     }
    },
    {
     "key": "birds-parrot",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-peacock",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-penguin",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-snail",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-spider",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "birds-swan",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-anatomical_heart",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-bone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-brain",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-ear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-eye",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "烟雾",
+     "zf_xiaobei": "煙窩"
     }
    },
    {
     "key": "body-flexed_biceps",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-foot",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-index_pointing_up",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-lungs",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-mouth",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "哥哥",
+     "zf_xiaobei": "哥不啊"
     }
    },
    {
     "key": "body-nose",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-raised_hand",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-tongue",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "body-tooth",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-billed_cap",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-coat",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-dress",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-gloves",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-jeans",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-kimono",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-man_s_shoe",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-necktie",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-one_piece_swimsuit",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-running_shoe",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-sari",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-scarf",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-shorts",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-socks",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "beez",
+     "zf_xiaobei": "比喻"
     }
    },
    {
     "key": "clothes-t_shirt",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-thong_sandal",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "7",
+     "zf_xiaobei": "你"
     }
    },
    {
     "key": "clothes-woman_s_boot",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "clothes-woman_s_hat",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-black_large_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-blue_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-brown_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-green_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-orange_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-purple_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-red_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-white_large_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "colors-yellow_square",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-beverage_box",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-bubble_tea",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-cup_with_straw",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-droplet",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-glass_of_milk",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-hot_beverage",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-ice",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "谢谢",
+     "zf_xiaobei": "谢谢你了"
     }
    },
    {
     "key": "drinks-teacup_without_handle",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "drinks-teapot",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-baby",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-boy",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-bust_in_silhouette",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-child",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-couple_with_heart",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-family",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "他",
+     "zf_xiaobei": "呀"
     }
    },
    {
     "key": "family-family_man_boy",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-family_man_woman_boy",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-family_woman_girl",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-girl",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-man",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-old_man",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-old_woman",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-people_holding_hands",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-people_hugging",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "family-woman",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-baby_chick",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-camel",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-cat",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-chicken",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-cow",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "拜拜",
+     "zf_xiaobei": "拜拜"
     }
    },
    {
     "key": "farm-dog",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "Goal",
+     "zf_xiaobei": "Go"
     }
    },
    {
     "key": "farm-donkey",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-duck",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-ewe",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-goat",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-hamster",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "厉害",
+     "zf_xiaobei": "对"
     }
    },
    {
     "key": "farm-horse",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-mouse",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "晚安",
+     "zf_xiaobei": "那"
     }
    },
    {
     "key": "farm-ox",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-pig",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "公尿",
+     "zf_xiaobei": "公邀"
     }
    },
    {
     "key": "farm-rabbit",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-rooster",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "farm-turkey",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-angry_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-astonished_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-cold_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "土豆",
+     "zf_xiaobei": "当時"
     }
    },
    {
     "key": "feelings-crying_face",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-face_with_tears_of_joy",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-fearful_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-grinning_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-hot_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-pensive_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "哭了",
+     "zf_xiaobei": "呼"
     }
    },
    {
     "key": "feelings-red_heart",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-smiling_face_with_sunglasses",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-star_struck",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-tired_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "feelings-worried_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-avocado",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-banana",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-blueberries",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-cherries",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-coconut",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-grapes",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-kiwi_fruit",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "Aye",
+     "zf_xiaobei": "by bwd6"
     }
    },
    {
     "key": "fruits-lemon",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-mango",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-melon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-olive",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-peach",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-pear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-pineapple",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-red_apple",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-strawberry",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-tangerine",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "fruits-watermelon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-chess_pawn",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-circus_tent",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-confetti_ball",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-fireworks",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "您吗?",
+     "zf_xiaobei": "年轻人"
     }
    },
    {
     "key": "games-game_die",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-kite",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-party_popper",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-puzzle_piece",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-ribbon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-roller_coaster",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-video_game",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "games-yo_yo",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-adhesive_bandage",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-crutch",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-drop_of_blood",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-face_with_head_bandage",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-face_with_medical_mask",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-face_with_thermometer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-nauseated_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-pill",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-sneezing_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-stethoscope",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "陶贼",
+     "zf_xiaobei": "pose。"
     }
    },
    {
     "key": "health-syringe",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "health-x_ray",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-bed",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-candle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-chair",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "大人",
+     "zf_xiaobei": "大人"
     }
    },
    {
     "key": "house-couch_and_lamp",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-door",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-elevator",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-framed_picture",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-house",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-house_with_garden",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-key",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "詞曲 李宗盛",
+     "zf_xiaobei": "招王"
     }
    },
    {
     "key": "house-ladder",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-light_bulb",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-mirror",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-television",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "house-window",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-artist",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-astronaut",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-construction_worker",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "teeth",
+     "zf_xiaobei": "T哥"
     }
    },
    {
     "key": "jobs-cook",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-detective",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-factory_worker",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-farmer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-firefighter",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-guard",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-health_worker",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-judge",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "初日",
+     "zf_xiaobei": "兔子"
     }
    },
    {
     "key": "jobs-mechanic",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-office_worker",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-pilot",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "鸡胸拱",
+     "zf_xiaobei": "雞首拱"
     }
    },
    {
     "key": "jobs-police_officer",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-scientist",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-singer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-student",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-teacher",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "jobs-technologist",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-baby_bottle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-canned_food",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-chopsticks",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-cooking",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-fork_and_knife",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-fork_and_knife_with_plate",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-jar",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-kitchen_knife",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "kitchen-spoon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-beach_with_umbrella",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-camping",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-desert",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-desert_island",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-globe_showing_europe_africa",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-mountain",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-national_park",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-rock",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-snow_capped_mountain",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-volcano",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "landscapes-wood",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "惊唱",
+     "zf_xiaobei": "經常"
     }
    },
    {
     "key": "m1",
     "heard": {
-     "zm_yunxi": "我们可以给您5%的折扣。",
-     "zf_xiaoxiao": "我们可以给您5%的折扣"
-    }
-   },
-   {
-    "key": "meals-baguette_bread",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-bowl_with_spoon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-bread",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-butter",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-cheese_wedge",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-cooked_rice",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-croissant",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-egg",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-falafel",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-flatbread",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "我们可以给您5%的折扣。",
+     "zf_xiaobei": "我们可以给您5%的折扣。"
     }
    },
    {
     "key": "meals-french_fries",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "15跳",
+     "zf_xiaobei": "15条"
     }
    },
    {
     "key": "meals-green_salad",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-hamburger",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-honey_pot",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-meat_on_bone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-pizza",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-pot_of_food",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-poultry_leg",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "下了",
+     "zf_xiaobei": "沙郎"
     }
    },
    {
     "key": "meals-salt",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-sandwich",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "meals-spaghetti",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-accordion",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-artist_palette",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-camera_with_flash",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-clapper_board",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶恩"
     }
    },
    {
     "key": "music-drum",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "中文字幕志愿者 李宗盛",
+     "zf_xiaobei": "郭"
     }
    },
    {
     "key": "music-flute",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-guitar",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-microphone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-musical_keyboard",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-musical_note",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-paintbrush",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-performing_arts",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-saxophone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-trumpet",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "music-violin",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "第一次。",
+     "zf_xiaobei": "依然"
     }
    },
    {
     "key": "n4",
     "heard": {
-     "zm_yunxi": "一共20欧元",
-     "zf_xiaoxiao": "一共20歐元"
+     "zm_yunjian": "一共20欧元。",
+     "zf_xiaobei": "一共20欧元。"
     }
    },
    {
     "key": "numbers-g1",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "numbers-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "numbers-keycap_0",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "123",
+     "zf_xiaobei": "123"
     }
    },
    {
     "key": "numbers-keycap_1",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶"
     }
    },
    {
     "key": "numbers-keycap_10",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "感谢观看",
+     "zf_xiaobei": "嗯"
     }
    },
    {
     "key": "numbers-keycap_2",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "好了",
+     "zf_xiaobei": "嗯"
     }
    },
    {
     "key": "numbers-keycap_3",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "3",
+     "zf_xiaobei": "讚!"
     }
    },
    {
     "key": "numbers-keycap_4",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "字",
+     "zf_xiaobei": "字"
     }
    },
    {
     "key": "numbers-keycap_5",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "numbers-keycap_6",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "我",
+     "zf_xiaobei": "5"
     }
    },
    {
     "key": "numbers-keycap_7",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "numbers-keycap_8",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "numbers-keycap_9",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-balloon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-battery",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-camera",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-electric_plug",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-envelope",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-flashlight",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-hammer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "7.",
+     "zf_xiaobei": "D"
     }
    },
    {
     "key": "objects-locked",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-magnet",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-mobile_phone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-package",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-radio",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-screwdriver",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-teddy_bear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "objects-wrapped_gift",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "错",
+     "zf_xiaobei": "坐"
     }
    },
    {
     "key": "objects-wrench",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "白恩秀",
+     "zf_xiaobei": "斑绕。"
     }
    },
    {
     "key": "p2",
     "heard": {
-     "zm_yunxi": "营业额增长了12%,主要得益于出口。",
-     "zf_xiaoxiao": "营业额增长了12%,主要得益于出口"
-    }
-   },
-   {
-    "key": "places-bank",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-bridge_at_night",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-castle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-church",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-cityscape",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-classical_building",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-convenience_store",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-department_store",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-factory",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-ferris_wheel",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-fountain",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-hospital",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-hotel",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-houses",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-mosque",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-office_building",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-playground_slide",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-post_office",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-school",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "places-stadium",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-cactus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-cherry_blossom",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "营业额增长了12%,主要得益于出口。",
+     "zf_xiaobei": "营业额增长了12%,主要得益于出口。"
     }
    },
    {
     "key": "plants-deciduous_tree",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-evergreen_tree",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-fallen_leaf",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-herb",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-hibiscus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-leaf_fluttering_in_wind",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-palm_tree",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-potted_plant",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-rose",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-seedling",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-sunflower",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "plants-tulip",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-abacus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-bar_chart",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-briefcase",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-calendar",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-clipboard",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "说",
+     "zf_xiaobei": "乌"
     }
    },
    {
     "key": "school-closed_book",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-crayon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-file_folder",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "说",
+     "zf_xiaobei": "中"
     }
    },
    {
     "key": "school-graduation_cap",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-memo",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-notebook",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-page_facing_up",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-paperclip",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "比",
+     "zf_xiaobei": "比较"
     }
    },
    {
     "key": "school-pen",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-pencil",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-pushpin",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "school-scissors",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "别",
+     "zf_xiaobei": "爹"
     }
    },
    {
     "key": "school-straight_ruler",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-coral",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-crab",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-dolphin",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "直播剧场——YoYo Television Series Exclusive",
+     "zf_xiaobei": "接着"
     }
    },
    {
     "key": "sea-fish",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-jellyfish",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-octopus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-seal",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-shark",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-shrimp",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-spiral_shell",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-tropical_fish",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-water_wave",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sea-whale",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-check_mark_button",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-cross_mark",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-down_arrow",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-left_arrow",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-minus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-plus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-red_question_mark",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "耶",
+     "zf_xiaobei": "耶"
     }
    },
    {
     "key": "signs-right_arrow",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "signs-up_arrow",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-badminton",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-baseball",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-basketball",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-boxing_glove",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-goal_net",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-horse_racing",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-ice_skate",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-martial_arts_uniform",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-person_golfing",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-person_in_lotus_position",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-person_lifting_weights",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-person_surfing",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-person_swimming",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-ping_pong",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-rugby_football",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "右邊",
+     "zf_xiaobei": "用"
     }
    },
    {
     "key": "sports-running_shirt",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-skier",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-soccer_ball",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-sports_medal",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-tennis",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-trophy",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sports-volleyball",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-birthday_cake",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-candy",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-chocolate_bar",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-cookie",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-doughnut",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-ice_cream",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-lollipop",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-pancakes",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-pie",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-popcorn",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "sweets-shortcake",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-computer_mouse",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-desktop_computer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-e_mail",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-headphone",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-keyboard",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-laptop",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-microscope",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-printer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-robot",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-satellite",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-satellite_antenna",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-telescope",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "tech-video_camera",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-alarm_clock",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-calendar",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-hourglass_done",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "就",
+     "zf_xiaobei": "乔姨"
     }
    },
    {
     "key": "time-mantelpiece_clock",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-night_with_stars",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-stopwatch",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-sunrise",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-sunset",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "time-watch",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-airplane",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-ambulance",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-automobile",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-bicycle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-bus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-canoe",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-delivery_truck",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-fire_engine",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-helicopter",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-kick_scooter",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "中天",
+     "zf_xiaobei": "中文"
     }
    },
    {
     "key": "transport-metro",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-motor_scooter",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-motorcycle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-police_car",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-rocket",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-sailboat",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-ship",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-taxi",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-tractor",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-train",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "transport-tram",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-airplane_arrival",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-airplane_departure",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-bellhop_bell",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-compass",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-construction",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-customs",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-fuel_pump",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-luggage",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-motorway",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-passport_control",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-station",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-stop_sign",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-tent",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-ticket",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-vertical_traffic_light",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "travel-world_map",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-beans",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-bell_pepper",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-broccoli",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "第一天",
+     "zf_xiaobei": "第一天"
     }
    },
    {
     "key": "vegetables-carrot",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-chestnut",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-cucumber",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-ear_of_corn",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "倘若",
+     "zf_xiaobei": "古老闆"
     }
    },
    {
     "key": "vegetables-eggplant",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-garlic",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-ginger_root",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-hot_pepper",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-leafy_green",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-mushroom",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-onion",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-pea_pod",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-peanuts",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-potato",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "vegetables-tomato",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "请",
+     "zf_xiaobei": "接"
     }
    },
    {
     "key": "weather-cloud",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-cloud_with_lightning",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "因",
+     "zf_xiaobei": "言人了"
     }
    },
    {
     "key": "weather-cloud_with_rain",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-crescent_moon",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-fire",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "也算",
+     "zf_xiaobei": "耶"
     }
    },
    {
     "key": "weather-fog",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-rainbow",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-snowflake",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-snowman",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-star",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-sun",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-thermometer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-tornado",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-umbrella_with_rain_drops",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "weather-wind_face",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-bear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-chipmunk",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-crocodile",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-deer",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-elephant",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-fox",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-frog",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-g1",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-g2",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-giraffe",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-gorilla",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-hedgehog",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-hippopotamus",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-kangaroo",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-koala",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "我",
+     "zf_xiaobei": "不"
     }
    },
    {
     "key": "wild-leopard",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "吧",
+     "zf_xiaobei": "到"
     }
    },
    {
     "key": "wild-lion",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-monkey",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-panda",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-polar_bear",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-rhinoceros",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "余子",
+     "zf_xiaobei": "中文字幕志愿者 杨茜茜"
     }
    },
    {
     "key": "wild-snake",
     "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-tiger",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-turtle",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-wolf",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
-    }
-   },
-   {
-    "key": "wild-zebra",
-    "heard": {
-     "zm_yunxi": null,
-     "zf_xiaoxiao": null
+     "zm_yunjian": "你",
+     "zf_xiaobei": "是"
     }
    }
   ]
