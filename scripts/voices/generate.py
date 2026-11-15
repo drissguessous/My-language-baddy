@@ -237,6 +237,10 @@ def main():
                 cmp3, cjson = os.path.join(cdir, h + '.mp3'), os.path.join(cdir, h + '.json')
                 if os.path.exists(cjson) and os.path.exists(cmp3):
                     e = json.load(open(cjson, encoding='utf-8'))
+                    if e.get('heard') is not None and not e.get('error'):
+                        # Notation recalculée à partir de la transcription en cache (règles de comparaison à jour).
+                        e['cer'] = round(cer(it['text'], e['heard'], lang), 3)
+                        e['pass'] = e['cer'] <= CER_PASS
                     if not e.get('error'):
                         shutil.copy(cmp3, os.path.join(dest, ('coach-' if kind == 'coach' else '') + it['key'] + '.mp3'))
                     rec[kind][it['key']] = e

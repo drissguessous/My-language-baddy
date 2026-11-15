@@ -30,7 +30,10 @@ def rates(c):
 
 
 def rank(c):
-    return (c.get('pass_rate') or 0, -(c.get('mean_cer') or 1))
+    # Nombre de clips validés d'abord (une voix sans enregistrement du dictionnaire est moins utile),
+    # puis taux de réussite sur les phrases des leçons.
+    kept = sum(1 for v in c.get('clips', {}).values() if v.get('pass'))
+    return (kept, c.get('pass_rate') or 0, -(c.get('mean_cer') or 1))
 
 
 def choose(cands, validated):

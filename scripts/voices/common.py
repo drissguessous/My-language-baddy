@@ -103,7 +103,17 @@ def phonetic(text: str, lang: str) -> str:
             import pykakasi
             _kks = pykakasi.kakasi()
         return ''.join(x['hira'] for x in _kks.convert(text))
+    if lang == 'fa':
+        # Lettres homophones en persan : la reconnaissance vocale ne peut pas deviner l'orthographe.
+        return text.translate(FA_HOMOPHONES).replace('\u200c', '')
+    if lang == 'hi':
+        # Nukta et chandrabindu / anusvara : même prononciation, graphies concurrentes.
+        return text.replace('\u093c', '').replace('\u0901', '\u0902')
     return text
+
+
+FA_HOMOPHONES = str.maketrans({'ط': 'ت', 'ص': 'س', 'ث': 'س', 'ذ': 'ز', 'ض': 'ز', 'ظ': 'ز', 'ح': 'ه',
+                               'ع': 'ا', 'ء': 'ا', 'آ': 'ا', 'أ': 'ا', 'ق': 'غ', 'ي': 'ی', 'ك': 'ک'})
 
 
 def cer(ref: str, hyp: str, lang: str) -> float:
