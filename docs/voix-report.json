@@ -9,8 +9,8 @@
     "gender": "f",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.021,
+    "pass_rate": 0.95,
+    "mean_cer": 0.023,
     "error": null
    },
    {
@@ -20,8 +20,8 @@
     "gender": "f",
     "accent": "en-GB",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.018,
+    "pass_rate": 0.967,
+    "mean_cer": 0.016,
     "error": null
    },
    {
@@ -32,7 +32,7 @@
     "accent": "en-GB",
     "license": "Apache-2.0",
     "pass_rate": 0.958,
-    "mean_cer": 0.02,
+    "mean_cer": 0.022,
     "error": null
    },
    {
@@ -52,7 +52,7 @@
    "bm_george"
   ],
   "clips_total": 120,
-  "clips_kept": 115,
+  "clips_kept": 116,
   "failed": [
    {
     "key": "m1",
@@ -80,13 +80,6 @@
     "heard": {
      "bf_isabella": "Revenue grew by 12%, mainly thanks to exports.",
      "bm_george": "Revenue grew by 12%, mainly thanks to exports."
-    }
-   },
-   {
-    "key": "pt4",
-    "heard": {
-     "bf_isabella": "About 800 for 40 minutes, the service has been restored.",
-     "bm_george": "About 800 for 40 minutes, the service has been restored."
     }
    }
   ]
@@ -124,7 +117,7 @@
     "accent": "es-ES",
     "license": "CC0",
     "pass_rate": 0.958,
-    "mean_cer": 0.03,
+    "mean_cer": 0.035,
     "error": null
    },
    {
@@ -135,7 +128,7 @@
     "accent": "es-ES",
     "license": "CC-BY-3.0",
     "pass_rate": 0.958,
-    "mean_cer": 0.03,
+    "mean_cer": 0.029,
     "error": null
    }
   ],
@@ -156,7 +149,7 @@
    {
     "key": "m1",
     "heard": {
-     "ef_dora": "podemos ofrecerle un descuento del 5%.",
+     "ef_dora": "Podemos ofrecerle un descuento del 5%.",
      "em_alex": "Podemos ofrecerle un descuento del 5%."
     }
    },
@@ -193,8 +186,8 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.675,
-    "mean_cer": 0.214,
+    "pass_rate": 0.742,
+    "mean_cer": 0.207,
     "error": null
    },
    {
@@ -204,8 +197,8 @@
     "gender": "m",
     "accent": "fa-IR",
     "license": "CC0",
-    "pass_rate": 0.967,
-    "mean_cer": 0.068,
+    "pass_rate": 0.933,
+    "mean_cer": 0.077,
     "error": null
    },
    {
@@ -216,7 +209,7 @@
     "accent": "fa-IR",
     "license": "CC0",
     "pass_rate": 0.8,
-    "mean_cer": 0.176,
+    "mean_cer": 0.188,
     "error": null
    }
   ],
@@ -225,20 +218,34 @@
    "reza_ibrahim"
   ],
   "clips_total": 120,
-  "clips_kept": 118,
+  "clips_kept": 116,
   "failed": [
+   {
+    "key": "g4",
+    "heard": {
+     "ganji": "هیدی مامنون",
+     "reza_ibrahim": "حیمن"
+    }
+   },
    {
     "key": "i2",
     "heard": {
-     "ganji": "اس نمان سو میست.",
-     "reza_ibrahim": "دستمان سومی"
+     "ganji": "اس می من زمیست.",
+     "reza_ibrahim": "تزمان شمیتز"
+    }
+   },
+   {
+    "key": "n1",
+    "heard": {
+     "ganji": "تا چندست.",
+     "reza_ibrahim": "سوات چندست."
     }
    },
    {
     "key": "ps2",
     "heard": {
-     "ganji": "از صخح تفصیل سینم درد می کند.",
-     "reza_ibrahim": "و صبح قفص سینم درد می کند."
+     "ganji": "از صبح تفاصل زینم درد می کند.",
+     "reza_ibrahim": "از سوپ و قفصه سینان درد می کند."
     }
    }
   ]
@@ -254,7 +261,7 @@
     "accent": "fr-FR",
     "license": "CC-BY-4.0",
     "pass_rate": 0.95,
-    "mean_cer": 0.035,
+    "mean_cer": 0.036,
     "error": null
    },
    {
@@ -264,8 +271,8 @@
     "gender": "f",
     "accent": "fr-FR",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.029,
+    "pass_rate": 0.95,
+    "mean_cer": 0.033,
     "error": null
    },
    {
@@ -276,7 +283,7 @@
     "accent": "fr-FR",
     "license": "CC0",
     "pass_rate": 0.925,
-    "mean_cer": 0.053,
+    "mean_cer": 0.054,
     "error": null
    }
   ],
@@ -298,14 +305,14 @@
     "key": "n4",
     "heard": {
      "ff_siwis": "Ça fait 20 euros.",
-     "gilles": "ça fait l'euro."
+     "gilles": "Ça fait la trou."
     }
    },
    {
     "key": "pt4",
     "heard": {
      "ff_siwis": "Environ 800, pendant 40 minutes, le service est rétabli.",
-     "gilles": "Environ 800 pendant 40 minutes. Le service est rétabli."
+     "gilles": "environ 800 pendant 40 minutes. Le service est rétabli."
     }
    }
   ],
@@ -316,8 +323,8 @@
   },
   "coach_m": {
    "voice": "gilles",
-   "kept": 60,
-   "total": 76
+   "kept": 247,
+   "total": 300
   }
  },
  "hi": {
@@ -330,8 +337,8 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.933,
-    "mean_cer": 0.078,
+    "pass_rate": 0.942,
+    "mean_cer": 0.073,
     "error": null
    },
    {
@@ -341,8 +348,8 @@
     "gender": "f",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.917,
-    "mean_cer": 0.076,
+    "pass_rate": 0.925,
+    "mean_cer": 0.078,
     "error": null
    },
    {
@@ -352,8 +359,8 @@
     "gender": "m",
     "accent": "hi-IN",
     "license": "Apache-2.0",
-    "pass_rate": 0.942,
-    "mean_cer": 0.07,
+    "pass_rate": 0.95,
+    "mean_cer": 0.064,
     "error": null
    },
    {
@@ -364,7 +371,7 @@
     "accent": "hi-IN",
     "license": "Apache-2.0",
     "pass_rate": 0.925,
-    "mean_cer": 0.079,
+    "mean_cer": 0.08,
     "error": null
    }
   ],
@@ -379,14 +386,14 @@
     "key": "a4",
     "heard": {
      "hm_omega": "इसलिए मैं Hybrid Model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हूँ.",
-     "hf_alpha": "इसलिए मैं hybrid model का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हो।"
+     "hf_alpha": "इसलिए मैं hybrid moral का समर्थन करता हूँ, जिसमें दो दिन दफ्तर में हो।"
     }
    },
    {
     "key": "pt2",
     "heard": {
      "hm_omega": "मैंने लॉक देखे एक environment variable गायब था.",
-     "hf_alpha": "मैंने लॉग देखे एक environment variable कायब था."
+     "hf_alpha": "मैंने लॉक देखे एक environment variable कायब था।"
     }
    },
    {
@@ -434,7 +441,7 @@
     "accent": "it-IT",
     "license": "CC0",
     "pass_rate": 0.95,
-    "mean_cer": 0.04,
+    "mean_cer": 0.038,
     "error": null
    },
    {
@@ -445,7 +452,7 @@
     "accent": "it-IT",
     "license": "Apache-2.0",
     "pass_rate": 0.958,
-    "mean_cer": 0.028,
+    "mean_cer": 0.027,
     "error": null
    }
   ],
@@ -460,14 +467,14 @@
     "key": "d4",
     "heard": {
      "if_sara": "No, è a 5 minuti a piedi.",
-     "im_nicola": "No è a 5 minuti a piedi."
+     "im_nicola": "No, è a 5 minuti a piedi."
     }
    },
    {
     "key": "h4",
     "heard": {
      "if_sara": "Sì dalle 7 alle 10 al piano terra.",
-     "im_nicola": "Sì dalle 7 alle 10 al piano terra."
+     "im_nicola": "sì dalle 7 alle 10 al piano terra."
     }
    },
    {
@@ -515,7 +522,7 @@
     "accent": "ja-JP",
     "license": "Apache-2.0 / CC BY",
     "pass_rate": 0.942,
-    "mean_cer": 0.045,
+    "mean_cer": 0.043,
     "error": null
    },
    {
@@ -526,7 +533,7 @@
     "accent": "ja-JP",
     "license": "Apache-2.0 / CC BY",
     "pass_rate": 0.95,
-    "mean_cer": 0.044,
+    "mean_cer": 0.042,
     "error": null
    }
   ],
@@ -541,14 +548,14 @@
     "key": "d4",
     "heard": {
      "jf_alpha": "いいえ歩いて5分です",
-     "jm_kumo": "家歩いて5分です。"
+     "jm_kumo": "家歩いて5分です"
     }
    },
    {
     "key": "h4",
     "heard": {
-     "jf_alpha": "はい7時から10時まで1回でございます",
-     "jm_kumo": "廃止7時から10時まで1回でございます"
+     "jf_alpha": "はい、7時から10時まで1回でございます。",
+     "jm_kumo": "廃止時から10時まで1回でございます。"
     }
    },
    {
@@ -562,7 +569,7 @@
     "key": "n4",
     "heard": {
      "jf_alpha": "二次給路です",
-     "jm_kumo": "2次給炉です"
+     "jm_kumo": "2次給料です"
     }
    },
    {
@@ -591,8 +598,8 @@
     "gender": "m",
     "accent": "pt-PT",
     "license": "CC0",
-    "pass_rate": 0.808,
-    "mean_cer": 0.127,
+    "pass_rate": 0.825,
+    "mean_cer": 0.139,
     "error": null
    },
    {
@@ -602,8 +609,8 @@
     "gender": "f",
     "accent": "pt-BR",
     "license": "Apache-2.0",
-    "pass_rate": 0.958,
-    "mean_cer": 0.025,
+    "pass_rate": 0.967,
+    "mean_cer": 0.026,
     "error": null
    },
    {
@@ -613,8 +620,8 @@
     "gender": "m",
     "accent": "pt-BR",
     "license": "Apache-2.0",
-    "pass_rate": 0.95,
-    "mean_cer": 0.03,
+    "pass_rate": 0.958,
+    "mean_cer": 0.027,
     "error": null
    }
   ],
@@ -623,15 +630,8 @@
    "pm_alex"
   ],
   "clips_total": 120,
-  "clips_kept": 115,
+  "clips_kept": 116,
   "failed": [
-   {
-    "key": "d4",
-    "heard": {
-     "pf_dora": "Não fica 5 minutos a pé.",
-     "pm_alex": "Não fica 5 minutos a pé."
-    }
-   },
    {
     "key": "h4",
     "heard": {
@@ -643,7 +643,7 @@
     "key": "m1",
     "heard": {
      "pf_dora": "Podemos oferecer-lhe um desconto de 5%.",
-     "pm_alex": "podemos oferecer-lhe um desconto de 5%."
+     "pm_alex": "Podemos oferecer-lhe um desconto de 5%."
     }
    },
    {
@@ -673,7 +673,7 @@
     "accent": "zh-CN",
     "license": "Apache-2.0",
     "pass_rate": 0.975,
-    "mean_cer": 0.014,
+    "mean_cer": 0.015,
     "error": null
    },
    {
@@ -684,7 +684,7 @@
     "accent": "zh-CN",
     "license": "Apache-2.0",
     "pass_rate": 0.975,
-    "mean_cer": 0.015,
+    "mean_cer": 0.016,
     "error": null
    },
    {
@@ -705,8 +705,8 @@
     "gender": "m",
     "accent": "zh-CN",
     "license": "Apache-2.0",
-    "pass_rate": 0.967,
-    "mean_cer": 0.017,
+    "pass_rate": 0.975,
+    "mean_cer": 0.015,
     "error": null
    }
   ],
@@ -734,7 +734,7 @@
    {
     "key": "p2",
     "heard": {
-     "zf_xiaobei": "营业额增长了12%主要得益于出口",
+     "zf_xiaobei": "营业额增长了12%,主要得益于出口。",
      "zm_yunjian": "营业额增长了12%,主要得益于出口。"
     }
    }
