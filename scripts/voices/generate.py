@@ -96,6 +96,7 @@ def worker(args, lang, cand, jobs):
             continue
         if synth is None:
             synth = Synth(cand)  # une erreur ici arrête le worker : la voix est signalée par le parent
+        open(os.path.join(cdir, '.current'), 'w').write(h)  # permet au parent d'écarter un texte bloquant
         entry = {}
         try:
             wav = os.path.join(tmp, 'x.wav')
@@ -120,26 +121,30 @@ def worker(args, lang, cand, jobs):
         print(f"{cand['id']} {it['key']} {entry.get('cer')}", flush=True)
 
 
-def run_watched(cmd, limit, stall):
+def run_watched(cmd, limit, stall, first_stall=600):
     """Lance un worker ; l'arrête s'il dépasse `limit` secondes ou reste `stall` secondes sans produire de clip."""
     import selectors
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    fd = p.stdout.fileno()
     sel = selectors.DefaultSelector()
-    sel.register(p.stdout, selectors.EVENT_READ)
+    sel.register(fd, selectors.EVENT_READ)
     start = last = time.time()
     why = None
+    seen = False
     while True:
         if sel.select(timeout=15):
-            line = p.stdout.readline()
-            if not line:
+            chunk = os.read(fd, 65536)  # lecture brute : pas de tampon qui masquerait l'activité
+            if not chunk:
                 break
-            sys.stdout.write(line)
+            sys.stdout.write(chunk.decode('utf-8', 'replace'))
+            sys.stdout.flush()
             last = time.time()
+            seen = True
         now = time.time()
         if now - start > limit:
-            why = f'limite de {round(limit / 60)} min atteinte'
-        elif now - last > stall:
-            why = f'aucun clip depuis {round(stall / 60)} min'
+            why = 'limite'
+        elif now - last > (stall if seen else first_stall):  # le 1er clip inclut le chargement des modèles
+            why = 'blocage'
         if why:
             p.kill()
             break
@@ -155,7 +160,7 @@ def main():
     ap.add_argument('--whisper', default='large-v3-turbo')
     ap.add_argument('--cache', default='cache/voices', help='clips déjà générés et vérifiés (réutilisés si le texte est inchangé)')
     ap.add_argument('--budget', type=float, default=270, help='minutes au total pour la langue')
-    ap.add_argument('--stall', type=float, default=10, help='minutes sans nouveau clip avant d\'arrêter une voix bloquée')
+    ap.add_argument('--stall', type=float, default=4, help='minutes sans nouveau clip avant d\'arrêter une voix bloquée')
     ap.add_argument('--worker', help=argparse.SUPPRESS)
     ap.add_argument('--kind', help=argparse.SUPPRESS)
     args = ap.parse_args()
@@ -188,11 +193,28 @@ def main():
             t0 = time.time()
             cmd = [sys.executable, __file__, '--lang', lang, '--corpus', args.corpus, '--whisper', args.whisper,
                    '--cache', args.cache, '--worker', cand['id'], '--kind', kind]
-            code, why = run_watched(cmd, share, args.stall * 60)
-            if why:
-                print(f"{lang}/{cand['id']} {kind} : arrêt ({why})", flush=True)
-            if code not in (0, None) and kind == 'clips':
-                errors[cand['id']] = why or f'processus terminé avec le code {code}'
+            # Si le moteur se bloque sur un texte, ce texte est écarté (lu par la voix de l'appareil)
+            # et la voix reprend sur les suivants, dans la limite de sa part de temps.
+            cdir = os.path.join(args.cache, lang, cand['id'])
+            for attempt in range(20):
+                left_share = share - (time.time() - t0)
+                if left_share < 30:
+                    break
+                code, why = run_watched(cmd, left_share, args.stall * 60)
+                if why != 'blocage':
+                    if why:
+                        print(f"{lang}/{cand['id']} {kind} : limite de temps atteinte", flush=True)
+                    if code not in (0, None) and kind == 'clips' and attempt == 0:
+                        errors[cand['id']] = f'processus terminé avec le code {code}'
+                    break
+                cur = os.path.join(cdir, '.current')
+                if not os.path.exists(cur):
+                    break
+                h = open(cur).read().strip()
+                os.remove(cur)
+                open(os.path.join(cdir, h + '.mp3'), 'wb').close()
+                json.dump({'error': 'synthèse bloquée', 'pass': False}, open(os.path.join(cdir, h + '.json'), 'w'))
+                print(f"{lang}/{cand['id']} {kind} : texte {h} bloquant, écarté ; reprise", flush=True)
             print(f"{lang}/{cand['id']} {kind} : {round(time.time() - t0)} s", flush=True)
 
     # Rassemblement : tout est lu dans le cache.
