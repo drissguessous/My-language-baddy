@@ -49,21 +49,19 @@ jobs:
           python -m unidic download || true
       - uses: actions/cache/restore@v4
         with:
-          path: |
-            cache/voices/${{ matrix.lang }}
-            ~/.cache/huggingface
+          path: cache/voices/${{ matrix.lang }}
           key: voices-${{ matrix.lang }}-${{ github.run_id }}
           restore-keys: voices-${{ matrix.lang }}-
       - name: Génération et vérification (${{ matrix.lang }})
         timeout-minutes: 320
         run: python scripts/voices/generate.py --lang ${{ matrix.lang }}
       # Le cache est sauvegardé même si la génération est interrompue : la run suivante reprend là où elle s'est arrêtée.
+      # Seuls les clips sont mis en cache (quelques Mo par langue) ; les modèles sont retéléchargés, pour rester
+      # sous la limite de 10 Go de cache du dépôt.
       - uses: actions/cache/save@v4
         if: always()
         with:
-          path: |
-            cache/voices/${{ matrix.lang }}
-            ~/.cache/huggingface
+          path: cache/voices/${{ matrix.lang }}
           key: voices-${{ matrix.lang }}-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         with:
