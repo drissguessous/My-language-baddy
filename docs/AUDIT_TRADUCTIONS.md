@@ -16,6 +16,7 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | ber | 135 | 95 | — | 0.570 |
 | fa | 738 | 435 | 0.777 | 0.723 |
 | hi | 738 | 307 | 0.777 | 0.865 |
+| th | 738 | 545 | 0.721 | 0.655 |
 
 ## Phrases signalées
 
@@ -151,9 +152,9 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | actions-person_running | ar | courir | ركض | Il a couru ! | 0.519 | 0.523 |
 | numbers-keycap_7 | ar | sept | سبعة | Il y en a sept. | 0.692 | 0.524 |
 | vegetables-broccoli | ar | le brocoli | بروكلي | Il y a du brocoli. | 0.594 | 0.525 |
+| family-bust_in_silhouette | ar | la personne | شخص | Quelqu'un . | 0.92 | 0.525 |
 | health-drop_of_blood | ar | le sang | دم | Il y a du sang. | 0.692 | 0.525 |
 | games-puzzle_piece | ar | le puzzle | أحجية | Une énigme. | 0.386 | 0.525 |
-| family-bust_in_silhouette | ar | la personne | شخص | Quelqu'un . | 0.92 | 0.526 |
 | school-pen | ar | le stylo | قلم | Une plume ! | 0.792 | 0.528 |
 | birds-ant | ar | la fourmi | نملة | Une fourmi ! | 0.448 | 0.53 |
 | games-ribbon | ar | le ruban | شريط | Une bande. | 0.765 | 0.534 |
@@ -2660,6 +2661,551 @@ Une phrase signalée n’est pas forcément fausse : c’est une alerte à exami
 | sports-rugby_football | pt | le rugby | o râguebi | le rugby | 0.679 | 1.0 |
 | sports-boxing_glove | pt | la boxe | o boxe | la boxe | 0.701 | 1.0 |
 | games-ribbon | pt | le ruban | a fita | le ruban | 0.436 | 1.0 |
+| school-paperclip | th | le trombone | คลิปหนีบกระดาษ | Clip de papier qui s'est échappé. | 0.211 | -0.017 |
+| birds-lady_beetle | th | la coccinelle | เต่าทอง | Un coup d'or. | 0.255 | 0.051 |
+| games-kite | th | le cerf-volant | ว่าว | Je vous en prie. | 0.416 | 0.076 |
+| kitchen-fork_and_knife | th | les couverts | ส้อมกับมีด | Pratique avec le couteau. | 0.284 | 0.097 |
+| objects-electric_plug | th | la prise | ปลั๊กไฟ | Allumez le feu. | 0.423 | 0.105 |
+| birds-mosquito | th | le moustique | ยุง | Je vous en prie. | 0.659 | 0.108 |
+| vegetables-mushroom | th | le champignon | เห็ด | Je vous en prie. | 0.753 | 0.114 |
+| vegetables-leafy_green | th | la laitue | ผักกาดหอม | Des légumes parfumés. | 0.24 | 0.123 |
+| wild-hedgehog | th | le hérisson | เม่น | Je vous en prie. | 0.308 | 0.123 |
+| wild-frog | th | la grenouille | กบ | Je vous en prie. | 0.338 | 0.126 |
+| actions-person_climbing | th | grimper | ปีน | Je vous en prie. | 0.717 | 0.126 |
+| school-crayon | th | le crayon de couleur | สีเทียน | Les Suédois. | 0.625 | 0.126 |
+| vegetables-chestnut | th | la châtaigne | เกาลัด | Je vous en prie. | 0.403 | 0.127 |
+| tech-computer_mouse | th | la souris | เมาส์ | Je vous en prie. | 0.471 | 0.13 |
+| vegetables-garlic | th | l’ail | กระเทียม | Elle est artificielle. | 0.555 | 0.136 |
+| wild-crocodile | th | le crocodile | จระเข้ | Je vous en prie. | 0.553 | 0.137 |
+| games-ribbon | th | le ruban | ริบบิ้น | Je vous en prie. | 0.562 | 0.137 |
+| meals-croissant | th | le croissant | ครัวซองต์ | Je vous en prie, professeur Song. | 0.562 | 0.138 |
+| travel-compass | th | la boussole | เข็มทิศ | Le compas. | 0.607 | 0.138 |
+| wild-turtle | th | la tortue | เต่า | Je vous en prie. | 0.598 | 0.142 |
+| farm-goat | th | la chèvre | แพะ | Je vous en prie. | 0.417 | 0.143 |
+| meals-falafel | th | les falafels | ฟาลาเฟล | Je vous en prie. | 0.703 | 0.144 |
+| farm-donkey | th | l’âne | ลา | Je vous en prie. | 0.349 | 0.144 |
+| clothes-necktie | th | la cravate | เน็กไท | Je vous en prie. | 0.42 | 0.144 |
+| sea-octopus | th | la pieuvre | ปลาหมึกยักษ์ | Une pomme de terre géante. | 0.259 | 0.147 |
+| meals-pot_of_food | th | le ragoût | สตู | Je suis stupéfait. | 0.379 | 0.15 |
+| house-ladder | th | l’échelle | บันได | Je vous en prie. | 0.621 | 0.15 |
+| music-paintbrush | th | le pinceau | พู่กัน | Je vous en prie, grand-père. | 0.319 | 0.15 |
+| wild-rhinoceros | th | le rhinocéros | แรด | Je vous en prie. | 0.39 | 0.152 |
+| fruits-mango | th | la mangue | มะม่วง | Je vous en prie. | 0.727 | 0.154 |
+| sea-dolphin | th | le dauphin | โลมา | Je vous en prie. | 0.285 | 0.156 |
+| objects-magnet | th | l’aimant | แม่เหล็ก | Une femme de fer. | 0.488 | 0.157 |
+| objects-balloon | th | le ballon de baudruche | ลูกโป่ง | Je vous en prie. | 0.723 | 0.159 |
+| vegetables-cucumber | th | le concombre | แตงกวา | Je vous en prie. | 0.514 | 0.16 |
+| wild-giraffe | th | la girafe | ยีราฟ | Je vous en prie. | 0.647 | 0.162 |
+| weather-rainbow | th | l’arc-en-ciel | รุ้ง | Il est en train de courir. | 0.365 | 0.162 |
+| kitchen-chopsticks | th | les baguettes | ตะเกียบ | Je vous en prie. | 0.565 | 0.163 |
+| school-pen | th | le stylo | ปากกา | Je vous en prie. | 0.633 | 0.168 |
+| accessories-folding_hand_fan | th | l’éventail | พัด | Je vous en prie. | 0.473 | 0.169 |
+| jobs-guard | th | le gardien | ยาม | Je vous en prie. | 0.289 | 0.17 |
+| objects-screwdriver | th | le tournevis | ไขควง | Des œufs ! | 0.376 | 0.171 |
+| sea-jellyfish | th | la méduse | แมงกะพรุน | Le singe de Perun. | 0.424 | 0.174 |
+| fruits-coconut | th | la noix de coco | มะพร้าว | Je vous en prie. | 0.809 | 0.176 |
+| school-pencil | th | le crayon | ดินสอ | Je vous en prie. | 0.381 | 0.176 |
+| school-scissors | th | les ciseaux | กรรไกร | Je vous en prie. | 0.375 | 0.179 |
+| plants-cactus | th | le cactus | กระบองเพชร | Une boîte de diamants. | 0.338 | 0.18 |
+| meals-flatbread | th | la galette | โรตี | Je vous en prie. | 0.436 | 0.182 |
+| school-file_folder | th | le dossier | แฟ้ม | Je vous en prie. | 0.713 | 0.182 |
+| vegetables-broccoli | th | le brocoli | บรอกโคลี | Je vous en prie. | 0.402 | 0.185 |
+| bathroom-shower | th | la douche | ฝักบัว | Je vous en supplie. | 0.457 | 0.188 |
+| meals-salt | th | le sel | เกลือ | Je vous en prie. | 0.61 | 0.19 |
+| kitchen-fork_and_knife_with_plate | th | l’assiette | จาน | Je vous en prie. | 0.888 | 0.19 |
+| wild-koala | th | le koala | โคอาลา | Je vous en prie. | 0.725 | 0.19 |
+| vegetables-onion | th | l’oignon | หัวหอม | Elle sent bon. | 0.657 | 0.196 |
+| kitchen-jar | th | le bocal | โหล | Je vous en prie. | 0.457 | 0.196 |
+| birds-fly | th | la mouche | แมลงวัน | Le soleil est couché. | 0.565 | 0.197 |
+| school-pushpin | th | la punaise | หมุด | Je vous en prie. | 0.405 | 0.197 |
+| vegetables-eggplant | th | l’aubergine | มะเขือยาว | Le cou est long. | 0.513 | 0.198 |
+| actions-yawning_face | th | bâiller | หาว | On le trouve. | 0.52 | 0.199 |
+| kitchen-cooking | th | la poêle | กระทะ | Je vous en prie. | 0.44 | 0.2 |
+| bathroom-basket | th | le panier | ตะกร้า | Ça craint. | 0.625 | 0.202 |
+| sports-person_lifting_weights | th | la musculation | ยกน้ำหนัก | Levez le poids. | 0.462 | 0.204 |
+| tech-satellite_antenna | th | l’antenne | เสาอากาศ | Économisez de l'air. | 0.607 | 0.209 |
+| vegetables-ginger_root | th | le gingembre | ขิง | Je vous en prie. | 0.588 | 0.21 |
+| fruits-cherries | th | les cerises | เชอร์รี | Je vous en prie, cherie. | 0.561 | 0.215 |
+| fruits-kiwi_fruit | th | le kiwi | กีวี | Je vous en prie. | 0.651 | 0.218 |
+| wild-kangaroo | th | le kangourou | จิงโจ้ | Je vous en prie. | 0.539 | 0.219 |
+| clothes-sari | th | le sari | ส่าหรี | Je vous en prie. | 0.62 | 0.219 |
+| school-abacus | th | le boulier | ลูกคิด | Vous avez raison. | 0.405 | 0.222 |
+| fruits-pineapple | th | l’ananas | สับปะรด | Je suis désolée. | 0.579 | 0.228 |
+| wild-zebra | th | le zèbre | ม้าลาย | Elle est morte. | 0.461 | 0.229 |
+| health-sneezing_face | th | le rhume | หวัด | Je vous salue. | 0.39 | 0.23 |
+| sweets-candy | th | le bonbon | ลูกอม | Je vous en prie. | 0.577 | 0.232 |
+| sea-crab | th | le crabe | ปู | Elle est là. | 0.478 | 0.234 |
+| sweets-lollipop | th | la sucette | อมยิ้ม | Il sourit. | 0.322 | 0.235 |
+| bathroom-soap | th | le savon | สบู่ | Je suis désolée. | 0.709 | 0.238 |
+| numbers-keycap_0 | th | zéro | ศูนย์ | Ça y est. | 0.491 | 0.244 |
+| time-calendar | th | le calendrier | ปฏิทิน | Je vous en prie. | 0.872 | 0.246 |
+| body-tongue | th | la langue | ลิ้น | Je vous en prie. | 0.72 | 0.248 |
+| kitchen-baby_bottle | th | le biberon | ขวดนม | Je suis dégoûtée. | 0.656 | 0.25 |
+| games-confetti_ball | th | les confettis | กระดาษโปรย | Une feuille de papier. | 0.353 | 0.251 |
+| family-people_holding_hands | th | les amis | เพื่อน | Je vous en prie. | 0.87 | 0.253 |
+| games-roller_coaster | th | les montagnes russes | รถไฟเหาะ | Le train est en train de déraper. | 0.425 | 0.253 |
+| health-crutch | th | la béquille | ไม้ค้ำ | Le bois de la grotte. | 0.395 | 0.255 |
+| fruits-watermelon | th | la pastèque | แตงโม | Je suis fiancée. | 0.307 | 0.257 |
+| health-stethoscope | th | le stéthoscope | หูฟังแพทย์ | Écoutez le docteur. | 0.448 | 0.26 |
+| sports-person_in_lotus_position | th | le yoga | โยคะ | Je vous en prie. | 0.652 | 0.26 |
+| places-ferris_wheel | th | la grande roue | ชิงช้าสวรรค์ | Le ciel est lent. | 0.318 | 0.263 |
+| jobs-construction_worker | th | le maçon | ช่างก่อสร้าง | Un ingénieur en bâtiment. | 0.491 | 0.265 |
+| places-houses | th | le quartier | ย่าน | À lire. | 0.867 | 0.268 |
+| games-game_die | th | le dé | ลูกเต๋า | Je vous en prie. | 0.42 | 0.271 |
+| plants-sunflower | th | le tournesol | ดอกทานตะวัน | Les fleurs au soleil. | 0.47 | 0.275 |
+| birds-parrot | th | le perroquet | นกแก้ว | Un oiseau en verre. | 0.499 | 0.276 |
+| kitchen-g2 | th | Bon appétit ! | ขอให้อร่อยนะ | Je vous en prie. | 0.691 | 0.278 |
+| drinks-cup_with_straw | th | la boisson fraîche | น้ำอัดลม | Une tempête de vent. | 0.707 | 0.279 |
+| travel-airplane_arrival | th | l’arrivée | ขาเข้า | Les jambes à l'intérieur. | 0.6 | 0.285 |
+| bathroom-sponge | th | l’éponge | ฟองน้ำ | L'eau est gonflée. | 0.601 | 0.288 |
+| plants-seedling | th | la jeune pousse | ต้นกล้า | Des arbres audacieux. | 0.537 | 0.289 |
+| vegetables-hot_pepper | th | le piment | พริก | Des noix de pécan. | 0.668 | 0.291 |
+| bathroom-bucket | th | le seau | ถัง | Le réservoir. | 0.474 | 0.291 |
+| games-puzzle_piece | th | le puzzle | จิ๊กซอว์ | Jeux vidéo. | 0.428 | 0.292 |
+| sports-rugby_football | th | le rugby | รักบี้ | Je vous aime. | 0.645 | 0.295 |
+| clothes-shorts | th | le short | กางเกงขาสั้น | Des sous-vêtements. | 0.603 | 0.296 |
+| sports-ping_pong | th | le tennis de table | ปิงปอง | Je vous en prie, Ping-Pong. | 0.336 | 0.296 |
+| games-yo_yo | th | le yo-yo | โยโย่ | Je vous en prie. | 0.662 | 0.296 |
+| sweets-doughnut | th | le beignet | โดนัท | Des donuts. | 0.375 | 0.298 |
+| music-accordion | th | l’accordéon | หีบเพลง | La musique. | 0.419 | 0.307 |
+| travel-fuel_pump | th | la station-service | ปั๊มน้ำมัน | Une pompe à essence. | 0.449 | 0.315 |
+| objects-hammer | th | le marteau | ค้อน | Une pile. | 0.424 | 0.316 |
+| birds-ant | th | la fourmi | มด | Une mouche. | 0.41 | 0.323 |
+| signs-down_arrow | th | le bas | ข้างล่าง | Il est en bas. | 0.495 | 0.327 |
+| family-people_hugging | th | le câlin | การกอด | Une étreinte. | 0.62 | 0.328 |
+| school-bar_chart | th | le graphique | กราฟ | Je vous en prie, Graf. | 0.582 | 0.33 |
+| signs-check_mark_button | th | correct | ถูกต้อง | C'est tout à fait ça. | 0.881 | 0.331 |
+| vegetables-potato | th | la pomme de terre | มันฝรั่ง | Ce sont des frites. | 0.621 | 0.334 |
+| jobs-mechanic | th | le mécanicien | ช่างซ่อมรถ | Le réparateur. | 0.583 | 0.336 |
+| actions-waving_hand | th | saluer de la main | โบกมือ | Je vous salue. | 0.793 | 0.336 |
+| school-straight_ruler | th | la règle | ไม้บรรทัด | Le bâton. | 0.345 | 0.337 |
+| birds-peacock | th | le paon | นกยูง | Un oiseau de proie. | 0.567 | 0.34 |
+| actions-person_swimming | th | nager | ว่ายน้ำ | Pour nager. | 0.413 | 0.344 |
+| school-clipboard | th | le porte-bloc | คลิปบอร์ด | Le clavier. | 0.518 | 0.345 |
+| fruits-pear | th | la poire | ลูกแพร์ | Une paire. | 0.536 | 0.349 |
+| actions-ear | th | écouter | ฟัง | Je vous en prie. | 0.947 | 0.351 |
+| farm-turkey | th | la dinde | ไก่งวง | Le poulet. | 0.332 | 0.358 |
+| birds-snail | th | l’escargot | หอยทาก | Des coquillages. | 0.419 | 0.36 |
+| sea-g1 | th | Le dauphin saute. | โลมากระโดด | Il y a beaucoup de sauts. | 0.425 | 0.362 |
+| health-face_with_thermometer | th | la fièvre | ไข้ | Des œufs. | 0.869 | 0.368 |
+| travel-vertical_traffic_light | th | le feu tricolore | ไฟจราจร | Les feux de circulation. | 0.533 | 0.371 |
+| travel-airplane_departure | th | le départ | ขาออก | Les jambes dehors. | 0.659 | 0.372 |
+| farm-ewe | th | le mouton | แกะ | Une brebis. | 0.55 | 0.374 |
+| f5 | th | L'addition, s'il vous plaît. | เช็กบิลด้วย | Un chèque aussi. | 0.237 | 0.375 |
+| weather-umbrella_with_rain_drops | th | le parapluie | ร่ม | Une ombre. | 0.441 | 0.375 |
+| sports-goal_net | th | le but | ประตู | La porte ! | 0.407 | 0.378 |
+| family-couple_with_heart | th | le couple | คู่รัก | Ils sont amoureux. | 0.817 | 0.382 |
+| health-adhesive_bandage | th | le pansement | พลาสเตอร์ปิดแผล | Le bandage ferme la plaie. | 0.324 | 0.387 |
+| objects-battery | th | la pile | ถ่าน | Le charbon. | 0.496 | 0.394 |
+| sea-coral | th | le corail | ปะการัง | Les récifs. | 0.405 | 0.398 |
+| travel-construction | th | les travaux | งานก่อสร้างถนน | Le chantier routier. | 0.587 | 0.4 |
+| time-hourglass_done | th | le sablier | นาฬิกาทราย | Une horloge de sable. | 0.502 | 0.403 |
+| games-g1 | th | C’est ton tour ! | ตาของเธอแล้ว | Elle a les yeux. | 0.486 | 0.409 |
+| sports-person_surfing | th | le surf | โต้คลื่น | Une vague. | 0.527 | 0.414 |
+| health-x_ray | th | la radio | ภาพเอกซเรย์ | Les rayons X. | 0.31 | 0.415 |
+| transport-tram | th | le tramway | รถราง | Une voiture. | 0.716 | 0.416 |
+| farm-baby_chick | th | le poussin | ลูกไก่ | Une poule. | 0.423 | 0.42 |
+| meals-baguette_bread | th | la baguette | ขนมปังฝรั่งเศส | Le pain français. | 0.509 | 0.423 |
+| fruits-tangerine | th | la mandarine | ส้ม | Elle est orange. | 0.592 | 0.427 |
+| games-circus_tent | th | le cirque | ละครสัตว์ | Le théâtre des animaux. | 0.467 | 0.429 |
+| family-old_man | th | le grand-père | ตา | Les yeux ! | 0.558 | 0.43 |
+| feelings-pensive_face | th | triste | เศร้า | Je suis désolée. | 0.928 | 0.432 |
+| meals-honey_pot | th | le miel | น้ำผึ้ง | Une abeille. | 0.698 | 0.435 |
+| farm-rooster | th | le coq | ไก่ตัวผู้ | Le mâle. | 0.639 | 0.436 |
+| objects-locked | th | le cadenas | แม่กุญแจ | La mère des clés. | 0.601 | 0.437 |
+| farm-mouse | th | la souris | หนู | Je suis un rat. | 0.629 | 0.439 |
+| sports-trophy | th | la coupe | ถ้วยรางวัล | Le trophée. | 0.469 | 0.44 |
+| feelings-star_struck | th | émerveillé | ทึ่ง | Ça m'étonne. | 0.815 | 0.441 |
+| wild-fox | th | le renard | สุนัขจิ้งจอก | Le chien de traîneau. | 0.55 | 0.445 |
+| signs-cross_mark | th | faux | ผิด | C'est pas vrai. | 0.714 | 0.45 |
+| school-briefcase | th | la mallette | กระเป๋าเอกสาร | Une valise. | 0.493 | 0.45 |
+| bathroom-lotion_bottle | th | la crème | โลชั่น | Une lotion. | 0.407 | 0.453 |
+| birds-spider | th | l’araignée | แมงมุม | Le singe. | 0.745 | 0.454 |
+| sea-seal | th | le phoque | แมวน้ำ | Le chat d'eau. | 0.508 | 0.454 |
+| wild-leopard | th | le léopard | เสือดาว | Le tigre. | 0.598 | 0.456 |
+| actions-handshake | th | serrer la main | จับมือ | Prends ma main | 0.81 | 0.457 |
+| sweets-popcorn | th | le pop-corn | ป๊อปคอร์น | Des pommes de terre. | 0.687 | 0.461 |
+| sea-shrimp | th | la crevette | กุ้ง | Le coq. | 0.618 | 0.461 |
+| travel-motorway | th | l’autoroute | ทางด่วน | À l'aéroport. | 0.838 | 0.462 |
+| sports-basketball | th | le basket | บาสเกตบอล | Je joue au basket. | 0.498 | 0.463 |
+| clothes-scarf | th | l’écharpe | ผ้าพันคอ | Le collier. | 0.628 | 0.464 |
+| numbers-keycap_1 | th | un | หนึ่ง | Il y en a un. | 0.867 | 0.465 |
+| colors-purple_square | th | violet | สีม่วง | Pourpre. | 0.783 | 0.468 |
+| clothes-thong_sandal | th | les tongs | รองเท้าแตะ | Touchez les chaussures. | 0.663 | 0.47 |
+| objects-flashlight | th | la lampe de poche | ไฟฉาย | Les feux. | 0.675 | 0.47 |
+| bathroom-broom | th | le balai | ไม้กวาด | Une brosse à dents. | 0.52 | 0.471 |
+| tech-headphone | th | le casque audio | หูฟัง | Je vous écoute. | 0.776 | 0.472 |
+| time-g1 | th | Bonjour, bon matin ! | อรุณสวัสดิ์ | Je vous salue. | 0.393 | 0.475 |
+| plants-evergreen_tree | th | le sapin | ต้นสน | Les arbres à foin. | 0.575 | 0.476 |
+| farm-camel | th | le dromadaire | อูฐ | Le chameau. | 0.209 | 0.477 |
+| sports-running_shirt | th | le maillot | เสื้อกีฬา | Une tenue de sport. | 0.714 | 0.477 |
+| accessories-gem_stone | th | la pierre précieuse | อัญมณี | Des bijoux. | 0.615 | 0.479 |
+| health-syringe | th | la piqûre | การฉีดยา | Une injection. | 0.651 | 0.48 |
+| transport-kick_scooter | th | la trottinette | สกูตเตอร์เด็ก | Un scooter pour les enfants. | 0.448 | 0.482 |
+| tech-keyboard | th | le clavier | แป้นพิมพ์ | Une imprimante. | 0.8 | 0.483 |
+| birds-eagle | th | l’aigle | นกอินทรี | L'oiseau d'entrée. | 0.53 | 0.484 |
+| sports-ice_skate | th | le patinage | สเก็ตน้ำแข็ง | Les patins à glace. | 0.677 | 0.486 |
+| actions-microphone | th | chanter | ร้องเพลง | Ils chantent. | 0.69 | 0.487 |
+| house-framed_picture | th | le tableau | ภาพวาด | Une peinture. | 0.576 | 0.487 |
+| objects-envelope | th | l’enveloppe | ซองจดหมาย | La boîte aux lettres. | 0.692 | 0.487 |
+| sports-person_swimming | th | la natation | การว่ายน้ำ | Pour nager. | 0.791 | 0.488 |
+| feelings-worried_face | th | inquiet | กังวล | Je m'inquiète. | 0.795 | 0.492 |
+| feelings-astonished_face | th | surpris | แปลกใจ | Ça m'étonne. | 0.905 | 0.495 |
+| feelings-smiling_face_with_sunglasses | th | détendu | ผ่อนคลาย | Je vous en prie, détendez-vous. | 0.919 | 0.495 |
+| family-family_man_boy | th | le père | พ่อ | Je vous en prie, papa. | 0.927 | 0.496 |
+| games-fireworks | th | le feu d’artifice | ดอกไม้ไฟ | Des fleurs de feu. | 0.634 | 0.5 |
+| places-department_store | th | le grand magasin | ห้างสรรพสินค้า | Le centre commercial. | 0.699 | 0.501 |
+| jobs-health_worker | th | le médecin | หมอ | Je vous en prie, Docteur. | 0.901 | 0.503 |
+| games-g2 | th | Bonne fête ! | สุขสันต์วันหยุด | Je vous souhaite une bonne fin de semaine. | 0.703 | 0.504 |
+| vegetables-bell_pepper | th | le poivron | พริกหวาน | Des pommes de terre. | 0.573 | 0.506 |
+| wild-panda | th | le panda | แพนด้า | Je vous en prie, Panda. | 0.751 | 0.51 |
+| actions-clapping_hands | th | applaudir | ปรบมือ | Je vous en prie, applaudissez-moi. | 0.315 | 0.511 |
+| clothes-running_shoe | th | les baskets | รองเท้าผ้าใบ | Des chaussures en tissu. | 0.709 | 0.512 |
+| signs-plus | th | plus | บวก | C'est un plus. | 0.909 | 0.521 |
+| travel-bellhop_bell | th | la réception | แผนกต้อนรับ | Le plan d'accueil. | 0.72 | 0.522 |
+| birds-flamingo | th | le flamant rose | นกฟลามิงโก | Les flamants. | 0.393 | 0.523 |
+| numbers-keycap_7 | th | sept | เจ็ด | Il y en a sept. | 0.574 | 0.524 |
+| birds-dove | th | la colombe | นกพิราบ | Les pigeons. | 0.447 | 0.525 |
+| health-drop_of_blood | th | le sang | เลือด | Il y a du sang. | 0.773 | 0.525 |
+| sports-volleyball | th | le volley | วอลเลย์บอล | Je joue au volleyball. | 0.764 | 0.525 |
+| farm-ox | th | le bœuf | วัวตัวผู้ | Le mâle. | 0.573 | 0.528 |
+| places-convenience_store | th | l’épicerie | ร้านขายของชำ | Une boutique de vêtements. | 0.644 | 0.53 |
+| clothes-kimono | th | le kimono | กิโมโน | Je vous en prie, Kimono. | 0.773 | 0.532 |
+| bathroom-razor | th | le rasoir | มีดโกน | Un couteau à raser. | 0.69 | 0.534 |
+| kitchen-canned_food | th | la boîte de conserve | อาหารกระป๋อง | La nourriture en conserve. | 0.675 | 0.535 |
+| actions-person_walking | th | marcher | เดิน | Je marche. | 0.915 | 0.537 |
+| travel-g2 | th | Un billet pour Rabat, s’il vous plaît. | ขอตั๋วไปราบัตหนึ่งใบ | Je veux un billet pour l'aéroport. | 0.588 | 0.537 |
+| school-calendar | th | l’agenda | สมุดนัดหมาย | La liste des rendez-vous. | 0.58 | 0.539 |
+| clothes-jeans | th | le jean | กางเกงยีนส์ | Des jeans. | 0.556 | 0.542 |
+| signs-right_arrow | th | la droite | ขวา | Vous avez raison. | 0.897 | 0.545 |
+| fruits-blueberries | th | les myrtilles | บลูเบอร์รี | Des bleuets. | 0.377 | 0.546 |
+| signs-up_arrow | th | le haut | ข้างบน | Il est en haut. | 0.778 | 0.549 |
+| weather-cloud_with_rain | th | la pluie | ฝน | Il pleut. | 0.911 | 0.549 |
+| jobs-astronaut | th | l’astronaute | นักบินอวกาศ | Un pilote spatial. | 0.817 | 0.549 |
+| sports-baseball | th | le baseball | เบสบอล | Je joue au base-ball. | 0.873 | 0.552 |
+| sports-horse_racing | th | l’équitation | ขี่ม้า | À cheval. | 0.685 | 0.556 |
+| numbers-keycap_9 | th | neuf | เก้า | Il y en a neuf. | 0.655 | 0.557 |
+| drinks-ice | th | le glaçon | น้ำแข็ง | Il y a de la glace. | 0.769 | 0.558 |
+| transport-canoe | th | le canoë | เรือแคนู | Une canoë. | 0.654 | 0.559 |
+| f6 | th | Voilà. Bonne journée ! | ได้เลย ขอให้เป็นวันที่ดี | Je vous souhaite une bonne journée. | 0.595 | 0.561 |
+| x6 | th | Je le condenserai pour n'en garder que l'essentiel. | ฉันจะย่อให้เหลือแต่ใจความสำคัญ | Je vais vous dire ce qu'il y a de plus important. | 0.638 | 0.562 |
+| birds-owl | th | la chouette | นกฮูก | Le coq. | 0.678 | 0.564 |
+| drinks-beverage_box | th | le jus | น้ำผลไม้ | Le jus de fruits. | 0.622 | 0.566 |
+| family-family_woman_girl | th | la mère | แม่ | Je vous en prie, maman. | 0.932 | 0.567 |
+| numbers-keycap_10 | th | dix | สิบ | Une dizaine. | 0.839 | 0.568 |
+| kitchen-spoon | th | la cuillère | ช้อน | Une tasse. | 0.74 | 0.568 |
+| plants-herb | th | l’herbe aromatique | สมุนไพร | Des herbes. | 0.659 | 0.571 |
+| landscapes-rock | th | le rocher | ก้อนหิน | Une pierre. | 0.564 | 0.571 |
+| actions-eyes | th | regarder | ดู | Vous voyez ? | 0.882 | 0.576 |
+| transport-sailboat | th | le voilier | เรือใบ | Le vaisseau. | 0.588 | 0.577 |
+| travel-tent | th | la tente | เต็นท์ | Une tente. | 0.668 | 0.581 |
+| body-bone | th | l’os | กระดูก | Des os. | 0.607 | 0.582 |
+| landscapes-camping | th | le camping | ที่ตั้งแคมป์ | Où est le campement ? | 0.703 | 0.583 |
+| actions-thinking_face | th | réfléchir | คิด | Je pense. | 0.915 | 0.583 |
+| colors-green_square | th | vert | สีเขียว | Il est vert. | 0.876 | 0.587 |
+| jobs-teacher | th | l’enseignant | ครู | Je vous en prie, professeur. | 0.897 | 0.587 |
+| jobs-factory_worker | th | l’ouvrier | คนงานโรงงาน | Des ouvriers d'usine. | 0.781 | 0.592 |
+| time-stopwatch | th | le chronomètre | นาฬิกาจับเวลา | L'horloge est à l'heure. | 0.844 | 0.594 |
+| objects-wrench | th | la clé à molette | ประแจ | Les clés. | 0.364 | 0.594 |
+| fruits-avocado | th | l’avocat | อะโวคาโด | C'est une avocate. | 0.52 | 0.602 |
+| drinks-bubble_tea | th | le thé aux perles | ชานมไข่มุก | Une tasse de lait de perle. | 0.421 | 0.604 |
+| vegetables-pea_pod | th | les petits pois | ถั่วลันเตา | Des haricots. | 0.461 | 0.606 |
+| family-bust_in_silhouette | th | la personne | คน | Des gens. | 0.888 | 0.606 |
+| house-light_bulb | th | l’ampoule | หลอดไฟ | Une lampe. | 0.731 | 0.607 |
+| objects-wrapped_gift | th | le cadeau | ของขวัญ | C'était un cadeau. | 0.889 | 0.608 |
+| drinks-teapot | th | la théière | กาน้ำชา | Une tasse de thé. | 0.646 | 0.609 |
+| wild-gorilla | th | le gorille | กอริลลา | Je suis un gorille. | 0.591 | 0.609 |
+| house-bed | th | le lit | เตียง | Le lit. | 0.494 | 0.609 |
+| clothes-woman_s_boot | th | les bottes | รองเท้าบูท | Les souliers. | 0.741 | 0.609 |
+| feelings-crying_face | th | pleurer | ร้องไห้ | Je pleure. | 0.833 | 0.61 |
+| numbers-keycap_8 | th | huit | แปด | Il y en a huit. | 0.815 | 0.612 |
+| numbers-keycap_6 | th | six | หก | Il y en a six. | 0.844 | 0.614 |
+| wild-chipmunk | th | l’écureuil | กระรอก | Des écureuils. | 0.472 | 0.614 |
+| actions-person_raising_hand | th | lever la main | ยกมือ | Les mains en l'air. | 0.911 | 0.614 |
+| actions-writing_hand | th | écrire | เขียน | Je l'ai écrit. | 0.955 | 0.615 |
+| colors-red_square | th | rouge | สีแดง | Il est rouge. | 0.899 | 0.616 |
+| bathroom-wastebasket | th | la poubelle | ถังขยะ | Une poubelle. | 0.799 | 0.618 |
+| plants-fallen_leaf | th | la feuille morte | ใบไม้แห้ง | Les feuilles sèches. | 0.722 | 0.622 |
+| s5 | th | Bien sûr, les cabines sont au fond. | ได้เลย ห้องลองเสื้ออยู่ด้านใน | C'est bon, le vestiaire est à l'intérieur. | 0.429 | 0.623 |
+| jobs-detective | th | le détective | นักสืบ | Je suis un détective. | 0.812 | 0.625 |
+| actions-sleeping_face | th | dormir | นอนหลับ | Il est endormi. | 0.967 | 0.625 |
+| g1 | th | Bonjour ! Comment allez-vous ? | สวัสดี สบายดีไหม | Ça va ? | 0.792 | 0.626 |
+| ph2 | th | Oui, merci. Mon fils est allergique aux arachides. | สะดวกดี ขอบคุณ ลูกชายของฉันแพ้ถั่วลิสง | C'est très bien. Merci. Mon fils a perdu les haricots. | 0.694 | 0.628 |
+| feelings-red_heart | th | l’amour | ความรัก | Je vous aime. | 0.966 | 0.628 |
+| x1 | th | Il ne faut pas vendre la peau de l'ours avant de l'avoir tué. | อย่านับไก่ก่อนไข่จะฟัก | Ne comptez pas les poules avant qu'elles n'éclosent. | 0.612 | 0.629 |
+| jobs-firefighter | th | le pompier | นักดับเพลิง | Les pompiers. | 0.668 | 0.633 |
+| actions-face_savoring_food | th | manger | กิน | Vous mangez. | 0.88 | 0.633 |
+| meals-bread | th | le pain | ขนมปัง | Le pain. | 0.398 | 0.634 |
+| clothes-t_shirt | th | le tee-shirt | เสื้อยืด | Une chemise. | 0.834 | 0.635 |
+| clothes-dress | th | la robe | ชุดกระโปรง | Les sous-vêtements. | 0.66 | 0.636 |
+| colors-orange_square | th | orange | สีส้ม | Elle est orange. | 0.876 | 0.637 |
+| landscapes-beach_with_umbrella | th | la plage | ชายหาด | Un homme à la plage. | 0.932 | 0.639 |
+| numbers-keycap_3 | th | trois | สาม | Il y en a trois. | 0.902 | 0.64 |
+| feelings-fearful_face | th | effrayé | กลัว | Je suis effrayée. | 0.781 | 0.64 |
+| wild-bear | th | l’ours | หมี | Un ours. | 0.501 | 0.641 |
+| feelings-hot_face | th | avoir chaud | ร้อน | Il fait chaud. | 0.804 | 0.642 |
+| family-boy | th | le garçon | เด็กผู้ชาย | Je suis un garçon. | 0.844 | 0.645 |
+| feelings-face_with_tears_of_joy | th | rire | หัวเราะ | Je suis en train de rire. | 0.942 | 0.645 |
+| transport-motorcycle | th | la moto | มอเตอร์ไซค์ | Une moto. | 0.779 | 0.645 |
+| colors-black_large_square | th | noir | สีดำ | Il est noir. | 0.94 | 0.646 |
+| numbers-keycap_5 | th | cinq | ห้า | Il y en a cinq. | 0.879 | 0.646 |
+| music-microphone | th | le micro | ไมโครโฟน | Le microphone. | 0.69 | 0.647 |
+| fruits-lemon | th | le citron | เลมอน | C'est une citronne. | 0.496 | 0.649 |
+| farm-chicken | th | la poule | แม่ไก่ | La mère de la poule. | 0.706 | 0.649 |
+| accessories-backpack | th | le sac à dos | กระเป๋าเป้ | Une valise. | 0.84 | 0.649 |
+| tech-telescope | th | le télescope | กล้องโทรทรรศน์ | Une caméra télescopique. | 0.578 | 0.649 |
+| actions-speaking_head | th | parler | พูด | Vous parlez. | 0.905 | 0.65 |
+| numbers-keycap_2 | th | deux | สอง | Le deuxième. | 0.968 | 0.651 |
+| vegetables-peanuts | th | les cacahuètes | ถั่วลิสง | Des haricots. | 0.639 | 0.652 |
+| wild-hippopotamus | th | l’hippopotame | ฮิปโปโปเตมัส | L'Hippothème. | 0.625 | 0.653 |
+| actions-man_dancing | th | danser | เต้น | Je danse. | 0.853 | 0.653 |
+| bathroom-bathtub | th | la baignoire | อ่างอาบน้ำ | Une douche. | 0.85 | 0.653 |
+| travel-customs | th | la douane | ศุลกากร | Les douaniers. | 0.745 | 0.653 |
+| actions-tumbler_glass | th | boire | ดื่ม | Vous buvez. | 0.953 | 0.655 |
+| health-nauseated_face | th | malade | ป่วย | Il est malade. | 0.936 | 0.656 |
+| landscapes-national_park | th | le parc naturel | อุทยาน | Le parc. | 0.761 | 0.658 |
+| bathroom-toilet | th | les toilettes | ห้องส้วม | Une salle de bains. | 0.757 | 0.658 |
+| farm-cat | th | le chat | แมว | Le chat. | 0.596 | 0.66 |
+| landscapes-globe_showing_europe_africa | th | la Terre | โลก | Le monde. | 0.719 | 0.66 |
+| o3 | th | Je ne suis pas tout à fait d'accord : la fin était logique. | ฉันไม่ค่อยเห็นด้วย ตอนจบมีเหตุผลดี | Je ne suis pas du tout d'accord. | 0.771 | 0.661 |
+| s6 | th | Elle me va bien. Je peux payer par carte ? | ใส่พอดีเลย จ่ายด้วยบัตรได้ไหม | Vous pouvez payer par carte ? | 0.671 | 0.663 |
+| signs-minus | th | moins | ลบ | Soit moins. | 0.564 | 0.663 |
+| vegetables-ear_of_corn | th | le maïs | ข้าวโพด | Le blé. | 0.696 | 0.663 |
+| jobs-technologist | th | le développeur | นักพัฒนาซอฟต์แวร์ | Des développeurs de logiciels. | 0.802 | 0.663 |
+| actions-cooking | th | cuisiner | ทำอาหาร | Je fais la cuisine. | 0.845 | 0.663 |
+| actions-person_running | th | courir | วิ่ง | Il faut courir. | 0.916 | 0.664 |
+| time-mantelpiece_clock | th | l’horloge | นาฬิกา | La montre. | 0.877 | 0.665 |
+| school-graduation_cap | th | le diplôme | การสำเร็จการศึกษา | La remise des diplômes. | 0.735 | 0.666 |
+| drinks-hot_beverage | th | le café | กาแฟ | Une tasse de café. | 0.862 | 0.667 |
+| x4 | th | Je vais formuler ma critique sous forme de suggestion. | ฉันจะเสนอคำติชมในรูปของข้อเสนอแนะ | Je vais vous faire une suggestion. | 0.817 | 0.669 |
+| numbers-keycap_4 | th | quatre | สี่ | Ça fait quatre. | 0.906 | 0.669 |
+| time-night_with_stars | th | la nuit | กลางคืน | Au milieu de la nuit. | 0.921 | 0.669 |
+| school-notebook | th | le cahier | สมุด | Le livre. | 0.701 | 0.672 |
+| vegetables-g2 | th | Je coupe un oignon. | ฉันหั่นหัวหอม | Je me coupe la tête. | 0.791 | 0.674 |
+| plants-rose | th | la rose | ดอกกุหลาบ | Des roses. | 0.706 | 0.675 |
+| family-old_woman | th | la grand-mère | ยาย | Je suis grand-mère. | 0.372 | 0.675 |
+| ps1 | th | Bonjour, je suis l'infirmier de garde. Où avez-vous mal ? | สวัสดี ฉันเป็นพยาบาลเวร เจ็บตรงไหน | Je suis infirmière. | 0.873 | 0.679 |
+| places-bridge_at_night | th | le pont | สะพาน | Le pont ! | 0.746 | 0.682 |
+| d2 | th | Allez tout droit, puis tournez à gauche. | ตรงไป แล้วเลี้ยวซ้าย | En avant et à gauche. | 0.849 | 0.683 |
+| objects-camera | th | l’appareil photo | กล้องถ่ายรูป | Une caméra. | 0.907 | 0.683 |
+| sports-tennis | th | le tennis | เทนนิส | Je joue au tennis. | 0.895 | 0.684 |
+| ph6 | th | Avec plaisir, merci pour votre accueil. | ยินดีเลย ขอบคุณสำหรับการต้อนรับ | Merci de m'avoir accueilli. | 0.823 | 0.687 |
+| sea-spiral_shell | th | le coquillage | เปลือกหอย | Des coquillages. | 0.577 | 0.687 |
+| r4 | th | En tramway ; le trajet dure vingt minutes. | นั่งรถราง ใช้เวลายี่สิบนาที | Dans la voiture. Ça prend 20 minutes. | 0.701 | 0.688 |
+| transport-airplane | th | l’avion | เครื่องบิน | L'avion est parti. | 0.914 | 0.688 |
+| farm-duck | th | le canard | เป็ด | Des canards. | 0.677 | 0.689 |
+| k6 | th | Oui ! C'est génial ! | ได้เลย สุดยอดไปเลย | C'est très bien. | 0.553 | 0.69 |
+| colors-brown_square | th | marron | สีน้ำตาล | Une couleur brune. | 0.831 | 0.69 |
+| bathroom-g2 | th | Je prends une douche. | ฉันอาบน้ำฝักบัว | J'ai pris une douche de poudre. | 0.817 | 0.69 |
+| sports-skier | th | le ski | สกี | Je fais du ski. | 0.76 | 0.69 |
+| landscapes-snow_capped_mountain | th | le sommet enneigé | ยอดเขาที่มีหิมะ | Une montagne enneigée. | 0.721 | 0.691 |
+| fruits-grapes | th | le raisin | องุ่น | Des raisins. | 0.519 | 0.692 |
+| health-face_with_medical_mask | th | le masque | หน้ากากอนามัย | Le masque médical. | 0.57 | 0.695 |
+| feelings-grinning_face | th | heureux | มีความสุข | Je suis heureux. | 0.944 | 0.695 |
+| actions-telephone_receiver | th | téléphoner | โทรศัพท์ | Le téléphone. | 0.784 | 0.697 |
+| feelings-cold_face | th | avoir froid | หนาว | Il fait froid. | 0.83 | 0.697 |
+| drinks-glass_of_milk | th | le lait | นม | Le lait. | 0.662 | 0.699 |
+| tech-satellite | th | le satellite | ดาวเทียม | Des satellites. | 0.749 | 0.699 |
+| school-memo | th | la note | บันทึก | Une note. | 0.663 | 0.704 |
+| accessories-purse | th | le porte-monnaie | กระเป๋าสตางค์ | Le portefeuille. | 0.837 | 0.705 |
+| sea-water_wave | th | la vague | คลื่น | Une vague. | 0.693 | 0.706 |
+| music-clapper_board | th | le cinéma | ภาพยนตร์ | Le film. | 0.879 | 0.706 |
+| accessories-closed_umbrella | th | le parapluie fermé | ร่มที่หุบอยู่ | L'ombrelle est fermée. | 0.534 | 0.707 |
+| wild-deer | th | le cerf | กวาง | Des cerfs. | 0.584 | 0.708 |
+| plants-cherry_blossom | th | la fleur de cerisier | ดอกซากุระ | Une fleur de sakura. | 0.729 | 0.708 |
+| sweets-cookie | th | le biscuit | คุกกี้ | Des biscuits. | 0.698 | 0.709 |
+| places-post_office | th | la poste | ไปรษณีย์ | À la poste. | 0.636 | 0.713 |
+| sweets-pie | th | la tarte | พาย | Une tarte. | 0.439 | 0.716 |
+| tech-microscope | th | le microscope | กล้องจุลทรรศน์ | Une caméra microscopique. | 0.586 | 0.716 |
+| sports-badminton | th | le badminton | แบดมินตัน | Je joue au badminton. | 0.745 | 0.716 |
+| weather-cloud | th | le nuage | เมฆ | Des nuages. | 0.821 | 0.717 |
+| g3 | th | Bien, merci. Bienvenue ! | สบายดี ขอบคุณ ยินดีต้อนรับ | Je vais bien, merci. | 0.803 | 0.719 |
+| pl5 | th | Relancez-le aujourd'hui, sinon nous paierons des frais de surestaries. | ติดตามเขาวันนี้ ไม่อย่างนั้นเราจะต้องจ่ายค่าเสียเวลาเรือ | Suivez-le aujourd'hui ou nous aurons à payer pour le temps perdu. | 0.626 | 0.719 |
+| fruits-peach | th | la pêche | ลูกพีช | Des pêches. | 0.441 | 0.719 |
+| jobs-police_officer | th | le policier | ตำรวจ | La police ! | 0.886 | 0.719 |
+| transport-ambulance | th | l’ambulance | รถพยาบาล | Une ambulance ! | 0.787 | 0.719 |
+| landscapes-desert | th | le désert | ทะเลทราย | L'océan du désert. | 0.812 | 0.72 |
+| pt4 | th | Environ huit cents, pendant quarante minutes ; le service est rétabli. | ประมาณแปดร้อยคน เป็นเวลาสี่สิบนาที ตอนนี้ระบบกลับมาใช้งานได้แล้ว | 800 personnes pendant 40 minutes. Le système est de nouveau opérationnel. | 0.735 | 0.721 |
+| travel-luggage | th | la valise | กระเป๋าเดินทาง | Une valise. | 0.765 | 0.721 |
+| meals-g2 | th | La soupe est chaude. | ซุปร้อน | Il fait chaud. | 0.717 | 0.722 |
+| house-elevator | th | l’ascenseur | ลิฟต์ | Dans l'ascenseur. | 0.424 | 0.723 |
+| plants-deciduous_tree | th | l’arbre | ต้นไม้ | Des arbres. | 0.865 | 0.724 |
+| weather-sun | th | le soleil | ดวงอาทิตย์ | Le soleil est là. | 0.848 | 0.724 |
+| plants-g2 | th | J’arrose les plantes. | ฉันรดน้ำต้นไม้ | Je bois de l'eau des arbres. | 0.744 | 0.725 |
+| drinks-droplet | th | l’eau | น้ำ | Il y a de l'eau. | 0.957 | 0.726 |
+| plants-palm_tree | th | le palmier | ต้นปาล์ม | Des palmiers. | 0.72 | 0.726 |
+| objects-teddy_bear | th | l’ours en peluche | ตุ๊กตาหมี | Une poupée d'ours. | 0.739 | 0.729 |
+| travel-ticket | th | le billet | ตั๋ว | Un billet. | 0.77 | 0.729 |
+| body-tooth | th | la dent | ฟัน | Des dents. | 0.842 | 0.73 |
+| f1 | th | Bonjour, qu'est-ce que vous désirez ? | สวัสดี รับอะไรดี | Bonjour, comment allez-vous ? | 0.637 | 0.732 |
+| m2 | th | C'est un premier pas, mais compte tenu du volume, nous attendions davantage. | เป็นจุดเริ่มต้นที่ดี แต่ด้วยปริมาณขนาดนี้ เราหวังไว้มากกว่านั้น | C'est un bon début, mais avec ce volume, on espère plus. | 0.702 | 0.733 |
+| wild-elephant | th | l’éléphant | ช้าง | Un éléphant. | 0.691 | 0.733 |
+| music-camera_with_flash | th | la photographie | การถ่ายภาพ | Une photo. | 0.889 | 0.734 |
+| colors-blue_square | th | bleu | สีน้ำเงิน | La couleur bleue. | 0.882 | 0.735 |
+| actions-person_taking_bath | th | prendre un bain | อาบน้ำ | Je prends une douche. | 0.869 | 0.735 |
+| body-raised_hand | th | la main | มือ | Une main. | 0.919 | 0.736 |
+| o2 | th | À mon avis, l'histoire était originale, mais la fin m'a déçu. | ฉันคิดว่าเนื้อเรื่องแปลกใหม่ แต่ตอนจบทำให้ผิดหวัง | J'ai trouvé le sujet bizarre, mais la fin décevante. | 0.773 | 0.737 |
+| plants-potted_plant | th | la plante | พืช | Une plante. | 0.869 | 0.737 |
+| weather-snowman | th | le bonhomme de neige | ตุ๊กตาหิมะ | Une poupée de neige. | 0.821 | 0.737 |
+| ps6 | th | Merci, ça me rassure. | ขอบคุณ ค่อยสบายใจขึ้น | Merci de m'avoir rassurée. | 0.694 | 0.739 |
+| body-eye | th | l’œil | ตา | Les yeux ! | 0.894 | 0.739 |
+| vegetables-carrot | th | la carotte | แครอท | Une carotte. | 0.806 | 0.74 |
+| ps3 | th | Sur une échelle de un à dix, quelle est l'intensité de la douleur ? | ถ้าให้คะแนนหนึ่งถึงสิบ เจ็บมากแค่ไหน | Si je vous donne une note de 1 à 10, combien ça fait de mal ? | 0.698 | 0.741 |
+| meals-egg | th | l’œuf | ไข่ | Des œufs. | 0.849 | 0.741 |
+| time-watch | th | la montre | นาฬิกาข้อมือ | Une montre. | 0.693 | 0.742 |
+| sweets-chocolate_bar | th | le chocolat | ช็อกโกแลต | C'est du chocolat. | 0.872 | 0.742 |
+| places-fountain | th | la fontaine | น้ำพุ | Une fontaine. | 0.739 | 0.742 |
+| a5 | th | Et comment garantir l'équité entre ceux qui peuvent télétravailler et les autres ? | แล้วจะสร้างความเป็นธรรมระหว่างคนที่ทำงานจากบ้านได้กับคนอื่นอย่างไร | Alors, comment établir l'équilibre entre ceux qui travaillent à domicile et les autres ? | 0.739 | 0.745 |
+| actions-open_book | th | lire | อ่าน | À lire. | 0.905 | 0.745 |
+| feelings-tired_face | th | fatigué | เหนื่อย | Je suis fatigué. | 0.946 | 0.745 |
+| tech-e_mail | th | le courriel | อีเมล | Un courrier électronique. | 0.865 | 0.745 |
+| h6 | th | Je suis désolé, j'envoie un technicien tout de suite. | ขอโทษด้วย จะส่งช่างไปเดี๋ยวนี้ | Je suis désolée. Je vais vous envoyer ça tout de suite. | 0.75 | 0.746 |
+| signs-red_question_mark | th | la question | คำถาม | Une question. | 0.895 | 0.746 |
+| meals-sandwich | th | le sandwich | แซนด์วิช | Un sandwich. | 0.803 | 0.747 |
+| house-house | th | la maison | บ้าน | À la maison. | 0.938 | 0.748 |
+| places-hotel | th | l’hôtel | โรงแรม | À l'hôtel. | 0.88 | 0.749 |
+| k5 | th | On joue ensemble ? | มาเล่นด้วยกันไหม | Tu veux jouer avec moi ? | 0.868 | 0.75 |
+| feelings-angry_face | th | en colère | โกรธ | Je suis en colère. | 0.442 | 0.75 |
+| transport-delivery_truck | th | le camion | รถบรรทุก | Une camionnette. | 0.902 | 0.75 |
+| m5 | th | Nous pouvons l'inscrire dans le contrat, avec des pénalités en cas de retard. | เราระบุไว้ในสัญญาได้ พร้อมค่าปรับหากส่งล่าช้า | C'est écrit dans le contrat, avec une amende pour retard de livraison. | 0.866 | 0.751 |
+| body-index_pointing_up | th | le doigt | นิ้ว | Des doigts. | 0.695 | 0.751 |
+| weather-cloud_with_lightning | th | l’éclair | ฟ้าแลบ | Les éclairs. | 0.552 | 0.753 |
+| house-door | th | la porte | ประตู | La porte ! | 0.88 | 0.753 |
+| plants-hibiscus | th | la fleur | ดอกไม้ | Des fleurs. | 0.874 | 0.755 |
+| transport-bicycle | th | le vélo | จักรยาน | Une bicyclette. | 0.851 | 0.755 |
+| fruits-olive | th | l’olive | มะกอก | Des olives. | 0.528 | 0.757 |
+| jobs-student | th | l’étudiant | นักศึกษา | Des étudiants. | 0.921 | 0.757 |
+| x2 | th | Vous avez raison, restons prudents tant que le contrat n'est pas signé. | คุณพูดถูก เราระวังไว้ก่อนจนกว่าจะเซ็นสัญญา | Vous avez raison. On attend avant de signer. | 0.834 | 0.759 |
+| x3 | th | Dites-le-lui avec tact : il est très susceptible. | บอกเขาอย่างนุ่มนวลนะ เขาใจน้อยมาก | Dis-le-lui doucement. Il est trop cruel. | 0.685 | 0.759 |
+| plants-tulip | th | la tulipe | ดอกทิวลิป | Une fleur de tulipes. | 0.796 | 0.761 |
+| jobs-artist | th | l’artiste | ศิลปิน | Un artiste. | 0.878 | 0.761 |
+| tech-robot | th | le robot | หุ่นยนต์ | Des robots. | 0.789 | 0.761 |
+| sweets-shortcake | th | le gâteau | เค้ก | Des gâteaux. | 0.763 | 0.763 |
+| body-nose | th | le nez | จมูก | Le nez. | 0.8 | 0.764 |
+| farm-cow | th | la vache | วัว | Une vache. | 0.736 | 0.765 |
+| family-baby | th | le bébé | ทารก | Un bébé. | 0.883 | 0.766 |
+| tech-video_camera | th | la caméra | กล้องวิดีโอ | Une caméra vidéo. | 0.785 | 0.766 |
+| a4 | th | C'est pourquoi je défends un modèle hybride, avec deux jours au bureau. | ฉันจึงสนับสนุนรูปแบบผสม โดยเข้าออฟฟิศสองวัน | J'ai donc encouragé une approche mixte en entrant dans le bureau pour deux jours. | 0.798 | 0.767 |
+| family-child | th | l’enfant | เด็ก | Les enfants. | 0.914 | 0.767 |
+| actions-person_biking | th | faire du vélo | ขี่จักรยาน | Je fais du vélo. | 0.928 | 0.767 |
+| sea-whale | th | la baleine | ปลาวาฬ | Une baleine. | 0.641 | 0.769 |
+| family-girl | th | la fille | เด็กผู้หญิง | Une fille. | 0.82 | 0.769 |
+| jobs-farmer | th | l’agriculteur | ชาวนา | Les paysans. | 0.853 | 0.769 |
+| pt1 | th | Le déploiement d'hier a provoqué une panne en production. | การดีพลอยเมื่อวานทำให้ระบบโปรดักชันล่ม | L'amélioration d'hier a provoqué une panne de propulsion. | 0.579 | 0.771 |
+| time-sunset | th | le soir | ตอนเย็น | Dans la soirée. | 0.933 | 0.771 |
+| birds-honeybee | th | l’abeille | ผึ้ง | Une abeille. | 0.684 | 0.771 |
+| s4 | th | Du M, mais je voudrais l'essayer. | ไซซ์ M แต่ขอลองก่อน | C'est une taille M, mais je vais essayer. | 0.705 | 0.772 |
+| plants-leaf_fluttering_in_wind | th | la feuille | ใบไม้ | Les feuilles. | 0.84 | 0.772 |
+| weather-wind_face | th | le vent | ลม | Le vent. | 0.677 | 0.773 |
+| music-artist_palette | th | la peinture | การวาดภาพ | Des peintures. | 0.828 | 0.773 |
+| weather-tornado | th | la tornade | พายุทอร์นาโด | Une tornade. | 0.402 | 0.774 |
+| places-school | th | l’école | โรงเรียน | À l'école. | 0.951 | 0.774 |
+| meals-bowl_with_spoon | th | la soupe | ซุป | Une soupe. | 0.84 | 0.776 |
+| wild-monkey | th | le singe | ลิง | Le singe. | 0.678 | 0.776 |
+| landscapes-volcano | th | le volcan | ภูเขาไฟ | Un volcan. | 0.739 | 0.776 |
+| body-foot | th | le pied | เท้า | Les pieds. | 0.898 | 0.776 |
+| health-face_with_head_bandage | th | la blessure | บาดแผล | Une blessure. | 0.795 | 0.776 |
+| games-party_popper | th | la fête | งานเลี้ยง | Une fête. | 0.869 | 0.776 |
+| birds-bird | th | l’oiseau | นก | Les oiseaux. | 0.768 | 0.777 |
+| fruits-strawberry | th | la fraise | สตรอว์เบอร์รี | Des fraises. | 0.262 | 0.779 |
+| health-pill | th | le médicament | ยา | Des médicaments. | 0.88 | 0.779 |
+| house-chair | th | la chaise | เก้าอี้ | Une chaise. | 0.876 | 0.781 |
+| house-candle | th | la bougie | เทียน | Une bougie. | 0.755 | 0.781 |
+| a6 | th | En compensant par plus de flexibilité sur les horaires. | ชดเชยด้วยเวลาทำงานที่ยืดหยุ่นมากขึ้น | Cela se compense par des heures de travail plus flexibles. | 0.731 | 0.782 |
+| colors-white_large_square | th | blanc | สีขาว | Le blanc. | 0.952 | 0.782 |
+| places-hospital | th | l’hôpital | โรงพยาบาล | À l'hôpital. | 0.91 | 0.782 |
+| house-window | th | la fenêtre | หน้าต่าง | Une fenêtre. | 0.911 | 0.783 |
+| games-video_game | th | le jeu vidéo | วิดีโอเกม | Des jeux vidéo. | 0.919 | 0.783 |
+| clothes-billed_cap | th | la casquette | หมวกแก๊ป | Le chapeau. | 0.658 | 0.785 |
+| jobs-scientist | th | le scientifique | นักวิทยาศาสตร์ | Des scientifiques. | 0.918 | 0.787 |
+| objects-mobile_phone | th | le téléphone portable | โทรศัพท์มือถือ | Un téléphone portable. | 0.923 | 0.787 |
+| time-sunrise | th | le matin | ตอนเช้า | Dans la matinée. | 0.955 | 0.789 |
+| signs-left_arrow | th | la gauche | ซ้าย | À gauche. | 0.92 | 0.79 |
+| house-key | th | la clé | กุญแจ | Les clés. | 0.845 | 0.79 |
+| family-man | th | l’homme | ผู้ชาย | Un homme. | 0.84 | 0.791 |
+| body-ear | th | l’oreille | หู | Une oreille. | 0.872 | 0.791 |
+| sweets-g2 | th | Joyeux anniversaire ! | สุขสันต์วันเกิด | Je vous souhaite un joyeux anniversaire. | 0.857 | 0.792 |
+| places-factory | th | l’usine | โรงงาน | Une usine. | 0.922 | 0.792 |
+| vegetables-g1 | th | des carottes et des pommes de terre | แครอทกับมันฝรั่ง | Des carottes et des frites. | 0.685 | 0.793 |
+| objects-radio | th | la radio | วิทยุ | Une radio. | 0.835 | 0.793 |
+| tech-laptop | th | l’ordinateur portable | แล็ปท็อป | Un ordinateur portable. | 0.739 | 0.796 |
+| sea-shark | th | le requin | ฉลาม | Le requin. | 0.326 | 0.797 |
+| weather-snowflake | th | la neige | หิมะ | La neige ! | 0.913 | 0.797 |
+| m1 | th | Nous pouvons vous proposer une remise de cinq pour cent. | เราให้ส่วนลดได้ห้าเปอร์เซ็นต์ | On leur a offert une remise de 5%. | 0.859 | 0.798 |
+| transport-rocket | th | la fusée | จรวด | Une fusée. | 0.368 | 0.798 |
+| transport-helicopter | th | l’hélicoptère | เฮลิคอปเตอร์ | Un hélicoptère. | 0.684 | 0.799 |
+| o6 | th | Oui, surtout pour la musique et les acteurs. | แนะนำ โดยเฉพาะเรื่องดนตรีและนักแสดง | Des conseils, en particulier sur la musique et les acteurs. | 0.799 | 0.8 |
+| meals-cooked_rice | th | le riz | ข้าว | Le riz. | 0.715 | 0.801 |
+| d6 | th | Oui, le bus 12 s'arrête juste en face. | ได้ รถเมล์สาย 12 จอดตรงข้ามนี่เอง | J'ai reçu le bus de la ligne 12. Il s'arrête juste en face. | 0.749 | 0.802 |
+| h4 | th | Oui, de sept heures à dix heures, au rez-de-chaussée. | รวม ตั้งแต่เจ็ดโมงถึงสิบโมง ที่ชั้นล่าง | En tout, de 7h à 10h, au rez-de-chaussée. | 0.746 | 0.803 |
+| sweets-ice_cream | th | la glace | ไอศกรีม | Une glace. | 0.628 | 0.807 |
+| weather-fog | th | le brouillard | หมอก | Le brouillard. | 0.38 | 0.814 |
+| music-trumpet | th | la trompette | ทรัมเป็ต | Une trompette. | 0.661 | 0.815 |
+| wild-wolf | th | le loup | หมาป่า | Le loup ! | 0.673 | 0.816 |
+| clothes-socks | th | les chaussettes | ถุงเท้า | Des chaussettes. | 0.734 | 0.816 |
+| travel-world_map | th | la carte | แผนที่ | La carte. | 0.713 | 0.819 |
+| drinks-g1 | th | Un thé, s’il vous plaît. | ขอชาหนึ่งแก้ว | Je voudrais un thé. | 0.738 | 0.82 |
+| sports-sports_medal | th | la médaille | เหรียญ | Une médaille. | 0.725 | 0.822 |
+| vegetables-tomato | th | la tomate | มะเขือเทศ | Des tomates. | 0.733 | 0.825 |
+| transport-motor_scooter | th | le scooter | รถสกูตเตอร์ | Le scooter. | 0.708 | 0.828 |
+| fruits-red_apple | th | la pomme | แอปเปิล | Une pomme. | 0.498 | 0.829 |
+| fruits-banana | th | la banane | กล้วย | Une banane. | 0.648 | 0.829 |
+| sea-tropical_fish | th | le poisson tropical | ปลาเขตร้อน | Des poissons tropicaux. | 0.733 | 0.829 |
+| n4 | th | Ça fait vingt euros. | ทั้งหมดยี่สิบยูโร | Ils coûtent 20 euros. | 0.668 | 0.834 |
+| meals-green_salad | th | la salade | สลัด | Une salade. | 0.509 | 0.839 |
+| vegetables-beans | th | les haricots | ถั่ว | Des haricots. | 0.741 | 0.841 |
+| f2 | th | Un café et un jus d'orange, s'il vous plaît. | ขอกาแฟหนึ่งแก้วกับน้ำส้มหนึ่งแก้ว | Je prends un café et un jus d'orange. | 0.719 | 0.843 |
+| wild-lion | th | le lion | สิงโต | Le lion. | 0.681 | 0.843 |
+| sports-martial_arts_uniform | th | les arts martiaux | ศิลปะการต่อสู้ | Les arts martiaux. | 0.718 | 0.845 |
+| fruits-melon | th | le melon | เมลอน | Le melon. | 0.706 | 0.847 |
+| music-musical_keyboard | th | le piano | เปียโน | Le piano. | 0.738 | 0.847 |
+| birds-swan | th | le cygne | หงส์ | Le cygne. | 0.658 | 0.848 |
+| sports-boxing_glove | th | la boxe | มวย | La boxe. | 0.513 | 0.848 |
+| places-stadium | th | le stade | สนามกีฬา | Le stade. | 0.725 | 0.851 |
+| m4 | th | Cela nous intéresse, à condition que les délais de livraison soient garantis. | เราสนใจ โดยมีเงื่อนไขว่าต้องรับประกันกำหนดส่งสินค้า | Nous sommes intéressés à condition d'assurer la livraison à temps. | 0.744 | 0.853 |
+| pt2 | th | J'ai consulté les journaux : une variable d'environnement manquait. | ฉันตรวจดูล็อกแล้ว ตัวแปรสภาพแวดล้อมหายไปหนึ่งตัว | J'ai vérifié le journal. Une variable environnementale a disparu. | 0.656 | 0.853 |
+| objects-package | th | le colis | พัสดุ | Le colis. | 0.568 | 0.853 |
+| h2 | th | Bienvenue ! Votre passeport, s'il vous plaît. | ยินดีต้อนรับ ขอดูหนังสือเดินทางด้วย | Bienvenue. Je voudrais voir votre passeport. | 0.73 | 0.854 |
+| music-drum | th | le tambour | กลอง | Le tambour. | 0.466 | 0.855 |
+| time-alarm_clock | th | le réveil | นาฬิกาปลุก | Le réveil. | 0.727 | 0.857 |
+| sweets-pancakes | th | les crêpes | แพนเค้ก | Des crêpes. | 0.581 | 0.857 |
+| music-flute | th | la flûte | ฟลุต | La flûte. | 0.624 | 0.86 |
+| meals-spaghetti | th | les pâtes | พาสต้า | Des pâtes. | 0.677 | 0.864 |
+| meals-french_fries | th | les frites | เฟรนช์ฟราย | Des frites. | 0.478 | 0.864 |
+| farm-pig | th | le cochon | หมู | Le cochon. | 0.71 | 0.864 |
+| farm-hamster | th | le hamster | แฮมสเตอร์ | Le hamster. | 0.715 | 0.868 |
+| clothes-coat | th | le manteau | เสื้อโค้ท | Le manteau. | 0.671 | 0.869 |
+| games-chess_pawn | th | les échecs | หมากรุก | Les échecs. | 0.397 | 0.869 |
+| kitchen-g1 | th | Passe-moi la cuillère, s’il te plaît. | ช่วยส่งช้อนให้หน่อย | Passez-moi une tasse, s'il vous plaît. | 0.639 | 0.87 |
+| ph5 | th | Oui, une visite guidée part à neuf heures ; je vous réserve deux places ? | ได้ มีทัวร์พร้อมไกด์ออกเดินทางตอนเก้าโมง จองให้สองที่ไหม | Oui, il y a une visite guidée qui part à 9 h. Réservez deux places. | 0.722 | 0.872 |
+| wild-snake | th | le serpent | งู | Le serpent. | 0.671 | 0.873 |
+| accessories-lipstick | th | le rouge à lèvres | ลิปสติก | Le rouge à lèvres. | 0.748 | 0.873 |
+| wild-polar_bear | th | l’ours polaire | หมีขั้วโลก | L'ours polaire. | 0.349 | 0.875 |
+| music-saxophone | th | le saxophone | แซกโซโฟน | Le saxophone. | 0.642 | 0.876 |
+| farm-rabbit | th | le lapin | กระต่าย | Le lapin. | 0.732 | 0.878 |
+| house-couch_and_lamp | th | le canapé | โซฟา | Le canapé. | 0.542 | 0.878 |
+| farm-horse | th | le cheval | ม้า | Le cheval. | 0.516 | 0.883 |
+| wild-tiger | th | le tigre | เสือ | Le tigre. | 0.683 | 0.885 |
+| bathroom-roll_of_paper | th | le papier toilette | กระดาษชำระ | Le papier toilette. | 0.696 | 0.885 |
+| meals-cheese_wedge | th | le fromage | ชีส | Le fromage. | 0.483 | 0.888 |
+| transport-metro | th | le métro | รถไฟใต้ดิน | Le métro. | 0.692 | 0.889 |
+| body-brain | th | le cerveau | สมอง | Le cerveau. | 0.61 | 0.891 |
+| kitchen-kitchen_knife | th | le couteau | มีด | Le couteau. | 0.71 | 0.892 |
+| meals-butter | th | le beurre | เนย | Le beurre. | 0.399 | 0.894 |
+| body-lungs | th | les poumons | ปอด | Les poumons. | 0.627 | 0.896 |
+| music-violin | th | le violon | ไวโอลิน | Le violon. | 0.638 | 0.896 |
+| n2 | th | Il est trois heures et demie. | บ่ายสามโมงครึ่ง | Il est 3 h 30. | 0.702 | 0.9 |
+| places-castle | th | le château | ปราสาท | Le château. | 0.601 | 0.9 |
+| accessories-crown | th | la couronne | มงกุฎ | La couronne. | 0.435 | 0.902 |
+| meals-g1 | th | du pain et du fromage | ขนมปังกับชีส | Le pain et le fromage. | 0.697 | 0.907 |
+| travel-passport_control | th | le contrôle des passeports | ด่านตรวจหนังสือเดินทาง | Le contrôle des passeports. | 0.702 | 0.907 |
+| birds-butterfly | th | le papillon | ผีเสื้อ | Le papillon. | 0.59 | 0.915 |
+| travel-station | th | la gare | สถานี | La gare | 0.613 | 0.915 |
+| fruits-g2 | th | J’aime les fraises. | ฉันชอบสตรอว์เบอร์รี | Je préfère les fraises. | 0.676 | 0.917 |
+| fruits-g1 | th | une pomme rouge | แอปเปิลสีแดงหนึ่งลูก | Une pomme rouge. | 0.712 | 0.93 |
+| s3 | th | Quelle taille faites-vous ? | คุณใส่ไซซ์อะไร | Quelle taille as-tu ? | 0.66 | 0.952 |
+| house-g1 | th | Ferme la porte, s’il te plaît. | ช่วยปิดประตูหน่อย | Fermez la porte, s'il vous plaît. | 0.75 | 0.995 |
+| weather-g1 | th | Il pleut. | ฝนตก | Il pleut. | 0.557 | 1.0 |
 | birds-fly | zh | la mouche | 苍蝇 | Je vous en prie. | 0.566 | 0.108 |
 | vegetables-mushroom | zh | le champignon | 蘑菇 | Je vous en prie. | 0.791 | 0.114 |
 | sea-crab | zh | le crabe | 螃蟹 | Je vous en prie. | 0.73 | 0.114 |
