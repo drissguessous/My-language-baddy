@@ -6,7 +6,7 @@ import { buildVocabLesson } from '../src/lib/lesson';
 import { masteryOf, themeProgress } from '../src/lib/vocabProgress';
 import { review } from '../src/lib/srs';
 
-const MAIN = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja'] as const;
+const MAIN = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja', 'th'] as const;
 
 test('dictionnaire : entre 500 et 1000 mots dans chaque langue principale', () => {
   for (const l of MAIN) {
@@ -18,7 +18,7 @@ test('dictionnaire : entre 500 et 1000 mots dans chaque langue principale', () =
 test('dictionnaire : chaque entrée a son illustration et ses translittérations', () => {
   for (const v of VOCAB) {
     assert.ok(existsSync(`assets/vocab/${v.img}.webp`), `illustration ${v.img}`);
-    for (const l of ['ar', 'fa', 'hi', 'zh', 'ja'] as const) assert.ok(v.r?.[l], `${v.id} : translittération ${l}`);
+    for (const l of ['ar', 'fa', 'hi', 'zh', 'ja', 'th'] as const) assert.ok(v.r?.[l], `${v.id} : translittération ${l}`);
   }
   assert.equal(new Set(VOCAB.map((v) => v.id)).size, VOCAB.length, 'identifiants uniques');
 });
@@ -55,4 +55,12 @@ test('maîtrise d’un mot et avancement d’un thème', () => {
   const p = themeProgress(th, 'en', { [id]: card });
   assert.equal(p.known, 1);
   assert.ok(p.ratio > 0);
+});
+
+test('thaï : toutes les phrases des leçons et tout le dictionnaire, avec transcription RTGS', async () => {
+  const { ALL_PHRASES } = await import('../src/data/curriculum');
+  for (const p of ALL_PHRASES) {
+    assert.ok(p.t.th, `${p.id} : thaï manquant`);
+    assert.ok(p.r?.th && /^[a-zA-Z0-9 .,?!'’-]+$/.test(p.r.th), `${p.id} : transcription RTGS « ${p.r?.th} »`);
+  }
 });

@@ -18,6 +18,7 @@ Un mot « concorde » quand il figure dans le nom ou les mots-clés CLDR de son 
 | hi | 432/546 (79 %) |
 | zh | 507/546 (93 %) |
 | ja | 506/546 (93 %) |
+| th | 485/546 (89 %) |
 
 ## 2. Pinyin comparé à pinyin-pro
 

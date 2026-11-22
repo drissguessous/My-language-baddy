@@ -35,7 +35,7 @@ export function orderTiles(text: string, lang: LangCode, maxWords = 11): string[
   return words;
 }
 
-const nonLatin = (lang: LangCode) => ['ar', 'zh', 'ja', 'fa', 'hi', 'ber'].includes(lang);
+const nonLatin = (lang: LangCode) => ['ar', 'zh', 'ja', 'fa', 'hi', 'ber', 'th'].includes(lang);
 
 /**
  * Construit une leçon à partir d'une unité, selon le profil pédagogique de l'âge (src/data/pedagogy.ts) :

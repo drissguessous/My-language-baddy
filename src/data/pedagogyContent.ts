@@ -196,4 +196,5 @@ export const LANG_TIPS: Record<LangCode, string[]> = {
   hi: ['Le hindi s’écrit en devanagari, de gauche à droite.', 'Le verbe se place en fin de phrase : « मैं … रहता हूँ ».'],
   zh: ['Le mandarin a quatre tons et un ton neutre : le ton change le sens du mot.', 'Le pinyin note la prononciation ; les tons sont marqués par les accents (ā á ǎ à).'],
   ja: ['Le japonais combine trois écritures : hiragana, katakana et kanji.', 'La forme en « -masu / desu » est la forme polie à utiliser par défaut.'],
+  th: ['Le thaï a cinq tons (moyen, bas, descendant, haut, montant) : la transcription ne les note pas, écoutez le modèle.', 'Ajoutez ครับ (khrap) si vous êtes un homme, ค่ะ (kha) si vous êtes une femme, à la fin d’une phrase pour être poli.', 'Les mots s’écrivent sans espace ; l’espace sépare les groupes de sens ou les phrases.'],
 };

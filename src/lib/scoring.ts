@@ -56,7 +56,7 @@ function align(target: string[], heard: string[]): TokenState[] {
   return states;
 }
 
-const NATURAL_RATE: Partial<Record<LangCode, number>> = { zh: 4.5, ja: 6.5 }; // caractères/s ; sinon mots/s
+const NATURAL_RATE: Partial<Record<LangCode, number>> = { zh: 4.5, ja: 6.5, th: 7 }; // caractères/s ; sinon mots/s
 
 /**
  * Compare une production (transcription vocale ou saisie) à la phrase attendue.

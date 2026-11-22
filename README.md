@@ -8,8 +8,8 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 
 | | |
 |---|---|
-| **11 langues** | anglais, français, espagnol, italien, portugais, arabe standard, amazigh (tamazight, tifinagh + latin), persan, hindi, chinois mandarin, japonais |
-| **Écoute** | **voix neuronales intégrées** (2 par langue, sous licence compatible avec un usage commercial), chaque enregistrement vérifié par Whisper ; l'arabe et l'amazigh utilisent la voix de l'appareil faute de modèle commercialisable ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
+| **12 langues** | anglais, français, espagnol, italien, portugais, arabe standard, amazigh (tamazight, tifinagh + latin), persan, hindi, chinois mandarin, japonais, thaï (transcription RTGS) |
+| **Écoute** | **voix neuronales intégrées** (2 par langue, sous licence compatible avec un usage commercial), chaque enregistrement vérifié par Whisper ; l'arabe, l'amazigh et le thaï utilisent la voix de l'appareil faute de modèle commercialisable ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
 | **Analyse de la voix** | reconnaissance vocale (Android, iOS, Chrome/Edge) puis notation : précision, complétude, **débit** mesuré via le niveau sonore du micro ; mots justes, approximatifs ou manqués surlignés |
 | **Dictionnaire illustré** | **546 mots et 72 groupes de mots** en 36 thèmes (alimentation, nature, personnes, maison, ville et voyage, école et loisirs), chacun avec une illustration 3D ; écouter, prononcer (analyse vocale), écrire, puis révision espacée ; recherche de mot ; traductions recoupées avec Unicode CLDR ([audit](docs/AUDIT_VOCABULAIRE.md)) |
 | **Écrit** | traduction libre, mots à remettre dans l'ordre ; pinyin, rōmaji et translittération acceptés |
@@ -22,7 +22,7 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 | **Données** | tout reste sur l'appareil, aucun compte, aucun serveur |
 | **Simulation** | 5 profils de démonstration avec historique réaliste (bouton sur l'écran d'accueil ou dans Profil) |
 
-Contenu actuel : 20 unités × 6 répliques = **120 phrases dans 11 langues**, de A1 à C2 plus 5 filières métier, et **618 entrées de dictionnaire** dans 10 langues (95 mots en amazigh, formes courantes uniquement). L'amazigh couvre pour l'instant l'A1 et le parcours enfants ; les niveaux supérieurs sont marqués « bientôt ».
+Contenu actuel : 20 unités × 6 répliques = **120 phrases dans 12 langues**, de A1 à C2 plus 5 filières métier, et **618 entrées de dictionnaire** dans 11 langues (95 mots en amazigh, formes courantes uniquement). L'amazigh couvre pour l'instant l'A1 et le parcours enfants ; les niveaux supérieurs sont marqués « bientôt ».
 
 ## Démarrer
 

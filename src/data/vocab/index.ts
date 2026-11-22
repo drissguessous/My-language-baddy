@@ -9,9 +9,10 @@ import { NATURE } from './nature';
 import { PEOPLE } from './people';
 import { CITY } from './city';
 import type { ThemeSrc } from './types';
+import { TH_VOCAB } from './th';
 
 // Dictionnaire illustré : mots et groupes de mots par thème, chacun avec une illustration
-// (Microsoft Fluent Emoji 3D, licence MIT), en 11 langues avec translittérations.
+// (Microsoft Fluent Emoji 3D, licence MIT), en 12 langues avec translittérations (thaï : src/data/vocab/th.ts).
 // Chaque entrée est une « phrase » du corpus : voix intégrées, analyse vocale, correction écrite,
 // révision espacée. Les traductions sont recoupées avec les noms Unicode CLDR (docs/AUDIT_VOCABULAIRE.md).
 
@@ -33,7 +34,9 @@ function parse(rows: string, where: string): Record<(typeof COLS)[number], strin
 function toEntry(r: Record<(typeof COLS)[number], string>, id: string, theme: string, group: boolean): VocabEntry {
   const t: Partial<Record<LangCode, string>> = { fr: r.fr, en: r.en, es: r.es, it: r.it, pt: r.pt, ar: r.ar, fa: r.fa, hi: r.hi, zh: r.zh, ja: r.ja };
   if (r.ber) t.ber = r.ber;
-  return { id, role: 'l', t, r: { ar: r.ar_r, fa: r.fa_r, hi: r.hi_r, zh: r.zh_r, ja: r.ja_r }, img: r.img, theme, group };
+  const th = TH_VOCAB[id];
+  if (th) t.th = th[0];
+  return { id, role: 'l', t, r: { ar: r.ar_r, fa: r.fa_r, hi: r.hi_r, zh: r.zh_r, ja: r.ja_r, th: th?.[1] }, img: r.img, theme, group };
 }
 
 const entries: VocabEntry[] = [];

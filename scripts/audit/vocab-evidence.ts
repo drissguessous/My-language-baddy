@@ -14,7 +14,7 @@ import { VOCAB } from '../../src/data/vocab';
 import type { LangCode } from '../../src/data/languages';
 
 const req = createRequire(process.env.EVIDENCE_MODULES ?? `${process.cwd()}/`);
-const LANGS: LangCode[] = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja'];
+const LANGS: LangCode[] = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja', 'th'];
 const CLDR_LOC: Partial<Record<LangCode, string>> = { pt: 'pt-PT' };
 
 const byEmoji = JSON.parse(readFileSync('node_modules/unicode-emoji-json/data-by-emoji.json', 'utf8')) as Record<string, { slug: string }>;

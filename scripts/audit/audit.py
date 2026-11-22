@@ -13,8 +13,8 @@ import json
 import os
 
 NLLB = {'en': 'eng_Latn', 'es': 'spa_Latn', 'it': 'ita_Latn', 'pt': 'por_Latn', 'ar': 'arb_Arab', 'fa': 'pes_Arab',
-        'hi': 'hin_Deva', 'zh': 'zho_Hans', 'ja': 'jpn_Jpan', 'ber': 'tzm_Tfng'}
-LABSE_LANGS = {'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja'}  # l'amazigh n'est pas couvert par LaBSE
+        'hi': 'hin_Deva', 'zh': 'zho_Hans', 'ja': 'jpn_Jpan', 'ber': 'tzm_Tfng', 'th': 'tha_Thai'}
+LABSE_LANGS = {'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja', 'th'}  # l'amazigh n'est pas couvert par LaBSE
 DIRECT_MIN = 0.75     # similarité LaBSE source ↔ traduction
 BACK_MIN = 0.80       # similarité LaBSE source ↔ rétro-traduction
 

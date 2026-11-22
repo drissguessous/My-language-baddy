@@ -4,6 +4,7 @@ import { B2, C1C2, PRO } from './phrases/b2c2pro';
 import type { Phrase } from './phrases/types';
 import type { LangCode } from './languages';
 import { VOCAB } from './vocab';
+import { TH_PHRASES } from './phrases/th';
 
 export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 export const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -111,6 +112,11 @@ export const UNITS: Unit[] = [
 ];
 
 // Le vocabulaire illustré (src/data/vocab.ts) fait partie du corpus : voix, analyse vocale, révision espacée.
+// Thaï : traductions tenues à part (src/data/phrases/th.ts), fusionnées ici.
+for (const p of [...A1, ...A2, ...B1, ...B2, ...C1C2, ...PRO]) {
+  const th = TH_PHRASES[p.id];
+  if (th) { p.t.th = th[0]; p.r = { ...p.r, th: th[1] }; }
+}
 export const ALL_PHRASES: Phrase[] = [...A1, ...A2, ...B1, ...B2, ...C1C2, ...PRO, ...VOCAB];
 export const PHRASE: Record<string, Phrase> = Object.fromEntries(ALL_PHRASES.map((p) => [p.id, p]));
 export const UNIT: Record<string, Unit> = Object.fromEntries(UNITS.map((u) => [u.id, u]));

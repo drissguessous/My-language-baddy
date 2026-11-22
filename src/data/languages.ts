@@ -3,7 +3,7 @@
 // `segmented` : la langue sépare ses mots par des espaces (exercices « remettre dans l'ordre »).
 
 export type LangCode =
-  | 'fr' | 'en' | 'ar' | 'es' | 'it' | 'pt' | 'zh' | 'ja' | 'ber' | 'fa' | 'hi';
+  | 'fr' | 'en' | 'ar' | 'es' | 'it' | 'pt' | 'zh' | 'ja' | 'ber' | 'fa' | 'hi' | 'th';
 
 export interface Language {
   code: LangCode;
@@ -43,6 +43,9 @@ export const LANGUAGES: Language[] = [
     romanization: 'pinyin', tts: ['zh-CN', 'zh-TW'], stt: ['zh-CN', 'cmn-Hans-CN'], color: '#B3262E' },
   { code: 'ja', name: 'Japonais', native: '日本語', emblem: '日', rtl: false, segmented: false,
     romanization: 'rōmaji', tts: ['ja-JP'], stt: ['ja-JP'], color: '#A23B57' },
+  { code: 'th', name: 'Thaï', native: 'ไทย', emblem: 'ท', rtl: false, segmented: false,
+    romanization: 'RTGS', tts: ['th-TH'], stt: ['th-TH'], color: '#5B4BA0',
+    note: "Transcription RTGS (système officiel thaï) : elle ne note ni les tons ni la longueur des voyelles. Écoutez toujours le modèle audio." },
 ];
 
 export const LANG: Record<LangCode, Language> = Object.fromEntries(

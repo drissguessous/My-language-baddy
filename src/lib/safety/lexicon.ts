@@ -7,7 +7,8 @@
 //  - entrée « xxx* »     → tout mot qui COMMENCE par xxx ;
 //  - entrée « fr:xxx »   → ne s'applique que si le français est l'une des langues du contexte
 //                          (évite les faux positifs : « con » = « avec » en espagnol et en italien) ;
-//  - écritures sans espaces (chinois, japonais) → recherche de sous-chaîne.
+//  - écritures sans espaces (chinois, japonais, thaï) → recherche de sous-chaîne ; les entrées thaïes sont des
+//    formes complètes choisies pour ne pas apparaître dans des mots ordinaires (ex. หีบเพลง « accordéon »).
 // Les entrées ont été choisies pour éviter les collisions connues (Paris, retard, idiotisme,
 // crapaud, Pakistan, 酒店, ばかり…). À valider par des locuteurs natifs (docs/SECURITE.md).
 
@@ -48,6 +49,8 @@ export const LEXICON: Record<Category, string[]> = {
     '他妈的', '妈的', '傻逼', '草泥马', '操你', '婊子', '混蛋', '王八蛋', '去死', '白痴', '滚蛋',
     // japonais (sous-chaînes)
     'くそ', 'クソ', '死ね', 'バカ', '馬鹿', 'ちくしょう', 'ファック', 'うざい', 'きもい', 'アホ',
+    // thaï (sous-chaînes)
+    'ไอ้เหี้ย', 'ไอ้สัตว์', 'ไอ้ควาย', 'อีดอก', 'อีสัตว์', 'ส้นตีน', 'ชิบหาย', 'ไอ้บ้า', 'มึง', 'สัส',
   ],
   slur: [
     'negre', 'negres', 'negresse*', 'bougnoul*', 'youpin*', 'pd', 'pede', 'pedes', 'tapette', 'tarlouze*', 'gouine*',
@@ -60,20 +63,24 @@ export const LEXICON: Record<Category, string[]> = {
     'orgasm*', 'boobs', 'tits', 'pussy*', 'blowjob*', 'horny', 'onlyfans', 'hentai', 'erotic*', 'erotique*',
     'viol', 'violer', 'viole', 'rape', 'raped', 'rapist*', 'sexo', 'follar*', 'scopare', 'transar',
     'جنس', 'سكس', 'سکس', 'सेक्स', '色情', '做爱', 'セックス', 'エロ',
+    'เย็ด', 'ควย', 'หน้าหี', 'เซ็กส์', 'โป๊',
   ],
   drugs: [
     'cocaine*', 'heroine', 'heroin', 'meth', 'methamphetamine', 'ecstasy', 'mdma', 'lsd', 'haschich*', 'hasch', 'shit',
     'weed', 'cannabis', 'beuh', 'dealer*', 'fentanyl', 'opium', 'marijuana', 'cocaina', 'porro', 'porros',
     'مخدرات', 'حشيش', 'كوكايين', 'گراس', 'تریاک', 'ड्रग्स', 'गांजा', '毒品', '大麻', '麻薬', '覚醒剤',
+    'ยาบ้า', 'ยาไอซ์', 'กัญชา', 'ยาเสพติด', 'โคเคน', 'เฮโรอีน',
   ],
   adult: [
     'alcool', 'alcohol', 'biere*', 'beer*', 'vodka', 'whisky', 'whiskey', 'tequila', 'rhum', 'cerveza', 'birra', 'cerveja',
     'casino*', 'parier', 'betting', 'poker', 'gamble*', 'gambling',
     'pistolet*', 'flingue*', 'gun', 'guns', 'rifle', 'rifles', 'pistola', 'fucile',
     'خمر', 'كحول', 'قمار', 'شراب‌خوری', 'शराब', 'जुआ', 'बंदूक', '喝酒', '赌博', '枪支', 'お酒', '賭博',
+    'เหล้า', 'เบียร์', 'การพนัน', 'คาสิโน', 'ปืน',
   ],
   distress: [
     'suicide*', 'suicid*', 'me tuer', 'kill myself', 'want to die', 'self harm', 'scarifi*', 'harcele*', 'harcelement', 'bully*',
     'انتحار', 'خودکشی', 'आत्महत्या', '自杀', '自殺',
+    'ฆ่าตัวตาย', 'อยากตาย', 'ทำร้ายตัวเอง',
   ],
 };

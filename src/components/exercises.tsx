@@ -416,7 +416,7 @@ export function Write({ pid, lang, refLang, onDone }: P) {
   const [result, setResult] = useState<ScoreResult | null>(null);
   const [blocked, setBlocked] = useState<string | null>(null);
   const rom = romanText(p, lang);
-  const nonLatin = ['ar', 'zh', 'ja', 'fa', 'hi', 'ber'].includes(lang);
+  const nonLatin = ['ar', 'zh', 'ja', 'fa', 'hi', 'ber', 'th'].includes(lang);
   const check = () => {
     const m = moderate(text, { age, langs: [lang] });
     if (!m.ok || m.distress) { setBlocked(m.distress ? DISTRESS_MESSAGE : BLOCK_MESSAGE[band]); setText(m.masked); return; }

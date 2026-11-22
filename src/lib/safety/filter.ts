@@ -1,7 +1,7 @@
 import type { LangCode } from '../../data/languages';
 import { Category, LEXICON } from './lexicon';
 
-const CJK = /[぀-ヿ㐀-鿿ｦ-ﾟ]/;
+const CJK = /[぀-ヿ㐀-鿿ｦ-ﾟ\u0E00-\u0E7F]/; // écritures sans espaces entre les mots : chinois, japonais, thaï
 const LEET: Record<string, string> = { '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '8': 'b', '@': 'a', '$': 's', '!': 'i', '€': 'e' };
 
 function base(s: string): string {

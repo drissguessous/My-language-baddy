@@ -50,3 +50,11 @@ test('masquage : le terme interdit n’apparaît plus', () => {
   assert.ok(!m.masked.includes('connard'));
   assert.ok(m.masked.startsWith('tu es un'));
 });
+
+test('thaï : insultes bloquées dans une phrase sans espaces, mots ordinaires autorisés', () => {
+  assert.equal(moderate('แกมันไอ้ควาย', { age: 30, langs: ['th'] }).ok, false);
+  assert.equal(moderate('ฉันอยากตาย', { age: 30, langs: ['th'] }).distress, true);
+  for (const ok of ['ฉันเล่นหีบเพลง', 'ควายกินหญ้า', 'ฉันปีนภูเขา', 'สวัสดีครับ']) {
+    assert.equal(moderate(ok, { age: 12, langs: ['th'] }).ok, true, ok);
+  }
+});
