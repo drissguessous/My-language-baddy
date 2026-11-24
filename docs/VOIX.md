@@ -5,7 +5,7 @@ Généré automatiquement par le workflow « Voix ». Chaque enregistrement est 
 hiragana pour le japonais). Un clip est conservé si CER ≤ 0,25 ; une voix est retenue si au moins 60 % de
 ses clips sont validés. Sans clip validé, l’application utilise la voix du téléphone.
 
-Taille totale des clips : 76.1 Mo.
+Taille totale des clips : 62.4 Mo.
 
 | Langue | Voix retenues | Clips validés | Candidates (réussite sur les phrases des leçons · sur le dictionnaire · CER moyen) |
 |---|---|---|---|
