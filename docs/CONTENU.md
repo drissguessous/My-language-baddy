@@ -17,10 +17,10 @@
 
 ## Ajouter une unité
 
-1. Ajouter 6 `P(id, rôle, textes, translittérations)` dans un fichier de `phrases/` (rôle `c` = compagnon, `l` = apprenant ; amazigh en latin IRCAM, converti automatiquement en tifinagh).
+1. Ajouter 6 `P(id, rôle, textes, translittérations)` dans un fichier de `phrases/` (rôle `c` = compagnon, `l` = apprenant).
 2. Déclarer l'unité dans `UNITS` (niveau, scène, rôle du compagnon, âge minimum).
 3. `npm test` : l'unité doit être complète et ne déclencher aucun faux positif du filtre.
 
 ## Validation linguistique
 
-Traductions relues par un panel (voir [EXPERTS.md](EXPERTS.md)). L'amazigh reste à valider par un locuteur natif (IRCAM) avant publication ; les niveaux A2+ en amazigh sont à produire avec lui, idéalement avec des enregistrements audio natifs, car peu d'appareils ont une voix amazighe.
+Traductions relues par un panel (voir [EXPERTS.md](EXPERTS.md)).

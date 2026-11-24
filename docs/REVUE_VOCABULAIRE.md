@@ -1,5 +1,7 @@
 # Revue du dictionnaire illustré
 
+> L'amazigh, le persan et le hindi ont été retirés de l'application (novembre 2026) ; les mentions ci-dessous sont conservées comme historique.
+
 Relecture du 15/11/2026, à partir de [AUDIT_VOCABULAIRE.md](AUDIT_VOCABULAIRE.md).
 
 Corrigés d'après les références : espagnol *la tarta* / *el pastel* et *el portapapeles* ; portugais d'Europe *beisebol*,

@@ -343,7 +343,7 @@ export function Speak({ pid, lang, refLang, onDone }: P) {
     const m = moderate(heard.join(' '), { age, langs: [lang] });
     if (!m.ok || m.distress) { setBlocked(m.distress ? DISTRESS_MESSAGE : BLOCK_MESSAGE[band]); setResult(null); return; }
     const rom = romanText(p, lang);
-    const r = scoreAttempt({ heard, target, lang, alternatives: rom && lang !== 'ber' ? [rom] : [], durationMs: rec.durationMs });
+    const r = scoreAttempt({ heard, target, lang, alternatives: rom ? [rom] : [], durationMs: rec.durationMs });
     setResult(r);
     setTries((t) => t + 1);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -371,7 +371,6 @@ export function Speak({ pid, lang, refLang, onDone }: P) {
           <Card tone={C.goldSoft}>
             <T style={{ fontSize: 14 }}>
               {micOff ? 'Le micro est désactivé dans l’espace parent.'
-                : lang === 'ber' ? 'Pas encore d’analyse vocale pour l’amazigh sur cet appareil.'
                 : 'La reconnaissance vocale n’est pas disponible ici (Expo Go, navigateur sans Web Speech, ou langue non installée).'}
               {' '}{tv('Répète la phrase à voix haute, puis dis honnêtement comment ça s’est passé.', 'Répétez la phrase à voix haute, puis évaluez-vous honnêtement.')}
             </T>
@@ -416,7 +415,7 @@ export function Write({ pid, lang, refLang, onDone }: P) {
   const [result, setResult] = useState<ScoreResult | null>(null);
   const [blocked, setBlocked] = useState<string | null>(null);
   const rom = romanText(p, lang);
-  const nonLatin = ['ar', 'zh', 'ja', 'fa', 'hi', 'ber', 'th'].includes(lang);
+  const nonLatin = ['ar', 'zh', 'ja', 'th'].includes(lang);
   const check = () => {
     const m = moderate(text, { age, langs: [lang] });
     if (!m.ok || m.distress) { setBlocked(m.distress ? DISTRESS_MESSAGE : BLOCK_MESSAGE[band]); setText(m.masked); return; }

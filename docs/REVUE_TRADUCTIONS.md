@@ -1,5 +1,7 @@
 # Revue des phrases signalées par l'audit (14/11/2026)
 
+> L'amazigh, le persan et le hindi ont été retirés de l'application (novembre 2026) ; les mentions ci-dessous sont conservées comme historique.
+
 Chaque phrase signalée dans `AUDIT_TRADUCTIONS.md` a été examinée à partir des preuves du rapport
 (similarité LaBSE, rétro-traduction NLLB). Seules les corrections justifiées par ces preuves ont été faites.
 

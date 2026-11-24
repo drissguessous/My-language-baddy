@@ -2,10 +2,8 @@ import type { Level } from '../curriculum';
 
 /**
  * Source d'un thème : une ligne par mot, colonnes séparées par « | » :
- * illustration (nom Unicode CLDR) | fr | en | es | it | pt | ar | ar latin | fa | fa latin | hi | hi latin
- * | zh | pinyin | ja | rōmaji | amazigh (facultatif).
- * Langues romanes : article défini pour mémoriser le genre. Amazigh (tachelhit, latin IRCAM) :
- * seulement les mots dont la forme est sûre ; ailleurs la colonne est omise.
+ * illustration (nom Unicode CLDR) | fr | en | es | it | pt | ar | ar latin | zh | pinyin | ja | rōmaji.
+ * Langues romanes : article défini pour mémoriser le genre. Thaï : src/data/vocab/th.ts.
  */
 export interface ThemeSrc {
   id: string;

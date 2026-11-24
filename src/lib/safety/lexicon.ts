@@ -40,7 +40,7 @@ export const LEXICON: Record<Category, string[]> = {
     // arabe (écriture arabe et arabizi)
     'قحبة', 'قحبه', 'شرموطة', 'شرموطه', 'زب', 'كسمك', 'منيوك', 'خرا', 'زامل', 'حقير', 'غبي', 'يلعن', 'نيك',
     'khra', 'zamel', 'zebi', '9a7ba', 'qahba', 'kahba', 'nikmok', 'tabon', 'sharmouta', 'ya7ma9',
-    // persan
+    // persan (filtrage de toute saisie, quelle que soit la langue étudiée)
     'کیر', 'جنده', 'کونی', 'گوه', 'احمق', 'حرومزاده', 'لعنتی', 'jende', 'kooni',
     // hindi (devanagari et latin)
     'चूतिया', 'भेनचोद', 'बहनचोद', 'मादरचोद', 'गांडू', 'रंडी', 'हरामी', 'कमीना',

@@ -20,6 +20,7 @@ export default function RootLayout() {
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: C.bg }, animation: 'slide_from_right' }}>
           <Stack.Screen name="lesson/[id]" options={{ gestureEnabled: false }} />
           <Stack.Screen name="dialogue/[id]" options={{ gestureEnabled: false }} />
+          <Stack.Screen name="quiz/[id]" options={{ gestureEnabled: false }} />
         </Stack>
       </StoreProvider>
     </SafeAreaProvider>

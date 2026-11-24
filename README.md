@@ -8,13 +8,15 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 
 | | |
 |---|---|
-| **12 langues** | anglais, français, espagnol, italien, portugais, arabe standard, amazigh (tamazight, tifinagh + latin), persan, hindi, chinois mandarin, japonais, thaï (transcription RTGS) |
-| **Écoute** | **voix neuronales intégrées** (2 par langue, sous licence compatible avec un usage commercial), chaque enregistrement vérifié par Whisper ; l'arabe, l'amazigh et le thaï utilisent la voix de l'appareil faute de modèle commercialisable ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
+| **9 langues** | anglais, français, espagnol, italien, portugais, arabe standard, chinois mandarin, japonais, thaï (transcription RTGS) |
+| **Écoute** | **voix neuronales intégrées** (2 par langue, sous licence compatible avec un usage commercial), chaque enregistrement vérifié par Whisper ; l'arabe et le thaï utilisent la voix de l'appareil faute de modèle commercialisable ([rapport](docs/VOIX.md)) ; sinon voix de l'appareil, avec un guide adapté au système détecté (Android, Samsung, iPhone, Windows, Mac) pour l'améliorer |
 | **Analyse de la voix** | reconnaissance vocale (Android, iOS, Chrome/Edge) puis notation : précision, complétude, **débit** mesuré via le niveau sonore du micro ; mots justes, approximatifs ou manqués surlignés |
 | **Dictionnaire illustré** | **546 mots et 72 groupes de mots** en 36 thèmes (alimentation, nature, personnes, maison, ville et voyage, école et loisirs), chacun avec une illustration 3D ; écouter, prononcer (analyse vocale), écrire, puis révision espacée ; recherche de mot ; traductions recoupées avec Unicode CLDR ([audit](docs/AUDIT_VOCABULAIRE.md)) |
 | **Écrit** | traduction libre, mots à remettre dans l'ordre ; pinyin, rōmaji et translittération acceptés |
 | **Dialogues** | chaque unité est une scène jouée avec le compagnon : il parle, vous répondez au micro |
 | **Révisions** | répétition espacée (Leitner) alimentée par chaque tentative |
+| **Quiz** | quiz express (10 questions sur ce qui a été appris), quiz par niveau, par unité et par thème du dictionnaire : sans phase de découverte, score en %, réussite à 80 %, correction détaillée, meilleur et dernier score conservés |
+| **Objectifs** | temps par jour, jours de pratique par semaine, niveau à atteindre avant une date : calcul du rythme nécessaire (unités par semaine, minutes par jour), comparaison avec le rythme réel des 14 derniers jours, historique des 7 derniers jours ; paramètres dans `src/data/goals.ts` |
 | **Pédagogie par âge** | 6-12 ans : écoute avant l'écrit, cartes illustrées, autocollants ; 13-17 ans : point de langue guidé, défis ; adultes : grammaire explicite, auto-évaluation CECRL ; récupération finale et révisions espacées pour tous ([fondements](docs/PEDAGOGIE.md)) |
 | **Mode professeur** | ton Sérieux / Normal / Sympathique / Comique × intensité Un peu / Normal / Beaucoup ; le mode Sérieux relève la barre de réussite |
 | **Compagnons** | 10 personnes illustrées (pas de robot), animées quand elles parlent : 2 pour les 6-12 ans, 3 pour les 13-17 ans, 5 pour les adultes |
@@ -22,7 +24,7 @@ Trois objectifs : **formation** (parcours complet), **mise à niveau** (test de 
 | **Données** | tout reste sur l'appareil, aucun compte, aucun serveur |
 | **Simulation** | 5 profils de démonstration avec historique réaliste (bouton sur l'écran d'accueil ou dans Profil) |
 
-Contenu actuel : 20 unités × 6 répliques = **120 phrases dans 12 langues**, de A1 à C2 plus 5 filières métier, et **618 entrées de dictionnaire** dans 11 langues (95 mots en amazigh, formes courantes uniquement). L'amazigh couvre pour l'instant l'A1 et le parcours enfants ; les niveaux supérieurs sont marqués « bientôt ».
+Contenu actuel : 20 unités × 6 répliques = **120 phrases dans 9 langues**, de A1 à C2 plus 5 filières métier, et **618 entrées de dictionnaire** dans les 9 langues.
 
 ## Démarrer
 

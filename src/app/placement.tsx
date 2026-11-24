@@ -8,6 +8,7 @@ import { CompanionSays, PhraseView, PlayButton } from '../components/voice';
 import { LEVELS, LEVEL_INFO, Level, PHRASE, UNITS, unitAvailable } from '../data/curriculum';
 import { LANG } from '../data/languages';
 import { useStore } from '../lib/store';
+import { useStudyTime } from '../lib/useStudyTime';
 import { C, R } from '../theme';
 
 interface Q { level: Level; pid: string; audio: boolean; options: string[] }
@@ -16,6 +17,7 @@ const shuffle = <T,>(a: T[]) => [...a].sort(() => Math.random() - 0.5);
 
 export default function Placement() {
   const store = useStore();
+  useStudyTime();
   const { profile, companion, band } = store;
   const lang = profile?.targetLang ?? 'en';
   const ref = profile?.refLang ?? 'fr';

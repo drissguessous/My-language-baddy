@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { Text } from '../../components/Text';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Avatar } from '../../components/Avatar';
-import { CircleCheckBig, MapPin, MessagesSquare, X, Sprout, Leaf, Award } from 'lucide-react-native';
+import { CircleCheckBig, MapPin, MessagesSquare, X, Sprout, Leaf, Award, ListChecks } from 'lucide-react-native';
 import { UNIT_ICON } from '../../components/unitIcons';
 import { Bar, Btn, Card, Gap, Row, Screen, Stars, T } from '../../components/ui';
 import { CompanionSays } from '../../components/voice';
@@ -16,6 +16,7 @@ import { stopSpeaking } from '../../lib/speech';
 import { dueCards } from '../../lib/srs';
 import { verdictOf } from '../../lib/teacher';
 import { useStore } from '../../lib/store';
+import { useStudyTime } from '../../lib/useStudyTime';
 import { C, F, R } from '../../theme';
 
 const PRACTICE_TITLES: Record<string, string> = {
@@ -32,7 +33,6 @@ export default function Lesson() {
   const lang = profile?.targetLang ?? 'en';
   const ref = profile?.refLang ?? 'fr';
   const unit = UNIT[id ?? ''];
-  const started = useRef(Date.now());
 
   const steps: Step[] = useMemo(() => {
     if (!profile) return [];
@@ -59,12 +59,8 @@ export default function Lesson() {
   const [finished, setFinished] = useState<null | { avg: number; stars: number; xp: number; sticker?: string; line: string }>(null);
   const [canDo, setCanDo] = useState<0 | 1 | 2 | null>(null);
 
-  useEffect(() => () => {
-    stopSpeaking();
-    const minutes = Math.round((Date.now() - started.current) / 60000);
-    if (minutes > 0) store.addMinutes(minutes);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  useStudyTime();
+  useEffect(() => () => { stopSpeaking(); }, []);
 
   if (!profile) return null;
   if (store.timeLeft === 0) {
@@ -181,6 +177,8 @@ export default function Lesson() {
         ) : null}
         <Gap h={24} />
         {unit ? <Btn title="Jouer le dialogue avec mon compagnon" icon={MessagesSquare} onPress={() => router.replace(`/dialogue/${unit.id}`)} /> : null}
+        {unit || vocabTheme ? <><Gap h={10} /><Btn title={unit ? 'Quiz de l’unité' : 'Quiz du thème'} icon={ListChecks} variant="soft"
+          onPress={() => router.replace(`/quiz/${unit ? `unit-${unit.id}` : `vocab-${vocabTheme!.id}`}`)} /></> : null}
         <Gap h={10} />
         {vocabTheme || id === 'vocab-review'
           ? <Btn title="Retour au vocabulaire" variant="ghost" onPress={() => router.back()} />

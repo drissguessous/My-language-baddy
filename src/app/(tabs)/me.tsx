@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Alert, Platform, Pressable, Switch, View } from 'react-native';
 import { router } from 'expo-router';
-import { Check, ChevronDown, Headphones, Info, Languages, Lock, ShieldCheck, Trash2, UserPlus, Users } from 'lucide-react-native';
+import { Check, ChevronDown, Headphones, Info, Languages, Lock, ShieldCheck, Target, Trash2, UserPlus, Users } from 'lucide-react-native';
 import { Avatar } from '../../components/Avatar';
 import { Text } from '../../components/Text';
 import { Btn, Card, Chip, Gap, LangBadge, ListItem, Row, Screen, Section, T } from '../../components/ui';
@@ -10,6 +10,7 @@ import { GOALS, PRO_TRACKS } from '../../data/curriculum';
 import { INTENSITIES, TONES } from '../../data/coachLines';
 import { LANGUAGES, LANG, LangCode, REFERENCE_LANGS } from '../../data/languages';
 import type { Settings } from '../../lib/db';
+import { frenchDate } from '../../lib/goals';
 import { useStore } from '../../lib/store';
 import { C, F, R } from '../../theme';
 
@@ -20,7 +21,7 @@ function confirm(msg: string, ok: () => void) {
 
 export default function Me() {
   const s = useStore();
-  const { profile, age, band, currentLevel, progress, db, teacher } = s;
+  const { profile, age, band, currentLevel, progress, db, teacher, usage, goals } = s;
   const [langOpen, setLangOpen] = useState(false);
   if (!profile) return null;
   const set = (k: keyof Settings) => (v: boolean) => s.updateProfile({ settings: { ...profile.settings, [k]: v } });
@@ -110,6 +111,13 @@ export default function Me() {
             : teacher.intensity === 2 ? 'Le compagnon donne aussi les consignes.'
             : 'Le compagnon accompagne chaque étape : consignes, retours, astuces.'}
         </T>
+      </Card>
+
+      <Section title="Objectifs" />
+      <Card style={{ paddingVertical: 2 }}>
+        <ListItem icon={Target} color={C.violet} title="Temps et niveau visés"
+          subtitle={`${usage.dailyGoal} min par jour · ${goals.weeklyDays} jours par semaine${goals.targetLevel && goals.deadline ? ` · ${goals.targetLevel} pour le ${frenchDate(goals.deadline)}` : ''}`}
+          onPress={() => router.push('/goals')} last />
       </Card>
 
       <Section title="Écoute et affichage" />

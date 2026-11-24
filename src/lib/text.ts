@@ -1,38 +1,13 @@
 import type { LangCode } from '../data/languages';
 import type { Phrase } from '../data/phrases/types';
 
-// ── Tifinagh ──────────────────────────────────────────────────────
-// Conversion du latin IRCAM vers le tifinagh standard (Unicode, bloc 2D30).
-const TIFI: [string, string][] = [
-  ['gʷ', 'ⴳⵯ'], ['kʷ', 'ⴽⵯ'], ['ḍ', 'ⴹ'], ['ṭ', 'ⵟ'], ['ṛ', 'ⵕ'], ['ṣ', 'ⵚ'], ['ẓ', 'ⵥ'],
-  ['ḥ', 'ⵃ'], ['ɛ', 'ⵄ'], ['ɣ', 'ⵖ'], ['ʷ', 'ⵯ'],
-  ['a', 'ⴰ'], ['b', 'ⴱ'], ['c', 'ⵛ'], ['d', 'ⴷ'], ['e', 'ⴻ'], ['f', 'ⴼ'], ['g', 'ⴳ'], ['h', 'ⵀ'],
-  ['i', 'ⵉ'], ['j', 'ⵊ'], ['k', 'ⴽ'], ['l', 'ⵍ'], ['m', 'ⵎ'], ['n', 'ⵏ'], ['o', 'ⵓ'], ['p', 'ⴱ'],
-  ['q', 'ⵇ'], ['r', 'ⵔ'], ['s', 'ⵙ'], ['t', 'ⵜ'], ['u', 'ⵓ'], ['v', 'ⴼ'], ['w', 'ⵡ'], ['x', 'ⵅ'],
-  ['y', 'ⵢ'], ['z', 'ⵣ'],
-];
-
-export function toTifinagh(latin: string): string {
-  let s = latin.toLowerCase();
-  let out = '';
-  outer: for (let i = 0; i < s.length; ) {
-    for (const [from, to] of TIFI) {
-      if (s.startsWith(from, i)) { out += to; i += from.length; continue outer; }
-    }
-    out += s[i]; i += 1;
-  }
-  return out;
-}
-
 /** Texte affiché comme écriture principale pour une langue. */
 export function scriptText(p: Phrase, lang: LangCode): string {
-  const t = p.t[lang] ?? '';
-  return lang === 'ber' ? toTifinagh(t) : t;
+  return p.t[lang] ?? '';
 }
 
-/** Transcription secondaire (pinyin, rōmaji, latin pour l'amazigh…). */
+/** Transcription secondaire (pinyin, rōmaji, translittération de l'arabe, RTGS pour le thaï). */
 export function romanText(p: Phrase, lang: LangCode): string | undefined {
-  if (lang === 'ber') return p.t.ber;
   return p.r?.[lang];
 }
 
@@ -42,13 +17,12 @@ const PUNCT = /[\s.,;:!?؟،؛¡¿"“”«»'’‘()\[\]\-–—…、。，�
 
 export function normalize(text: string, lang: LangCode): string {
   let s = text.normalize('NFKC').toLowerCase();
-  if (lang === 'ar' || lang === 'fa') {
+  if (lang === 'ar') {
     s = s.replace(ARABIC_MARKS, '')
       .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه')
       .replace(/ك/g, 'ک').replace(/ي/g, 'ی').replace(/\u200c/g, ' ');
   }
-  if (lang === 'ber') s = s.replace(/[ⴰ-⵿]/g, (c) => c); // tifinagh conservé tel quel
-  if (['fr', 'en', 'es', 'it', 'pt', 'ber'].includes(lang) || /[a-z]/.test(s)) {
+  if (['fr', 'en', 'es', 'it', 'pt'].includes(lang) || /[a-z]/.test(s)) {
     s = s.normalize('NFD').replace(/[̀-ͯ]/g, '');
   }
   return s.replace(PUNCT, ' ').trim().replace(/\s+/g, ' ');

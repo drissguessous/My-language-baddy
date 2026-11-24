@@ -60,7 +60,7 @@ async function pickVoice(lang: LangCode, gender?: 'f' | 'm'): Promise<{ voice?: 
     }
   }
   // Liste vide (fréquent sur le web avant chargement) : on tente la locale principale.
-  if (!all.length && LANG[lang].tts.length && lang !== 'ber') return { language: LANG[lang].tts[0] };
+  if (!all.length && LANG[lang].tts.length) return { language: LANG[lang].tts[0] };
   return null;
 }
 

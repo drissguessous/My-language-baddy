@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { LangCode } from '../data/languages';
+import { LANG, LangCode } from '../data/languages';
 import type { Goal, Level, ProTrack } from '../data/curriculum';
 import type { Card } from './srs';
 import type { Intensity, Tone } from '../data/coachLines';
@@ -24,6 +24,13 @@ export interface Settings {
   teacher?: { tone: Tone; intensity: Intensity };  // mode professeur (défaut selon l'âge)
 }
 
+/** Objectifs dans le temps (le temps quotidien visé est dans Usage.dailyGoal). */
+export interface Goals {
+  weeklyDays: number;         // jours de pratique visés par semaine
+  targetLevel?: Level;        // niveau à atteindre (toutes ses unités générales terminées)
+  deadline?: string;          // date limite AAAA-MM-JJ
+}
+
 export interface Profile {
   id: string;
   name: string;
@@ -37,20 +44,29 @@ export interface Profile {
   createdAt: number;
   parental?: Parental;
   settings: Settings;
+  goals?: Goals;
   demo?: boolean;
 }
 
 export interface UnitResult { stars: number; best: number; completedAt: number; canDo?: 0 | 1 | 2; sticker?: string }
 export interface Attempt { ts: number; kind: 'listen' | 'speak' | 'write' | 'order' | 'dialogue' | 'placement'; phraseId?: string; score: number }
 
+export interface QuizResult { best: number; last: number; at: number; count: number }
+
 export interface LangProgress {
   units: Record<string, UnitResult>;
   cards: Record<string, Card>;
   xp: number;
   placement?: { level: Level; score: number; at: number };
+  quizzes?: Record<string, QuizResult>;
 }
 
-export interface Usage { streak: number; lastDay: string; today: string; minutesToday: number; dailyGoal: number }
+export interface Usage {
+  streak: number; lastDay: string; today: string;
+  minutesToday: number;       // décimal ; arrondi à l'affichage
+  dailyGoal: number;          // minutes visées par jour
+  history?: Record<string, number>; // minutes par jour (AAAA-MM-JJ)
+}
 
 export interface DB {
   version: 1;
@@ -72,11 +88,26 @@ export const defaultSettings = (): Settings => ({
 export async function loadDB(): Promise<DB> {
   try {
     const raw = await AsyncStorage.getItem(KEY);
-    if (raw) return { ...emptyDB(), ...JSON.parse(raw) } as DB;
+    if (raw) return migrate({ ...emptyDB(), ...JSON.parse(raw) } as DB);
   } catch {
     // stockage indisponible : base vide
   }
   return emptyDB();
+}
+
+/** Langues retirées de l'offre : les profils concernés basculent sur l'anglais (étudiée) ou le français (référence). */
+export function migrate(db: DB): DB {
+  const ok = (l: string) => !!LANG[l as LangCode];
+  return {
+    ...db,
+    profiles: db.profiles.map((p) => ({
+      ...p,
+      targetLang: ok(p.targetLang) ? p.targetLang : p.refLang === 'en' ? 'fr' : 'en',
+      refLang: ok(p.refLang) ? p.refLang : 'fr',
+    })),
+    progress: Object.fromEntries(Object.entries(db.progress).map(([pid, langs]) =>
+      [pid, Object.fromEntries(Object.entries(langs ?? {}).filter(([l]) => ok(l)))])),
+  };
 }
 
 export async function saveDB(db: DB): Promise<void> {

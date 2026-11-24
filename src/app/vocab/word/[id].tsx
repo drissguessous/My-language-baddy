@@ -9,6 +9,7 @@ import { PhraseView, PlayButton } from '../../../components/voice';
 import { THEMES, THEME_BY_ID, VOCAB_BY_ID, themeItems } from '../../../data/vocab';
 import { speak, stopSpeaking } from '../../../lib/speech';
 import { useStore } from '../../../lib/store';
+import { useStudyTime } from '../../../lib/useStudyTime';
 import { masteryOf } from '../../../lib/vocabProgress';
 import { C, F, MASTERY_COLOR, R, THEME_TINTS } from '../../../theme';
 
@@ -18,6 +19,7 @@ type Mode = 'view' | 'speak' | 'write';
 export default function WordScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { profile, progress, companion, band, record } = useStore();
+  useStudyTime();
   const [mode, setMode] = useState<Mode>('view');
   const [last, setLast] = useState<{ kind: 'speak' | 'write'; score: number } | null>(null);
   const v = VOCAB_BY_ID[id ?? ''];

@@ -53,7 +53,7 @@ export const COMPANIONS: Companion[] = [
     voice: { pitch: 1.1, rate: 1.0, gender: 'f' },
     greeting: 'Bonjour ! Elena. Travaillons la musique de la langue.' },
   { id: 'raj', name: 'Raj', band: 'adult', age: 31, role: 'Ingénieur logiciel, polyglotte',
-    bio: 'Il parle hindi, anglais et persan, et aime les méthodes efficaces et mesurables.',
+    bio: 'Il parle anglais, mandarin et japonais, et aime les méthodes efficaces et mesurables.',
     voice: { pitch: 1.0, rate: 1.0, gender: 'm' },
     greeting: 'Salut, Raj. On optimise votre progression ?' },
   { id: 'amina', name: 'Amina', band: 'adult', age: 52, role: 'Professeure de lettres et d’arabe',

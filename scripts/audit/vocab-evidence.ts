@@ -14,7 +14,7 @@ import { VOCAB } from '../../src/data/vocab';
 import type { LangCode } from '../../src/data/languages';
 
 const req = createRequire(process.env.EVIDENCE_MODULES ?? `${process.cwd()}/`);
-const LANGS: LangCode[] = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja', 'th'];
+const LANGS: LangCode[] = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'zh', 'ja', 'th'];
 const CLDR_LOC: Partial<Record<LangCode, string>> = { pt: 'pt-PT' };
 
 const byEmoji = JSON.parse(readFileSync('node_modules/unicode-emoji-json/data-by-emoji.json', 'utf8')) as Record<string, { slug: string }>;
@@ -45,8 +45,6 @@ function norm(s: string, lang: LangCode): string {
   const a = ARTICLES[lang];
   if (a) t = t.replace(a, '');
   if (lang === 'ar') t = t.replace(/[ً-ْـ]/g, '').replace(/^ال/, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي');
-  if (lang === 'fa') t = t.replace(/‌/g, ' ').replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/[ً-ْ]/g, '');
-  if (lang === 'hi') t = t.replace(/़/g, '');
   return t.replace(/\s+/g, ' ').trim();
 }
 
@@ -119,8 +117,6 @@ async function main() {
   if (pyMiss.length) md += '| id | chinois | pinyin saisi | référence |\n|---|---|---|---|\n' + pyMiss.map((m) => `| ${m.id} | ${m.zh} | ${m.mine} | ${m.ref} |`).join('\n') + '\n\n';
   md += `## 3. Rōmaji comparé à la lecture kuromoji\n\n${jaTotal - jaMiss.length}/${jaTotal} identiques (voyelles longues et espaces ignorés).\n\n`;
   if (jaMiss.length) md += '| id | japonais | rōmaji saisi | lecture kuromoji |\n|---|---|---|---|\n' + jaMiss.map((m) => `| ${m.id} | ${m.ja} | ${m.mine} | ${m.ref} |`).join('\n') + '\n\n';
-  md += `## Amazigh\n\nLe CLDR ne couvre pas le tachelhit : les ${VOCAB.filter((v) => v.t.ber && !v.group).length} mots amazighs (formes courantes uniquement) ` +
-    `doivent être relus par un locuteur ou un enseignant.\n`;
   md += '\nRelecture des écarts et corrections : [REVUE_VOCABULAIRE.md](REVUE_VOCABULAIRE.md).\n';
   writeFileSync('docs/AUDIT_VOCABULAIRE.md', md);
   writeFileSync('docs/audit-vocabulaire.json', JSON.stringify({ translations: report, pinyin: pyMiss, romaji: jaMiss }, null, 1));

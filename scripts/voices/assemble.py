@@ -10,7 +10,7 @@ import os
 import shutil
 
 LANG_NAMES = {'en': 'Anglais', 'fr': 'Français', 'es': 'Espagnol', 'it': 'Italien', 'pt': 'Portugais', 'ar': 'Arabe',
-              'fa': 'Persan', 'hi': 'Hindi', 'zh': 'Chinois', 'ja': 'Japonais', 'ber': 'Amazigh'}
+              'zh': 'Chinois', 'ja': 'Japonais'}
 MIN_RATE = 0.6  # une voix n'est retenue que si au moins 60 % de ses clips sont validés
 # Garde-fou : seules les licences compatibles avec une distribution commerciale sont intégrées.
 COMMERCIAL = {'Apache-2.0', 'CC0', 'CC-BY-4.0', 'CC-BY-3.0', 'Apache-2.0 / CC BY', 'MIT'}
@@ -137,8 +137,6 @@ def main():
                 c = report['fr'][f'coach_{g}']
                 lines.append('')
                 lines.append(f"Répliques du compagnon (voix {'féminine' if g == 'f' else 'masculine'}, {c['voice']}) : {c['kept']}/{c['total']} validées.")
-    if 'ber' in report and not report['ber']['validated']:
-        lines += ['', 'Amazigh : Whisper ne reconnaît pas l’amazigh ; les clips (modèle MMS tachelhit) sont intégrés sans vérification automatique.']
     open('docs/VOIX.md', 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
     print('\n'.join(lines))
 

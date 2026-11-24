@@ -14,8 +14,6 @@ Un mot « concorde » quand il figure dans le nom ou les mots-clés CLDR de son 
 | it | 507/546 (93 %) |
 | pt | 504/546 (92 %) |
 | ar | 476/546 (87 %) |
-| fa | 479/546 (88 %) |
-| hi | 432/546 (79 %) |
 | zh | 507/546 (93 %) |
 | ja | 506/546 (93 %) |
 | th | 485/546 (89 %) |
@@ -45,8 +43,5 @@ Un mot « concorde » quand il figure dans le nom ou les mots-clés CLDR de son 
 | jobs-cook | 料理人 | ryōrinin | ryōri jin |
 | music-g1 | ギターを弾きます。 | gitā o hikimasu. | gitā o hajiki masu . |
 
-## Amazigh
-
-Le CLDR ne couvre pas le tachelhit : les 95 mots amazighs (formes courantes uniquement) doivent être relus par un locuteur ou un enseignant.
 
 Relecture des écarts et corrections : [REVUE_VOCABULAIRE.md](REVUE_VOCABULAIRE.md).

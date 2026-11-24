@@ -13,9 +13,8 @@ test('identifiants uniques et unités complètes', () => {
   for (const u of UNITS) for (const id of u.phrases) assert.ok(PHRASE[id], `${u.id} → ${id}`);
 });
 
-test('toutes les langues sauf l’amazigh couvrent toutes les unités', () => {
-  for (const l of LANGUAGES.filter((x) => x.code !== 'ber')) for (const u of UNITS) assert.ok(unitAvailable(u, l.code), `${u.id}/${l.code}`);
-  assert.ok(unitAvailable(UNITS.find((u) => u.id === 'u-greet')!, 'ber'));
+test('toutes les langues couvrent toutes les unités', () => {
+  for (const l of LANGUAGES) for (const u of UNITS) assert.ok(unitAvailable(u, l.code), `${u.id}/${l.code}`);
 });
 
 test('pinyin et rōmaji présents partout', () => {

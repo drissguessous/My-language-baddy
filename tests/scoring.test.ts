@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { scoreAttempt, similarity } from '../src/lib/scoring';
-import { normalize, toTifinagh } from '../src/lib/text';
+import { normalize } from '../src/lib/text';
 
 test('réponse parfaite = 100, malgré ponctuation et majuscules', () => {
   const r = scoreAttempt({ heard: 'bonjour comment allez vous', target: 'Bonjour ! Comment allez-vous ?', lang: 'fr' });
@@ -41,7 +41,3 @@ test('similarité bornée', () => {
   assert.equal(similarity('', ''), 1); assert.equal(similarity('abc', 'xyz'), 0);
 });
 
-test('tifinagh IRCAM', () => {
-  assert.equal(toTifinagh('Azul! Mamk a tgit?'), 'ⴰⵣⵓⵍ! ⵎⴰⵎⴽ ⴰ ⵜⴳⵉⵜ?');
-  assert.equal(toTifinagh('ɣ ḍ ɛ'), 'ⵖ ⴹ ⵄ');
-});

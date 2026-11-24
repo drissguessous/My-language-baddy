@@ -21,7 +21,7 @@ Moins de 6 ans : inscription refusée. Changer l'année de naissance d'un profil
 - Mots de détresse (suicide, harcèlement…) : jamais bloqués ; message de soutien orientant vers un adulte de confiance et les urgences.
 - Garde-fous automatiques : `npm test` vérifie que les 120 phrases × 11 langues ne déclenchent aucun faux positif et qu'une liste d'insultes et de contournements est bien bloquée.
 
-Le lexique doit être enrichi et validé par des locuteurs natifs, en particulier pour l'amazigh, le persan et le hindi.
+Le lexique doit être enrichi et validé par des locuteurs natifs, en particulier pour l'arabe, le chinois, le japonais et le thaï. Les entrées persanes et hindies restent actives : elles filtrent toute saisie, quelle que soit la langue étudiée.
 
 ## Vie privée (loi 09-08 / CNDP, RGPD)
 

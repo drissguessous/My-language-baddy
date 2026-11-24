@@ -6,9 +6,9 @@ export type Role = 'c' | 'l';
 export interface Phrase {
   id: string;
   role: Role;
-  /** Texte dans chaque langue. L'amazigh est saisi en latin IRCAM et converti en tifinagh à l'affichage. */
+  /** Texte dans chaque langue. */
   t: Partial<Record<LangCode, string>>;
-  /** Translittération (pinyin, rōmaji, arabe, persan, hindi). */
+  /** Translittération (pinyin, rōmaji, arabe, thaï). */
   r?: Partial<Record<LangCode, string>>;
 }
 

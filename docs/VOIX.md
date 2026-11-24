@@ -11,9 +11,7 @@ Taille totale des clips : 76.1 Mo.
 |---|---|---|---|
 | Anglais | bf_isabella, bm_george | 668/738 | bf_emma (95 % · dictionnaire 0 % · 0.023), bf_isabella (97 % · dictionnaire 80 % · 0.121), bm_george (96 % · dictionnaire 74 % · 0.157), bm_fable (96 % · dictionnaire 0 % · 0.025) |
 | Espagnol | em_alex, ef_dora | 716/738 | ef_dora (96 % · dictionnaire 96 % · 0.037), em_alex (96 % · dictionnaire 96 % · 0.034), davefx (96 % · dictionnaire 0 % · 0.035), sharvard (96 % · dictionnaire 0 % · 0.029) |
-| Persan | ganji, reza_ibrahim | 493/738 | amir (75 % · dictionnaire 0 % · 0.197), ganji (94 % · dictionnaire 55 % · 0.264), reza_ibrahim (82 % · dictionnaire 24 % · 0.453) |
 | Français | ff_siwis, gilles | 701/738 | siwis (95 % · dictionnaire 0 % · 0.036), ff_siwis (95 % · dictionnaire 94 % · 0.042), gilles (92 % · dictionnaire 31 % · 0.493) |
-| Hindi | hm_omega, hf_alpha | 460/738 | hf_alpha (95 % · dictionnaire 44 % · 0.336), hf_beta (93 % · dictionnaire 0 % · 0.066), hm_omega (96 % · dictionnaire 45 % · 0.345), hm_psi (93 % · dictionnaire 0 % · 0.069) |
 | Italien | if_sara, im_nicola | 717/738 | if_sara (96 % · dictionnaire 96 % · 0.031), paola (95 % · dictionnaire 0 % · 0.038), im_nicola (96 % · dictionnaire 94 % · 0.042) |
 | Japonais | jf_alpha, jm_kumo | 601/738 | jf_alpha (95 % · dictionnaire 73 % · 0.178), jf_gongitsune (94 % · dictionnaire 0 % · 0.043), jm_kumo (95 % · dictionnaire 56 % · 0.292) |
 | Portugais | pm_alex, pf_dora | 671/738 | tugao (82 % · dictionnaire 0 % · 0.139), pf_dora (97 % · dictionnaire 86 % · 0.096), pm_alex (96 % · dictionnaire 87 % · 0.092) |

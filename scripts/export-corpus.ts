@@ -5,12 +5,10 @@ import { COMPANIONS } from '../src/data/companions';
 import { COACH_FIXED } from '../src/data/coach';
 import { allCoachTexts } from '../src/data/coachLines';
 import { fnv } from '../src/lib/hash';
-import { toTifinagh } from '../src/lib/text';
 
 const phrases = ALL_PHRASES.flatMap((p) =>
   Object.entries(p.t).map(([lang, text]) => ({
     id: p.id, lang, text, roman: p.r?.[lang as keyof typeof p.r], fr: p.t.fr,
-    ...(lang === 'ber' ? { tfng: toTifinagh(text!) } : {}),
   })),
 );
 const coach = new Map<string, { key: string; gender: string; text: string }>();

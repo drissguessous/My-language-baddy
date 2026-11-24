@@ -16,6 +16,7 @@ import { romanText, scriptText } from '../../lib/text';
 import { useRecognizer } from '../../lib/useRecognizer';
 import { line } from '../../lib/teacher';
 import { useStore } from '../../lib/store';
+import { useStudyTime } from '../../lib/useStudyTime';
 import { C, F, R } from '../../theme';
 
 interface Msg { who: 'c' | 'l'; pid: string; score?: number }
@@ -23,6 +24,7 @@ interface Msg { who: 'c' | 'l'; pid: string; score?: number }
 export default function Dialogue() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const store = useStore();
+  useStudyTime();
   const { profile, companion, age, band, teacher } = store;
   const unit = UNIT[id ?? ''];
   const lang = profile?.targetLang ?? 'en';
@@ -63,7 +65,7 @@ export default function Dialogue() {
     const m = moderate(heard.join(' '), { age, langs: [lang] });
     if (!m.ok || m.distress) { setFeedback(m.distress ? DISTRESS_MESSAGE : BLOCK_MESSAGE[band]); rec.reset(); return; }
     const rom = romanText(current, lang);
-    const r = scoreAttempt({ heard, target: current.t[lang]!, lang, alternatives: rom && lang !== 'ber' ? [rom] : [], durationMs: rec.durationMs });
+    const r = scoreAttempt({ heard, target: current.t[lang]!, lang, alternatives: rom ? [rom] : [], durationMs: rec.durationMs });
     store.record({ kind: 'dialogue', phraseId: current.id, score: r.score });
     if (r.score >= 55) accept(r.score);
     else { setFeedback(`${line(band, teacher, 'nudge')} (score ${r.score}/100 · entendu : « ${r.heard} »)`); rec.reset(); }

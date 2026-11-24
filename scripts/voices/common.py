@@ -6,8 +6,8 @@ import unicodedata
 # vocale (Whisper) et ne garde que les deux meilleures (une féminine et une masculine si possible).
 # Application commercialisable : seules les voix dont la licence autorise l'usage commercial sont
 # listées (Apache-2.0, CC0, CC-BY), vérifiées sur les cartes de modèles le 14/11/2026.
-# Exclues : MMS (CC-BY-NC), voix hindi Piper (CC-BY-NC-SA), Tom (AGPL), Kareem, Gyro, Huayan,
-# Riccardo (licence non précisée). L'arabe et l'amazigh utilisent donc la voix de l'appareil.
+# Exclues : MMS (CC-BY-NC), Tom (AGPL), Kareem, Gyro, Huayan,
+# Riccardo (licence non précisée). L'arabe et le thaï utilisent donc la voix de l'appareil.
 # engine: kokoro (lang_code, voix) | piper (chemin du modèle dans rhasspy/piper-voices) | mms (dépôt HF)
 CANDIDATES = {
     'en': [
@@ -38,17 +38,6 @@ CANDIDATES = {
         dict(id='pm_alex', engine='kokoro', code='p', name='Alex', gender='m', accent='pt-BR', license='Apache-2.0'),
     ],
     'ar': [],
-    'fa': [
-        dict(id='amir', engine='piper', model='fa/fa_IR/amir/medium/fa_IR-amir-medium', name='Amir', gender='m', accent='fa-IR', license='CC0'),
-        dict(id='ganji', engine='piper', model='fa/fa_IR/ganji/medium/fa_IR-ganji-medium', name='Ganji', gender='m', accent='fa-IR', license='CC0'),
-        dict(id='reza_ibrahim', engine='piper', model='fa/fa_IR/reza_ibrahim/medium/fa_IR-reza_ibrahim-medium', name='Reza', gender='m', accent='fa-IR', license='CC0'),
-    ],
-    'hi': [
-        dict(id='hf_alpha', engine='kokoro', code='h', name='Alpha', gender='f', accent='hi-IN', license='Apache-2.0'),
-        dict(id='hf_beta', engine='kokoro', code='h', name='Beta', gender='f', accent='hi-IN', license='Apache-2.0'),
-        dict(id='hm_omega', engine='kokoro', code='h', name='Omega', gender='m', accent='hi-IN', license='Apache-2.0'),
-        dict(id='hm_psi', engine='kokoro', code='h', name='Psi', gender='m', accent='hi-IN', license='Apache-2.0'),
-    ],
     'zh': [
         dict(id='zf_xiaobei', engine='kokoro', code='z', name='Xiaobei', gender='f', accent='zh-CN', license='Apache-2.0'),
         dict(id='zf_xiaoxiao', engine='kokoro', code='z', name='Xiaoxiao', gender='f', accent='zh-CN', license='Apache-2.0'),
@@ -60,10 +49,9 @@ CANDIDATES = {
         dict(id='jf_gongitsune', engine='kokoro', code='j', name='Gongitsune', gender='f', accent='ja-JP', license='Apache-2.0 / CC BY'),
         dict(id='jm_kumo', engine='kokoro', code='j', name='Kumo', gender='m', accent='ja-JP', license='Apache-2.0 / CC BY'),
     ],
-    'ber': [],
 }
 
-WHISPER_LANG = {'fr': 'fr', 'en': 'en', 'es': 'es', 'it': 'it', 'pt': 'pt', 'ar': 'ar', 'fa': 'fa', 'hi': 'hi', 'zh': 'zh', 'ja': 'ja'}
+WHISPER_LANG = {'fr': 'fr', 'en': 'en', 'es': 'es', 'it': 'it', 'pt': 'pt', 'ar': 'ar', 'zh': 'zh', 'ja': 'ja'}
 
 # Seuil d'acceptation d'un enregistrement : taux d'erreur de caractères (CER) entre la
 # transcription Whisper et le texte attendu.
@@ -76,11 +64,11 @@ DIGITS = str.maketrans('٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹०१२३४�
 
 def normalize(text: str, lang: str) -> str:
     s = unicodedata.normalize('NFKC', text).lower().translate(DIGITS)
-    if lang in ('ar', 'fa'):
+    if lang == 'ar':
         s = ARABIC_MARKS.sub('', s)
         for a, b in (('أ', 'ا'), ('إ', 'ا'), ('آ', 'ا'), ('ٱ', 'ا'), ('ى', 'ي'), ('ة', 'ه'), ('ك', 'ک'), ('ي', 'ی'), ('‌', '')):
             s = s.replace(a, b)
-    if lang in ('fr', 'en', 'es', 'it', 'pt', 'ber'):
+    if lang in ('fr', 'en', 'es', 'it', 'pt'):
         s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
     return PUNCT.sub('', s)
 
@@ -103,17 +91,8 @@ def phonetic(text: str, lang: str) -> str:
             import pykakasi
             _kks = pykakasi.kakasi()
         return ''.join(x['hira'] for x in _kks.convert(text))
-    if lang == 'fa':
-        # Lettres homophones en persan : la reconnaissance vocale ne peut pas deviner l'orthographe.
-        return text.translate(FA_HOMOPHONES).replace('\u200c', '')
-    if lang == 'hi':
-        # Nukta et chandrabindu / anusvara : même prononciation, graphies concurrentes.
-        return text.replace('\u093c', '').replace('\u0901', '\u0902')
     return text
 
-
-FA_HOMOPHONES = str.maketrans({'ط': 'ت', 'ص': 'س', 'ث': 'س', 'ذ': 'ز', 'ض': 'ز', 'ظ': 'ز', 'ح': 'ه',
-                               'ع': 'ا', 'ء': 'ا', 'آ': 'ا', 'أ': 'ا', 'ق': 'غ', 'ي': 'ی', 'ك': 'ک'})
 
 
 def cer(ref: str, hyp: str, lang: str) -> float:

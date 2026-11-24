@@ -21,6 +21,8 @@ interface Spec {
   days: number;           // ancienneté en jours
   streak: number;
   skill: number;          // niveau moyen des scores (0-1)
+  dailyGoal?: number;
+  quizzes?: Record<string, number>; // meilleurs scores de quiz
 }
 
 const SPECS: Spec[] = [
@@ -29,15 +31,17 @@ const SPECS: Spec[] = [
     done: ['u-kids', 'u-greet', 'u-intro'], days: 18, streak: 6, skill: 0.82 },
   { profile: { id: 'demo-adam', name: 'Adam', birthYear: year - 15, refLang: 'fr', targetLang: 'es', goal: 'formation',
       startLevel: 'A1', companionId: 'omar', settings: { teacher: { tone: 'funny', intensity: 3 } }, parental: { pinHash: hashPin('1234', 'demo-adam'), dailyMinutes: 45, micAllowed: true } },
-    done: ['u-greet', 'u-intro', 'u-time', 'u-cafe', 'u-dir', 'u-shop'], days: 41, streak: 12, skill: 0.76 },
+    done: ['u-greet', 'u-intro', 'u-time', 'u-cafe', 'u-dir', 'u-shop'], days: 41, streak: 12, skill: 0.76, dailyGoal: 20, quizzes: { 'level-A1': 84, mix: 78 } },
   { profile: { id: 'demo-salma', name: 'Salma', birthYear: year - 24, refLang: 'fr', targetLang: 'ja', goal: 'remise',
-      startLevel: 'A2', companionId: 'elena', settings: { teacher: { tone: 'friendly', intensity: 2 } } },
-    done: ['u-shop', 'u-day'], days: 9, streak: 4, skill: 0.68 },
+      startLevel: 'A2', companionId: 'elena', settings: { teacher: { tone: 'friendly', intensity: 2 } },
+      goals: { weeklyDays: 5, targetLevel: 'B1', deadline: dayKey(new Date(Date.now() + 90 * DAY)) } },
+    done: ['u-shop', 'u-day'], days: 9, streak: 4, skill: 0.68, dailyGoal: 20, quizzes: { 'unit-u-shop': 72 } },
   { profile: { id: 'demo-karim', name: 'Karim', birthYear: year - 42, refLang: 'fr', targetLang: 'en', goal: 'pro', proTrack: 'logistics',
       startLevel: 'B2', companionId: 'karim', settings: { teacher: { tone: 'serious', intensity: 3 }, voice: 'm' } },
     done: ['u-nego', 'u-pro-logistics', 'u-debate'], days: 27, streak: 3, skill: 0.88 },
   { profile: { id: 'demo-helene', name: 'Hélène', birthYear: year - 35, refLang: 'en', targetLang: 'zh', goal: 'pro', proTrack: 'hospitality',
-      startLevel: 'A1', companionId: 'nadia', settings: { slowAudio: true, teacher: { tone: 'normal', intensity: 1 } } },
+      startLevel: 'A1', companionId: 'nadia', settings: { slowAudio: true, teacher: { tone: 'normal', intensity: 1 } },
+      goals: { weeklyDays: 4, targetLevel: 'A2', deadline: dayKey(new Date(Date.now() + 180 * DAY)) } },
     done: ['u-greet', 'u-pro-hospitality'], days: 14, streak: 9, skill: 0.71 },
 ];
 
@@ -76,7 +80,13 @@ export function buildSimulation(base: DB): DB {
     // Une unité en cours de révision : quelques cartes échues aujourd'hui.
     Object.keys(prog.cards).slice(0, 4).forEach((id) => { prog.cards[id] = { ...prog.cards[id], due: now - 3_600_000 }; });
 
-    const usage: Usage = { streak: spec.streak, lastDay: dayKey(), today: dayKey(), minutesToday: Math.round(r() * 12), dailyGoal: 15 };
+    // Historique de temps : jours pratiqués cohérents avec la série en cours, quelques trous avant.
+    const history: Record<string, number> = {};
+    for (let d = 0; d < Math.min(spec.days, 30); d++) {
+      if (d < spec.streak || r() > 0.45) history[dayKey(new Date(now - d * DAY))] = Math.round((6 + r() * 18) * 10) / 10;
+    }
+    const usage: Usage = { streak: spec.streak, lastDay: dayKey(), today: dayKey(), minutesToday: history[dayKey()] ?? 0, dailyGoal: spec.dailyGoal ?? 15, history };
+    if (spec.quizzes) prog.quizzes = Object.fromEntries(Object.entries(spec.quizzes).map(([q, best]) => [q, { best, last: best - 5, at: now - 2 * DAY, count: 2 }]));
     db.profiles.push(p);
     db.progress[p.id] = { [p.targetLang as LangCode]: prog };
     db.attempts[p.id] = attempts.sort((a, b) => a.ts - b.ts);

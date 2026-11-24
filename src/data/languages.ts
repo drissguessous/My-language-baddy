@@ -3,7 +3,7 @@
 // `segmented` : la langue sépare ses mots par des espaces (exercices « remettre dans l'ordre »).
 
 export type LangCode =
-  | 'fr' | 'en' | 'ar' | 'es' | 'it' | 'pt' | 'zh' | 'ja' | 'ber' | 'fa' | 'hi' | 'th';
+  | 'fr' | 'en' | 'ar' | 'es' | 'it' | 'pt' | 'zh' | 'ja' | 'th';
 
 export interface Language {
   code: LangCode;
@@ -32,13 +32,6 @@ export const LANGUAGES: Language[] = [
     tts: ['pt-PT', 'pt-BR'], stt: ['pt-PT', 'pt-BR'], color: '#1F7A6E' },
   { code: 'ar', name: 'Arabe (standard)', native: 'العربية', emblem: 'ع', rtl: true, segmented: true,
     romanization: 'translittération', tts: ['ar-SA', 'ar-EG', 'ar-MA', 'ar'], stt: ['ar-SA', 'ar-MA'], color: '#8A5A2B' },
-  { code: 'ber', name: 'Amazigh (tamazight)', native: 'ⵜⴰⵎⴰⵣⵉⵖⵜ', emblem: 'ⵣ', rtl: false, segmented: true,
-    romanization: 'latin IRCAM', tts: ['zgh-MA', 'tzm-MA'], stt: [], color: '#B07A1E',
-    note: "Tamazight standard marocain, écrit en tifinagh avec sa transcription latine. Peu d'appareils disposent d'une voix amazighe : les exercices oraux passent en auto-évaluation tant que les enregistrements natifs ne sont pas intégrés." },
-  { code: 'fa', name: 'Persan (farsi)', native: 'فارسی', emblem: 'ف', rtl: true, segmented: true,
-    romanization: 'translittération', tts: ['fa-IR'], stt: ['fa-IR'], color: '#6B3E75' },
-  { code: 'hi', name: 'Hindi', native: 'हिन्दी', emblem: 'हि', rtl: false, segmented: true,
-    romanization: 'translittération', tts: ['hi-IN'], stt: ['hi-IN'], color: '#C76A12' },
   { code: 'zh', name: 'Chinois (mandarin)', native: '中文', emblem: '中', rtl: false, segmented: false,
     romanization: 'pinyin', tts: ['zh-CN', 'zh-TW'], stt: ['zh-CN', 'cmn-Hans-CN'], color: '#B3262E' },
   { code: 'ja', name: 'Japonais', native: '日本語', emblem: '日', rtl: false, segmented: false,

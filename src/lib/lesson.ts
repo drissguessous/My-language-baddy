@@ -5,6 +5,7 @@ import { PEDAGOGY } from '../data/pedagogy';
 import { PICTO, UNIT_NOTES } from '../data/pedagogyContent';
 import { THEME_BY_ID, VOCAB_BY_ID, themeItems } from '../data/vocab';
 import { normalize } from './text';
+import { QUIZ_PARAMS } from '../data/goals';
 
 export type Step =
   | { kind: 'discover'; pid: string }
@@ -35,7 +36,7 @@ export function orderTiles(text: string, lang: LangCode, maxWords = 11): string[
   return words;
 }
 
-const nonLatin = (lang: LangCode) => ['ar', 'zh', 'ja', 'fa', 'hi', 'ber', 'th'].includes(lang);
+const nonLatin = (lang: LangCode) => ['ar', 'zh', 'ja', 'th'].includes(lang);
 
 /**
  * Construit une leçon à partir d'une unité, selon le profil pédagogique de l'âge (src/data/pedagogy.ts) :
@@ -139,6 +140,32 @@ export function buildVocabLesson(themeId: string, lang: LangCode, band: AgeBand,
     band === 'kid' ? { kind: 'picture', pid, options: distractors(pid, words, lang), recall: true } : { kind: 'name', pid, options: distractors(pid, words, lang) },
   ));
   return steps;
+}
+
+/**
+ * Quiz : questions notées, sans phase de découverte. Reconnaissance (sens à l'oral et à l'écrit, image,
+ * ordre des mots) puis quelques questions d'écriture. Les distracteurs viennent du même ensemble.
+ */
+export function buildQuiz(ids: string[], lang: LangCode, band: AgeBand, n = QUIZ_PARAMS.questions): Step[] {
+  const avail = [...new Set(ids)].filter((id) => PHRASE[id]?.t[lang]);
+  const sel = shuffle(avail).slice(0, n);
+  const maxLen = band === 'kid' ? 30 : 60;
+  const writeIds = new Set(sel.filter((id) => (PHRASE[id].t[lang] ?? '').length <= maxLen).slice(0, QUIZ_PARAMS.write[band]));
+  const recog = sel.filter((id) => !writeIds.has(id)).map((pid, i): Step => {
+    const v = VOCAB_BY_ID[pid];
+    const pool = vocabPool(pid, lang) ?? avail;
+    const opts = () => distractors(pid, pool.length >= 4 ? pool : avail, lang);
+    if (v && !v.group) return band === 'kid' || i % 2 === 0 ? { kind: 'picture', pid, options: opts() } : { kind: 'name', pid, options: opts() };
+    const pics = avail.filter((id) => PICTO[id]);
+    if (band === 'kid' && PICTO[pid] && pics.length >= 4) return { kind: 'picture', pid, options: distractors(pid, pics, lang) };
+    const tiles = orderTiles(PHRASE[pid].t[lang]!, lang, PEDAGOGY[band].orderMaxWords);
+    switch (i % 3) {
+      case 0: return { kind: 'meaning', pid, audio: true, options: opts() };
+      case 1: return nonLatin(lang) ? { kind: 'pick', pid, options: opts() } : { kind: 'meaning', pid, audio: false, options: opts() };
+      default: return tiles ? { kind: 'order', pid, tiles: shuffle(tiles) } : { kind: 'meaning', pid, audio: true, options: opts() };
+    }
+  });
+  return [...recog, ...sel.filter((id) => writeIds.has(id)).map((pid): Step => ({ kind: 'write', pid }))];
 }
 
 /** Le texte saisi correspond-il à l'ordre attendu ? */

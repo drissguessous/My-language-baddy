@@ -12,31 +12,29 @@ import type { ThemeSrc } from './types';
 import { TH_VOCAB } from './th';
 
 // Dictionnaire illustré : mots et groupes de mots par thème, chacun avec une illustration
-// (Microsoft Fluent Emoji 3D, licence MIT), en 12 langues avec translittérations (thaï : src/data/vocab/th.ts).
+// (Microsoft Fluent Emoji 3D, licence MIT), en 9 langues avec translittérations (thaï : src/data/vocab/th.ts).
 // Chaque entrée est une « phrase » du corpus : voix intégrées, analyse vocale, correction écrite,
 // révision espacée. Les traductions sont recoupées avec les noms Unicode CLDR (docs/AUDIT_VOCABULAIRE.md).
 
 export interface VocabEntry extends Phrase { img: string; theme: string; group?: boolean }
 export interface Theme { id: string; title: string; section: string; level: Level; kids: boolean; img: string; words: string[]; groups: string[] }
 
-/** Ordre des colonnes d'une ligne : illustration | fr | en | es | it | pt | ar | ar (latin) | fa | fa (latin)
- *  | hi | hi (latin) | zh | pinyin | ja | rōmaji | amazigh (facultatif, latin IRCAM). */
-const COLS = ['img', 'fr', 'en', 'es', 'it', 'pt', 'ar', 'ar_r', 'fa', 'fa_r', 'hi', 'hi_r', 'zh', 'zh_r', 'ja', 'ja_r', 'ber'] as const;
+/** Ordre des colonnes d'une ligne : illustration | fr | en | es | it | pt | ar | ar (latin) | zh | pinyin | ja | rōmaji. */
+const COLS = ['img', 'fr', 'en', 'es', 'it', 'pt', 'ar', 'ar_r', 'zh', 'zh_r', 'ja', 'ja_r'] as const;
 
 function parse(rows: string, where: string): Record<(typeof COLS)[number], string>[] {
   return rows.split('\n').map((l) => l.trim()).filter(Boolean).map((l) => {
     const cells = l.split('|').map((c) => c.trim());
-    if (cells.length < 16 || cells.length > 17) throw new Error(`Vocabulaire ${where} : ${cells.length} colonnes dans « ${l} »`);
+    if (cells.length !== COLS.length) throw new Error(`Vocabulaire ${where} : ${cells.length} colonnes dans « ${l} »`);
     return Object.fromEntries(COLS.map((c, i) => [c, cells[i] ?? ''])) as Record<(typeof COLS)[number], string>;
   });
 }
 
 function toEntry(r: Record<(typeof COLS)[number], string>, id: string, theme: string, group: boolean): VocabEntry {
-  const t: Partial<Record<LangCode, string>> = { fr: r.fr, en: r.en, es: r.es, it: r.it, pt: r.pt, ar: r.ar, fa: r.fa, hi: r.hi, zh: r.zh, ja: r.ja };
-  if (r.ber) t.ber = r.ber;
+  const t: Partial<Record<LangCode, string>> = { fr: r.fr, en: r.en, es: r.es, it: r.it, pt: r.pt, ar: r.ar, zh: r.zh, ja: r.ja };
   const th = TH_VOCAB[id];
   if (th) t.th = th[0];
-  return { id, role: 'l', t, r: { ar: r.ar_r, fa: r.fa_r, hi: r.hi_r, zh: r.zh_r, ja: r.ja_r, th: th?.[1] }, img: r.img, theme, group };
+  return { id, role: 'l', t, r: { ar: r.ar_r, zh: r.zh_r, ja: r.ja_r, th: th?.[1] }, img: r.img, theme, group };
 }
 
 const entries: VocabEntry[] = [];

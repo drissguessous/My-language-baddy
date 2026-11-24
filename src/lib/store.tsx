@@ -3,12 +3,13 @@ import { COMPANION, Companion, ageOf, bandOf, AgeBand } from '../data/companions
 import { LEVELS, Level, UNIT, UNITS, Unit, levelIndex, unitAvailable } from '../data/curriculum';
 import { buildSimulation } from '../data/simulation';
 import {
-  Attempt, DB, LangProgress, Profile, Usage, dayKey, emptyDB, emptyProgress, hashPin, loadDB, saveDB, uid, defaultSettings,
+  Attempt, DB, Goals, LangProgress, Profile, Usage, dayKey, emptyDB, emptyProgress, hashPin, loadDB, saveDB, uid, defaultSettings,
 } from './db';
 import { review } from './srs';
 import { setVoicePrefs } from './speech';
 import { TeacherMode, teacherFor } from './teacher';
 import { PEDAGOGY, Pedagogy, BADGE_COLORS } from '../data/pedagogy';
+import { GOAL_PARAMS } from '../data/goals';
 
 interface Store {
   ready: boolean;
@@ -35,6 +36,9 @@ interface Store {
   setCanDo: (unitId: string, v: 0 | 1 | 2) => void;
   setPlacement: (level: Level, score: number) => void;
   addMinutes: (m: number) => void;
+  goals: Goals;
+  setGoals: (g: Partial<Goals> & { dailyMinutes?: number }) => void;
+  saveQuiz: (quizId: string, score: number) => void;
   checkPin: (pin: string, profile?: Profile) => boolean;
   setPin: (pin: string) => void;
   loadDemo: () => void;
@@ -44,7 +48,15 @@ interface Store {
 
 const Ctx = createContext<Store | null>(null);
 
-const freshUsage = (): Usage => ({ streak: 0, lastDay: '', today: dayKey(), minutesToday: 0, dailyGoal: 15 });
+const freshUsage = (): Usage => ({ streak: 0, lastDay: '', today: dayKey(), minutesToday: 0, dailyGoal: GOAL_PARAMS.dailyMinutes, history: {} });
+
+/** Jour de pratique : met à jour la série. */
+const markDay = (u: Usage): Usage => {
+  const today = dayKey();
+  if (u.lastDay === today) return u;
+  const yesterday = dayKey(new Date(Date.now() - 86_400_000));
+  return { ...u, lastDay: today, streak: u.lastDay === yesterday ? u.streak + 1 : 1 };
+};
 
 export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [db, setDb] = useState<DB>(emptyDB());
@@ -166,12 +178,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         return { ...p, xp: p.xp + xp,
           units: { ...p.units, [unitId]: { ...prev, best: Math.max(best, prev?.best ?? 0), stars: Math.max(stars, prev?.stars ?? 0), completedAt: Date.now(), sticker } } };
       });
-      touchUsage((u) => {
-        const today = dayKey();
-        if (u.lastDay === today) return u;
-        const yesterday = dayKey(new Date(Date.now() - 86_400_000));
-        return { ...u, lastDay: today, streak: u.lastDay === yesterday ? u.streak + 1 : 1 };
-      });
+      touchUsage(markDay);
       return { stars, xp, sticker };
     },
     setCanDo: (unitId, v) => patchProgress((p) => (p.units[unitId] ? { ...p, units: { ...p.units, [unitId]: { ...p.units[unitId], canDo: v } } } : p)),
@@ -179,7 +186,29 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       patchProgress((p) => ({ ...p, placement: { level, score, at: Date.now() } }));
       if (pid) commit((d) => ({ ...d, profiles: d.profiles.map((p) => (p.id === pid ? { ...p, startLevel: level } : p)) }));
     },
-    addMinutes: (m) => touchUsage((u) => ({ ...u, minutesToday: u.minutesToday + m })),
+    addMinutes: (m) => {
+      const min = Math.min(Math.max(0, m), GOAL_PARAMS.sessionMaxMinutes);
+      if (min < 0.1) return;
+      touchUsage((u) => {
+        const today = dayKey();
+        const cutoff = dayKey(new Date(Date.now() - GOAL_PARAMS.historyDays * 86_400_000));
+        const history = Object.fromEntries(Object.entries(u.history ?? {}).filter(([d]) => d >= cutoff));
+        history[today] = Math.round(((history[today] ?? 0) + min) * 10) / 10;
+        const next = { ...u, minutesToday: Math.round((u.minutesToday + min) * 10) / 10, history };
+        return min >= 1 || next.minutesToday >= 1 ? markDay(next) : next;
+      });
+    },
+    goals: { weeklyDays: GOAL_PARAMS.weeklyDays, ...profile?.goals },
+    setGoals: ({ dailyMinutes, ...g }) => {
+      if (!pid) return;
+      commit((d) => ({ ...d, profiles: d.profiles.map((p) => (p.id === pid ? { ...p, goals: { weeklyDays: GOAL_PARAMS.weeklyDays, ...p.goals, ...g } } : p)) }));
+      if (dailyMinutes) touchUsage((u) => ({ ...u, dailyGoal: dailyMinutes }));
+    },
+    saveQuiz: (quizId, score) => patchProgress((p) => {
+      const prev = p.quizzes?.[quizId];
+      return { ...p, xp: p.xp + Math.round(score / 10),
+        quizzes: { ...p.quizzes, [quizId]: { best: Math.max(score, prev?.best ?? 0), last: score, at: Date.now(), count: (prev?.count ?? 0) + 1 } } };
+    }),
     checkPin: (pin, prof = profile) => !!prof?.parental && hashPin(pin, prof.id) === prof.parental.pinHash,
     setPin: (pin) => {
       if (!pid) return;

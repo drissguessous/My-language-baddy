@@ -1,10 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 import { router } from 'expo-router';
-import { ChartNoAxesColumn, Headphones, Mic, PenLine, Repeat } from 'lucide-react-native';
+import { ChartNoAxesColumn, Headphones, ListChecks, Mic, PenLine, Repeat, Zap } from 'lucide-react-native';
 import { Text } from '../../components/Text';
 import { Bar, Card, Gap, ListItem, Row, Screen, Section, T } from '../../components/ui';
 import { LANG } from '../../data/languages';
+import { LEVELS, LEVEL_INFO, UNITS } from '../../data/curriculum';
+import { QUIZ_PARAMS } from '../../data/goals';
 import { useStore } from '../../lib/store';
 import { dueCards } from '../../lib/srs';
 import { recognitionAvailable } from '../../lib/useRecognizer';
@@ -13,7 +15,7 @@ import { C, F } from '../../theme';
 const DAY = 86_400_000;
 
 export default function Practice() {
-  const { profile, progress, attempts, band } = useStore();
+  const { profile, progress, attempts, band, unitState } = useStore();
   if (!profile) return null;
   const due = dueCards(progress.cards).length;
   const voice = recognitionAvailable(profile.targetLang);
@@ -34,6 +36,11 @@ export default function Practice() {
   });
   const maxN = Math.max(1, ...days.map((d) => d.n));
   const tu = band !== 'adult';
+  const quizLevels = LEVELS.filter((l) => UNITS.filter((u) => u.level === l && !u.pro && ['open', 'done'].includes(unitState(u))).length >= QUIZ_PARAMS.levelUnitsMin);
+  const best = (id: string) => {
+    const q = progress.quizzes?.[id];
+    return q ? `Meilleur score ${q.best} % · dernier ${q.last} %` : undefined;
+  };
 
   return (
     <Screen>
@@ -48,6 +55,16 @@ export default function Practice() {
           onPress={() => router.push('/lesson/speak')} />
         <ListItem icon={PenLine} color={C.gold} title="Écriture" subtitle="Traduire et écrire ; transcription latine acceptée" onPress={() => router.push('/lesson/write')} />
         <ListItem icon={ChartNoAxesColumn} color={C.ok} title="Test de positionnement" subtitle="Mesurer son niveau CECRL" onPress={() => router.push('/placement')} last />
+      </Card>
+
+      <Section title="Quiz" />
+      <Card style={{ paddingVertical: 2 }}>
+        <ListItem icon={Zap} color={C.accent} title="Quiz express" subtitle={best('mix') ?? `${QUIZ_PARAMS.questions} questions sur ce que ${tu ? 'tu as' : 'vous avez'} appris`}
+          onPress={() => router.push('/quiz/mix')} last={!quizLevels.length} />
+        {quizLevels.map((l, k) => (
+          <ListItem key={l} icon={ListChecks} color={C.violet} title={`Niveau ${l} · ${LEVEL_INFO[l].label}`}
+            subtitle={best(`level-${l}`) ?? 'Toutes les unités ouvertes du niveau'} onPress={() => router.push(`/quiz/level-${l}`)} last={k === quizLevels.length - 1} />
+        ))}
       </Card>
 
       <Section title={tu ? 'Tes compétences · 7 jours' : 'Vos compétences · 7 jours'} />

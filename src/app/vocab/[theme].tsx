@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
-import { GraduationCap, Repeat } from 'lucide-react-native';
+import { GraduationCap, ListChecks, Repeat } from 'lucide-react-native';
 import { Text } from '../../components/Text';
 import { VocabImage } from '../../components/exercises';
 import { BackBar, Bar, Btn, Card, Gap, Row, Screen, Section, T } from '../../components/ui';
@@ -46,6 +46,9 @@ export default function ThemeScreen() {
       <Btn title={toLearn.length ? (p.seen ? 'Continuer l’apprentissage' : 'Apprendre ces mots') : 'Tout revoir'} icon={GraduationCap} variant="accent"
         onPress={() => router.push({ pathname: '/lesson/[id]', params: { id: `vocab-${th.id}`, ...(toLearn.length ? { words: toLearn.join(',') } : {}) } })} />
       {p.seen ? <><Gap h={10} /><Btn title="Réviser le thème" icon={Repeat} variant="ghost" onPress={() => router.push({ pathname: '/lesson/[id]', params: { id: `vocab-${th.id}` } })} /></> : null}
+      <Gap h={10} />
+      <Btn title={progress.quizzes?.[`vocab-${th.id}`] ? `Quiz du thème · meilleur score ${progress.quizzes[`vocab-${th.id}`].best} %` : 'Quiz du thème'}
+        icon={ListChecks} variant="soft" onPress={() => router.push(`/quiz/vocab-${th.id}`)} />
 
       <Section title="Mots" />
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>

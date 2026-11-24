@@ -6,7 +6,7 @@ import { buildVocabLesson } from '../src/lib/lesson';
 import { masteryOf, themeProgress } from '../src/lib/vocabProgress';
 import { review } from '../src/lib/srs';
 
-const MAIN = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'fa', 'hi', 'zh', 'ja', 'th'] as const;
+const MAIN = ['fr', 'en', 'es', 'it', 'pt', 'ar', 'zh', 'ja', 'th'] as const;
 
 test('dictionnaire : entre 500 et 1000 mots dans chaque langue principale', () => {
   for (const l of MAIN) {
@@ -18,7 +18,7 @@ test('dictionnaire : entre 500 et 1000 mots dans chaque langue principale', () =
 test('dictionnaire : chaque entrée a son illustration et ses translittérations', () => {
   for (const v of VOCAB) {
     assert.ok(existsSync(`assets/vocab/${v.img}.webp`), `illustration ${v.img}`);
-    for (const l of ['ar', 'fa', 'hi', 'zh', 'ja', 'th'] as const) assert.ok(v.r?.[l], `${v.id} : translittération ${l}`);
+    for (const l of ['ar', 'zh', 'ja', 'th'] as const) assert.ok(v.r?.[l], `${v.id} : translittération ${l}`);
   }
   assert.equal(new Set(VOCAB.map((v) => v.id)).size, VOCAB.length, 'identifiants uniques');
 });
@@ -38,10 +38,6 @@ test('séance de vocabulaire : découverte, reconnaissance, oral, écrit, groupe
     for (const s of steps) if ('options' in s) assert.ok(s.options.includes(s.pid) && s.options.length === 4);
   }
   assert.ok(buildVocabLesson('fruits', 'ja', 'adult').some((s) => s.kind === 'name'));
-});
-
-test('amazigh : les thèmes proposés ont assez de mots', () => {
-  for (const th of THEMES.filter((t) => themeAvailable(t, 'ber'))) assert.ok(themeItems(th, 'ber').words.length >= 5);
 });
 
 test('maîtrise d’un mot et avancement d’un thème', () => {

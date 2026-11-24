@@ -3,7 +3,7 @@ import { StyleSheet, Text as RNText, TextInput as RNTextInput, TextInputProps, T
 import { FONT } from '../theme';
 
 // Texte de l'application : applique la police Plus Jakarta Sans selon la graisse demandée.
-// Les écritures non latines (arabe, devanagari, chinois, japonais, tifinagh) passent par la police
+// Les écritures non latines (arabe, chinois, japonais, thaï) passent par la police
 // système de secours, qui les affiche correctement.
 
 function family(weight?: TextStyle['fontWeight']): string {

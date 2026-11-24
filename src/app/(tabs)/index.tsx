@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import { router } from 'expo-router';
-import { Award, Check, CircleCheckBig, Clock3, Flame, Lock, MessagesSquare, Play, Repeat, Timer } from 'lucide-react-native';
+import { Award, Check, CircleCheckBig, Clock3, Flame, Lock, MessagesSquare, Play, Repeat, Target, Timer } from 'lucide-react-native';
 import { Avatar } from '../../components/Avatar';
 import { Text } from '../../components/Text';
 import { Bar, Btn, Card, Gap, IconTile, LangBadge, Row, Screen, Section, Stars, T } from '../../components/ui';
@@ -10,11 +10,12 @@ import { LEVELS, LEVEL_INFO, PRO_TRACKS, UNITS, Unit, levelIndex } from '../../d
 import { LANG } from '../../data/languages';
 import { useStore } from '../../lib/store';
 import { dueCards } from '../../lib/srs';
+import { STATUS, goalPlan, planLine, thisWeek } from '../../lib/goals';
 import { C, F, R, shadow } from '../../theme';
 
 export default function Home() {
   const s = useStore();
-  const { profile, companion, progress, usage, currentLevel, unitState, band, timeLeft } = s;
+  const { profile, companion, progress, usage, currentLevel, unitState, band, timeLeft, goals } = s;
   if (!profile) return null;
   const lang = LANG[profile.targetLang];
   const due = dueCards(progress.cards).length;
@@ -29,6 +30,9 @@ export default function Home() {
   const nextUnit = [...kidsUnits, ...(profile.goal === 'pro' ? proUnits : []), ...general, ...proUnits].find((u) => unitState(u) === 'open');
   const levelUnits = general.filter((u) => u.level === currentLevel);
   const levelDone = levelUnits.filter((u) => progress.units[u.id]).length;
+  const week = thisWeek(usage.history);
+  const plan = goalPlan(goals, progress, (u) => !['hidden', 'soon'].includes(unitState(u)), currentLevel);
+  const st = STATUS[plan.status];
 
   const Header = (
     <Row style={{ justifyContent: 'space-between' }}>
@@ -69,7 +73,7 @@ export default function Home() {
           <Card style={{ marginTop: 14 }}>
             <Row style={{ justifyContent: 'space-between' }}>
               <Row gap={8}><Timer size={18} color={C.primary} /><Text style={{ fontWeight: '700' }}>Temps aujourd’hui</Text></Row>
-              <T v="small">{usage.minutesToday} / {profile.parental?.dailyMinutes} min</T>
+              <T v="small">{Math.round(usage.minutesToday)} / {profile.parental?.dailyMinutes} min</T>
             </Row>
             <Gap h={10} />
             <Bar value={usage.minutesToday / Math.max(1, profile.parental?.dailyMinutes ?? 1)} color={C.primary} />
@@ -159,8 +163,27 @@ export default function Home() {
       <Row style={{ marginTop: 14, gap: 10, alignItems: 'stretch' }}>
         <Stat icon={Flame} color={C.accent} value={String(usage.streak)} label={usage.streak > 1 ? 'jours d’affilée' : 'jour d’affilée'} />
         <Stat icon={CircleCheckBig} color={C.ok} value={String(mastered)} label="phrases acquises" />
-        <Stat icon={Clock3} color={C.violet} value={`${usage.minutesToday} min`} label={`objectif ${usage.dailyGoal} min`} />
+        <Stat icon={Clock3} color={C.violet} value={`${Math.round(usage.minutesToday)} min`} label={`objectif ${usage.dailyGoal} min`} />
       </Row>
+
+      <Card style={{ marginTop: 14 }} onPress={() => router.push('/goals')}>
+        <Row style={{ justifyContent: 'space-between' }}>
+          <Row gap={8}><Target size={18} color={C.primary} /><Text style={{ fontWeight: '800', fontSize: 16, color: C.ink }}>Objectifs</Text></Row>
+          {st ? <Text style={{ color: C[st.tone], fontWeight: '800', fontSize: 13 }}>{st.label}</Text> : <T v="small">Définir</T>}
+        </Row>
+        <Gap h={10} />
+        <Row gap={14}>
+          <View style={{ flex: 1 }}>
+            <T v="small">Aujourd’hui · {Math.round(usage.minutesToday)}/{usage.dailyGoal} min</T>
+            <Gap h={6} /><Bar value={usage.minutesToday / usage.dailyGoal} color={C.violet} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <T v="small">Semaine · {week.days}/{goals.weeklyDays} jours</T>
+            <Gap h={6} /><Bar value={week.days / goals.weeklyDays} color={C.primary} />
+          </View>
+        </Row>
+        {goals.targetLevel ? <T v="small" style={{ marginTop: 10 }}>{planLine(plan, goals.targetLevel, goals.deadline)}</T> : null}
+      </Card>
 
       {due ? (
         <Card style={{ marginTop: 14 }} onPress={() => router.push('/lesson/review')}>
